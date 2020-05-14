@@ -290,22 +290,71 @@
                 <h5 class="sidebar-nav-title">App</h5>
                 <ul class="sidebar-nav">
                     <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="../dashboard/index.html">
+                        <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
                             <i class="sidebar-icon dashboard-icon"></i>
                             <span class="icon">Dashboard</span>
+                            <i class="toggle fa fa-angle-down"></i>
                         </a>
+                        <ul id="sidebar-dashboard" class="collapse ">
+                            <li class=""><a href="../dashboard/index.html">Visits</a></li>
+                            <li class=""><a href="../dashboard/analytics.html">Analytics</a></li>
+                            <li class=""><a href="../dashboard/widgets.html">Widgets</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../other/package.html">
+                            <i class="sidebar-icon package-icon"></i>
+                            <span class="icon">LB Package</span>
+        
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="../other/profile.html">
+                            <i class="sidebar-icon profile-icon"></i>
+                            <span class="icon">Profile</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="../other/inbox.html">
+                            <i class="sidebar-icon email-icon"></i>
+                            <span class="icon">Email</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="collapsed" href="#sidebar-pages" data-toggle="collapse" data-parent="#sidebar">
+                            <i class="sidebar-icon e-comerce-icon"></i>
+                            <span class="icon">E-commerce</span>
+                            <i class="toggle fa fa-angle-down"></i>
+                        </a>
+                        <ul id="sidebar-pages" class="collapse ">
+                            <li class=""><a href="../e-commerce/product_detail.html">Product Detail</a></li>
+                            <li class=""><a href="../e-commerce/product_grid.html">Product Grid</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- every .sidebar-nav may have a title -->
                 <h5 class="sidebar-nav-title">Template </h5>
                 <ul class="sidebar-nav">
                     <li class="">
+                        <a href="#sidebar-core" data-toggle="collapse" data-parent="#sidebar">
+                            <i class="sidebar-icon core-icon"></i>
+                            <span class="icon">Core</span>
+                            <i class="toggle fa fa-angle-down"></i>
+                        </a>
+                        <ul id="sidebar-core" class="collapse ">
+                            <li class=""><a href="../components/ui_notifications.html">Notifications</a></li>
+                            <li class=""><a href="../components/ui_icons.html">Icons</a></li>
+                            <li class=""><a href="../charts/charts.html">Charts</a></li>
+                            <li class=""><a href="../maps/maps_google.html">Google Maps</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidebar-nav">
+                    <li class="">
                         <!-- an example of nested submenu. basic bootstrap collapse component -->
                         <a href="../core/core_typography.html">
                             <i class="sidebar-icon typography-icon"></i>
                             <span class="icon">Typography</span>
-        
                         </a>
                     </li>
                     <li class="">
@@ -354,7 +403,72 @@
                     </li>
                 </ul>
             </div>
-        </nav>    <div class="content-wrap">
+        </nav>        <div class="theme-helper">
+            <section class="widget theme-helper-content">
+                <header class="theme-helper-header d-flex p-0">
+                    <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
+                        <div class="theme-helper-spinner bg-warning">
+                            <img src="../img/icons/cog.svg" alt="">
+                        </div>
+                    </div>
+                    <h5>Theme</h5>
+                </header>
+                <div class="widget-body mt-3">
+                    <h6>Navbar Type</h6>
+                    <div class="form-group row justify-content-around">
+                        <div class="abc-radio">
+                            <input type="radio" checked name="navbar-type" id="navbar_static" value="static">
+                            <label for="navbar_static">Static</label>
+                        </div>
+                        <div class="abc-radio">
+                            <input type="radio" name="navbar-type" id="navbar_floating" value="floating">
+                            <label for="navbar_floating">Floating</label>
+                        </div>
+                    </div>
+                    <h6>Navbar Color</h6>
+                    <ul class="colors-list">
+                        <li class="color-box-nav-bar active" style="background-color: rgb(0, 43, 73);" data-style="first"></li>
+                        <li class="color-box-nav-bar" style="background-color: rgb(255, 255, 255);" data-style="second"></li>
+                    </ul>
+                    <h6>Sidebar Type</h6>
+                    <div class="form-group row justify-content-around">
+                        <div class="abc-radio"><input type="radio" checked name="sidebar-type" id="sidebar_transparent" value="transparent">
+                            <label for="sidebar_transparent">Transparent</label>
+                        </div>
+                        <div class="abc-radio"><input type="radio" name="sidebar-type" id="sidebar_solid" value="solid" checked>
+                            <label for="sidebar_solid">Solid</label>
+                        </div>
+                    </div>
+                    <h6>Sidebar Color</h6>
+                    <ul class="colors-list">
+                        <li class="color-box-side-bar " style="background-color: rgb(0, 43, 73);" data-style="first"></li>
+                        <li class="color-box-side-bar active" style="background-color: rgb(255, 255, 255);" data-style="second"></li>
+                    </ul>
+                    <h6>Theme Color</h6>
+                    <ul class="colors-list">
+                        <li class="color-box-side-bar " style="background-color: rgb(254, 190, 105);" data-style="first"></li>
+                        <li class="color-box-side-bar active" style="background-color: rgb(255, 119, 105);" data-style="second"></li>
+                        <li class="color-box-side-bar " style="background-color: rgb(129, 212, 187);" data-style="third"></li>
+                        <li class="color-box-side-bar" style="background-color: rgb(77, 199, 223);" data-style="fourth"></li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="https://flatlogic.com/admin-dashboards/sing-app-html5"
+                           target="_blank"
+                           role="button"
+                           class="btn btn-dark btn-rounded btn-block fs-mini text-white">
+                            Purchase
+                        </a>
+                        <a href="http://demo.flatlogic.com/sing-app/documentation/"
+                           target="_blank"
+                           role="button"
+                           class="btn btn-warning btn-rounded btn-block fs-mini text-white">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="content-wrap">
         <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
         <main id="content" class="content" role="main">
             <!-- Page content -->

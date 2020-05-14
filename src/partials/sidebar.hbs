@@ -8,23 +8,72 @@
         </header>
         <h5 class="sidebar-nav-title">App</h5>
         <ul class="sidebar-nav">
-            <li class="{{#activeClass active "dashboard"}} active {{/activeClass}}">
-                <!-- an example of nested submenu. basic bootstrap collapse component -->
-                <a href="../dashboard/index.html">
+            <li class="{{#activeClass active "dashboard_analytics dashboard_visits dashboard_widgets"}} active {{/activeClass}}">
+                <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
                     <i class="sidebar-icon dashboard-icon"></i>
                     <span class="icon">Dashboard</span>
+                    <i class="toggle fa fa-angle-down"></i>
                 </a>
+                <ul id="sidebar-dashboard" class="collapse {{#activeClass active "dashboard_analytics dashboard_visits dashboard_widgets"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "dashboard_visits"}} active {{/activeClass}}"><a href="../dashboard/index.html">Visits</a></li>
+                    <li class="{{#activeClass active "dashboard_analytics"}} active {{/activeClass}}"><a href="../dashboard/analytics.html">Analytics</a></li>
+                    <li class="{{#activeClass active "dashboard_widgets"}} active {{/activeClass}}"><a href="../dashboard/widgets.html">Widgets</a></li>
+                </ul>
+            </li>
+            <li class="{{#activeClass active "package"}} active {{/activeClass}}">
+                <a href="../other/package.html">
+                    <i class="sidebar-icon package-icon"></i>
+                    <span class="icon">LB Package</span>
+
+                </a>
+            </li>
+            <li class="{{#activeClass active "profile"}} active {{/activeClass}}">
+                <a href="../other/profile.html">
+                    <i class="sidebar-icon profile-icon"></i>
+                    <span class="icon">Profile</span>
+                </a>
+            </li>
+            <li class="{{#activeClass active "email"}} active {{/activeClass}}">
+                <a href="../other/inbox.html">
+                    <i class="sidebar-icon email-icon"></i>
+                    <span class="icon">Email</span>
+                </a>
+            </li>
+            <li class="{{#activeClass active "product_detail product_grid"}} active {{/activeClass}}">
+                <a class="collapsed" href="#sidebar-pages" data-toggle="collapse" data-parent="#sidebar">
+                    <i class="sidebar-icon e-comerce-icon"></i>
+                    <span class="icon">E-commerce</span>
+                    <i class="toggle fa fa-angle-down"></i>
+                </a>
+                <ul id="sidebar-pages" class="collapse {{#activeClass active "product_detail product_grid"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "product_detail"}} active {{/activeClass}}"><a href="../e-commerce/product_detail.html">Product Detail</a></li>
+                    <li class="{{#activeClass active "product_grid"}} active {{/activeClass}}"><a href="../e-commerce/product_grid.html">Product Grid</a></li>
+                </ul>
             </li>
         </ul>
         <!-- every .sidebar-nav may have a title -->
         <h5 class="sidebar-nav-title">Template </h5>
+        <ul class="sidebar-nav">
+            <li class="{{#activeClass active "notifications icons charts maps_google"}} active {{/activeClass}}">
+                <a href="#sidebar-core" data-toggle="collapse" data-parent="#sidebar">
+                    <i class="sidebar-icon core-icon"></i>
+                    <span class="icon">Core</span>
+                    <i class="toggle fa fa-angle-down"></i>
+                </a>
+                <ul id="sidebar-core" class="collapse {{#activeClass active "notifications icons charts maps_google"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "notifications"}} active {{/activeClass}}"><a href="../components/ui_notifications.html">Notifications</a></li>
+                    <li class="{{#activeClass active "icons"}} active {{/activeClass}}"><a href="../components/ui_icons.html">Icons</a></li>
+                    <li class="{{#activeClass active "charts"}} active {{/activeClass}}"><a href="../charts/charts.html">Charts</a></li>
+                    <li class="{{#activeClass active "maps_google"}} active {{/activeClass}}"><a href="../maps/maps_google.html">Google Maps</a></li>
+                </ul>
+            </li>
+        </ul>
         <ul class="sidebar-nav">
             <li class="{{#activeClass active "typography"}} active {{/activeClass}}">
                 <!-- an example of nested submenu. basic bootstrap collapse component -->
                 <a href="../core/core_typography.html">
                     <i class="sidebar-icon typography-icon"></i>
                     <span class="icon">Typography</span>
-
                 </a>
             </li>
             <li class="{{#activeClass active "tables"}} active {{/activeClass}}">

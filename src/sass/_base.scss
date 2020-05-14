@@ -282,7 +282,7 @@ body {
   }
 
   >li {
-    margin: 18px 0;
+    margin: 20px 0;
     &:hover a span{
       font-weight: 600;
     }
@@ -356,26 +356,36 @@ body {
     }
 
     .sidebar-icon.dashboard-icon {
-      background: url(../img/icons/dashboard_outlined.svg) no-repeat;
-      background-size: 24px;
+      @include sidebar-icons('../img/icons/dashboard_outlined.svg');
     }
-
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/package_outlined.svg');
+    }
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/profile_outlined.svg');
+    }
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/email_outlined.svg');
+    }
+    .sidebar-icon.e-comerce-icon {
+      @include sidebar-icons('../img/icons/e-commerce_outlined.svg');
+    }
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/core_outlined.svg');
+    }
     .sidebar-icon.typography-icon {
-      background: url(../img/icons/typography_outlined.svg) no-repeat;
-      background-size: 24px;
+      @include sidebar-icons('../img/icons/typography_outlined.svg');
     }
     .sidebar-icon.tables-icon {
-      background: url(../img/icons/tables_outlined.svg) no-repeat;
-      background-size: 24px;
+      @include sidebar-icons('../img/icons/tables_outlined.svg');
     }
     .sidebar-icon.ui-elements {
-      background: url(../img/icons/ui_elements_outlined.svg) no-repeat;
-      background-size: 24px;
+      @include sidebar-icons('../img/icons/ui_elements_outlined.svg');
     }
     .sidebar-icon.ui-notifications {
-      background: url(../img/icons/package_outlined.svg) no-repeat;
-      background-size: 24px;
+      @include sidebar-icons('../img/icons/package_outlined.svg');
     }
+
     .sidebar-icon.settings-icon {
       background: url(../img/icons/settings_outlined.svg) no-repeat;
     }
@@ -411,7 +421,7 @@ body {
   > .open > a{
     background-color: #ffffff1a;
     border-radius: .3rem;
-
+    margin-bottom: $spacer * 2;
   }
 
   > li:last-child > a{

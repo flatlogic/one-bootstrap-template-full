@@ -1460,16 +1460,17 @@
     list-style: none;
     padding-left: 0;
     .color-box-nav-bar, .color-box-side-bar{
-      min-width: 25px;
-      height: 25px;
+      min-width: 38px;
+      height: 38px;
       border: 1px solid #d7dfe6;
       cursor: pointer;
-      margin: 3px;
+      margin: 10px;
+      border-radius: 4px;
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
     }
     .active{
-      border-color: #00395f;
+      border: 3px solid #FFBF69;
     }
   }
 
@@ -1478,7 +1479,8 @@
     margin-left: -($sidebar-width / 4);
     cursor: pointer;
 
-    i {
+    img {
+      animation-name: spin;
       animation-duration: 6500ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
@@ -1499,8 +1501,8 @@
   .theme-helper-spinner {
     z-index: 200;
     border-radius: 50% 0 0 50%;
-    padding: $spacer * 0.8 $spacer / 2 $spacer * 0.8 $spacer;
-    font-size: $font-size-lg * 1.4;
+    padding: $spacer * 0.4 $spacer / 2 $spacer * 0.8 $spacer;
+    font-size: $font-size-lg * 1.9;
     line-height: initial;
     box-shadow: $widget-shadow-designated;
     background: $yellow;
@@ -1510,7 +1512,7 @@
     padding-top: 0;
 
     h6, h5 {
-      margin: auto;
+      margin: auto 22px;
     }
   }
 
@@ -1551,7 +1553,7 @@
     0% {
       transform:rotate(0deg);
     }
-    50% {
+    100% {
       transform:rotate(360deg);
     }
   }

@@ -92,6 +92,11 @@
   filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
 }
 
+@mixin sidebar-icons($icon){
+  background: url($icon) no-repeat;
+  background-size: 24px;
+};
+
 @mixin chat-sidebar-style($mainColor, $mainBGColor, $hoverColor, $inputBG, $inputColor, $placeHolderColor) {
   border-left: none;
   color: $mainColor;
@@ -232,6 +237,7 @@
   }
 
 }
+
 
 @mixin chat-avatar($value){
   width: $value;
