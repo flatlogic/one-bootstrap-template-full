@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Flatlogic One HTML5 Dashboard - Visits</title>
+    <title>Flatlogic One Bootstrap Dashboard</title>
     <link href="../css/application.min.css" rel="stylesheet">
     <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
     <!--[if IE 9]>
@@ -55,7 +55,7 @@
                         <div class="input-group input-group-no-border mr-3">
                             <input class="form-control" id="main-search" type="text" placeholder="Search" aria-describedby="search-icon">
                             <div class="input-group-append my-auto">
-                               <img src="../img/icons/search.svg" id="search-icon" alt="search" width="24px" height="23px" style="margin-left: 12px;">
+                               <img src="../img/icons/search-black.svg" id="search-icon" alt="search" width="24px" height="23px" style="margin-left: 12px;">
                             </div>
                         </div>
                     </div>
@@ -281,18 +281,18 @@
         </div>
     </nav>        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
+            <header class="logo d-md-block">
+                <a href="https://demo.flatlogic.com/sing-app/">
+                    <img src="../img/logo.svg" alt="...">
+                    <b class="fw-bold">Flatlogic</b> One</a>
+            </header>
             <div class="js-sidebar-content">
-                <header class="logo d-md-block">
-                    <a href="https://demo.flatlogic.com/sing-app/">
-                        <img src="../img/logo.svg" alt="...">
-                        <b class="fw-bold">Flatlogic</b> One</a>
-                </header>
                 <h5 class="sidebar-nav-title">App</h5>
                 <ul class="sidebar-nav">
                     <li class="">
                         <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
                             <i class="sidebar-icon dashboard-icon"></i>
-                            <span class="icon">Dashboard</span>
+                            <span class="icon-text">Dashboard</span>
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-dashboard" class="collapse ">
@@ -302,28 +302,9 @@
                         </ul>
                     </li>
                     <li class="">
-                        <a href="../other/package.html">
-                            <i class="sidebar-icon package-icon"></i>
-                            <span class="icon">LB Package</span>
-        
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="../other/profile.html">
-                            <i class="sidebar-icon profile-icon"></i>
-                            <span class="icon">Profile</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="../other/inbox.html">
-                            <i class="sidebar-icon email-icon"></i>
-                            <span class="icon">Email</span>
-                        </a>
-                    </li>
-                    <li class="">
                         <a class="collapsed" href="#sidebar-pages" data-toggle="collapse" data-parent="#sidebar">
-                            <i class="sidebar-icon e-comerce-icon"></i>
-                            <span class="icon">E-commerce</span>
+                            <i class="sidebar-icon e-commerce-icon"></i>
+                            <span class="icon-text">E-commerce</span>
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-pages" class="collapse ">
@@ -331,14 +312,39 @@
                             <li class=""><a href="../e-commerce/product_grid.html">Product Grid</a></li>
                         </ul>
                     </li>
+                    <li class="">
+                        <a href="../other/package.html">
+                            <i class="sidebar-icon package-icon"></i>
+                            <span class="icon-text">LB Package</span>
+        
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="../other/profile.html">
+                            <i class="sidebar-icon profile-icon"></i>
+                            <span class="icon-text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="../other/inbox.html">
+                            <i class="sidebar-icon email-icon"></i>
+                            <span class="icon-text">Email</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="sidebar-icon documentation-icon"></i>
+                            <span class="icon-text">Documentation</span>
+                        </a>
+                    </li>
+        
                 </ul>
-                <!-- every .sidebar-nav may have a title -->
                 <h5 class="sidebar-nav-title">Template </h5>
                 <ul class="sidebar-nav">
                     <li class="">
                         <a href="#sidebar-core" data-toggle="collapse" data-parent="#sidebar">
                             <i class="sidebar-icon core-icon"></i>
-                            <span class="icon">Core</span>
+                            <span class="icon-text">Core</span>
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-core" class="collapse ">
@@ -348,26 +354,10 @@
                             <li class=""><a href="../maps/maps_google.html">Google Maps</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="sidebar-nav">
                     <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="../core/core_typography.html">
-                            <i class="sidebar-icon typography-icon"></i>
-                            <span class="icon">Typography</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="../tables/tables_basic.html">
-                            <i class="sidebar-icon tables-icon"></i>
-                            <span class="icon">Tables</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="collapsed" href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
-                            <i class="sidebar-icon ui-elements"></i>
-                            <span class="icon">UI Elements</span>
+                        <a href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
+                            <i class="sidebar-icon ui-icon"></i>
+                            <span class="icon-text">UI Elements</span>
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-ui" class="collapse ">
@@ -379,26 +369,38 @@
                     </li>
                 </ul>
                 <ul class="sidebar-nav">
+                    <li class="">
+                        <a href="../core/core_typography.html">
+                            <i class="sidebar-icon typography-icon"></i>
+                            <span class="icon-text">Typography</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="../tables/tables_basic.html">
+                            <i class="sidebar-icon tables-icon"></i>
+                            <span class="icon-text">Tables</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-nav">
                     <hr>
                     <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
                         <a href="#">
                             <i class="sidebar-icon settings-icon"></i>
-                            <span class="icon">Settings</span>
+                            <span class="icon-text">Settings</span>
         
                         </a>
                     </li>
                     <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
                         <a href="#">
                             <i class="sidebar-icon account-icon"></i>
-                            <span class="icon">Account</span>
+                            <span class="icon-text">Account</span>
                         </a>
                     </li>
                     <li class="">
                         <a href="../extra/login.html" target="_blank" data-no-pjax>
                             <i class="sidebar-icon logout-icon"></i>
-                            <span class="icon">Logout</span>
+                            <span class="icon-text">Logout</span>
                         </a>
                     </li>
                 </ul>
@@ -413,9 +415,9 @@
                     </div>
                     <h5>Theme</h5>
                 </header>
-                <div class="widget-body mt-3">
-                    <h6>Navbar Type</h6>
-                    <div class="form-group row justify-content-around">
+                <div class="widget-body">
+                    <h5 class="fw-semi-bold">Navbar Type</h5>
+                    <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
                             <input type="radio" checked name="navbar-type" id="navbar_static" value="static">
                             <label for="navbar_static">Static</label>
@@ -425,13 +427,13 @@
                             <label for="navbar_floating">Floating</label>
                         </div>
                     </div>
-                    <h6>Navbar Color</h6>
+                    <h5>Navbar Color</h5>
                     <ul class="colors-list">
                         <li class="color-box-nav-bar active" style="background-color: rgb(0, 43, 73);" data-style="first"></li>
-                        <li class="color-box-nav-bar" style="background-color: rgb(255, 255, 255);" data-style="second"></li>
+                        <li class="color-box-nav-bar" style="background-color: rgb(255, 255, 255);" data-style="white"></li>
                     </ul>
-                    <h6>Sidebar Type</h6>
-                    <div class="form-group row justify-content-around">
+                    <h5 class="fw-semi-bold">Sidebar Type</h5>
+                    <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio"><input type="radio" checked name="sidebar-type" id="sidebar_transparent" value="transparent">
                             <label for="sidebar_transparent">Transparent</label>
                         </div>
@@ -439,12 +441,12 @@
                             <label for="sidebar_solid">Solid</label>
                         </div>
                     </div>
-                    <h6>Sidebar Color</h6>
+                    <h5 class="fw-semi-bold">Sidebar Color</h5>
                     <ul class="colors-list">
                         <li class="color-box-side-bar " style="background-color: rgb(0, 43, 73);" data-style="first"></li>
                         <li class="color-box-side-bar active" style="background-color: rgb(255, 255, 255);" data-style="second"></li>
                     </ul>
-                    <h6>Theme Color</h6>
+                    <h5 class="fw-semi-bold">Theme Color</h5>
                     <ul class="colors-list">
                         <li class="color-box-side-bar " style="background-color: rgb(254, 190, 105);" data-style="first"></li>
                         <li class="color-box-side-bar active" style="background-color: rgb(255, 119, 105);" data-style="second"></li>

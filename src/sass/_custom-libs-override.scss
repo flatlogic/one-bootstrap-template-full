@@ -1985,12 +1985,15 @@ a.fc-event {
     &::before
      {
       margin-top: -2px;
-      background-color: $widget-border-color;
-      border: none;
+      background-color: #fff;
+      border: 2px solid #FEBE69;
     }
     &::after {
-      background-color: #636c72;
-      top: 3px;
+      background-color: #ffbf69;
+      width: 9px;
+      height: 9px;
+      top: 4px;
+      left: 4px;
     }
   }
 }

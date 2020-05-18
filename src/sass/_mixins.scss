@@ -162,8 +162,10 @@
   background-color: $bgcolor;
   .container-fluid {
     .navbar-header {
-      .navbar-brand {
-        color: $color;
+      .navbar-form {
+        .input-group {
+          background-color: $sBgColor;
+        }
       }
       .la-refresh, .la-times, .la-search, .la-bars {
         color: $color;
@@ -188,8 +190,37 @@
         color: $sPColor;
       }
     }
+
+    .icons.notifications-icon {
+      background: url(../img/icons/white-navbar/notification.svg) no-repeat!important;
+      background-size: cover;
+    }
+
+    .icons.email-icon {
+      background: url(../img/icons/white-navbar/message.svg) no-repeat!important;
+      background-size: cover;
+      height: 21px;
+      width: 26px;
+    }
+
+    .navbar-nav {
+      .show {
+        .icons.notifications-icon {
+          background: url(../img/icons/white-navbar/notification_active.svg) no-repeat !important;
+          background-size: cover;
+        }
+
+        .icons.email-icon {
+          background: url(../img/icons/white-navbar/message_active.svg) no-repeat !important;
+          background-size: cover;
+          height: 21px;
+          width: 26px;
+        }
+      }
+    }
   }
 };
+
 @mixin sidebar-style($mainColor, $mainBGColor, $iconColor, $hoverColor, $pbColor, $activeColor ) {
   color: $mainColor;
   border-right: none;
@@ -238,23 +269,102 @@
 
 }
 
+@mixin sidebar-style($mainColor, $mainBGColor, $iconColor, $hoverColor, $pbColor, $activeColor ) {
+  color: $mainColor;
+  border-right: none;
+  background-color: $mainBGColor;
+  .slimScrollDiv{
+    .sidebar-nav-title{
+      color: $mainColor;
+    }
+    .sidebar-nav>.open>a{
+      font-weight: 400;
+      background: #323232;
+    }
+    .sidebar-nav{
+      li{
+        a{
+          color: $mainColor!important;
+          &:hover{
+            background-color: $hoverColor;
+          }
 
-@mixin chat-avatar($value){
-  width: $value;
-  height: $value;
-  min-width: $value;
-  position: relative;
-  .status {
-    position: absolute;
-    bottom: 1px;
-    right: 1px;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    border: 1px solid $white;
-  }
-  img{
-    width: 100%;
-    height: 100%;
+          .dashboard-icon {
+            background: url(../img/icons/dark-sidebar/yellow/dashboard_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .package-icon {
+            background: url(../img/icons/dark-sidebar/yellow/package_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .profile-icon {
+            background: url(../img/icons/dark-sidebar/yellow/profile_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .email-icon {
+            background: url(../img/icons/dark-sidebar/yellow/email_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .e-commerce-icon {
+            background: url(../img/icons/dark-sidebar/yellow/e-commerce_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .documentation-icon {
+            background: url(../img/icons/dark-sidebar/yellow/documentation_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .core-icon {
+            background: url(../img/icons/dark-sidebar/yellow/core_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .ui-icon {
+            background: url(../img/icons/dark-sidebar/yellow/ui_elements_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+
+        }
+      }
+      .active a{
+        color: $mainColor;
+        span{
+          i{
+            color: $iconColor;
+          }
+        }
+
+        .dashboard-icon {
+          background: url(../img/icons/dark-sidebar/yellow/dashboard_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .package-icon {
+          background: url(../img/icons/dark-sidebar/yellow/package_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .profile-icon {
+          background: url(../img/icons/dark-sidebar/yellow/profile_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .email-icon {
+          background: url(../img/icons/dark-sidebar/yellow/email_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .e-commerce-icon {
+          background: url(../img/icons/dark-sidebar/yellow/e-commerce_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+
+      }
+      ul{
+        background-color: $activeColor;
+      }
+    }
+    .sidebar-labels>li>a{
+      color: $mainColor;
+    }
+    .sidebar-alerts{
+      .progress{
+        background-color: $pbColor;
+      }
+    }
   }
 }

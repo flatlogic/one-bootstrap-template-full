@@ -719,11 +719,55 @@ function initDemoFunctions(){
 
         const mainSidebar = $('#sidebar');
         const toggleSidebar = $('#toggleSidebar');
-        toggleSidebar.on('click', () => {
+
+        $('.content-wrap').on('click', (e) => {
+            if ($('.toggle-sidebar').hasClass('open')) {
+                mainSidebar.removeClass('sidebar-open');
+                $('.toggle-sidebar').removeClass('open');
+            }
+        });
+
+        toggleSidebar.on('click', (e) => {
             mainSidebar.toggleClass('sidebar-open');
             $('.toggle-sidebar').toggleClass('open');
         });
 
+        // Theme Switcher
+
+        const sidebar = $(".sidebar");
+        const navbar = $(".navbar");
+        const sup = $("sup");
+        const circle = $(".circle");
+        const styles = ["navbar-first ", "second ", "third ", "fourth ", "fifth ", "sixth ", "seventh ", "eighth ", "ninth "];
+
+        $("[name=navbar-type]").change(function() {
+            if (this.value === 'floating') {
+                navbar.addClass('navbar-floating-type');
+            } else {
+                navbar.removeClass('navbar-floating-type');
+            }
+        });
+
+        $("[name=sidebar-type]").change( function() {
+            if (this.value === "transparent") { (sidebar).addClass('sidebar-transparent') }
+            else {(sidebar).removeClass('sidebar-transparent')}
+        });
+
+        $('.colors-list .color-box-nav-bar').click(function(e) {
+            const target = $(e.target);
+
+            $('.color-box-nav-bar').removeClass('active');
+            target.addClass('active');
+            navbar.toggleClass('navbar-white');
+        });
+
+        $('.colors-list .color-box-side-bar').click(function(e) {
+            const target = $(e.target);
+            $('.color-box-side-bar').removeClass('active');
+            sidebar.toggleClass('sidebar-dark');
+
+            target.addClass('active');
+        });
 
     }(jQuery);
 }
