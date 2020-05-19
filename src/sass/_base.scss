@@ -29,6 +29,10 @@
   }
 }
 
+.sidebar-transparent {
+  background: transparent;
+}
+
 .sidebar-dark {
   @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
 }
@@ -36,6 +40,7 @@
 .sidebar.sidebar-open {
   left: 0;
 }
+
 .collapsing {
   position: relative;
   height: 0;
@@ -44,6 +49,7 @@
   -o-transition: height .7s ease;
   transition: height .7s ease;
 }
+
 .content-wrap, .loader-wrap{
   left: $sidebar-width;
   transition: left .2s linear;
@@ -267,6 +273,10 @@ body {
   font-weight: $sidebar-font-weight;
   list-style: none;
 
+  &:last-child {
+    margin-bottom: $spacer * 4;
+  }
+
   li.active .sidebar-icon.dashboard-icon {
     background: url(../img/icons/dashboard_filled.svg) no-repeat;
     background-size: 24px;
@@ -284,7 +294,7 @@ body {
     background-size: 24px;
   }
   li.active .sidebar-icon.email-icon {
-    background: url(../img/icons/messages-filled.svg) no-repeat;
+    background: url(../img/icons/yellow/email_filled.svg) no-repeat;
     background-size: 24px;
   }
   li.active .sidebar-icon.documentation-icon {
@@ -303,12 +313,45 @@ body {
     background: url(../img/icons/ui_elements_filled.svg) no-repeat;
     background-size: 24px;
   }
-
+  li.active .sidebar-icon.core-icon {
+    background: url(../img/icons/core_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.ui-icon {
+    background: url(../img/icons/ui_elements_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.forms-icon {
+    background: url(../img/icons/forms_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.charts-icon {
+    background: url(../img/icons/charts_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.grid-icon {
+    background: url(../img/icons/grid_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.tables-icon {
+    background: url(../img/icons/tables_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.maps-icon {
+    background: url(../img/icons/maps_filled.svg) no-repeat;
+    background-size: 24px;
+  }
+  li.active .sidebar-icon.extra-icon {
+    background: url(../img/icons/extra_filled.svg) no-repeat;
+    background-size: 24px;
+  }
 
   >li {
-    margin: 20px 0;
     &:hover a span{
       font-weight: 600;
+    }
+    ul {
+      background-color: rgba(255,173,1,0.1);
     }
   }
   .hover-white{
@@ -318,6 +361,7 @@ body {
       background-color: transparent;
     }
   }
+
   li a {
     display: block;
     color: $sidebar-color;
@@ -359,7 +403,7 @@ body {
     align-items: center;
     position: relative;
     border-top: 1px solid $sidebar-item-border-color;
-    padding-left: 40px;
+    padding: 1rem 0 1rem 40px;
     line-height: 35px;
 
     &:hover{
@@ -415,6 +459,24 @@ body {
     .sidebar-icon.ui-icon {
       @include sidebar-icons('../img/icons/ui_elements_outlined.svg');
     }
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/forms_outlined.svg');
+    }
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/charts_outlined.svg');
+    }
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/grid_outlined.svg');
+    }
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/tables_outlined.svg');
+    }
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/maps_outlined.svg');
+    }
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/yellow/extra_outlined.svg');
+    }
 
     .sidebar-icon.settings-icon {
       background: url(../img/icons/settings_outlined.svg) no-repeat;
@@ -438,6 +500,7 @@ body {
 
 
   }
+
   .open {
     ul {
       background-color: rgba(255, 173, 1, .1);
@@ -451,7 +514,7 @@ body {
   > .open > a{
     background-color: #ffffff1a;
     border-radius: .3rem;
-    margin-bottom: $spacer * 2;
+
   }
 
   > li:last-child > a{

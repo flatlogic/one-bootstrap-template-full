@@ -749,8 +749,15 @@ function initDemoFunctions(){
         });
 
         $("[name=sidebar-type]").change( function() {
-            if (this.value === "transparent") { (sidebar).addClass('sidebar-transparent') }
-            else {(sidebar).removeClass('sidebar-transparent')}
+            if (this.value === "transparent")
+            {
+                sidebar.removeClass('sidebar-dark');
+                sidebar.addClass('sidebar-transparent')
+            }
+            else
+                {
+                sidebar.removeClass('sidebar-transparent')
+                }
         });
 
         $('.colors-list .color-box-nav-bar').click(function(e) {
@@ -769,5 +776,11 @@ function initDemoFunctions(){
             target.addClass('active');
         });
 
+        $('.colors-list .color-box').click(function(e) {
+            const target = $(e.target);
+            $('.color-box').removeClass('active-theme');
+
+            target.addClass('active-theme');
+        });
     }(jQuery);
 }

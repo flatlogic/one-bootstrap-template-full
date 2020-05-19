@@ -1470,7 +1470,7 @@
     padding-left: 0;
     margin-bottom: $spacer * 2.5;
 
-    .color-box-nav-bar, .color-box-side-bar {
+    .color-box-nav-bar, .color-box-side-bar, .color-box {
       min-width: 38px;
       height: 38px;
       border: 1px solid #d7dfe6;
@@ -1485,6 +1485,9 @@
     }
     .active{
       border: 3px solid #FFBF69;
+    }
+    .active-theme {
+      border: 3px solid #323232;
     }
   }
 

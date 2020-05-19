@@ -321,7 +321,39 @@
             background: url(../img/icons/dark-sidebar/yellow/ui_elements_outlined.svg) no-repeat!important;
             background-size: 24px;
           }
-
+          .forms-icon {
+            background: url(../img/icons/dark-sidebar/yellow/forms_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .charts-icon {
+            background: url(../img/icons/dark-sidebar/yellow/charts_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .grid-icon {
+            background: url(../img/icons/dark-sidebar/yellow/grid_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .tables-icon {
+            background: url(../img/icons/dark-sidebar/yellow/tables_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .maps-icon {
+            background: url(../img/icons/dark-sidebar/yellow/maps_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .extra-icon {
+            background: url(../img/icons/dark-sidebar/yellow/extra_outlined.svg) no-repeat!important;
+            background-size: 24px;
+          }
+          .settings-icon {
+            background: url(../img/icons/dark-sidebar/yellow/settings_outlined.svg) no-repeat;
+          }
+          .account-icon {
+            background: url(../img/icons/dark-sidebar/yellow/profile_outlined.svg) no-repeat;
+          }
+          .logout-icon {
+            background: url(../img/icons/dark-sidebar/yellow/logout_outlined.svg) no-repeat;
+          }
         }
       }
       .active a{
@@ -352,7 +384,38 @@
           background: url(../img/icons/dark-sidebar/yellow/e-commerce_filled.svg) no-repeat!important;
           background-size: 24px;
         }
-
+        .core-icon {
+          background: url(../img/icons/dark-sidebar/yellow/core_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .ui-icon {
+          background: url(../img/icons/dark-sidebar/yellow/ui_elements_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .forms-icon {
+          background: url(../img/icons/dark-sidebar/yellow/forms_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .charts-icon {
+          background: url(../img/icons/dark-sidebar/yellow/charts_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .grid-icon {
+          background: url(../img/icons/dark-sidebar/yellow/grid_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .tables-icon {
+          background: url(../img/icons/dark-sidebar/yellow/tables_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .maps-icon {
+          background: url(../img/icons/dark-sidebar/yellow/maps_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
+        .extra-icon {
+          background: url(../img/icons/dark-sidebar/yellow/extra_filled.svg) no-repeat!important;
+          background-size: 24px;
+        }
       }
       ul{
         background-color: $activeColor;

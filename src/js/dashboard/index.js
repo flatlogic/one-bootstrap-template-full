@@ -65,6 +65,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
+
         chart.render();
     };
 
