@@ -50,20 +50,20 @@ $teal: #81D4BB !default;
 $cyan: #17a2b8 !default;
 
 $theme-colors: (
-  primary: $blue,
+  primary: #007bc6,
   secondary: #5B5B5B,
-  success: $teal,
+  success: #3bbf97,
   primary-light: #dee4ee,
   success-light: #ecfaec,
   info-light: #f2fafa,
   warning-light: #fdf7e6,
   danger-light: #fff2ef,
-  info: #4dc7df,
-  warning: $yellow,
-  danger: $red,
+  info: #12b4de,
+  warning: #feb04a,
+  danger: #f5695a,
   dark: #323232,
-  inverse: #002B49,
-  gray: #5B5B5B,
+  inverse: #323232,
+  gray: #999999,
 );
 
 $fonts-colors: (

@@ -4,26 +4,38 @@
 {{/content}}
 {{#content "content" mode="replace"}}
 <ol class="breadcrumb">
-            <li class="breadcrumb-item">YOU ARE HERE</li>
-            <li class="breadcrumb-item active">Visits</li>
-        </ol>
-<h1 class="page-title">Visits
-    <small>
-        <small>The Lucky One</small>
-    </small>
-</h1>
+    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item active">Visits</li>
+</ol>
 <div class="row">
-    <div class="col-lg-8 col-xl-7">
-        <!-- minimal widget consist of .widget class. note bg-transparent - it can be any background like bg-gray,
-                bg-primary, bg-white -->
-        <section class="widget bg-transparent">
-            <!-- .widget-body is a mostly semantic class. may be a sibling to .widget>header or .widget>footer -->
+    <div class="col-lg-8 col-xl-8">
+        <section class="widget" style="max-height: 587px; overflow: hidden;">
+            <header>
+                <h5>Geographic Presence</h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <div class="widget-body">
                 <div id="map" class="mapael">
                     <div class="stats">
                         <h6 class="mt-3">GEO-LOCATIONS</h6>
-                        <p class="h2 no-margin"><span id="geo-locations-number">1 656 843</span> <i
-                                class="fa fa-map-marker"></i></p>
+                        <p class="h2 no-margin"><span id="geo-locations-number">1 656 843</span>
+                        <i class="fa fa-map-marker"></i></p>
                     </div>
                     <div class="map">
                         <span>Alternative content for the map</span>
@@ -32,83 +44,103 @@
             </div>
         </section>
     </div>
-    <div class="col-lg-4 offset-xl-1">
-        <section class="widget bg-transparent">
+    <div class="col-lg-4 col-xl-4">
+        <section class="widget">
             <header>
-                <h5>
-                    Map
-                    <span class="fw-semi-bold">Statistics</span>
-                </h5>
-                <div class="widget-controls widget-controls-hover">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                <h5>Map Statistics</h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
-                <p>Status: <strong>Live</strong></p>
+                <p>Status: <strong class="text-success">Live</strong></p>
                 <p>
-                    <span class="circle bg-primary text-white"><i class="fa fa-map-marker"></i></span>
+                    <span><i class="fa fa-circle text-black mr-1"></i></span>
                     146 Countries, 2759 Cities
                 </p>
                 <div class="row progress-stats">
-                    <div class="col-md-9">
-                        <h6 class="name mt-3">Foreign Visits</h6>
-                        <p class="description deemphasize">Some Cool Text</p>
-                        <div class="bg-white progress progress-xs">
-                            <div class="progress-bar bg-primary js-progress-animate" style="width: 0;" data-width="60%">
-                            </div>
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="name mt-3">Foreign Visits</h4>
+                            <h4 class="status">
+                                <span id="percent-1">75</span>%</small>
+                            </h4>
                         </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <span class="status square square-lg bg-body-light">
-                            <small><span id="percent-1">75</span>%</small>
-                        </span>
+                        <div class="progress progress-xs" style="background-color: rgba(129, 212, 187, 0.2); height: 8px;">
+                            <div class="progress-bar bg-success js-progress-animate" style="width: 0;" data-width="75%"></div>
+                        </div>
+                        <p class="description deemphasize">50k users (+0.9%)</p>
                     </div>
                 </div>
                 <div class="row progress-stats">
-                    <div class="col-md-9">
-                        <h6 class="name mt-3">Local Visits</h6>
-                        <p class="description deemphasize">P. to C. Conversion</p>
-                        <div class="bg-white progress progress-xs">
-                            <div class="progress-bar bg-danger js-progress-animate" style="width: 0;" data-width="39%">
-                            </div>
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="name mt-3">Local Visits</h4>
+                            <h4 class="status">
+                                <span id="percent-1">84</span>%</small>
+                            </h4>
                         </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <span class="status square square-lg bg-body-light">
-                            <small><span id="percent-2">84</span>%</small>
-                        </span>
+                        <div class="progress progress-xs" style="background-color: rgba(245, 105, 90, 0.2); height: 8px;">
+                            <div class="progress-bar bg-danger js-progress-animate" style="width: 0;" data-width="84%"></div>
+                        </div>
+                        <p class="description deemphasize">35k users (+0.9%)</p>
                     </div>
                 </div>
                 <div class="row progress-stats">
-                    <div class="col-md-9">
-                        <h6 class="name mt-3">Sound Frequencies</h6>
-                        <p class="description deemphasize">Average Bitrate</p>
-                        <div class="bg-white progress progress-xs">
-                            <div class="progress-bar bg-success js-progress-animate" style="width: 0;" data-width="80%">
-                            </div>
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="name mt-3">Male</h4>
+                            <h4 class="status">
+                                <span id="percent-1">80</span>%</small>
+                            </h4>
                         </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <span class="status square square-lg bg-body-light">
-                            <small><span id="percent-3">92</span>%</small>
-                        </span>
+                        <div class="progress progress-xs" style="background-color: rgba(18, 180, 222, 0.2); height: 8px;">
+                            <div class="progress-bar bg-info js-progress-animate" style="width: 0;" data-width="80%"></div>
+                        </div>
+                        <p class="description deemphasize">55k users (+0.9%)</p>
                     </div>
                 </div>
-                <h6 class="fw-semi-bold mt">Map Distributions</h6>
-                <p>Tracking: <strong>Active</strong></p>
-                <p>
-                    <span class="circle bg-primary text-white"><i class="fa fa-cog"></i></span>
-                    391 elements installed, 84 sets
-                </p>
-                <div class="input-group mt">
-                    <input type="text" class="form-control" placeholder="Search Map">
-                    <span class="input-group-append">
-                        <button type="submit" class="btn btn-default">
-                            <i class="fa fa-search text-gray"></i>
-                        </button>
-                    </span>
+                <div class="row progress-stats">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="name mt-3">Female</h4>
+                            <h4 class="status">
+                                <span id="percent-1">39</span>%</small>
+                            </h4>
+                        </div>
+                        <div class="progress progress-xs" style="background-color: rgba(254, 176, 74, 0.2); height: 8px;">
+                            <div class="progress-bar bg-warning js-progress-animate" style="width: 0;" data-width="39%"></div>
+                        </div>
+                        <p class="description deemphasize">55k users (+0.9%)</p>
+                    </div>
+                </div>
+                <div class="row progress-stats">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="name mt-3">Paying Customers</h4>
+                            <h4 class="status">
+                                <span id="percent-1">56</span>%</small>
+                            </h4>
+                        </div>
+                        <div class="progress progress-xs" style="background-color: rgba(129, 212, 187, 0.2); height: 8px;">
+                            <div class="progress-bar bg-success js-progress-animate" style="width: 0;" data-width="56%"></div>
+                        </div>
+                        <p class="description deemphasize">55k users (+0.9%)</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -117,7 +149,6 @@
 <div class="row">
     <div class="col-lg-4">
         <section class="widget">
-            <!-- .widget>header is generally a place for widget title and widget controls. see .widget in _base.scss -->
             <header>
                 <h6>
                     USERBASE GROWTH

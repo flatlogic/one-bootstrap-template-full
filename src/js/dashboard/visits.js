@@ -8,11 +8,11 @@ $(function(){
                 name : "usa_states",
                 defaultArea : {
                     attrs: {
-                        fill: '#d1e7f6',
-                        stroke: '#ffffff',
+                        fill: '#FFF0D1',
+                        stroke: Sing.colors['brand-warning'],
                     },
                     attrsHover: {
-                        fill: '#8dc3e8',
+                        fill: '#feb04a',
                         animDuration : 100
                     },
                     tooltip: {
@@ -29,7 +29,7 @@ $(function(){
                 defaultPlot:{
                     size: 17,
                     attrs : {
-                        fill : Sing.colors['brand-warning'],
+                        fill : Sing.colors['black'],
                         stroke : Sing.colors['white'],
                         "stroke-width" : 0,
                         "stroke-linejoin" : "round"
@@ -40,8 +40,12 @@ $(function(){
                     }
                 },
                 zoom : {
+                    mousewheel: true,
                     enabled : true,
-                    step : 0.75
+                    step : 0.75,
+                    int: {
+                        level: 1000
+                    }
                 }
             },
             plots:{
@@ -108,20 +112,6 @@ $(function(){
                     tooltip: {content : "Lakewood Mutual"}
                 }
             }
-        });
-
-        //ie svg height fix
-        function _fixMapHeight(){
-            $map.find('svg').css('height', function(){
-                return $(this).attr('height') + 'px';
-            });
-        }
-
-        _fixMapHeight();
-        SingApp.onResize(function(){
-            setTimeout(function(){
-                _fixMapHeight();
-            }, 100)
         });
     }
 
