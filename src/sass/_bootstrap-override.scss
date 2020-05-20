@@ -1335,6 +1335,11 @@ legend {
 
 .alert {
   border: none;
+  color: white;
+
+  .alert-heading, .alert-footer {
+    color: white!important;
+  }
 
   .btn {
     border: none;
@@ -1350,7 +1355,7 @@ legend {
 
 .alert-success {
   background: theme-color('success');
-  color: $btn-default-color;
+  color: white;
 
   &.alert-transparent {
     color: theme-color('success');
@@ -1365,7 +1370,7 @@ legend {
 
 .alert-info {
   background: theme-color('info');
-  color: $btn-default-color;
+  color: white;
 
   &.alert-transparent {
     color: theme-color('info');
@@ -1380,7 +1385,7 @@ legend {
 
 .alert-warning {
   background: theme-color('warning');
-  color: $btn-default-color;
+  color: white;
 
   &.alert-transparent {
     color: theme-color('warning');
@@ -1395,7 +1400,7 @@ legend {
 
 .alert-danger {
   background: theme-color('danger');
-  color: $btn-default-color;
+  color: white;
 
   &.alert-transparent {
     color: theme-color('danger');
