@@ -228,6 +228,11 @@ legend {
   white-space: nowrap;
 }
 
+.table.visits-table td {
+  border-top: 1px solid RGBA(196, 196, 196, 0.2);
+}
+
+
 //
 // Dropdown menus
 // --------------------------------------------------
@@ -1078,24 +1083,21 @@ legend {
 }
 
 .btn-inverse {
-  color: $body-main-color;
-  background-color: #30314e;
-  border-color: #30314e;
+  color: white;
+  background-color: $body-main-color;
   &:hover{
-    background-color: #1d1d2e;
-    color: $body-main-color;
-    border-color: #181827;
+    background-color: rgb(40, 40, 40);
+    color: white;
+
   }
 }
 
 .btn-gray{
-  color: $body-main-color;
-  background-color: #595d78;
-  border-color: #595d78;
+  color: white!important;
+  background-color: rgba(50, 50, 50, 0.25)!important;
   &:hover, &:active, &:focus {
-    background-color: #43465b!important;
-    color: $body-main-color!important;
-    border-color: #43465b!important;
+    background-color: rgba(50, 50, 50, 0.4)!important;
+    color: white!important;
   }
 }
 
@@ -1115,10 +1117,12 @@ legend {
 
 .btn-warning {
   background-color: #ffbf69;
-  color: black;
+  color: white;
+  border-color: RGBA(255, 175, 67, .25);
   &:hover, &:active, &:focus {
     background-color: #ffaf43;
-    color: black;
+    color: white;
+    border-color: RGBA(255, 175, 67, .25);
 
   }
 }

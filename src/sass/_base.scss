@@ -1296,7 +1296,7 @@ body {
       }
       .description {
         color: $body-main-color;
-        font-size: $font-size-mini;
+        font-size: $font-size-base;
       }
       .statistics {
         color: $body-main-color-small;
@@ -1538,7 +1538,7 @@ body {
 
 code {
   font-size: 85%;
-  background-color: rgba(255,173,1,.1);
+  background-color: rgba(254,176,74,.1);
   color: $yellow;
   padding: 2px;
   border-radius: .3rem;

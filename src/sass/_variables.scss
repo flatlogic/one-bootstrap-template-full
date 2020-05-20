@@ -44,7 +44,7 @@ $purple: #9964e3 !default;
 $pink: #e54e9a !default;
 $red: #ff7769 !default;
 $orange: #ff7d47 !default;
-$yellow: #FFBF69 !default;
+$yellow: #feb04a !default;
 $green: #68ca66 !default;
 $teal: #81D4BB !default;
 $cyan: #17a2b8 !default;
@@ -59,7 +59,7 @@ $theme-colors: (
   warning-light: #fdf7e6,
   danger-light: #fff2ef,
   info: #12b4de,
-  warning: #feb04a,
+  warning: $yellow,
   danger: #f5695a,
   dark: #323232,
   inverse: #323232,
@@ -98,7 +98,7 @@ $logo-color: $gray-750;
 
 $body-color: $gray-700 !default;
 $body-main-color: $font-main-color !default;
-$body-main-color-small: #5b5b5b !default;
+$body-main-color-small: #323232 !default;
 
 $font-size-initial: 14px; // reset default browser value from 16px to 13px
 $font-size-xlg: 1.5rem !default;
@@ -177,7 +177,7 @@ $widget-padding-vertical: 25px !default;
 $widget-padding-horizontal: 25px !default;
 $widget-bg-color: #fff !default;
 $widget-color: $font-main-color;
-$widget-color-header: rgba(244,244,245,.9);
+$widget-color-header: $font-main-color;
 $widget-shadow-color: 75,102,171;
 $widget-shadow: 4px 4px 25px rgba(109, 105, 105, 0.15) !default;
 $widget-card-shadow: 4px 4px 10px 0px rgba(75,102,171,0.2);

@@ -44,7 +44,7 @@ $(function(){
                     enabled : true,
                     step : 0.75,
                     int: {
-                        level: 1000
+                        level: 0
                     }
                 }
             },
@@ -115,124 +115,81 @@ $(function(){
         });
     }
 
-    function initCalendar(){
-
-        var monthNames = ["January", "February", "March", "April", "May", "June",  "July", "August", "September", "October", "November", "December"];
-
-        var dayNames = ["S", "M", "T", "W", "T", "F", "S"];
-
-        var now = new Date(),
-            month = now.getMonth() + 1,
-            year = now.getFullYear();
-
-        var events = [
-            [
-                    "2/"+month+"/"+year,
-                'The flower bed',
-                '#',
-                Sing.colors['brand-primary'],
-                'Contents here'
-            ],
-            [
-                    "5/"+month+"/"+year,
-                'Stop world water pollution',
-                '#',
-                Sing.colors['brand-warning'],
-                'Have a kick off meeting with .inc company'
-            ],
-            [
-                    "18/"+month+"/"+year,
-                'Light Blue 2.2 release',
-                '#',
-                Sing.colors['brand-success'],
-                'Some contents here'
-            ],
-            [
-                    "29/"+month+"/"+year,
-                'A link',
-                'http://www.flatlogic.com',
-                Sing.colors['brand-danger']
-            ]
-        ];
-        var $calendar = $('#events-calendar');
-        $calendar.calendar({
-            months: monthNames,
-            days: dayNames,
-            events: events,
-            popover_options:{
-                placement: 'top',
-                html: true
-            }
-        });
-        $calendar.find('.icon-arrow-left').addClass('fa fa-arrow-left');
-        $calendar.find('.icon-arrow-right').addClass('fa fa-arrow-right');
-        function restyleCalendar(){
-            $calendar.find('.event').each(function(){
-                var $this = $(this),
-                    $eventIndicator = $('<span></span>');
-                $eventIndicator.css('background-color', $this.css('background-color')).appendTo($this.find('a'));
-                $this.css('background-color', '');
-            })
-        }
-        $calendar.find('.icon-arrow-left, .icon-arrow-right').parent().on('click', restyleCalendar);
-        restyleCalendar();
-    }
-
-    function initRickshaw(){
-        "use strict";
-
-        var seriesData = [ [], [] ];
-        var random = new Rickshaw.Fixtures.RandomData(30);
-
-        for (var i = 0; i < 30; i++) {
-            random.addData(seriesData);
-        }
-
-        var graph = new Rickshaw.Graph( {
-            element: document.getElementById("rickshaw"),
-            height: 100,
-            renderer: 'area',
-            series: [
-                {
-                    color: Sing.colors['brand-warning'],
-                    data: seriesData[0],
-                    name: 'Uploads'
-                }, {
-                    color: Sing.colors['brand-info'],
-                    data: seriesData[1],
-                    name: 'Downloads'
+    function apexChartFifth() {
+        let options = {
+            series: [{
+                name: 'Users',
+                type: 'area',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'Sessions',
+                type: 'line',
+                data: [86, 96, 84, 62, 44, 52, 41]
+            }],
+            chart: {
+                toolbar: {
+                    show: false
+                },
+                height: 300,
+            },
+            grid: {
+                padding: {
+                    right: 20,
+                    left: -20
+                },
+                xaxis: {
+                    lines: {
+                        show: false,
+                    }
                 }
-            ]
-        } );
+            },
+            colors: [Sing.colors['brand-warning'], Sing.colors['black']],
+            fill: {
+                colors: [ '#fff5e0' ]
+            },
+            stroke: {
+                width: [4, 4],
+                opacity: 0.5,
+                colors: [Sing.colors['brand-warning'], Sing.colors['black']],
+                curve: 'smooth'
+            },
 
-        function onResize(){
-            var $chart = $('#rickshaw');
-            graph.configure({
-                width: $chart.width(),
-                height: 100
-            });
-            graph.render();
-
-            $chart.find('svg').css({height: '100px'})
-        }
-
-        SingApp.onResize(onResize);
-        onResize();
-
-
-        var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-            graph: graph,
-            xFormatter: function(x) {
-                return new Date(x * 1000).toString();
+            labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'
+            ],
+            legend: {
+                position: 'top',
+                horizontalAlign: 'center',
+                markers: {
+                    fillColors :[Sing.colors['brand-warning'], Sing.colors['black']]
+                }
+            },
+            yaxis: {
+                labels: {
+                    show: true,
+                    style: {
+                        colors: ['#898280','#898280','#898280','#898280','#898280'],
+                        fontSize: '12px',
+                    },
+                    offsetX: -20,
+                    offsetY: 0,
+                },
+                tickAmount: 4,
+                padding: {
+                    left: -20
+                },
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        colors: ['#898280','#898280','#898280','#898280','#898280','#898280','#898280'],
+                        fontSize: '12px',
+                    }
+                }
             }
-        } );
+        };
 
-        setInterval( function() {
-            random.removeData(seriesData);
-            random.addData(seriesData);
-            graph.update();
-
-        }, 1000 );
+        var chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
+        chart.render();
     }
 
     function initAnimations(){
@@ -249,8 +206,7 @@ $(function(){
     function pjaxPageLoad(){
         $('.widget').widgster();
         initMap();
-        initCalendar();
-        initRickshaw();
+        apexChartFifth();
         initAnimations();
     }
 

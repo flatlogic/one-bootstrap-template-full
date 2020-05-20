@@ -67,7 +67,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
 
         chart.render();
-    };
+    }
 
     function apexChartSecond() {
         let options = {
@@ -134,7 +134,7 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
         chart.render();
-    };
+    }
 
     function apexChartThird() {
         var options = {
@@ -194,7 +194,7 @@ $(function(){
 
         var chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
-    };
+    }
 
     function apexChartFourth() {
         let options = {
@@ -253,7 +253,7 @@ $(function(){
 
         var chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
         chart.render();
-    };
+    }
 
     function apexChartFifth() {
         let options = {
@@ -330,7 +330,7 @@ $(function(){
 
         var chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
-    };
+    }
 
     function apexChartSixth() {
         var options = {
@@ -361,7 +361,7 @@ $(function(){
 
         var chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
         chart.render();
-    };
+    }
 
     function pageLoad(){
         $('.widget').widgster();

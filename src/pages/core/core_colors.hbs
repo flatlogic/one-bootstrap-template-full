@@ -3,26 +3,52 @@
         {{> sidebar active="core_colors"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">YOU ARE HERE</li>
-            <li class="breadcrumb-item active">Colors</li>
-        </ol>
-        <h1 class="page-title">Colors</h1>
+        <div class="row">
+            <div class="col-lg-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Core</li>
+                    <li class="breadcrumb-item active">Colors</li>
+                </ol>
+            </div>
+            <div class="d-flex align-items-start justify-content-center pr-0 dashboard-buttons mt-1 col-lg-7">
+                <div class="ml-lg-auto ml-md-0 btn-group dropdown mr-4">
+                    <button class="btn btn-default bg-white dropdown-toggle custom-dropdown" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        15 Jan 2020
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <button class="dropdown-item" type="button">14 Jan 2020</button>
+                        <button class="dropdown-item" type="button">13 Jan 2020</button>
+                        <button class="dropdown-item" type="button">12 Jan 2020</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger mr-4">Download Report</button>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <section class="widget">
                     <header>
-                        <h5>
-                            States <span class="fw-semi-bold">Colors</span>
-                        </h5>
+                        <h5>States Colors</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#" style="display: none;"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p>Sing comes with a number of state colors that can be applied to the most of elements 
+                        <p>Flatlogic One comes with a number of state colors that can be applied to the most of elements
                             and components. It reuses Bootstrap's original 6 states:</p>
                         <table class="table table-lg">
                             <thead>
@@ -30,7 +56,7 @@
                                     <th scope="col">State</th>
                                     <th scope="col">Preview</th>
                                     <th scope="col">Class postfix</th>
-                                    <th scope="col">usage example</th>
+                                    <th scope="col">Usage example</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -80,26 +106,35 @@
                     <div class="col-md">
                         <section class="widget">
                             <header>
-                                <h5>
-                                    Text
-                                    <span class="fw-semi-bold">Colors</span>
-                                </h5>
+                                <h5>Text Colors</h5>
                                 <div class="widget-controls">
-                                    <a data-widgster="expand" title="Expand" href="#" style="display: none;"><i class="la la-angle-up"></i></a>
-                                    <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                                    <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+                                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                            </button>
+                                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             <div class="widget-body">
                                 <p>Convey meaning through color with a handful of color utility classes. Includes support for 
                                     styling links with hover states, too. Use <code>text-*</code> class to fill text.</p>
                                 <div class="widget-padding-md border rounded">
-                                    <h1 class="text-danger">h1. Heading</h1>
-                                    <h2 class="text-warning">h2. Heading</h2>
-                                    <h3 class="text-success">h3. Heading</h3>
-                                    <h4 class="text-primary">h4. Heading</h4>
-                                    <h5 class="text-info">h5. Heading</h5>
-                                    <h6 class="text-inverse">h6. Heading</h6>
+                                    <h1 class="text-black fw-semi-bold">h1. Heading</h1>
+                                    <h2 class="text-warning fw-semi-bold">h2. Heading</h2>
+                                    <h3 class="text-danger fw-semi-bold">h3. Heading</h3>
+                                    <h4 class="text-success fw-semi-bold">h4. Heading</h4>
+                                    <h5 class="text-primary fw-semi-bold">h5. Heading</h5>
+                                    <h6 class="text-info fw-semi-bold">h6. Heading</h6>
                                 </div>
                             </div>
                         </section>
@@ -107,13 +142,23 @@
                     <div class="col-md">
                         <section class="widget">
                             <header>
-                                <h5>
-                                    Example <span class="fw-semi-bold">Buttons</span>
-                                </h5>
+                                <h5>Example Buttons</h5>
                                 <div class="widget-controls">
-                                    <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                                    <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                            </button>
+                                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             <div class="widget-body">
@@ -122,29 +167,29 @@
                                     Semantically distinguishable beauty.
                                 </p>
                                 <p>
-                                    <button class="btn btn-default width-100 mb-xs" role="button">
-                                        Defaullt
+                                    <button class="btn btn-default width-100 m-2" role="button">
+                                        <span class="fw-semi-bold">DEFAULT</span>
                                     </button>
-                                    <button class="btn btn-primary width-100 mb-xs" role="button">
-                                        Primary
+                                    <button class="btn btn-primary width-100 m-2" role="button">
+                                         <span class="fw-semi-bold">PRIMARY</span>
                                     </button>
-                                    <button class="btn btn-info width-100 mb-xs" role="button">
-                                        Info
+                                    <button class="btn btn-info width-100 m-2" role="button">
+                                         <span class="fw-semi-bold">INFO</span>
                                     </button>
-                                    <button class="btn btn-success width-100 mb-xs" role="button">
-                                        Success
+                                    <button class="btn btn-success width-100 m-2" role="button">
+                                        <span class="fw-semi-bold">SUCCESS</span>
                                     </button>
-                                    <button class="btn btn-warning width-100 mb-xs" role="button">
-                                        Warning
+                                    <button class="btn btn-warning width-100 m-2" role="button">
+                                       <span class="fw-semi-bold">WARNING</span>
                                     </button>
-                                    <button class="btn btn-danger width-100 mb-xs" role="button">
-                                        Danger
+                                    <button class="btn btn-danger width-100 m-2" role="button">
+                                        <span class="fw-semi-bold">DANGER</span>
                                     </button>
-                                    <button class="btn btn-gray width-100 mb-xs" role="button">
-                                        Gray
+                                    <button class="btn btn-gray width-100 m-2" role="button">
+                                        <span class="fw-semi-bold">GRAY</span>
                                     </button>
-                                    <button class="btn btn-inverse width-100 mb-xs" role="button">
-                                        Inverse
+                                    <button class="btn btn-inverse width-100 m-2" role="button">
+                                        <span class="fw-semi-bold">INVERSE</span>
                                     </button>
                                 </p>
                             </div>
