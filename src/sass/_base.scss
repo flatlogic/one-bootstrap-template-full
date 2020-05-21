@@ -196,6 +196,42 @@ body {
   font-family: 'Nunito', sans-serif;
   color: $body-main-color;
   font-size: 16px;
+  &:after {
+    content:
+      url(../img/icons/dashboard_filled.svg)
+      url(../img/icons/dashboard_outlined.svg)
+      url(../img/icons/e-commerce_filled.svg)
+      url(../img/icons/e-commerce_outlined.svg)
+      url(../img/icons/package_filled.svg)
+      url(../img/icons/package_outlined.svg)
+      url(../img/icons/profile_filled.svg)
+      url(../img/icons/profile_outlined.svg)
+      url(../img/icons/email_outlined.svg)
+      url(../img/icons/email_filled.svg)
+      url(../img/icons/documentation_filled.svg)
+      url(../img/icons/documentation_outlined.svg)
+      url(../img/icons/core_filled.svg)
+      url(../img/icons/core_outlined.svg)
+      url(../img/icons/ui_elements_filled.svg)
+      url(../img/icons/ui_elements_outlined.svg)
+      url(../img/icons/forms_filled.svg)
+      url(../img/icons/forms_outlined.svg)
+      url(../img/icons/charts_filled.svg)
+      url(../img/icons/charts_outlined.svg)
+      url(../img/icons/grid_filled.svg)
+      url(../img/icons/grid_outlined.svg)
+      url(../img/icons/maps_filled.svg)
+      url(../img/icons/maps_outlined.svg)
+      url(../img/icons/extra_filled.svg)
+      url(../img/icons/extra_outlined.svg)
+      url(../img/icons/typography_outlined.svg)
+      url(../img/icons/typography_filled.svg)
+      url(../img/icons/tables_filled.svg)
+      url(../img/icons/tables_outlined.svg)
+      url(../img/icons/ui_elements_filled.svg)
+      url(../img/icons/ui_elements_outlined.svg);
+    display: none;
+  }
 }
 
 .content-wrap{
@@ -1299,31 +1335,27 @@ body {
         font-size: $font-size-base;
       }
       .statistics {
-        color: $body-main-color-small;
+        color: $body-main-color;
       }
       .stats-row {
-        color: $body-main-color-small;
+        color: $body-main-color;
       }
       p{
         &:last-child {
-          color: $body-main-color-small;
+          color: $body-main-color;
         }
       }
       .border-top {
-        border-top: 1px solid $widget-border-color!important;
+        border-top: 1px solid $body-main-color!important;
       }
 
       .border-right {
-        border-right: 1px solid $widget-border-color!important;
-      }
-      .fs-mini {
-        color: $body-main-color-small;
+        border-right: 1px solid $body-main-color!important;
       }
       .grid-system {
-        background: $widget-border-color;
+        background: $body-main-color;
       }
     }
-
   }
 
   > .widget-body > hr {

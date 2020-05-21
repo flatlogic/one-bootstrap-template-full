@@ -1121,7 +1121,7 @@ legend {
   border-color: RGBA(255, 175, 67, .25);
   &:hover, &:active, &:focus {
     background-color: #ffaf43;
-    color: white;
+    color: white!important;
     border-color: RGBA(255, 175, 67, .25);
 
   }
