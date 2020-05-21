@@ -21,6 +21,8 @@
 //$btn-primary-bg: theme-color('primary');
 //$btn-primary-color: $white;
 //$gray-lighter: $gray-300;
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import "../../node_modules/apexcharts/dist/apexcharts";
 @import "../../node_modules/tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
 @import "../../node_modules/nvd3/build/nv.d3";
@@ -33,7 +35,9 @@
 @import "../../node_modules/metrojs/release/MetroJs.Full/MetroJs";
 @import "../../node_modules/bootstrap-markdown/css/bootstrap-markdown.min";
 @import "../../node_modules/jasny-bootstrap/dist/css/jasny-bootstrap";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.green.min.css";
+
 
 @import "custom-libs-override";
 
