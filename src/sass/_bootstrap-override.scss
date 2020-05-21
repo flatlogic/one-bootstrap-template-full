@@ -2034,13 +2034,6 @@ a.badge.badge-light {
 
 .widget {
  .widget-body {
-   .bg-default {
-     background-color: $default;
-   }
-
-   .bg-inverse {
-     background-color: #040620!important;
-   }
    .contacts {
      li {
        a {
@@ -2049,7 +2042,6 @@ a.badge.badge-light {
            color: #104d97;
            text-decoration: underline;
          }
-
        }
      }
    }
