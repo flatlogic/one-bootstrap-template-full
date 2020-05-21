@@ -162,6 +162,9 @@
   color: $body-color;
 }
 
+.zoomButton.zoomReset {
+  display: none;
+}
 .zoomIn,
 .zoomOut {
   display: none;
@@ -194,6 +197,7 @@
   left: 36px;
 }
 #map-years-mapael {
+  margin: -25px;
   .map-controls {
     border-top: 1px solid $default;
     .nav-item {
@@ -219,10 +223,8 @@
   }
 }
 
-
 .mapael {
   position: relative;
-  margin: (-$widget-padding-vertical) (-$widget-padding-horizontal) 0;
   .map {
     position: relative;
   }

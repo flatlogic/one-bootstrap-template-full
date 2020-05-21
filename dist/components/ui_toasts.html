@@ -548,21 +548,30 @@
         <main id="content" class="content" role="main">
             <!-- Page content -->
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">YOU ARE HERE</li>
-            <li class="breadcrumb-item active">UI Badge</li>
+            <li class="breadcrumb-item">UI</li>
+            <li class="breadcrumb-item active">Toasts</li>
         </ol>
-        <h1 class="page-title">Toasts - <span class="fw-semi-bold">Push Notifications</span></h1>
         <div class="row">
             <div class="col-md-8">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Toasts <span class="fw-semi-bold">Examples</span> <span class="badge badge-primary">Bootstrap 4.2.1</span>
-                        </h5>
+                        <h5>Toasts Examples</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">

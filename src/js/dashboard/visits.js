@@ -40,12 +40,11 @@ $(function(){
                     }
                 },
                 zoom : {
+                    enabled: true,
                     mousewheel: true,
-                    enabled : true,
-                    step : 0.75,
-                    int: {
-                        level: 0
-                    }
+                    maxLevel: 10,
+                    minLevel: 0,
+                    step: 0.25
                 }
             },
             plots:{
