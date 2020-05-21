@@ -1556,9 +1556,6 @@ code {
 /**         Widgets Grid          **/
 /***********************************/
 
-
-body
-
 .widget-container{
   min-height: 30px;
 
@@ -1616,11 +1613,11 @@ input[type=search], input.search {
 .btn-outline {
   &-default {
     color: $body-main-color-small;
-    border-color: $default;
+    border-color: $body-main-color;
     &:hover {
       color: $body-main-color;
-      background-color: $default;
-      border-color: $default;
+      background-color: $gray-200;
+      border-color: $gray-300;
     }
   }
 
@@ -1638,7 +1635,9 @@ input[type=search], input.search {
 
   &-warning {
     color: theme-color('warning');
-
+    &:hover {
+      color: white;
+    }
   }
 
   &-danger {
@@ -1646,20 +1645,17 @@ input[type=search], input.search {
   }
 
   &-gray {
-    color: #595d78;
-    border-color: #595d78;
+    color: $body-main-color;
     &:hover {
-      color: $body-main-color;
-      background-color: #595d78;
-      border-color: #595d78;
+      color: white;
+      background-color: #32323240;
     }
   }
 
   &-inverse {
     color: theme-color('inverse');
     &:hover {
-      background-color: #30314e;
-      border-color: #30314e;
+      background-color: theme-color('inverse');
     }
   }
 }

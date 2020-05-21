@@ -1074,11 +1074,11 @@ legend {
 
 .btn-default {
   color: $body-main-color;
-  background-color: #e9ecef;
+  background-color: $gray-200;
   &:hover, &:active, &:focus {
-    color: #29323a;
+    color: $body-main-color;
     background-color: #cbd3da;
-    border-color: #e9ecef;
+    border-color: $gray-300;
   }
 }
 

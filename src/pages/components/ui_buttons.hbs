@@ -4,52 +4,61 @@
     {{/content}}
     {{#content "content" mode="replace"}}
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">YOU ARE HERE</li>
-            <li class="breadcrumb-item active">UI Buttons</li>
+            <li class="breadcrumb-item">UI</li>
+            <li class="breadcrumb-item active">Buttons</li>
         </ol>
-        <h1 class="page-title">Buttons - <span class="fw-semi-bold">Styles</span></h1>
         <div class="row">
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Color <span class="fw-semi-bold">Options</span>
-                        </h5>
+                        <h5>Color Options</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Use any of the available button classes to quickly create a styled button.
                             Semantically distinguishable beauty.
                         </p>
                         <p>
-                            <button class="btn btn-default width-100 mb-xs" role="button">
-                                Defaullt
+                            <button class="btn btn-default width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Default</span>
                             </button>
-                            <button class="btn btn-primary width-100 mb-xs" role="button">
-                                Primary
+                            <button class="btn btn-primary width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Primary</span>
                             </button>
-                            <button class="btn btn-info width-100 mb-xs" role="button">
-                                Info
+                            <button class="btn btn-info width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Info</span>
                             </button>
-                            <button class="btn btn-success width-100 mb-xs" role="button">
-                                Success
+                            <button class="btn btn-success width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Success</span>
                             </button>
-                            <button class="btn btn-warning width-100 mb-xs" role="button">
-                                Warning
+                            <button class="btn btn-warning width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Warning</span>
                             </button>
-                            <button class="btn btn-danger width-100 mb-xs" role="button">
-                                Danger
+                            <button class="btn btn-danger width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Danger</span>
                             </button>
-                            <button class="btn btn-gray width-100 mb-xs" role="button">
-                                Gray
+                            <button class="btn btn-gray width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Gray</span>
                             </button>
-                            <button class="btn btn-inverse width-100 mb-xs" role="button">
-                                Inverse
+                            <button class="btn btn-inverse width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Inverse</span>
                             </button>
                         </p>
                     </div>
@@ -58,153 +67,190 @@
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Size <span class="fw-semi-bold">Variants</span>
-                        </h5>
+                        <h5>Size Variants</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Fancy larger or smaller buttons? Four separate sizes available for all use cases: from
                             tiny 10px button to large one. Add <code>.btn-lg</code>, <code>.btn-sm</code> or  <code>.btn-xs</code> for additional sizes.
                         </p>
                         <p>
-                            <button type="button" class="btn btn-default btn-lg mb-xs">Large button</button>
-                            <button type="button" class="btn btn-primary mb-xs mb-xs">Default button</button>
-                            <button type="button" class="btn btn-info btn-sm mb-xs">Small button</button>
-                            <button type="button" class="btn btn-success btn-xs mb-xs">Tiny button</button>
+                            <button type="button" class="btn btn-default btn-lg mb-xs mr-2">Large button</button>
+                            <button type="button" class="btn btn-primary mb-xs mb-xs mr-2">Default button</button>
+                            <button type="button" class="btn btn-info btn-sm mb-xs mr-2">Small button</button>
+                            <button type="button" class="btn btn-success btn-xs mb-xs mr-2">Tiny button</button>
                         </p>
-
                     </div>
                 </section>
             </div>
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Outline <span class="fw-semi-bold">Buttons</span>
-                        </h5>
+                        <h5>Outline Buttons</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             In need of a button, but not the hefty background colors they bring? Replace the default modifier 
                             classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.
                         </p>
                         <p>
-                            <button class="btn btn-outline-default btn-rounded width-100 mb-xs" role="button">
-                                Default
+                            <button class="btn btn-outline-default btn-rounded width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Default</span>
                             </button>
-                            <button class="btn btn-outline-primary btn-rounded width-100 mb-xs" role="button">
-                                Primary
+                            <button class="btn btn-outline-primary btn-rounded width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Primary</span>
                             </button>
-                            <button class="btn btn-outline-info btn-rounded width-100 mb-xs" role="button">
-                                Info
+                            <button class="btn btn-outline-info btn-rounded width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Info</span>
                             </button>
-                            <button class="btn btn-outline-success btn-rounded width-100 mb-xs" role="button">
-                                Success
+                            <button class="btn btn-outline-success btn-rounded width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Success</span>
                             </button>
-                            <button class="btn btn-outline-warning btn-square width-100 mb-xs" role="button">
-                                Warning
+                            <button class="btn btn-outline-warning btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Warning</span>
                             </button>
-                            <button class="btn btn-outline-danger btn-square width-100 mb-xs" role="button">
-                                Danger
+                            <button class="btn btn-outline-danger btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Danger</span>
                             </button>
-                            <button class="btn btn-outline-gray btn-square width-100 mb-xs" role="button">
-                                Gray
+                            <button class="btn btn-outline-gray btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Gray</span>
                             </button>
-                            <button class="btn btn-outline-inverse btn-square width-100 mb-xs" role="button">
-                                Inverse
+                            <button class="btn btn-outline-inverse btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Inverse</span>
                             </button>
                         </p>
-
                     </div>
                 </section>
             </div>
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Rounded <span class="fw-semi-bold">Buttons</span>
-                        </h5>
+                        <h5>Rounded Buttons</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Use any of the available button classes to quickly create a styled button.
                             Semantically distinguishable beauty. Use <code>.btn-rounded-f</code> and <code>.btn-rounded</code>
                         </p>
                         <p>
-                            <button class="btn btn-default btn-rounded-f width-100 mb-xs" role="button">
-                                Defaullt
+                            <button class="btn btn-default btn-rounded-f width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Default</span>
                             </button>
-                            <button class="btn btn-primary btn-rounded-f width-100 mb-xs" role="button">
-                                Primary
+                            <button class="btn btn-primary btn-rounded-f width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Primary</span>
                             </button>
-                            <button class="btn btn-info btn-rounded-f width-100 mb-xs" role="button">
-                                Info
+                            <button class="btn btn-info btn-rounded-f width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Info</span>
                             </button>
-                            <button class="btn btn-success btn-rounded-f width-100 mb-xs" role="button">
-                                Success
+                            <button class="btn btn-success btn-rounded-f width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Success</span>
                             </button>
-                            <button class="btn btn-outline-warning btn-square width-100 mb-xs" role="button">
-                                Warning
+                            <button class="btn btn-outline-warning btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Warning</span>
                             </button>
-                            <button class="btn btn-outline-danger btn-square width-100 mb-xs" role="button">
-                                Danger
+                            <button class="btn btn-outline-danger btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Danger</span>
                             </button>
-                            <button class="btn btn-outline-gray btn-square width-100 mb-xs" role="button">
-                                Gray
+                            <button class="btn btn-outline-gray btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Gray</span>
                             </button>
-                            <button class="btn btn-outline-inverse btn-square width-100 mb-xs" role="button">
-                                Inverse
+                            <button class="btn btn-outline-inverse btn-square width-100 mb-xs m-2" role="button">
+                                <span class="fw-semi-bold">Inverse</span>
                             </button>
                         </p>
-
                     </div>
                 </section>
             </div>
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Block <span class="fw-semi-bold">Buttons</span>
-                        </h5>
+                        <h5>Block Buttons</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Create block level buttons - those that span the full width
                             of a parent— by adding <code>.btn-block</code>.
                             Great for menu & social buttons.
                         </p>
                         <p>
-                            <button type="button" class="btn btn-info btn-block">Block Button</button>
+                            <button type="button" class="btn btn-info btn-block"><span class="fw-semi-bold">Block Button</span></button>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-default btn-block">Show Menu &nbsp;&nbsp;&nbsp;<i class="fa fa-bars"></i></button>
+                            <button type="button" class="btn btn-default btn-block"><span class="fw-semi-bold">Show Menu</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-bars"></i></button>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Login mit Facebook</button>
+                            <button type="button" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i><span class="fw-semi-bold">&nbsp;Login mit Facebook</span></button>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-warning btn-block">Are you sure?</button>
+                            <button type="button" class="btn btn-warning btn-block"><span class="fw-semi-bold">Are you sure?</span></button>
                         </p>
                     </div>
                 </section>
@@ -212,27 +258,37 @@
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Disabled <span class="fw-semi-bold">Buttons</span>
-                        </h5>
+                        <h5>Disabled Buttons</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Make buttons look unclickable by fading them back 50%.
                             Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
                         </p>
                         <p>
-                            <button type="button" class="btn btn-primary" disabled="disabled">Primary button</button>
-                            <button type="button" class="btn btn-default" disabled="disabled">Button</button>
+                            <button type="button" class="btn btn-primary m-2" disabled="disabled"><span class="fw-semi-bold">Primary button</span></button>
+                            <button type="button" class="btn btn-default m-2" disabled="disabled"><span class="fw-semi-bold">Button</span></button>
                         </p>
                         <p>
-                            <a href="#" class="btn btn-success btn-sm disabled" role="button">Primary link</a>
-                            <a href="#" class="btn btn-default btn-sm disabled" role="button">Link</a>
+                            <a href="#" class="btn btn-success btn-sm disabled m-2" role="button"><span class="fw-semi-bold">Primary link</span></a>
+                            <a href="#" class="btn btn-default btn-sm disabled m-2" role="button"><span class="fw-semi-bold">Link</span></a>
                         </p>
                     </div>
                 </section>
@@ -240,17 +296,27 @@
             <div class="col-md-6">
                 <section class="widget">
                     <header>
-                        <h5>
-                            Button <span class="fw-semi-bold">Groups</span>
-                        </h5>
+                        <h5>Button Groups</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Group a series of buttons together on a single line with the button group.
                             Add on optional JavaScript radio and checkbox style behavior with Bootstrap buttons plugin.
                         </p>
@@ -281,17 +347,27 @@
             <div class="col-md-6">
                 <section class="widget" style="overflow: visible;">
                     <header>
-                        <h5>
-                            Button <span class="fw-semi-bold">Dropdowns</span>
-                        </h5>
+                        <h5>Button Dropdowns</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p class="fs-mini text-muted">
+                        <p class="fs-mini">
                             Add dropdown menus to nearly anything with this simple plugin, including the buttons,
                             navbar, tabs, and pills.
                             Both solid & segmented dropdown options available.
@@ -337,22 +413,30 @@
             <div class="col-12">
                 <section class="widget">
                     <header>
-                        <h6>
-                            Button <span class="fw-semi-bold">Options</span>
-                        </h6>
+                        <h5>Button Options</h5>
                         <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </header>
                     <div class="widget-body">
                         <div class="row">
                             <div class="col-xl-4">
-                                <h4>
-                                Button <span class="fw-semi-bold">Checkboxes</span>
-                                </h4>
-                                <p class="fs-mini text-muted">
+                                <h4>Button Checkboxes</h4>
+                                <p class="fs-mini">
                                     Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
                                     Add <code>data-toggle="buttons"</code> to a group of checkboxes for checkbox style toggling on btn-group.
                                 </p>
@@ -384,10 +468,8 @@
                                 </div>
                             </div>
                             <div class="col-xl-4">
-                                <h4>
-                                    Button <span class="fw-semi-bold">Radios</span>
-                                </h4>
-                                <p class="fs-mini text-muted">
+                                <h4>Button Radios</h4>
+                                <p class="fs-mini">
                                     Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
                                     Add <code>data-toggle="buttons"</code> to a group of radio inputs for radio style toggling on btn-group.
                                 </p>
@@ -419,14 +501,12 @@
                                 </div>
                             </div>
                             <div class="col-xl-4">
-                                <h4>
-                                    Use with <span class="fw-semi-bold">Icons</span>
-                                </h4>
-                                <p class="fs-mini text-muted">
+                                <h4>Use with Icons</h4>
+                                <p class="fs-mini">
                                     Fontawesome and Glyph- icons may be used in buttons, button groups for a toolbar, navigation, or prepended form inputs.
                                     Let your buttons shine!
                                 </p>
-                                <p class="text-center">
+                                <p>
                                     <button class="btn btn-default width-100 mb-xs" role="button">
                                         <i class="glyphicon glyphicon-tree-conifer text-success"></i>
                                         Forest
@@ -440,7 +520,7 @@
                                         Login
                                     </button>
                                 </p>
-                                <p class="text-center">
+                                <p>
                                     <button class="btn btn-inverse width-100 mb-xs" role="button">
                                         <i class="fa fa-exclamation text-warning"></i>
                                         Error
