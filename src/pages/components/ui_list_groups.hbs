@@ -3,28 +3,34 @@
 {{> sidebar active="ui_list_groups"}}
 {{/content}}
 {{#content "content" mode="replace"}}
-<!-- jquery ui sortable chrome overflow-x fix. when set to hidden does not behaves as expected. resetting back
-             just for this page.
-             http://bugs.jqueryui.com/ticket/9588 -->
 <style>
     body {
         overflow-x: visible;
     }
 </style>
 <ol class="breadcrumb">
-    <li class="breadcrumb-item">YOU ARE HERE</li>
-    <li class="breadcrumb-item active">UI List Groups</li>
+    <li class="breadcrumb-item">UI</li>
+    <li class="breadcrumb-item active">List Groups</li>
 </ol>
-<h1 class="page-title">Lists - <span class="fw-semi-bold">Sortable Groups</span></h1>
 <section class="widget">
     <header>
-        <h4>
-            Grouped <span class="fw-semi-bold">Lists</span>
-        </h4>
+        <h5>Grouped Lists</h5>
         <div class="widget-controls">
-            <a href="#"><i class="la la-cog"></i></a>
-            <a href="#"><i class="la la-refresh"></i></a>
-            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                    </button>
+                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+            </div>
         </div>
     </header>
     <div class="widget-body">
@@ -66,13 +72,23 @@
 </section>
 <section class="widget mt-lg">
     <header>
-        <h5>
-            List <span class="fw-semi-bold">Groups</span>
-        </h5>
+        <h5>List Groups</h5>
         <div class="widget-controls">
-            <a href="#"><i class="la la-cog"></i></a>
-            <a href="#"><i class="la la-refresh"></i></a>
-            <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                    </button>
+                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+            </div>
         </div>
     </header>
     <div class="widget-body">

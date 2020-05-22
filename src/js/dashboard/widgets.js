@@ -399,9 +399,9 @@ $(function() {
           ]
         }
       },
-      areas: fakeWorldData[2015]["areas"]
+      areas: fakeWorldData[2020]["areas"]
     });
-    var coords = $.fn.mapael.maps["world_countries"].getCoords(
+    let coords = $.fn.mapael.maps["world_countries"].getCoords(
       59.599254,
       8.863224
     );
