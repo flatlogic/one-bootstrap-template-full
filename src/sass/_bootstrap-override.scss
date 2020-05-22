@@ -1980,7 +1980,7 @@ a.badge.badge-light {
   position: fixed;
   display: none;
   z-index: 195;
-  top: $navbar-height;
+  top: $navbar-height + 20px;
   right: 5rem;
   width: 350px;
   border: 0;
@@ -1992,10 +1992,9 @@ a.badge.badge-light {
 
   &.toast-flatlogic-left {
     right: auto;
-    left: 5rem;
 
     &.show + .toast-flatlogic-left {
-      margin-top: 90px;
+      margin-top: 100px;
     }
   }
 }
