@@ -198,29 +198,6 @@
 }
 #map-years-mapael {
   margin: -25px;
-  .map-controls {
-    border-top: 1px solid $default;
-    .nav-item {
-
-      .nav-link {
-        background-color: $widget-border-color;
-        color: $widget-color-header;
-
-        &:hover {
-          background: $default;
-          color: $widget-color-header;
-        }
-      }
-    }
-    .active {
-      font-weight: 700;
-      background: $default;
-
-      .nav-link{
-        background: $default;
-      }
-    }
-  }
 }
 
 .mapael {

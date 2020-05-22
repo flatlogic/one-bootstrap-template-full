@@ -326,7 +326,7 @@ $(function() {
     var $map = $("#map-years-mapael");
     $map
       .css("height", 394)
-      .css("margin-bottom", -20)
+      .css("margin-bottom", -25)
       .find(".map")
       .css("height", parseInt($map.parents(".widget").css("height")) - 40);
     $map.mapael({
@@ -399,7 +399,7 @@ $(function() {
           ]
         }
       },
-      areas: fakeWorldData[2009]["areas"]
+      areas: fakeWorldData[2015]["areas"]
     });
     var coords = $.fn.mapael.maps["world_countries"].getCoords(
       59.599254,

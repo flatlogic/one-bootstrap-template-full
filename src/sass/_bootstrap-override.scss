@@ -363,7 +363,7 @@ legend {
 .nav-tabs {
   & .nav-item+.nav-item { margin-left: 0}
   border-bottom: none;
-  background-color: #f8f9fa;
+  background-color: $gray-200;
 
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
