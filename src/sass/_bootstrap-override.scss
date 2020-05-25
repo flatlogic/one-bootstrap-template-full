@@ -1433,18 +1433,18 @@ legend {
     }
 
     .page-link {
-      background: #ffffff1a;
-      color: $body-main-color-small;
+      background: $gray-200;
+      color: $body-main-color;
       border: none;
       &:hover {
-        background: transparent;
+        background: $gray-300;
       }
     }
 
     &.active {
       .page-link {
         background: transparent;
-        color: $body-main-color-small;
+        color: $body-main-color;
         border: none;
       }
     }

@@ -4,15 +4,12 @@
 {{/content}}
 {{#content "content" mode="replace"}}
 <ol class="breadcrumb">
-    <li class="breadcrumb-item">YOU ARE HERE</li>
-    <li class="breadcrumb-item active">Tables Dynamic</li>
+    <li class="breadcrumb-item">Tables</li>
+    <li class="breadcrumb-item active">Dynamic</li>
 </ol>
-<h2 class="page-title">Dynamic - <span class="fw-semi-bold">Tables</span></h2>
 <section class="widget">
     <header class="d-flex justify-content-between flex-wrap">
-        <h4>
-            Table <span class="fw-semi-bold">Styles</span>
-        </h4>
+        <h5>Table Styles</h5>
         <div class="width-200">
             <div class="input-group input-group-sm input-group-transparent input-group-rounded">
                 <span class="input-group-prepend">
@@ -34,11 +31,23 @@
 </section>
 <section class="widget">
     <header>
-        <h4>Table <span class="fw-semi-bold">Styles</span></h4>
+        <h4>Table Styles</h4>
         <div class="widget-controls">
-            <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-            <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-            <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                    </button>
+                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+            </div>
         </div>
     </header>
     <div class="widget-body">

@@ -751,7 +751,7 @@ input.parsley-error {
         line-height: $line-height-base;
         text-decoration: none;
         color: $body-main-color-small;
-        background-color: #ffffff1a;
+        background-color: $gray-200;
         border: 1px solid $pagination-border;
         border-radius: $border-radius;
         margin: 0 2px;
@@ -774,7 +774,7 @@ input.parsley-error {
       &:hover,
       &:focus {
         color: $body-main-color-small;
-        background-color: transparent;
+        background-color: $gray-300;
         border-color: $pagination-hover-border;
       }
     }
@@ -899,20 +899,6 @@ table.dataTable tfoot th {
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
   font-size: $font-size-mini;
-
-  button {
-    background: $default;
-    border-color: $default;
-    color: $body-main-color;
-    &:active {
-      background: $default!important;
-      color: $body-main-color;
-    }
-  }
-  .show>.btn-light.dropdown-toggle {
-    background: $default!important;
-    color: $body-main-color;
-  }
 }
 
 
