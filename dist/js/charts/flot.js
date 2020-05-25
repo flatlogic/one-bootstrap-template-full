@@ -398,7 +398,7 @@ $(function () {
                     axisLabelFontSizePixels: 13,
                     axisLabelPadding: 15
                 },
-                colors: Object.values(Sing.colors).slice(14)
+                colors: COLORS.pieChart
             });
         }
     }

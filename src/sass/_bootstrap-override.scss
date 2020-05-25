@@ -57,9 +57,6 @@ small, .small {
     color: $body-main-color;
   }
 
-  &:disabled {
-    background: $widget-bg-color;
-  }
 }
 
 .form-control.input-no-border {
@@ -71,9 +68,7 @@ small, .small {
 }
 .form-group {
   .input-group-text {
-    background: $widget-bg-color;
-    color: $body-main-color-small;
-    border: none;
+    color: $body-main-color;
   }
 }
 
@@ -96,7 +91,7 @@ legend {
   line-height: inherit;
   color: $body-main-color;
   border: 0;
-  border-bottom: 1px solid $widget-border-color;
+  border-bottom: 1px solid $gray-200;
   font-size: 15px;
   font-weight: $font-weight-normal;
 }
@@ -259,7 +254,7 @@ legend {
     display: none;
   }
 }
-.nav  .dropdown-menu {
+.navbar .dropdown-menu {
   margin-top: 1.5rem;
 }
 
@@ -408,7 +403,6 @@ legend {
 
 .nav-tabs {
   .nav-link {
-    color: rgba(244,244,245,.7);
     transition: color .15s ease-in-out;
 
     &:hover {
@@ -1422,58 +1416,6 @@ legend {
 
 .popover-content {
   padding: 20px;
-}
-
-//
-// Modals
-// --------------------------------------------------
-
-// z-index fix. modal doesn't show up properly when .content-wrap is relative
-
-//.modal-open {
-//  &, &.nav-collapsed, &.nav-static {
-//    .content-wrap {
-//           -webkit-transform: none;
-//           -ms-transform: none;
-//           transform: none;
-//           position: static;
-//         }
-//
-//    .sidebar {
-//      z-index: -1;
-//      display: none;
-//    }
-//  }
-//}
-
-.modal {
-  .modal-content {
-    background: #232642;
-    color: $body-main-color;
-
-    .modal-header {
-      border-bottom: 1px solid $widget-border-color;
-    }
-    .modal-body {
-        p {
-          color: $body-main-color-small;
-        }
-      .form-group {
-        margin-bottom: 0;
-      }
-    }
-    .modal-footer {
-      border-top: 1px solid $widget-border-color;
-    }
-  }
-
-  .close {
-    color: $body-main-color;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
 }
 
 //

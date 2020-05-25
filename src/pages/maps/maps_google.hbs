@@ -5,15 +5,13 @@
     {{#content "content" mode="replace"}}
         <ol class="breadcrumb">
             <li class="breadcrumb-item">UI</li>
-            <li class="breadcrumb-item active">Maps</li>
+            <li class="breadcrumb-item active">Google Maps</li>
         </ol>
         <div class="row">
             <div class="col-md-12">
                 <section class="widget">
                     <header>
-                        <h5 class="fw-semi-bold">
-                            Google Maps
-                        </h5>
+                        <h5>Google Maps</h5>
                     </header>
                     <div class="widget-body maps widget-table-overlay">
                         <div id="gmap" class="content-map"></div>
@@ -24,9 +22,9 @@
     {{/content}}
     {{#content "scripts"}}
         <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzLGh9l7VfM67K_8wSxf4rkqoyo_3YXgY"></script>
-        <script src="../node_modules/gmaps/gmaps.js"></script>
+        <script src="../../node_modules/gmaps/gmaps.js"></script>
 
         <!-- page specific js -->
-        <script src="js/maps/gmap.js"></script>
+        <script src="../js/maps/gmap.js"></script>
     {{/content}}
 {{/extend}}

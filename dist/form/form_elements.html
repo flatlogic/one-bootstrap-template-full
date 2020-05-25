@@ -282,7 +282,7 @@
     </nav><nav id="sidebar" class="sidebar" role="navigation">
     <!-- need this .js class to initiate slimscroll -->
     <header class="logo d-md-block">
-        <a href="https://demo.flatlogic.com/sing-app/">
+        <a href="index.html">
             <img src="../img/logo.svg" alt="...">
             <b class="fw-bold">Flatlogic</b> One</a>
     </header>
@@ -403,7 +403,6 @@
                     <li class=""><a href="../charts/morris.html">Morris Charts</a></li>
                     <li class=""><a href="../charts/rickshaw.html">Rickshaw Charts</a></li>
                     <li class=""><a href="../charts/sparkline.html">Sparkline Charts</a></li>
-                    <li class=""><a class="no-pjax" href="../charts/d3_plain.html">D3 version 5 Charts</a></li>
                     <li class=""><a href="../charts/easy_pie.html">Easy Pie Charts</a></li>
                 </ul>
             </li>
@@ -546,27 +545,36 @@
         <main id="content" class="content" role="main">
             <!-- Page content -->
 <ol class="breadcrumb">
-    <li class="breadcrumb-item">YOU ARE HERE</li>
-    <li class="breadcrumb-item active">Form Elements</li>
+    <li class="breadcrumb-item">Form</li>
+    <li class="breadcrumb-item active">Elements</li>
 </ol>
-<h1 class="page-title">Form - <span class="fw-semi-bold">Inputs & Controls</span></h1>
 <div class="row">
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    Inputs
-                </h6>
+                <h5>Inputs</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <form class="form-horizontal" role="form">
                     <fieldset>
-                        <legend><strong>Horizontal</strong> form</legend>
+                        <legend>Horizontal form</legend>
                         <div class="form-group row">
                             <label for="normal-field" class="col-md-4 form-control-label text-md-right">Normal
                                 field</label>
@@ -672,7 +680,7 @@
                                 Append Transparent
                             </label>
                             <div class="col-md-7 ">
-                                <div class="input-group input-group-transparent">
+                                <div class="input-group">
                                     <input id="transparent-input" class="form-control" type="text">
                                     <span class="input-group-append">
                                         <span class="input-group-text">
@@ -686,7 +694,7 @@
                     <div class="form-actions">
                         <div class="row">
                             <div class="offset-md-4 col-md-7 col-12">
-                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                <button type="submit" class="btn btn-warning">Save Changes</button>
                                 <button type="button" class="btn btn-inverse">Cancel</button>
                             </div>
                         </div>
@@ -698,19 +706,29 @@
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    Prepended and appended inputs
-                </h6>
+                <h5>Prepended and appended inputs</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <form role="form">
                     <fieldset>
-                        <legend><strong>Default</strong> Form</legend>
+                        <legend>Default Form</legend>
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
@@ -800,8 +818,8 @@
                         </div>
                     </fieldset>
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-inverse">Save Changes</button>
-                        <button type="button" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-warning">Save Changes</button>
+                        <button type="button" class="btn btn-inverse">Cancel</button>
                     </div>
                 </form>
             </div>
@@ -812,13 +830,23 @@
     <div class="col-lg-8">
         <section class="widget">
             <header>
-                <h6>
-                    Form <span class="fw-semi-bold">Options</span>
-                </h6>
+                <h5>Form Options</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -851,21 +879,29 @@
     <div class="col-lg-4">
         <section class="widget">
             <header>
-                <h6>
-                    Form <span class="fw-semi-bold">Options</span>
-                </h6>
+                <h5>Form Options</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <form role="form">
                     <fieldset>
-                        <legend>
-                            Input Groups
-                        </legend>
+                        <legend>Input Groups</legend>
                         <p>
                             Different colors & sizes for any elements including input groups. Elements may be
                             easily styled with classes like <code>.bg-primary</code> or <code>.bg-transparent</code>
@@ -874,7 +910,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-prepend">
-                                    <span class="input-group-text bg-transparent">
+                                    <span class="input-group-text">
                                         <i class="fa fa-github-alt"></i>
                                     </span>
                                 </span>
@@ -911,14 +947,23 @@
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    <i class="fa fa-font"></i>
-                    Textareas
-                </h6>
+                <h5>Textareas</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -985,14 +1030,23 @@ Enjoy!
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    <i class="fa fa-list-alt"></i>
-                    Selects
-                </h6>
+                <h5>Selects</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -1667,13 +1721,23 @@ Enjoy!
     <div class="col-lg-12">
         <section class="widget">
             <header>
-                <h6>
-                    Checkbox <strong>Controls</strong>
-                </h6>
+                <h5>Checkbox Controls</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -1791,13 +1855,23 @@ Enjoy!
     <div class="col-lg-12">
         <section class="widget">
             <header>
-                <h6>
-                    Radio <strong>Controls</strong>
-                </h6>
+                <h5>Radio Controls</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -1904,13 +1978,23 @@ Enjoy!
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    Pickers
-                </h6>
+                <h5>Pickers</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -1972,13 +2056,23 @@ Enjoy!
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    Input <strong>Masks</strong>
-                </h6>
+                <h5>Input Masks</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -2033,13 +2127,23 @@ Enjoy!
     <div class="col-lg-12">
         <section class="widget">
             <header>
-                <h6>
-                    Sliders
-                </h6>
+                <h5>Sliders</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -2068,7 +2172,7 @@ Enjoy!
                                     data-slider-min="0" data-slider-max="20" data-slider-step="1"
                                     data-slider-value="11" />
                             </div>
-                            <div class="slider-inverse mb-sm">
+                            <div class="slider-info mb-sm">
                                 <input class="js-slider" id="slider-ex5" data-slider-id='ex5Slider' type="text"
                                     data-slider-min="0" data-slider-max="20" data-slider-step="1"
                                     data-slider-value="4" />
@@ -2137,13 +2241,23 @@ Enjoy!
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    Simple <strong>file uploads</strong>
-                </h6>
+                <h5>Simple file uploads</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -2207,20 +2321,30 @@ Enjoy!
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h6>
-                    <strong>Drop</strong> Zone
-                </h6>
+                <h5>Drop Zone</h5>
                 <div class="widget-controls">
-                    <a href="#"><i class="la la-cog"></i></a>
-                    <a href="#"><i class="la la-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <form class="dropzone" action="#" id="my-awesome-dropzone">
                     <div class="dz-message">
                         <p class="mb-xs fw-normal">Drop files here or click to upload.</p>
-                        <p class="text-muted">(This is just a demo dropzone. Selected files are <strong>not</strong>
+                        <p>(This is just a demo dropzone. Selected files are <strong>not</strong>
                             actually uploaded.)</p>
                     </div>
                 </form>

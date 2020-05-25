@@ -56,8 +56,6 @@
   .thumbnail {
     padding: $thumbnail-padding;
     line-height: $spacer;
-    background-color: #333867;
-    border: 1px solid #595d78;
     border-radius: $thumbnail-border-radius;
     transition: all 0.2s ease-in-out;
     @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.075));
@@ -137,8 +135,8 @@
  */
 
 .dropzone {
-  border: 2px dashed $widget-border-color;
-  background: $default;
+  border: 2px dashed $gray-400;
+  padding: 15px;
   .dz-preview.dz-image-preview {
     background: transparent;
   }
@@ -264,67 +262,6 @@ svg .title {
 }
 
 
-
-/**
- * Markdown. converted from less files
- */
-
-.md-editor {
-  display: block;
-  border: none;
-  border: 1px $default solid;
-  border-radius: 5px;
-  > .md-header,
-  .md-footer {
-    display: block;
-    padding: 6px 4px;
-    background: $gray-200;
-  }
-
-  > .md-header {
-    margin: 0;
-    background: $default;
-
-    .glyphicon {
-      top: 3px;
-    }
-  }
-
-  > .md-preview {
-    padding: $input-padding-y $input-padding-x;
-    background: $input-bg;
-    min-height: 10px;
-  }
-
-  > textarea {
-    font-family: $font-family-monospace;
-    font-size: $font-size-base;
-    outline: 0;
-    outline: thin dotted \9; /* IE6-9 */
-    margin: 0;
-    display: block;
-    width: 100%;
-    padding: $input-padding-y $input-padding-x;
-    border: 0;
-    border-top: 1px dashed $table-border-color;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-    &:focus {
-      box-shadow: none;
-      background: transparent;
-    }
-  }
-
-  // Hover state
-  $color: $input-focus-border-color;
-  &.active {
-    border-color: $color;
-    outline: 0;
-    box-shadow: none;
-  }
-}
-
 /**
  * Bootstrap slider. converted from less files
  */
@@ -357,7 +294,6 @@ $slider-handle-size: 26px;
     .slider-handle {
       margin-left: -$slider-handle-size/2;
       margin-top: -$slider-handle-size * 3/8;
-      background: $default;
       &.triangle {
         border-width: 0 $slider-line-height/2 $slider-line-height/2
           $slider-line-height/2;
@@ -383,10 +319,6 @@ $slider-handle-size: 26px;
       left: 0;
       top: 0;
       bottom: 0;
-
-      &:nth-child(even) {
-        background: $default;
-      }
     }
     .slider-handle {
       margin-left: -$slider-handle-size * 3/8;
@@ -429,7 +361,6 @@ $slider-handle-size: 26px;
 .slider-track {
   position: absolute;
   cursor: pointer;
-  background: $widget-border-color;
   @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
   border-radius: $border-radius;
 }
@@ -612,7 +543,7 @@ input.parsley-error {
       padding-top: 15px;
       padding-bottom: 15px;
       margin-bottom: $spacer * 0.5;
-      background-color: #ffffff1a;
+      background-color: $gray-200;
       color: $body-main-color;
       @include border-radius(3px);
       cursor: default;
@@ -710,8 +641,8 @@ input.parsley-error {
 .wizard-footer {
   .wizard-back {
     color: $body-main-color;
-    background-color: #353a63;
-    border-color: #31355b;
+    background-color: $gray-200;
+    border-color: $gray-300;
   }
 }
 .wizard-nav-list > li.already-visited > a.wizard-nav-link,
@@ -740,7 +671,6 @@ input.parsley-error {
     text-decoration: none;
     width: 100%;
     padding: 10px 15px;
-    background: transparent;
   }
 }
 
@@ -2062,7 +1992,6 @@ a.fc-event {
 
   .select2-selection.select2-selection--single, .select2-selection.select2-selection--multiple{
     background: $widget-bg-color;
-    border: none;
 
     .select2-selection__choice {
       background: transparent;
@@ -2076,22 +2005,6 @@ a.fc-event {
     }
   }
 }
-
-.select2-dropdown {
-  background: #000000cc;
-  .select2-results {
-    color: $body-main-color;
-
-    .select2-results__options {
-      background: transparent;
-
-      .select2-results__option {
-        background: transparent;
-      }
-    }
-  }
-}
-
 
 /// d3 ///
 #nvd31 .nv-x .nv-axis line, #nvd32 .nv-x .nv-axis line {
@@ -2116,43 +2029,6 @@ a.fc-event {
   opacity: 1;
   border: none;
   color: white;
-}
-
-
-// summernote //
-
-.note-editor.note-frame {
-  border: none;
-
-  .note-toolbar {
-    .note-btn-group {
-      .dropdown-toggle {
-        .note-icon-magic {
-          padding-right: 10px;
-        }
-
-        &:after {
-          content: none;
-        }
-      }
-
-      .note-dropdown-menu {
-        li > a {
-          &:hover {
-            background: transparent;
-          }
-        }
-      }
-    }
-  }
-  .note-statusbar {
-    background-color: $default;
-    border-top-color: $default;
-  }
-
-  .note-editing-area .note-editable {
-    background-color: $widget-border-color;
-  }
 }
 
 /**

@@ -282,7 +282,7 @@
     </nav><nav id="sidebar" class="sidebar" role="navigation">
     <!-- need this .js class to initiate slimscroll -->
     <header class="logo d-md-block">
-        <a href="https://demo.flatlogic.com/sing-app/">
+        <a href="index.html">
             <img src="../img/logo.svg" alt="...">
             <b class="fw-bold">Flatlogic</b> One</a>
     </header>
@@ -403,7 +403,6 @@
                     <li class=" active "><a href="../charts/morris.html">Morris Charts</a></li>
                     <li class=""><a href="../charts/rickshaw.html">Rickshaw Charts</a></li>
                     <li class=""><a href="../charts/sparkline.html">Sparkline Charts</a></li>
-                    <li class=""><a class="no-pjax" href="../charts/d3_plain.html">D3 version 5 Charts</a></li>
                     <li class=""><a href="../charts/easy_pie.html">Easy Pie Charts</a></li>
                 </ul>
             </li>
@@ -546,27 +545,34 @@
         <main id="content" class="content" role="main">
             <!-- Page content -->
 <ol class="breadcrumb">
-    <li class="breadcrumb-item">YOU ARE HERE</li>
-    <li class="breadcrumb-item">Charts</li>
-    <li class="breadcrumb-item active">Morris</li>
+    <li class="breadcrumb-item">UI</li>
+    <li class="breadcrumb-item active">Morris Charts</li>
 </ol>
-<h1 class="page-title">Visual - <span class="fw-semi-bold">Chart</span></h1>
 <div class="row">
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Line Chart</span>
-                </h5>
+                <h5>Morris Line Chart</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     Good-looking charts shouldn't be difficult.
                     The public API is terribly simple. It's just one function: <code>Morris.Line(options)</code>,
                     where options is an object containing some of the following configuration options.
@@ -579,18 +585,27 @@
     <div class="col-lg-6">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Area Chart</span>
-                </h5>
+                <h5>Morris Area Chart</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     Good-looking charts shouldn't be difficult.
                     The public API is terribly simple. It's just one function: <code>Morris.Line(options)</code>,
                     where options is an object containing some of the following configuration options.
@@ -605,19 +620,28 @@
     <div class="col-lg-5 col-xl-5">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Bar Chart</span>
-                </h5>
+                <h5>Morris Bar Chart</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <div id="morris4" style="height: 260px"></div>
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     Bar charts are also commonly referred to as a column charts. If you was trying to compare
                     the
                     height of something then intuitvely you would represent this by using columns.
@@ -630,20 +654,29 @@
     <div class="col-lg-3 col-xl-3">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Donut Chart</span>
-                </h5>
+                <h5>Morris Donut Chart</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <div id="morris3" style="height: 180px">
                 </div>
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     Donuts a great for representing some parted information like traffice sources,
                     disk partitions, etc.
                     This really couldn't be easier. Create a Donut chart using
@@ -656,19 +689,28 @@
     <div class="col-lg-4 col-xl-4">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Bar Chart 2</span>
-                </h5>
+                <h5>Morris Bar Chart 2</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <div id="morris6" style="height: 180px"></div>
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     This is generally a good chart to choose for all comparison based analysis but if you were
                     to display
                     a data set with negative values a column would be the best to represent this.
@@ -681,20 +723,29 @@
     <div class="col-lg-12">
         <section class="widget">
             <header>
-                <h5>
-                    Morris <span class="fw-semi-bold">Stacked Bar Chart</span>
-                </h5>
+                <h5>Morris Stacked Bar Chart</h5>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i
-                            class="glyphicon glyphicon-chevron-down"></i></a>
-                    <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
                 <div id="morris5" style="height: 200px">
                 </div>
-                <p class="fs-mini text-muted">
+                <p class="fs-mini">
                     Stacked charts are excellent to track some dynamics within declared categories.
                     An example of this can be seen above.
                     To create a Stacked Bar chart use <code>Morris.Bar(options)</code> and set
@@ -704,7 +755,6 @@
             </div>
         </section>
     </div>
-
 </div>
 
             <footer class="content-footer hidden-print">

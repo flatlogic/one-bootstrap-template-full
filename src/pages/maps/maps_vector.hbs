@@ -3,15 +3,21 @@
         {{> sidebar active="maps_vector"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-        <div id="vmap" class="content-map">
-        </div>
-        <header class="page-title">
-            <h1 class="no-margin mb-sm">Vector <span class="fw-semi-bold">Maps</span></h1>
-            <p class="page-title fs-sm no-margin">
-            <span class="fw-semi-bold">1 656 843</span>
-            <span class="ml-xs circle bg-gray"><i class="text-gray-lighter fa fa-sm fa-circle"></i></span>
-            </p>
-        </header>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">UI</li>
+            <li class="breadcrumb-item active">Vector Maps</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="widget">
+                    <header>
+                        <h5>Vector Maps</h5>
+                    </header>
+                    <div class="widget-body maps widget-table-overlay">
+                        <div id="vmap" class="content-map"></div>
+                    </div>
+                </section>
+            </div>
         </div>
     {{/content}}
     {{#content "scripts"}}

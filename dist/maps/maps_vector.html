@@ -282,7 +282,7 @@
     </nav>        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
-                <a href="https://demo.flatlogic.com/sing-app/">
+                <a href="index.html">
                     <img src="../img/logo.svg" alt="...">
                     <b class="fw-bold">Flatlogic</b> One</a>
             </header>
@@ -403,7 +403,6 @@
                             <li class=""><a href="../charts/morris.html">Morris Charts</a></li>
                             <li class=""><a href="../charts/rickshaw.html">Rickshaw Charts</a></li>
                             <li class=""><a href="../charts/sparkline.html">Sparkline Charts</a></li>
-                            <li class=""><a class="no-pjax" href="../charts/d3_plain.html">D3 version 5 Charts</a></li>
                             <li class=""><a href="../charts/easy_pie.html">Easy Pie Charts</a></li>
                         </ul>
                     </li>
@@ -545,15 +544,21 @@
         <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
         <main id="content" class="content" role="main">
             <!-- Page content -->
-        <div id="vmap" class="content-map">
-        </div>
-        <header class="page-title">
-            <h1 class="no-margin mb-sm">Vector <span class="fw-semi-bold">Maps</span></h1>
-            <p class="page-title fs-sm no-margin">
-            <span class="fw-semi-bold">1 656 843</span>
-            <span class="ml-xs circle bg-gray"><i class="text-gray-lighter fa fa-sm fa-circle"></i></span>
-            </p>
-        </header>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">UI</li>
+            <li class="breadcrumb-item active">Vector Maps</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="widget">
+                    <header>
+                        <h5>Vector Maps</h5>
+                    </header>
+                    <div class="widget-body maps widget-table-overlay">
+                        <div id="vmap" class="content-map"></div>
+                    </div>
+                </section>
+            </div>
         </div>
 
             <footer class="content-footer hidden-print">

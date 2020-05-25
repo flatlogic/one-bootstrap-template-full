@@ -282,7 +282,7 @@
     </nav><nav id="sidebar" class="sidebar" role="navigation">
     <!-- need this .js class to initiate slimscroll -->
     <header class="logo d-md-block">
-        <a href="https://demo.flatlogic.com/sing-app/">
+        <a href="index.html">
             <img src="../img/logo.svg" alt="...">
             <b class="fw-bold">Flatlogic</b> One</a>
     </header>
@@ -403,7 +403,6 @@
                     <li class=""><a href="../charts/morris.html">Morris Charts</a></li>
                     <li class=""><a href="../charts/rickshaw.html">Rickshaw Charts</a></li>
                     <li class=""><a href="../charts/sparkline.html">Sparkline Charts</a></li>
-                    <li class=""><a class="no-pjax" href="../charts/d3_plain.html">D3 version 5 Charts</a></li>
                     <li class=""><a href="../charts/easy_pie.html">Easy Pie Charts</a></li>
                 </ul>
             </li>
@@ -590,14 +589,21 @@
             <header>
                 <h6>Default <span class="fw-semi-bold">Widget</span></h6>
                 <div class="widget-controls">
-                    <a data-widgster="load" title="Reload" href="#"><i class="la la-refresh"></i></a>
-                    <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                    <a data-widgster="fullscreen" title="Full Screen" href="#"><i
-                            class="glyphicon glyphicon-resize-full"></i></a>
-                    <a data-widgster="restore" title="Restore" href="#"><i
-                            class="glyphicon glyphicon-resize-small"></i></a>
-                    <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -612,8 +618,21 @@
                     Latest <span class="fw-semi-bold">Shares</span>
                 </h6>
                 <div class="widget-controls">
-                    <a data-widgster="load" title="Reload" href="#"><strong class="text-gray-light">Reload</strong></a>
-                    <a data-widgster="close" title="Close" href="#"><strong class="text-gray-light">Close</strong></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body p-0">
@@ -657,28 +676,22 @@
             data-widgster-autoload="true" data-widgster-show-loader="false">
             <header>
                 <h6>Autoload <span class="fw-semi-bold">Widget</span></h6>
-                <div class="widget-controls dropdown">
-                    <span>
-                        <i class="fa fa-spinner fa-lg fade mr-xs"></i>
-                    </span>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-cog"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li>
-                            <a class="dropdown-item" data-widgster="load" title="Reload" href="#">Reload
-                                &nbsp;&nbsp;<span
-                                    class="badge badge-pill bg-success animated bounceIn"><strong>9</strong></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" data-widgster="fullscreen" title="Full Screen"
-                                href="#">Fullscreen</a>
-                            <a class="dropdown-item" data-widgster="restore" title="Restore" href="#">Restore</a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" data-widgster="close" title="Close" href="#">Close</a></li>
-                    </ul>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">
@@ -708,7 +721,7 @@ data-widgster-autoload="true"</code></pre>
                     </p>
                     <div class="clearfix">
                         <div class="btn-toolbar float-right">
-                            <button type="button" class="btn btn-transparent">Cancel</button>
+                            <button type="button" class="btn btn-default">Cancel</button>
                             <button type="button" class="btn btn-success">&nbsp;Submit&nbsp;</button>
                         </div>
                     </div>
@@ -734,12 +747,23 @@ data-widgster-autoload="true"</code></pre>
                 <h6>
                     News <span class="badge badge-pill bg-success">17</span>
                 </h6>
-                <span class="text-muted">spinning refresh button & close prompt</span>
+                <span class="">spinning refresh button & close prompt</span>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                    <a data-widgster="load" title="I am spinning!" href="#"><i class="la la-refresh"></i></a>
-                    <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body p-0">
@@ -801,7 +825,6 @@ data-widgster-autoload="true"</code></pre>
                             <button type="button" class="btn btn-danger" id="news-widget-remove">Yes, remove
                                 widget</button>
                         </div>
-
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div>
@@ -810,9 +833,21 @@ data-widgster-autoload="true"</code></pre>
             <header>
                 <h6>Collapsed by default & locked</h6>
                 <div class="widget-controls">
-                    <a data-widgster="expand" title="Expand" href="#"><i class="la la-angle-up"></i></a>
-                    <a data-widgster="collapse" title="Collapse" href="#"><i class="la la-angle-down"></i></a>
-                    <a data-widgster="close" title="Close" href="#"><i class="la la-remove"></i></a>
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="widget-body">

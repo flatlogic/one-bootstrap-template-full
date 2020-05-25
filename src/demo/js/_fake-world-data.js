@@ -1,6 +1,6 @@
 // Fake data for countries and cities from 2003 to 2013
 var fakeWorldData = {
-    "2008": {
+    "2015": {
         "areas": {
             "AF": {
                 "value": 19880820,
@@ -1162,7 +1162,7 @@ var fakeWorldData = {
             }
         }
     },
-    "2009": {
+    "2016": {
         "areas": {
             "AF": {
                 "value": 52466800,
@@ -2324,7 +2324,7 @@ var fakeWorldData = {
             }
         }
     },
-    "2010": {
+    "2017": {
         "areas": {
             "AF": {
                 "value": 44310251,
@@ -3486,7 +3486,7 @@ var fakeWorldData = {
             }
         }
     },
-    "2011": {
+    "2018": {
         "areas": {
             "AF": {
                 "value": 59288907,
@@ -4648,7 +4648,7 @@ var fakeWorldData = {
             }
         }
     },
-    "2012": {
+    "2019": {
         "areas": {
             "AF": {
                 "value": 9658627,
@@ -5810,7 +5810,7 @@ var fakeWorldData = {
             }
         }
     },
-    "2013": {
+    "2020": {
         "areas": {
             "AF": {
                 "value": 30428397,

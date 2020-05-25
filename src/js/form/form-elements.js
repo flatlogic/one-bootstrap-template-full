@@ -18,14 +18,14 @@ $(function(){
         $('#datetimepicker1').datetimepicker({
         });
 
-        $('#colorpicker').colorpicker({color: Sing.colors['gray-100']});
+        $('#colorpicker').colorpicker({color: Sing.colors['brand-danger']});
 
         $("#mask-phone").inputmask({mask: "(999) 999-9999"});
         $("#mask-date").inputmask({mask: "99-99-9999"});
         $("#mask-int-phone").inputmask({mask: "+999 999 999 999"});
         $("#mask-time").inputmask({mask: "99:99"});
 
-        $('#markdown').markdown();
+        $('#markdown').markdown({fullscreen: {enable : false} });
 
         $('.js-slider').slider();
 

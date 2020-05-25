@@ -7,6 +7,7 @@
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "../../node_modules/line-awesome/dist/css/line-awesome.css";
 @import "../../node_modules/animate.css/animate";
+@import "../../node_modules/bootstrap-select/dist/css/bootstrap-select";
 @import "../../node_modules/select2/dist/css/select2"; //import as css to keep image urls correct
 @import "../../node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
 @import "../../node_modules/glyphicons-halflings/scss/glyphicons-halflings";
@@ -17,14 +18,18 @@
 //
 
 @import "../../node_modules/rickshaw/rickshaw";
+@import "../../node_modules/summernote/dist/summernote.css";
+@import "../../node_modules/switchery/dist/switchery";
 //for tempusdominus-bootstrap-4 lib we need to define some obsolete bs4 variables:
 //$btn-primary-bg: theme-color('primary');
 //$btn-primary-color: $white;
 //$gray-lighter: $gray-300;
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "../../node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker";
 @import "../../node_modules/apexcharts/dist/apexcharts";
 @import "../../node_modules/tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
+@import "../../node_modules/bootstrap-application-wizard/src/bootstrap-wizard";
 @import "../../node_modules/nvd3/build/nv.d3";
 @import "../../node_modules/morris.js/morris";
 @import "../../node_modules/backgrid/lib/backgrid";
@@ -37,6 +42,7 @@
 @import "../../node_modules/jasny-bootstrap/dist/css/jasny-bootstrap";
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.green.min.css";
+@import "../../node_modules/jvectormap/jquery-jvectormap.css";
 
 
 @import "custom-libs-override";
