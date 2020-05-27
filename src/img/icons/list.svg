@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="19" height="19" rx="1.5" stroke="#323232"/>
+<rect x="4" y="3" width="3" height="2" rx="1" fill="#FFD887"/>
+<rect x="3" y="4" width="2" height="3" rx="1" fill="#FFD887"/>
+<rect x="4" y="8" width="3" height="2" rx="1" fill="#FFD887"/>
+<rect x="3" y="9" width="2" height="3" rx="1" fill="#FFD887"/>
+<rect x="4" y="13" width="3" height="2" rx="1" fill="#FFD887"/>
+<rect x="3" y="14" width="2" height="3" rx="1" fill="#FFD887"/>
+<rect x="3.5" y="8.5" width="3" height="3" rx="0.5" stroke="#323232"/>
+<line x1="8.39453" y1="10.0264" x2="15.8156" y2="10.0264" stroke="#FFAD01" stroke-linecap="round"/>
+<rect x="3.5" y="3.5" width="3" height="3" rx="0.5" stroke="#323232"/>
+<line x1="8.39453" y1="5.28955" x2="15.8156" y2="5.28955" stroke="#FFAD01" stroke-linecap="round"/>
+<rect x="3.5" y="13.5" width="3" height="3" rx="0.5" stroke="#323232"/>
+<line x1="8.39453" y1="14.7632" x2="15.8156" y2="14.7632" stroke="#FFAD01" stroke-linecap="round"/>
+</svg>

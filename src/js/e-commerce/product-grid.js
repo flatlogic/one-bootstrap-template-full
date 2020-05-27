@@ -1,5 +1,5 @@
 $(function() {
-  var filters = {
+  let filters = {
     type: {items: ['Shoes', 'Boots', 'Trainers'], checked: ''},
     brands: {items: ['All', 'Nike', 'Adidas'], checked: ''},
     size: {items: ['All', '7', '8', '9', '10', '11', '12'], checked: ''},
@@ -93,7 +93,7 @@ $(function() {
 
   function pageLoad() {
     initFilter();
-
+    $('.js-slider').slider();
     $(".star").on("click", function() {
       var starred = $(this).hasClass("star--fill");
 

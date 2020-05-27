@@ -17,12 +17,13 @@ $(function(){
             'gray-700': '#495057',
             'gray-800': '#343a40',
             'gray-900': '#212529',
-            'brand-primary': '#4dc7df',
-            'brand-success': '#81d4bb',
-            'brand-danger': '#ff7769',
-            'brand-warning': '#ffbf69',
-            'brand-info': '#9fdbe9',
-            'body-bg': '#fafbff'
+            'brand-primary': '#1f7db6',
+            'brand-success': '#38a383',
+            'brand-danger': '#e05546',
+            'brand-warning': '#feb04a',
+            'brand-info': '#12b4de',
+            'body-bg': '#fafbff',
+            'brand-secondary': '#5B5B5B'
         },
 
         // Brand colors modifications

@@ -187,7 +187,7 @@
   @include transition(background-color ease-in-out .15s);
 
   &:focus{
-    background-color: $gray-100;
+    background-color: $gray-100!important;
   }
 }
 
@@ -481,6 +481,10 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 
 .fs-larger{
   font-size: $font-size-larger;
+}
+
+.fs-xlg {
+  font-size: $font-size-xlg;
 }
 
 .btlr{

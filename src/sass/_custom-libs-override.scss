@@ -268,7 +268,9 @@ svg .title {
 
 $slider-line-height: 8px;
 $slider-handle-size: 26px;
-
+.slider-warning .slider.slider-horizontal {
+  width: 166px;
+}
 .slider {
   display: inline-block;
   vertical-align: middle;
@@ -276,6 +278,7 @@ $slider-handle-size: 26px;
   .tooltip.in {
     opacity: .8;
   }
+
   &.slider-horizontal {
     width: 210px;
     height: $slider-line-height;
@@ -1685,9 +1688,6 @@ ul.messenger-theme-air .messenger-message .message-info {
   color: $body-color;
 }
 
-.fc-today {
-  background-color: $default!important;
-}
 
 a.fc-event {
   height: auto;
@@ -1839,6 +1839,7 @@ a.fc-event {
 }
 
 .jvectormap-zoomin {
+  display: none;
   top: auto;
   bottom: 40px;
   padding: 10px;
@@ -1851,6 +1852,7 @@ a.fc-event {
 }
 
 .jvectormap-zoomout {
+  display: none;
   bottom: 20px;
   top: auto;
   padding: 10px;

@@ -594,7 +594,7 @@
 
   > li {
     padding: 10px;
-    border-top: 1px solid $widget-border-color;
+    border-top: 1px solid $gray-200;
     list-style: none;
     @include clearfix();
 
@@ -655,6 +655,7 @@
 
     figcaption {
       margin: 0.8571rem 0.5714rem 0.8571rem 0.5714rem;
+      color: $body-main-color;
     }
 
     a{
@@ -677,23 +678,13 @@
 
   .post-links > li > a{
     display: inline;
+    color: $body-main-color;
   }
 
   .js-shuffle-sizer {
     pointer-events: none;
   }
-
-  .figure {
-    background-color: $widget-bg-color;
-
-    .figure-caption, .post-links {
-      color: $white;
-     li a {
-       color: $white;
-     }
-    }
-  }
-}
+ }
 
 /***********************************/
 /**         Search Result         **/
@@ -901,7 +892,7 @@
     width: 8px;
     content: " ";
     margin-left: -4px;
-    background-color: $widget-bg-color;
+    background-color: $gray-200;
 
     @include media-breakpoint-up(lg){
       left: 50%;
@@ -1057,7 +1048,7 @@
     font-weight: $font-weight-semi-bold;
     > a{
       text-decoration: none;
-      color: $text-muted;
+      color: $body-main-color;
     }
   }
 }
@@ -1139,8 +1130,11 @@
     color: $body-main-color;
     font-weight: $font-weight-normal;
     padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &:hover{
-      background-color: $widget-bg-color;
+      background-color: $gray-200;
       color: $body-main-color;
     }
 
@@ -1158,9 +1152,10 @@
     &,
     &:hover,
     &:focus {
-      background-color: $widget-bg-color;
+      background-color: $gray-200;
       color: $body-main-color;
       font-weight: $font-weight-semi-bold;
+
 
       > .label{
         color: $body-color;
@@ -1224,7 +1219,6 @@
   td,
   th {
     padding: 7px 5px 7px 5px;
-    border-top: 1px solid #33333359;
   }
 
   .name,
@@ -1517,6 +1511,14 @@
     line-height: initial;
     box-shadow: $widget-shadow-designated;
     background: $yellow;
+
+
+    img {
+      animation-name: spin;
+      animation-duration: 8500ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
   }
 
   .theme-helper-header {

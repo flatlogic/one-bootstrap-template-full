@@ -930,7 +930,7 @@ legend {
 
       &:hover,
       &:focus {
-        color: white;
+        //color: white;
         background-color: $navbar-dashboard-link-hover-bg;
       }
     }
@@ -1958,13 +1958,9 @@ a.badge.badge-light {
          color: $blue;
          &:hover {
            color: #104d97;
-           text-decoration: underline;
          }
        }
      }
-   }
-   .lead {
-     color: $gray-400;
    }
  }
 }
@@ -1984,7 +1980,7 @@ a.badge.badge-light {
     }
 
     p {
-      color: $gray-400;
+      color: $gray-800;
     }
 
     footer{

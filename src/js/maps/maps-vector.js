@@ -2,7 +2,7 @@ $(function() {
   function initVMap() {
     $("#vmap").vectorMap({
       map: "world_mill_en",
-      scaleColors: ["#C8EEFF", "#0071A4"],
+      scaleColors: [Sing.colors["brand-info"],Sing.colors["brand-warning"]],
       normalizeFunction: "polynomial",
       focusOn: {
         x: 0.5359,
@@ -13,9 +13,9 @@ $(function() {
       hoverColor: false,
       regionStyle: {
         initial: {
-          fill: "#1a86d0",
-          "fill-opacity": 0.2,
-          stroke: "#bdbdbd",
+          fill: Sing.colors['brand-warning'],
+          "fill-opacity": 0.5,
+          stroke: Sing.colors['brand-warning'],
           "stroke-width": 0.25,
           "stroke-opacity": 1
         },
@@ -25,8 +25,8 @@ $(function() {
       },
       markerStyle: {
         initial: {
-          fill: Sing.colors["brand-info"],
-          stroke: Sing.darken(Sing.colors["brand-info"], 0.1),
+          fill: '#323232',
+          stroke: Sing.darken(Sing.colors["brand-warning"], 0.1),
           "fill-opacity": 1,
           "stroke-width": 4,
           "stroke-opacity": 0.2,

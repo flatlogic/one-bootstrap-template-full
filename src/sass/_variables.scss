@@ -37,6 +37,7 @@ $black: #323232 !default;
 $gray-light: $gray-100 !default;
 
 $default: #474d84;
+$primary: #007bc6;
 $blue: #4dc7df !default;
 $skyblue: #4ebfbb !default;
 $indigo: #7f3ddb !default;
@@ -182,7 +183,7 @@ $widget-shadow-color: 75,102,171;
 $widget-shadow: 4px 4px 25px rgba(109, 105, 105, 0.15) !default;
 $widget-card-shadow: 4px 4px 10px 0px rgba(75,102,171,0.2);
 $widget-border-color: #040620 !default;
-$widget-author-color: #7ca9dd !default;
+$widget-author-color: $primary !default;
 $widget-dropdown-color: rgba(0,0,0,.8) !default;
 $widget-shadow-designated: -1px 0 8px rgba(0, 0, 0, 0.2);
 $widget-border-radius: $border-radius;

@@ -34,11 +34,11 @@ $(function(){
             selectable: true,
             selectHelper: true,
             select: function(start, end, allDay) {
-                var $modal = $("#edit-modal"),
+                let $modal = $("#edit-modal"),
                     $btn = $('#create-event');
                 $btn.off('click');
                 $btn.click(function () {
-                    var title = $("#event-name").val();
+                    let title = $("#event-name").val();
                     if (title) {
                         $calendar.fullCalendar('renderEvent',
                             {
@@ -63,10 +63,10 @@ $(function(){
             drop: function(date, allDay) { // this function is called when something is dropped
 
                 // retrieve the dropped element's stored Event Object
-                var originalEventObject = $(this).data('eventObject');
+                let originalEventObject = $(this).data('eventObject');
 
                 // we need to copy it, so that multiple events don't have a reference to the same object
-                var copiedEventObject = $.extend({}, originalEventObject);
+                let copiedEventObject = $.extend({}, originalEventObject);
 
                 // assign it the date that was reported
                 copiedEventObject.start = date;

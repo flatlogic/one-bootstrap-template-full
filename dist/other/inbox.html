@@ -311,6 +311,7 @@
                 <ul id="sidebar-pages" class="collapse ">
                     <li class=""><a href="../e-commerce/product_detail.html">Product Detail</a></li>
                     <li class=""><a href="../e-commerce/product_grid.html">Product Grid</a></li>
+                    <li class=""><a href="../e-commerce/product_management.html">Product Management</a></li>
                 </ul>
             </li>
             <li class="">
@@ -545,10 +546,6 @@
         <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
         <main id="content" class="content" role="main">
             <!-- Page content -->
-<ol class="breadcrumb">
-    <li class="breadcrumb-item">YOU ARE HERE</li>
-    <li class="breadcrumb-item active">Email</li>
-</ol>
 <div class="alert alert-success alert-sm float-right no-margin animated bounceInLeft hide" id="app-alert">
     <button type="button" class="ml-lg close" data-dismiss="alert" aria-hidden="true">×</button>
     Hey! This is a <span class="fw-semi-bold">real app</span> with CRUD and Search functions. Have fun!
@@ -561,28 +558,26 @@
         <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt" id="folders-list">
             <li class="nav-item active">
                 <a class="nav-link" href="../other/inbox.html">
-                    <span class="badge badge-pill badge-default text-inverse float-right">2</span>
-                    Inbox
+                    <p class="m-0">Inbox</p>
+                    <span class="badge badge-pill badge-primary">2</span>
                 </a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Starred</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Sent Mail</a></li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="badge badge-pill badge-danger float-right">3</span>
-                    Draft
+                    <p class="m-0">Draft</p>
+                    <span class="badge badge-pill badge-danger">3</span>
+
                 </a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
         </ul>
         <h6 class="mt">QUICK VIEW</h6>
         <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg fs-mini">
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle text-danger float-right"></i> Work
-                </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle text-white float-right"></i>
-                    Private </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle text-gray-light float-right"></i>
-                    Saved </a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Work</p><i class="fa fa-circle text-danger"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Private</p><i class="fa fa-circle text-success"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Saved</p><i class="fa fa-circle text-warning"></i></a></li>
         </ul>
     </div>
     <div class="col-lg-9 col-xl-10">

@@ -1292,7 +1292,7 @@ body {
     color: $widget-color-header;
 
     .dropdown-toggle {
-      background: $default;
+
       color: $widget-color;
     }
     .dropdown-menu {
@@ -1420,7 +1420,7 @@ body {
   right: 0;
   padding: 14px;
   padding-right: 25px;
-
+  cursor: pointer;
   &.left{
     left: 0;
     right: auto;
@@ -1594,13 +1594,13 @@ code {
   .fullscreened .jumbotron{
     height: 100vh;
     border-radius: 0;
-    background: radial-gradient(farthest-side ellipse at 10% 0,#333867,#17193b);
+
   }
 
   .fullscreened .jumbotron{
     height: 100vh;
     border-radius: 0;
-    background: radial-gradient(farthest-side ellipse at 10% 0,#333867,#17193b);
+
   }
   .widget:not(.fullscreened) > header{
     cursor: move;
@@ -1792,10 +1792,6 @@ input[type=search], input.search {
     margin-top: $spacer * 2;
     margin-bottom: -$spacer * 3;
   }
-
-  .product-element {
-    margin-bottom: 60px;
-  }
 }
 
 .product-filter-modal {
@@ -1882,12 +1878,10 @@ input[type=search], input.search {
 
 .product-card {
   .card-photo {
-    height: 320px;
+    height: 221px;
     background-size: cover;
     background-position: center;
     position: relative;
-    border-radius: 10px;
-    box-shadow: $widget-card-shadow;
 
     @include media-breakpoint-down(sm) {
       height: 200px;
@@ -1907,6 +1901,7 @@ input[type=search], input.search {
       top: $spacer;
       border-radius: 0;
       padding: ($spacer / 2) $spacer;
+      transform: rotate(90deg);
       font-size: $font-size-base;
       font-weight: $font-weight-thin;
     }
@@ -1930,7 +1925,7 @@ input[type=search], input.search {
 
   .card-title {
     margin: $spacer 0 $spacer / 2;
-    font-weight: $font-weight-normal;
+    font-weight: $font-weight-semi-bold;
     color: $body-main-color;
   }
 
@@ -1958,11 +1953,16 @@ input[type=search], input.search {
     }
   }
 }
+.info {
+  margin-top: $spacer;
+  font-size: $font-size-base;
+}
 
 .price {
   font-size: $font-size-larger;
   font-weight: $font-weight-semi-bold;
   color: $body-main-color;
+  margin-bottom: $spacer / 2;
 
   &.price-sale {
     font-weight: $font-weight-normal;
