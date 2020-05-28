@@ -51,11 +51,18 @@
                     <span class="icon-text">Email</span>
                 </a>
             </li>
-            <li class="{{#activeClass active "documentation"}} active {{/activeClass}}">
-                <a href="">
+            <li class="{{#activeClass active "quick_start structure"}} active {{/activeClass}}">
+                <a class="collapsed" href="#sidebar-doc" data-toggle="collapse" data-parent="#sidebar">
                     <i class="sidebar-icon documentation-icon"></i>
                     <span class="icon-text">Documentation</span>
+                    <i class="toggle fa fa-angle-down"></i>
                 </a>
+                <ul id="sidebar-doc" class="collapse {{#activeClass active "core_typography structure components purchase"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "quick_start"}} active {{/activeClass}}"><a href="../documentation/quick_start.html">Quick Start</a></li>
+                    <li class="{{#activeClass active "structure"}} active {{/activeClass}}"><a href="../documentation/structure.html">Structure</a></li>
+                    <li class="{{#activeClass active "components"}} active {{/activeClass}}"><a href="../documentation/components.html">Components</a></li>
+                    <li class="{{#activeClass active "purchase"}} active {{/activeClass}}"><a href="https://flatlogic.com/templates/bootstrap" target="_blank">Purchase</a></li>
+                </ul>
             </li>
         </ul>
         <h5 class="sidebar-nav-title">Template </h5>

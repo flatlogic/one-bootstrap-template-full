@@ -1,0 +1,41 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Structure"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="structure"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item active">Structure</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Structure</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <p>Flatlogic One package goes with the following folders:</p>
+                            <ul>
+                                <li><strong>*root*</strong> - configuration files;</li>
+                                <li><strong>src</strong> - hbs and scss files, images;</li>
+                                <li><strong>dist</strong> - built project;</li>
+                                <li><strong>node_modules</strong> - various JS libraries used in Sing App. As of we are using Yarn here it's strongly recommended to
+                                    add/update/remove libraries only via Yarn;</li>
+                            </ul>
+                            <br>
+                            <p>Next folders are not essential and can be removed from package:</p>
+                            <ul>
+                                <li>demo - demo data (images, json, etc);</li>
+                                <li>sass - scss stylesheets. We also have a recommendation here for you - if possible use sass or less insted of pure css.
+                                    Saves time &amp; simplifies your styling work.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

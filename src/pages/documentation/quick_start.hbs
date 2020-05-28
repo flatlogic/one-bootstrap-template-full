@@ -1,0 +1,36 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Quick Start"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="quick_start"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item active">Quick Start</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Quick Start</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <ol class="pl-3">
+                                <li><p>Run <code>yarn install</code>.
+                                    This will install run-time project dependencies and developer tools listed in package.json file.</p></li>
+                                <li><p>Run <code>yarn build</code>.
+                                    This command will build the app from the source files (<b>/src</b>) into the output <b>/dist</b> folder. Then open <b>dist/index.html</b> in your browser.
+                                    <br><br>Now you can open your web app in a browser, on mobile devices and start hacking. Then open dist/dashboard/index.html in your browser.
+                                    The page must be served from a web server, e.g. apache, nginx, WebStorm built-in web server, etc., otherwise some features may not work properly.</p></li>
+                                <li><p>Run <code>yarn watch</code>.
+                                    This command will watch for changes in <b>/src</b> and recompile handlebars' templates &amp; scss styles on the fly into html &amp; css accordingly.</p></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

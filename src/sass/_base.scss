@@ -1284,6 +1284,12 @@ body {
   .widget-body {
     color: $body-main-color;
 
+    .components-block {
+      background: $body-main-color;
+      overflow: auto;
+      width: auto;
+      padding: .2em .6em;
+    }
   }
 
   > header {
