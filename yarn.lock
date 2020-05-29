@@ -631,7 +631,7 @@ block-stream@*:
   version "0.0.0"
   resolved "https://github.com/amoffat/bootstrap-application-wizard.git#91c9ba33efa3929be46b68616a128da4470f552e"
 
-bootstrap-colorpicker@^2.3.0:
+bootstrap-colorpicker@^2.5.3:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/bootstrap-colorpicker/-/bootstrap-colorpicker-2.5.3.tgz#b50aff8590fbaa6b5aa63a5624e4213f1659a49d"
   integrity sha512-xdllX8LSMvKULs3b8JrgRXTvyvjkSMHHHVuHjjN5FNMqr6kRe5NPiMHFmeAFjlgDF73MspikudLuEwR28LbzLw==

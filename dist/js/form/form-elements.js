@@ -18,7 +18,8 @@ $(function(){
         $('#datetimepicker1').datetimepicker({
         });
 
-        $('#colorpicker').colorpicker({color: Sing.colors['brand-danger']});
+        $('#colorpicker').colorpicker({color: Sing.colors['brand-warning']}
+            );
 
         $("#mask-phone").inputmask({mask: "(999) 999-9999"});
         $("#mask-date").inputmask({mask: "99-99-9999"});

@@ -1,6 +1,6 @@
-{{#extend "layout" title="Flatlogic One Bootstrap - Product Grid"}}
+{{#extend "layout" title="Flatlogic One Bootstrap - Product Management"}}
 {{#content "sidebar"}}
-{{> sidebar active="product_grid"}}
+{{> sidebar active="product_management"}}
 {{/content}}
 {{#content "content" mode="replace"}}
 <div class="product-grid">
@@ -13,75 +13,44 @@
             <div class="widget">
                 <div class="widget-body">
                     <div class="table-striped" style="height: 100%;">
-                        <div class="table-header-wrapper">
-                            <table class="table table-hover">
-                                <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                </colgroup>
+                        <div class="" style="height: 100%;">
+                            <table class="table">
                                 <thead>
                                 <tr>
                                     <th class="width-50" data-is-only-head="false" data-field="id" style="text-align: left;">
-                                        <span class="fs-sm">ID</span>
-                                        <div>
-
-                                        </div>
+                                        <span >ID</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="img" style="text-align: left;">
-                                        <span class="fs-sm">Image</span>
-                                        <div></div>
+                                        <span >Image</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="title" style="text-align: left;">
-                                        <span class="fs-sm">Title</span>
-                                        <div></div>
+                                        <span >Title</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="subtitle" style="text-align: left;">
-                                        <span class="fs-sm">Subtitle</span>
-                                        <div></div>
+                                        <span >Subtitle</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="price" style="text-align: left;">
-                                        <span class="fs-sm">Price($)</span>
-                                        <div></div>
+                                        <span >Price($)</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="rating" style="text-align: left;">
-                                        <span class="fs-sm">Rating</span>
-                                        <div></div>
+                                        <span >Rating</span>
                                     </th>
                                     <th class="" data-is-only-head="false" data-field="undefined" style="text-align: left;">
-                                        <span class="fs-sm">Api</span>
-                                        <div></div>
+                                        <span >Api</span>
                                     </th>
                                 </tr>
                                 </thead>
-                            </table>
-                        </div>
-                        <div class="" style="height: 100%;">
-                            <table class="table">
-                                <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                </colgroup>
                                 <tbody>
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">1</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product1.png" alt="..." style="height: 171px" title="image"></td>
+                                        <img src="../demo/img/products/product1.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Trainers</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
                                     <td class="" style="text-align: left;">76</td>
                                     <td class="" style="text-align: left;">
-                                        <div class="">
+                                        <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star pl-1" aria-hidden="true"></i>
                                             <i class="fa fa-star pl-1" aria-hidden="true"></i>
@@ -90,7 +59,7 @@
                                             <span class="pl-2">(4.6)</span>
                                         </div>
                                     </td>
-                                    <td tabindex="7" class="" style="text-align: left;">
+                                    <td style="text-align: left;">
                                         <div role="toolbar" class="d-flex flex-column btn-toolbar">
                                             <button type="button" class="btn btn-info btn-xs" style="background-color: transparent; color: rgb(159, 219, 233); display: block;">
                                                 <span class="d-none d-md-inline-block">Edit</span>
@@ -109,7 +78,7 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">2</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product2.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product2.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Boots</a></td>
                                     <td class="" style="text-align: left;">Trainers In Blue</td>
@@ -138,12 +107,12 @@
                                 </tr>
                                 <tr class=""><td class="width-50" style="text-align: left;">3</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product3.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product3.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;"><a href="#/app/ecommerce/product/3">Flat sandals</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
                                     <td class="" style="text-align: left;">55</td>
                                     <td class="" style="text-align: left;">
-                                        <div class="">
+                                        <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star pl-1" aria-hidden="true"></i>
                                             <i class="fa fa-star pl-1" aria-hidden="true"></i>
@@ -170,18 +139,20 @@
                                 </tr>
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">4</td>
-                                    <td class="" style="text-align: left;"><img src="../demo/img/products/product4.png" alt="..." class="" title="image"></td>
+                                    <td class="" style="text-align: left;"><img src="../demo/img/products/product4.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Trainers</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
                                     <td class="" style="text-align: left;">76</td>
-                                    <td class="" style="text-align: left;"><div class="">
+                                    <td class="" style="text-align: left;">
+                                        <div class="rating">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star pl-1" aria-hidden="true"></i>
                                         <i class="fa fa-star pl-1" aria-hidden="true"></i>
                                         <i class="fa fa-star pl-1" aria-hidden="true"></i>
                                         <i class="fa fa-star-half pl-1" aria-hidden="true"></i>
-                                        <span class="pl-2">(4.6)</span></div></td>
+                                        <span class="pl-2">(4.6)</span></div>
+                                    </td>
                                     <td class="" style="text-align: left;">
                                         <div role="toolbar" class="d-flex flex-column btn-toolbar">
                                             <button type="button" class="btn btn-info btn-xs" style="background-color: transparent; color: rgb(159, 219, 233); display: block;">
@@ -200,7 +171,7 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">5</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product5.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product5.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;"><a href="#">Boots</a></td>
                                     <td class="" style="text-align: left;">Trainers In Blue</td>
                                     <td class="" style="text-align: left;">45</td>
@@ -233,7 +204,7 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">6</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product6.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product6.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;"><a href="#">Flat sandals</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
                                     <td class="" style="text-align: left;">55</td>
@@ -267,7 +238,7 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">7</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product7.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product7.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Trainers</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
@@ -300,9 +271,9 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">8</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product8.png" alt="..." title="image"></td>
+                                        <img src="../demo/img/products/product8.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
-                                        <a href="#/app/ecommerce/product/8">Boots</a></td>
+                                        <a href="#">Boots</a></td>
                                     <td class="" style="text-align: left;">Trainers In Blue</td>
                                     <td class="" style="text-align: left;">45</td>
                                     <td class="" style="text-align: left;">
@@ -333,7 +304,7 @@
                                 <tr class="">
                                     <td class="width-50" style="text-align: left;">9</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product9.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product9.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Flat sandals</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
@@ -365,7 +336,7 @@
                                 </tr>
                                 <tr class=""><td class="width-50" style="text-align: left;">10</td>
                                     <td class="" style="text-align: left;">
-                                        <img src="../demo/img/products/product10.png" alt="..." class="" title="image"></td>
+                                        <img src="../demo/img/products/product10.png" alt="..." class="width-150" title="image"></td>
                                     <td class="" style="text-align: left;">
                                         <a href="#">Trainers</a></td>
                                     <td class="" style="text-align: left;">Trainers In White</td>
@@ -408,44 +379,6 @@
 
 {{/content}}
 {{#content "scripts"}}
-<div class="product-filter-modal">
-        <div class="filter-modal-title">
-            <button class="close">
-                <img id="close_modal" class="hide" src="./../demo/img/cancel.svg" alt="close" />
-                <img id="back_modal" class="hide" src="./../demo/img/back.svg" alt="back" />
-            </button>
-            <h5 class="mb-0"></h5>
-        </div>
-        <ul id="sort-filters-list" class="filter-modal-body">
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Favourite</span>
-            </li>
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Price</span>
-            </li>
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Popular</span>
-            </li>
-        </ul>
-        <ul id="type-filters-list" class="filter-modal-body">
-            <li>Type</li>
-            <li>Brands</li>
-            <li>Size</li>
-            <li>Color</li>
-            <li>Range</li>
-        </ul>
-        <ul id="type-subfilters-list" class="filter-modal-body">
-        </ul>
-    </div>
 <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="../../node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
 <!-- page specific js -->
