@@ -532,7 +532,8 @@ function initAppFunctions(){
             $sidebarContent.slimscroll({
                 height: '100vh',
                 size: '5px',
-                opacity: 0.1
+                opacity: 0.1,
+                wheelStep: 10
             });
         }
 
@@ -603,9 +604,7 @@ function initDemoFunctions(){
 
         const sidebar = $(".sidebar");
         const navbar = $(".navbar");
-        const sup = $("sup");
-        const circle = $(".circle");
-        const styles = ["navbar-first ", "second ", "third ", "fourth ", "fifth ", "sixth ", "seventh ", "eighth ", "ninth "];
+        const styles = ["sidebar-first ", "second ", "third ", "fourth ", "fifth ", "sixth ", "seventh ", "eighth ", "ninth "];
 
         $("[name=navbar-type]").change(function() {
             if (this.value === 'floating') {
@@ -622,9 +621,9 @@ function initDemoFunctions(){
                 sidebar.addClass('sidebar-transparent')
             }
             else
-                {
+            {
                 sidebar.removeClass('sidebar-transparent')
-                }
+            }
         });
 
         $('.colors-list .color-box-nav-bar').click(function(e) {
@@ -641,13 +640,26 @@ function initDemoFunctions(){
             sidebar.toggleClass('sidebar-dark');
 
             target.addClass('active');
+            localStorage.setItem('sidebarThem', sidebar.attr('class'));
         });
 
         $('.colors-list .color-box').click(function(e) {
             const target = $(e.target);
             $('.color-box').removeClass('active-theme');
+            sidebar.removeClass(styles.join("sidebar-")).addClass(`sidebar-${target.data('style')}`);
 
             target.addClass('active-theme');
+            localStorage.setItem('sidebarThem', sidebar.attr('class'));
         });
+
+        //Theme load on reload
+
+        function themeLoad() {
+            if (localStorage.getItem('sidebarThem')) {
+                sidebar.removeClass().addClass(localStorage.getItem('sidebarThem'))
+            }
+
+        }
+        themeLoad();
     }(jQuery);
 }
