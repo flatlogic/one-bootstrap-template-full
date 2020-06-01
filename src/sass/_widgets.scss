@@ -132,12 +132,11 @@
   padding-right: 15px;
 
   & + .stat-item{
-    padding-left: 15px;
+    padding-left: $spacer * 2;
     border-left: 1px solid $hr-border-color;
   }
   .name{
     margin-bottom: 2px;
-    margin-top: 10px;
   }
 
   &.stat-item-mini-chart{
@@ -546,9 +545,13 @@
   }
 }
 
+/***********************************/
+/**          Post Comments        **/
+/***********************************/
+
 .post-links{
   margin-bottom: 0;
-  font-size: $font-size-sm;
+  font-size: $font-size-base;
   padding-left: 0;
   @include clearfix();
   > li{
@@ -557,14 +560,15 @@
 
     + li{
       &:before{
-        color: #999;
+        color: #cecece;
         content: "\25cf";
         padding: 0 8px;
+        font-size: 12px;
       }
     }
     > a{
       text-decoration: none;
-      color: $text-muted;
+      color: $primary;
       &:hover{
         color: $text-muted;
       }
@@ -579,12 +583,7 @@
   }
 }
 
-/***********************************/
-/**          Post Comments           **/
-/***********************************/
-
 .post-comments{
-  font-size: $font-size-sm;
   padding-left: 0;
   @include clearfix();
 
@@ -622,7 +621,7 @@
   }
 
   h6.author > small{
-    font-size: 11px;
+    color: $text-muted;
   }
 
   .widget > footer &{
@@ -638,12 +637,7 @@
 .post-user{
   position: relative;
   @include clearfix();
-
-  img{
-    border: 3px solid white;
-  }
 }
-
 
 /***********************************/
 /**            Gallery            **/
@@ -780,9 +774,43 @@
   }
 }
 
-.post-user-profile {
-  margin-top: -75px;
+.avatars-row {
+  display: flex;
+  padding-right: 10px;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    .avatar {
+      width: 35px;
+      height: 35px;
+      min-width: 35px;
+      position: relative;
+    }
+  }
+  .stroke {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    background: #fd5f00;
+    border: 2px solid #fff;
+  }
+}
 
+.post-user-profile {
+  margin-top: -90px;
+  @include media-breakpoint-down(lg) {
+    margin-top: -140px;
+  }
   .contacts {
     display: block;
     margin-top: 25px;
@@ -804,7 +832,7 @@
       }
 
       > a {
-        color: lighten($body-color, 30%);
+        color: $body-main-color;
         text-decoration: none;
 
         &:hover,
@@ -815,7 +843,7 @@
     }
 
     .fa {
-      font-size: $font-size-lg;
+      font-size: $font-size-xlg;
       vertical-align: middle;
     }
   }
@@ -832,7 +860,8 @@
 
     .value {
       font-size: 28px;
-      font-weight: $font-weight-base;
+      font-weight: $font-weight-normal;
+      margin-bottom: 0;
     }
   }
 }
@@ -1509,7 +1538,7 @@
     font-size: $font-size-lg * 1.9;
     line-height: initial;
     box-shadow: $widget-shadow-designated;
-    background: $yellow;
+    background: #feb04a;
 
 
     img {

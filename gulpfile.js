@@ -6,7 +6,6 @@ const sass = require("gulp-sass");
 const rename = require("gulp-rename");
 const hb = require("gulp-hb");
 const concat = require('gulp-concat');
-const resolveDependencies = require('gulp-resolve-dependencies');
 const layouts = require("handlebars-layouts");
 const runSequence = require("run-sequence");
 const sourcemaps = require("gulp-sourcemaps");
@@ -86,11 +85,11 @@ function styles() {
 //         'node_modules/jquery-pjax/jquery.pjax.js',
 //         'node_modules/popper.js/dist/umd/popper.js',
 //         'node_modules/bootstrap/dist/js/bootstrap.js',
-//         // 'node_modules/bootstrap/js/dist/util.js',
-//         // 'node_modules/widgster/widgster.js',
-//         // 'node_modules/hammerjs/hammer.js',
-//         // 'node_modules/jquery-slimscroll/jquery.slimscroll.js',
-//         // 'node_modules/jquery-hammerjs/jquery.hammer.js',
+//         'node_modules/bootstrap/js/dist/util.js',
+//         'node_modules/widgster/widgster.js',
+//         'node_modules/hammerjs/hammer.js',
+//         'node_modules/jquery-slimscroll/jquery.slimscroll.js',
+//         'node_modules/jquery-hammerjs/jquery.hammer.js',
 //         // 'src/js/app.js',
 //         // 'src/js/settings.js',
 //         // 'node_modules/apexcharts/dist/apexcharts.js'
@@ -110,7 +109,7 @@ exports.watch = function watch() {
   );
 };
 
-gulp.task("build", gulp.parallel(hbs, styles, copy, copyJS));
+gulp.task("build", gulp.parallel( hbs, styles, copy, copyJS));
 
 
 // Build Task

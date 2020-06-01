@@ -65,8 +65,8 @@
 
 @include thumb('.thumb-xl', 100px);
 @include thumb('.thumb-lg', 60px);
-@include thumb('.thumb', 48px);
-@include thumb('.thumb-sm', 34px);
+@include thumb('.thumb', 44px);
+@include thumb('.thumb-sm', 32px);
 @include thumb('.thumb-xs', 28px);
 
 .thumb-xs,
@@ -439,15 +439,15 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 
 //override bs .text-* classes so they use $brand-* variables
 
-@include text-emphasis-variant('.text-primary', #1f7db6);
+@include text-emphasis-variant('.text-primary', theme-color('primary'));
 
-@include text-emphasis-variant('.text-success', #38a383);
+@include text-emphasis-variant('.text-success', theme-color('success'));
 
-@include text-emphasis-variant('.text-info', #2Ca0ba);
+@include text-emphasis-variant('.text-info', theme-color('info'));
 
-@include text-emphasis-variant('.text-warning', #f29112);
+@include text-emphasis-variant('.text-warning', theme-color('warning'));
 
-@include text-emphasis-variant('.text-danger', #e05546);
+@include text-emphasis-variant('.text-danger', theme-color('danger'));
 
 @include text-emphasis-variant('.text-link', $link-color);
 
@@ -465,6 +465,9 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 .text-light{
   opacity: .8;
   color: inherit !important;
+}
+.fs-index {
+  font-size: $font-size-index;
 }
 
 .fs-mini{

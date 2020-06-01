@@ -214,8 +214,12 @@ legend {
     }
   }
 }
+.table-hover tbody tr:hover {
 
+  background-color: rgba(#323232, 0.1)!important;
+}
 .table th, .table td {
+
   vertical-align: middle;
 }
 
@@ -1846,8 +1850,10 @@ span.badge.badge-default {
 
 a.badge.badge-light {
   color: $gray-900;
+  background-color: $gray-200;
   &:hover, &:active {
     color: $gray-900;
+    background-color: $gray-300;
   }
 }
 
@@ -1955,9 +1961,9 @@ a.badge.badge-light {
    .contacts {
      li {
        a {
-         color: $blue;
+         color: $body-main-color;
          &:hover {
-           color: #104d97;
+           color: $body-main-color;
          }
        }
      }
@@ -1974,21 +1980,15 @@ a.badge.badge-light {
 
     .event-heading {
 
-        a {
+        a, span {
           color: $primary;
         }
     }
 
-    p {
-      color: $gray-800;
-    }
-
     footer{
       background: $widget-bg-color;
+      border-top: 1px solid #e9ecef;
     }
   }
-}
-.text-muted {
-  color: $body-main-color-small!important;
 }
 

@@ -196,40 +196,274 @@ body {
   font-family: 'Nunito', sans-serif;
   color: $body-main-color;
   font-size: 16px;
+
+  //icons preload
+
   &:after {
     content:
-      url(../img/icons/dashboard_filled.svg)
-      url(../img/icons/dashboard_outlined.svg)
-      url(../img/icons/e-commerce_filled.svg)
-      url(../img/icons/e-commerce_outlined.svg)
-      url(../img/icons/package_filled.svg)
-      url(../img/icons/package_outlined.svg)
-      url(../img/icons/profile_filled.svg)
-      url(../img/icons/profile_outlined.svg)
-      url(../img/icons/email_outlined.svg)
-      url(../img/icons/email_filled.svg)
-      url(../img/icons/documentation_filled.svg)
-      url(../img/icons/documentation_outlined.svg)
-      url(../img/icons/core_filled.svg)
-      url(../img/icons/core_outlined.svg)
-      url(../img/icons/ui_elements_filled.svg)
-      url(../img/icons/ui_elements_outlined.svg)
-      url(../img/icons/forms_filled.svg)
-      url(../img/icons/forms_outlined.svg)
-      url(../img/icons/charts_filled.svg)
-      url(../img/icons/charts_outlined.svg)
-      url(../img/icons/grid_filled.svg)
-      url(../img/icons/grid_outlined.svg)
-      url(../img/icons/maps_filled.svg)
-      url(../img/icons/maps_outlined.svg)
-      url(../img/icons/extra_filled.svg)
-      url(../img/icons/extra_outlined.svg)
-      url(../img/icons/typography_outlined.svg)
-      url(../img/icons/typography_filled.svg)
-      url(../img/icons/tables_filled.svg)
-      url(../img/icons/tables_outlined.svg)
-      url(../img/icons/ui_elements_filled.svg)
-      url(../img/icons/ui_elements_outlined.svg);
+    url(../img/icons/dashboard_filled.svg)
+    url(../img/icons/dashboard_outlined.svg)
+    url(../img/icons/e-commerce_filled.svg)
+    url(../img/icons/e-commerce_outlined.svg)
+    url(../img/icons/package_filled.svg)
+    url(../img/icons/package_outlined.svg)
+    url(../img/icons/profile_filled.svg)
+    url(../img/icons/profile_outlined.svg)
+    url(../img/icons/email_outlined.svg)
+    url(../img/icons/email_filled.svg)
+    url(../img/icons/documentation_filled.svg)
+    url(../img/icons/documentation_outlined.svg)
+    url(../img/icons/core_filled.svg)
+    url(../img/icons/core_outlined.svg)
+    url(../img/icons/ui_elements_filled.svg)
+    url(../img/icons/ui_elements_outlined.svg)
+    url(../img/icons/forms_filled.svg)
+    url(../img/icons/forms_outlined.svg)
+    url(../img/icons/charts_filled.svg)
+    url(../img/icons/charts_outlined.svg)
+    url(../img/icons/grid_filled.svg)
+    url(../img/icons/grid_outlined.svg)
+    url(../img/icons/maps_filled.svg)
+    url(../img/icons/maps_outlined.svg)
+    url(../img/icons/extra_filled.svg)
+    url(../img/icons/extra_outlined.svg)
+    url(../img/icons/typography_outlined.svg)
+    url(../img/icons/typography_filled.svg)
+    url(../img/icons/tables_filled.svg)
+    url(../img/icons/tables_outlined.svg)
+    url(../img/icons/ui_elements_filled.svg)
+    url(../img/icons/ui_elements_outlined.svg)
+
+    url(../img/icons/blue/dashboard_filled.svg)
+    url(../img/icons/blue/dashboard_outlined.svg)
+    url(../img/icons/blue/e-commerce_filled.svg)
+    url(../img/icons/blue/e-commerce_outlined.svg)
+    url(../img/icons/blue/package_filled.svg)
+    url(../img/icons/blue/package_outlined.svg)
+    url(../img/icons/blue/profile_filled.svg)
+    url(../img/icons/blue/profile_outlined.svg)
+    url(../img/icons/blue/email_outlined.svg)
+    url(../img/icons/blue/email_filled.svg)
+    url(../img/icons/blue/documentation_filled.svg)
+    url(../img/icons/blue/documentation_outlined.svg)
+    url(../img/icons/blue/core_filled.svg)
+    url(../img/icons/blue/core_outlined.svg)
+    url(../img/icons/blue/ui_elements_filled.svg)
+    url(../img/icons/blue/ui_elements_outlined.svg)
+    url(../img/icons/blue/forms_filled.svg)
+    url(../img/icons/blue/forms_outlined.svg)
+    url(../img/icons/blue/charts_filled.svg)
+    url(../img/icons/blue/charts_outlined.svg)
+    url(../img/icons/blue/grid_filled.svg)
+    url(../img/icons/blue/grid_outlined.svg)
+    url(../img/icons/blue/maps_filled.svg)
+    url(../img/icons/blue/maps_outlined.svg)
+    url(../img/icons/blue/extra_filled.svg)
+    url(../img/icons/blue/extra_outlined.svg)
+    url(../img/icons/blue/typography_outlined.svg)
+    url(../img/icons/blue/typography_filled.svg)
+    url(../img/icons/blue/tables_filled.svg)
+    url(../img/icons/blue/tables_outlined.svg)
+    url(../img/icons/blue/ui_elements_filled.svg)
+    url(../img/icons/blue/ui_elements_outlined.svg)
+
+    url(../img/icons/green/dashboard_filled.svg)
+    url(../img/icons/green/dashboard_outlined.svg)
+    url(../img/icons/green/e-commerce_filled.svg)
+    url(../img/icons/green/e-commerce_outlined.svg)
+    url(../img/icons/green/package_filled.svg)
+    url(../img/icons/green/package_outlined.svg)
+    url(../img/icons/green/profile_filled.svg)
+    url(../img/icons/green/profile_outlined.svg)
+    url(../img/icons/green/email_outlined.svg)
+    url(../img/icons/green/email_filled.svg)
+    url(../img/icons/green/documentation_filled.svg)
+    url(../img/icons/green/documentation_outlined.svg)
+    url(../img/icons/green/core_filled.svg)
+    url(../img/icons/green/core_outlined.svg)
+    url(../img/icons/green/ui_elements_filled.svg)
+    url(../img/icons/green/ui_elements_outlined.svg)
+    url(../img/icons/green/forms_filled.svg)
+    url(../img/icons/green/forms_outlined.svg)
+    url(../img/icons/green/charts_filled.svg)
+    url(../img/icons/green/charts_outlined.svg)
+    url(../img/icons/green/grid_filled.svg)
+    url(../img/icons/green/grid_outlined.svg)
+    url(../img/icons/green/maps_filled.svg)
+    url(../img/icons/green/maps_outlined.svg)
+    url(../img/icons/green/extra_filled.svg)
+    url(../img/icons/green/extra_outlined.svg)
+    url(../img/icons/green/typography_outlined.svg)
+    url(../img/icons/green/typography_filled.svg)
+    url(../img/icons/green/tables_filled.svg)
+    url(../img/icons/green/tables_outlined.svg)
+    url(../img/icons/green/ui_elements_filled.svg)
+    url(../img/icons/green/ui_elements_outlined.svg)
+
+    url(../img/icons/red/dashboard_filled.svg)
+    url(../img/icons/red/dashboard_outlined.svg)
+    url(../img/icons/red/e-commerce_filled.svg)
+    url(../img/icons/red/e-commerce_outlined.svg)
+    url(../img/icons/red/package_filled.svg)
+    url(../img/icons/red/package_outlined.svg)
+    url(../img/icons/red/profile_filled.svg)
+    url(../img/icons/red/profile_outlined.svg)
+    url(../img/icons/red/email_outlined.svg)
+    url(../img/icons/red/email_filled.svg)
+    url(../img/icons/red/documentation_filled.svg)
+    url(../img/icons/red/documentation_outlined.svg)
+    url(../img/icons/red/core_filled.svg)
+    url(../img/icons/red/core_outlined.svg)
+    url(../img/icons/red/ui_elements_filled.svg)
+    url(../img/icons/red/ui_elements_outlined.svg)
+    url(../img/icons/red/forms_filled.svg)
+    url(../img/icons/red/forms_outlined.svg)
+    url(../img/icons/red/charts_filled.svg)
+    url(../img/icons/red/charts_outlined.svg)
+    url(../img/icons/red/grid_filled.svg)
+    url(../img/icons/red/grid_outlined.svg)
+    url(../img/icons/red/maps_filled.svg)
+    url(../img/icons/red/maps_outlined.svg)
+    url(../img/icons/red/extra_filled.svg)
+    url(../img/icons/red/extra_outlined.svg)
+    url(../img/icons/red/typography_outlined.svg)
+    url(../img/icons/red/typography_filled.svg)
+    url(../img/icons/red/tables_filled.svg)
+    url(../img/icons/red/tables_outlined.svg)
+    url(../img/icons/red/ui_elements_filled.svg)
+    url(../img/icons/red/ui_elements_outlined.svg)
+
+    url(../img/icons/dark-sidebar/red/dashboard_filled.svg)
+    url(../img/icons/dark-sidebar/red/dashboard_outlined.svg)
+    url(../img/icons/dark-sidebar/red/e-commerce_filled.svg)
+    url(../img/icons/dark-sidebar/red/e-commerce_outlined.svg)
+    url(../img/icons/dark-sidebar/red/package_filled.svg)
+    url(../img/icons/dark-sidebar/red/package_outlined.svg)
+    url(../img/icons/dark-sidebar/red/profile_filled.svg)
+    url(../img/icons/dark-sidebar/red/profile_outlined.svg)
+    url(../img/icons/dark-sidebar/red/email_outlined.svg)
+    url(../img/icons/dark-sidebar/red/email_filled.svg)
+    url(../img/icons/dark-sidebar/red/documentation_filled.svg)
+    url(../img/icons/dark-sidebar/red/documentation_outlined.svg)
+    url(../img/icons/dark-sidebar/red/core_filled.svg)
+    url(../img/icons/dark-sidebar/red/core_outlined.svg)
+    url(../img/icons/dark-sidebar/red/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/red/ui_elements_outlined.svg)
+    url(../img/icons/dark-sidebar/red/forms_filled.svg)
+    url(../img/icons/dark-sidebar/red/forms_outlined.svg)
+    url(../img/icons/dark-sidebar/red/charts_filled.svg)
+    url(../img/icons/dark-sidebar/red/charts_outlined.svg)
+    url(../img/icons/dark-sidebar/red/grid_filled.svg)
+    url(../img/icons/dark-sidebar/red/grid_outlined.svg)
+    url(../img/icons/dark-sidebar/red/maps_filled.svg)
+    url(../img/icons/dark-sidebar/red/maps_outlined.svg)
+    url(../img/icons/dark-sidebar/red/extra_filled.svg)
+    url(../img/icons/dark-sidebar/red/extra_outlined.svg)
+    url(../img/icons/dark-sidebar/red/typography_outlined.svg)
+    url(../img/icons/dark-sidebar/red/typography_filled.svg)
+    url(../img/icons/dark-sidebar/red/tables_filled.svg)
+    url(../img/icons/dark-sidebar/red/tables_outlined.svg)
+    url(../img/icons/dark-sidebar/red/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/red/ui_elements_outlined.svg)
+
+    url(../img/icons/dark-sidebar/blue/dashboard_filled.svg)
+    url(../img/icons/dark-sidebar/blue/dashboard_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/e-commerce_filled.svg)
+    url(../img/icons/dark-sidebar/blue/e-commerce_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/package_filled.svg)
+    url(../img/icons/dark-sidebar/blue/package_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/profile_filled.svg)
+    url(../img/icons/dark-sidebar/blue/profile_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/email_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/email_filled.svg)
+    url(../img/icons/dark-sidebar/blue/documentation_filled.svg)
+    url(../img/icons/dark-sidebar/blue/documentation_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/core_filled.svg)
+    url(../img/icons/dark-sidebar/blue/core_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/blue/ui_elements_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/forms_filled.svg)
+    url(../img/icons/dark-sidebar/blue/forms_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/charts_filled.svg)
+    url(../img/icons/dark-sidebar/blue/charts_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/grid_filled.svg)
+    url(../img/icons/dark-sidebar/blue/grid_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/maps_filled.svg)
+    url(../img/icons/dark-sidebar/blue/maps_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/extra_filled.svg)
+    url(../img/icons/dark-sidebar/blue/extra_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/typography_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/typography_filled.svg)
+    url(../img/icons/dark-sidebar/blue/tables_filled.svg)
+    url(../img/icons/dark-sidebar/blue/tables_outlined.svg)
+    url(../img/icons/dark-sidebar/blue/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/blue/ui_elements_outlined.svg)
+
+    url(../img/icons/dark-sidebar/green/dashboard_filled.svg)
+    url(../img/icons/dark-sidebar/green/dashboard_outlined.svg)
+    url(../img/icons/dark-sidebar/green/e-commerce_filled.svg)
+    url(../img/icons/dark-sidebar/green/e-commerce_outlined.svg)
+    url(../img/icons/dark-sidebar/green/package_filled.svg)
+    url(../img/icons/dark-sidebar/green/package_outlined.svg)
+    url(../img/icons/dark-sidebar/green/profile_filled.svg)
+    url(../img/icons/dark-sidebar/green/profile_outlined.svg)
+    url(../img/icons/dark-sidebar/green/email_outlined.svg)
+    url(../img/icons/dark-sidebar/green/email_filled.svg)
+    url(../img/icons/dark-sidebar/green/documentation_filled.svg)
+    url(../img/icons/dark-sidebar/green/documentation_outlined.svg)
+    url(../img/icons/dark-sidebar/green/core_filled.svg)
+    url(../img/icons/dark-sidebar/green/core_outlined.svg)
+    url(../img/icons/dark-sidebar/green/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/green/ui_elements_outlined.svg)
+    url(../img/icons/dark-sidebar/green/forms_filled.svg)
+    url(../img/icons/dark-sidebar/green/forms_outlined.svg)
+    url(../img/icons/dark-sidebar/green/charts_filled.svg)
+    url(../img/icons/dark-sidebar/green/charts_outlined.svg)
+    url(../img/icons/dark-sidebar/green/grid_filled.svg)
+    url(../img/icons/dark-sidebar/green/grid_outlined.svg)
+    url(../img/icons/dark-sidebar/green/maps_filled.svg)
+    url(../img/icons/dark-sidebar/green/maps_outlined.svg)
+    url(../img/icons/dark-sidebar/green/extra_filled.svg)
+    url(../img/icons/dark-sidebar/green/extra_outlined.svg)
+    url(../img/icons/dark-sidebar/green/typography_outlined.svg)
+    url(../img/icons/dark-sidebar/green/typography_filled.svg)
+    url(../img/icons/dark-sidebar/green/tables_filled.svg)
+    url(../img/icons/dark-sidebar/green/tables_outlined.svg)
+    url(../img/icons/dark-sidebar/green/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/green/ui_elements_outlined.svg)
+
+    url(../img/icons/dark-sidebar/yellow/dashboard_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/dashboard_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/e-commerce_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/e-commerce_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/package_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/package_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/profile_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/profile_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/email_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/email_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/documentation_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/documentation_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/core_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/core_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/ui_elements_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/forms_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/forms_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/charts_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/charts_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/grid_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/grid_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/maps_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/maps_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/extra_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/extra_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/typography_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/typography_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/tables_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/tables_outlined.svg)
+    url(../img/icons/dark-sidebar/yellow/ui_elements_filled.svg)
+    url(../img/icons/dark-sidebar/yellow/ui_elements_outlined.svg);
     display: none;
   }
 }
@@ -256,8 +490,8 @@ body {
   }
 
   .content-footer {
-    position: absolute;
-    bottom: 10px;
+    padding-top: 30px;
+    margin-bottom: -20px;
     color: $gray-400;
   }
 }
@@ -279,7 +513,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $logo-color;
+    color: white;
     text-decoration: none;
     text-transform: capitalize;
     white-space: nowrap;
@@ -866,7 +1100,7 @@ body {
     }
 
     .sidebar-icon.dashboard-icon {
-      @include sidebar-icons('../img/icons/dark-sidebar/yellow/dashboard_filled.svg');
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/dashboard_outlined.svg');
     }
     .active .sidebar-icon.dashboard-icon {
       @include sidebar-icons('../img/icons/dark-sidebar/yellow/dashboard_filled.svg');
@@ -997,7 +1231,7 @@ body {
     }
 
     .sidebar-icon.dashboard-icon {
-      @include sidebar-icons('../img/icons/dark-sidebar/red/dashboard_filled.svg');
+      @include sidebar-icons('../img/icons/dark-sidebar/red/dashboard_outlined.svg');
     }
     .active .sidebar-icon.dashboard-icon {
       @include sidebar-icons('../img/icons/dark-sidebar/red/dashboard_filled.svg');
@@ -1128,7 +1362,7 @@ body {
     }
 
     .sidebar-icon.dashboard-icon {
-      @include sidebar-icons('../img/icons/dark-sidebar/green/dashboard_filled.svg');
+      @include sidebar-icons('../img/icons/dark-sidebar/green/dashboard_outlined.svg');
     }
     .active .sidebar-icon.dashboard-icon {
       @include sidebar-icons('../img/icons/dark-sidebar/green/dashboard_filled.svg');
@@ -1258,7 +1492,7 @@ body {
       border-right: 3px solid theme-color('info');
     }
     .sidebar-icon.dashboard-icon {
-      @include sidebar-icons('../img/icons/dark-sidebar/blue/dashboard_filled.svg');
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/dashboard_outlined.svg');
     }
     .active .sidebar-icon.dashboard-icon {
       @include sidebar-icons('../img/icons/dark-sidebar/blue/dashboard_filled.svg');
@@ -1407,7 +1641,7 @@ body {
       margin-left: auto;
       margin-right: 35px;
       line-height: 18px;
-      font-size: 26px;
+      font-size: 20px;
       color: #FFAD01;
       transition: transform .35s ease;
     }
@@ -1416,21 +1650,20 @@ body {
       transform: rotate(-90deg);
       margin-left: auto;
       margin-right: 35px;
-      font-size: 26px;
+      font-size: 20px;
       color: #C1C2C1;
     }
 
     .badge {
-      line-height: 11px;
-      padding: .4rem .5rem;
+      line-height: 15px;
       border-radius: 50%;
       margin: 0 33px 0 auto;
       background: #ffeace82;
       color: $body-main-color;
       border: 1px solid $warning;
       font-weight: 400;
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       font-size: 11px;
     }
   }
