@@ -1,4 +1,24 @@
 $(function(){
+    let colors = {
+        'white': '#fff',
+        'black': '#323232',
+        'gray-100': '#f8f9fa',
+        'gray-200': '#e9ecef',
+        'gray-300': '#dee2e6',
+        'gray-400': '#ced4da',
+        'gray-500': '#adb5bd',
+        'gray-600': '#6c757d',
+        'gray-700': '#495057',
+        'gray-800': '#343a40',
+        'gray-900': '#212529',
+        'brand-primary': '#1f7db6',
+        'brand-success': '#38a383',
+        'brand-danger': '#e05546',
+        'brand-warning': '#feb04a',
+        'brand-info': '#12b4de',
+        'body-bg': '#fafbff',
+        'brand-secondary': '#5B5B5B'
+    };
 
     function apexChartFirst() {
         let options = {
@@ -168,10 +188,10 @@ $(function(){
                     },
                 }
             },
-            colors: [Sing.colors['brand-danger']],
+            colors: [colors['brand-danger']],
 
             stroke: {
-                colors: [Sing.colors['brand-danger']],
+                colors: [colors['brand-danger']],
                 curve: 'smooth'
             },
             xaxis: {
@@ -228,9 +248,9 @@ $(function(){
                     },
                 }
             },
-            colors: [Sing.colors['brand-warning']],
+            colors: [colors['brand-warning']],
             stroke: {
-                colors: [Sing.colors['brand-warning']],
+                colors: [colors['brand-warning']],
                 curve: 'smooth'
             },
             xaxis: {
@@ -283,14 +303,14 @@ $(function(){
                     }
                 }
             },
-            colors: [Sing.colors['brand-warning'], Sing.colors['black']],
+            colors: [colors['brand-warning'], colors['black']],
             fill: {
                 colors: [ '#fff5e0' ]
             },
             stroke: {
                 width: [4, 4],
                 opacity: 0.5,
-                colors: [Sing.colors['brand-warning'], Sing.colors['black']],
+                colors: [colors['brand-warning'], colors['black']],
                 curve: 'smooth'
             },
 
@@ -300,7 +320,7 @@ $(function(){
                 position: 'top',
                 horizontalAlign: 'center',
                 markers: {
-                    fillColors :[Sing.colors['brand-warning'], Sing.colors['black']]
+                    fillColors :[colors['brand-warning'], colors['black']]
                 }
             },
             yaxis: {
@@ -340,9 +360,9 @@ $(function(){
                 height: 180,
                 width: '100%'
             },
-            colors: [Sing.colors['brand-warning'], Sing.colors['brand-danger'], Sing.colors['black']],
+            colors: [colors['brand-warning'], colors['brand-danger'], colors['black']],
             fill: {
-                colors: [Sing.colors['brand-warning'], Sing.colors['brand-danger'], Sing.colors['black']]
+                colors: [colors['brand-warning'], colors['brand-danger'], colors['black']]
             },
             plotOptions: {
                 pie: {

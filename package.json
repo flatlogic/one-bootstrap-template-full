@@ -1,7 +1,7 @@
 {
-  "name": "Sing",
+  "name": "One",
   "version": "4.5.0",
-  "description": "Sing App - Bootstrap 4 Admin Dashboard",
+  "description": "Flatlogic One - Bootstrap 4.5 Admin Dashboard",
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch"
@@ -15,7 +15,7 @@
     "backbone.paginator": "^2.0.8",
     "backgrid": "^0.3.8",
     "backgrid-paginator": "^0.3.9",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "4.5.0",
     "bootstrap-application-wizard": "https://github.com/amoffat/bootstrap-application-wizard.git",
     "bootstrap-colorpicker": "^2.5.3",
     "bootstrap-markdown": "^2.10.0",
@@ -44,7 +44,6 @@
     "hammerjs": "^2.0.8",
     "handlebars": "^4.7.2",
     "holderjs": "^2.5.0",
-    "intro.js": "^2.9.3",
     "jasny-bootstrap": "^3.1.3",
     "jquery": "2.1.4",
     "jquery-autosize": "^1.18.18",
@@ -91,8 +90,12 @@
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-sourcemap": "^1.3.1",
     "gulp-hb": "^8.0.0",
+    "gulp-minify": "^3.1.0",
     "gulp-rename": "2.0.0",
+    "gulp-resolve-dependencies": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "handlebars-layouts": "^3.1.4",

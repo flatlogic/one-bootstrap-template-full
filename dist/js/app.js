@@ -640,7 +640,7 @@ function initDemoFunctions(){
             sidebar.toggleClass('sidebar-dark');
 
             target.addClass('active');
-            localStorage.setItem('sidebarThem', sidebar.attr('class'));
+            localStorage.setItem('sidebarTheme', sidebar.attr('class'));
         });
 
         $('.colors-list .color-box').click(function(e) {
@@ -649,14 +649,14 @@ function initDemoFunctions(){
             sidebar.removeClass(styles.join("sidebar-")).addClass(`sidebar-${target.data('style')}`);
 
             target.addClass('active-theme');
-            localStorage.setItem('sidebarThem', sidebar.attr('class'));
+            localStorage.setItem('sidebarTheme', sidebar.attr('class'));
         });
 
         //Theme load on reload
 
         function themeLoad() {
-            if (localStorage.getItem('sidebarThem')) {
-                sidebar.removeClass().addClass(localStorage.getItem('sidebarThem'))
+            if (localStorage.getItem('sidebarTheme')) {
+                sidebar.removeClass().addClass(localStorage.getItem('sidebarTheme'))
             }
 
         }
