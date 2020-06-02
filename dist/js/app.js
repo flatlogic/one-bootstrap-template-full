@@ -617,8 +617,7 @@ function initDemoFunctions(){
         $("[name=sidebar-type]").change( function() {
             if (this.value === "transparent")
             {
-                sidebar.removeClass('sidebar-dark');
-                sidebar.addClass('sidebar-transparent')
+                sidebar.removeClass('sidebar-dark').addClass('sidebar-transparent')
             }
             else
             {
@@ -628,18 +627,18 @@ function initDemoFunctions(){
 
         $('.colors-list .color-box-nav-bar').click(function(e) {
             const target = $(e.target);
-
             $('.color-box-nav-bar').removeClass('active');
             target.addClass('active');
-            navbar.toggleClass('navbar-white');
+            navbar.removeClass('navbar-white').addClass( target.data('style') );
         });
 
         $('.colors-list .color-box-side-bar').click(function(e) {
             const target = $(e.target);
             $('.color-box-side-bar').removeClass('active');
-            sidebar.toggleClass('sidebar-dark');
 
+            sidebar.removeClass('sidebar-dark', 'sidebar-first').addClass( `sidebar-${target.data('style')}` );
             target.addClass('active');
+
             localStorage.setItem('sidebarTheme', sidebar.attr('class'));
         });
 
@@ -658,7 +657,6 @@ function initDemoFunctions(){
             if (localStorage.getItem('sidebarTheme')) {
                 sidebar.removeClass().addClass(localStorage.getItem('sidebarTheme'))
             }
-
         }
         themeLoad();
     }(jQuery);

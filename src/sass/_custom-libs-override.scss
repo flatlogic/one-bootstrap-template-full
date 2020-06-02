@@ -1881,7 +1881,6 @@ a.fc-event {
   label {
     &::before
      {
-      margin-top: -2px;
       background-color: #fff;
       border: 2px solid #FEBE69;
     }
@@ -1889,7 +1888,7 @@ a.fc-event {
       background-color: #ffbf69;
       width: 9px;
       height: 9px;
-      top: 4px;
+      top: 6px;
       left: 4px;
     }
   }

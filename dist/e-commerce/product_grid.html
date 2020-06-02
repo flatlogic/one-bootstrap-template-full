@@ -509,8 +509,8 @@
                     </div>
                     <h5>Navbar Color</h5>
                     <ul class="colors-list">
-                        <li class="color-box-nav-bar active" style="background-color: rgb(50, 50, 50);" data-style="first"></li>
-                        <li class="color-box-nav-bar" style="background-color: rgb(255, 255, 255);" data-style="white"></li>
+                        <li class="color-box-nav-bar active" style="background-color: rgb(50, 50, 50);" data-style=""></li>
+                        <li class="color-box-nav-bar" style="background-color: rgb(255, 255, 255);" data-style="navbar-white"></li>
                     </ul>
                     <h5 class="fw-semi-bold">Sidebar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
@@ -523,8 +523,8 @@
                     </div>
                     <h5 class="fw-semi-bold">Sidebar Color</h5>
                     <ul class="colors-list">
-                        <li class="color-box-side-bar " style="background-color: rgb(50, 50, 50);" data-style="first"></li>
-                        <li class="color-box-side-bar active" style="background-color: rgb(255, 255, 255);" data-style="second"></li>
+                        <li class="color-box-side-bar " style="background-color: rgb(50, 50, 50);" data-style="dark"></li>
+                        <li class="color-box-side-bar active" style="background-color: rgb(255, 255, 255);" data-style="first"></li>
                     </ul>
                     <h5 class="fw-semi-bold">Theme Color</h5>
                     <ul class="colors-list">
@@ -560,7 +560,7 @@
         <li class="breadcrumb-item active">Product Grid</li>
     </ol>
     <div class="row wrapper">
-        <div class="product-elements col-2">
+        <div class="product-elements col-lg-2 d-none d-lg-block">
             <div class="widget">
                 <div class="widget-header">
                     <h5 class="fw-bold">List of Products</h5>
@@ -727,17 +727,17 @@
                 </div>
             </div>
         </div>
-        <div class="product-elements col-10" id="product-grid">
+        <div class="product-elements col-lg-10" id="product-grid">
             <div class="widget">
                 <div class="widget-body">
                     <div class="row">
-                        <div class="col-4"><div class="input-group input-group-lg pl-0">
+                        <div class="col-lg-4 col-sm-8"><div class="input-group input-group-lg pl-0">
                             <div class="input-group-prepend">
                                 <span class="input-group-text bg-transparent"><i class="fa fa-search text-black-50" aria-hidden="true"></i></span>
                             </div>
                             <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
                         </div></div>
-                        <div class="col-8 ml-auto">
+                        <div class="col-lg-8 col-sm-4">
                             <img src="../img/icons/list.svg" style="height: 38px" class="float-right" alt="">
                             <img src="../img/icons/grid.svg" style="height: 38px" class="float-right mr-2" alt="">
                     </div>
@@ -755,13 +755,12 @@
                                     </div>
                                 </div>
                                 <h5 class="card-title fw-semi-bold">2019 Porsche 911</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -785,13 +784,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Porsche 911</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -815,13 +813,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2019 Mercedes ML</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -845,13 +842,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Mercedes A Class</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -874,13 +870,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2019 Jeep Gran Cherokee</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -904,13 +899,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Mercedes SLS</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -934,13 +928,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Audi TT</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -963,13 +956,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2019 Audi A3</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -992,13 +984,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Toyota RAV 4</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -1022,13 +1013,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 Maserati GranTurismo</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -1052,13 +1042,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2020 BMW 3 Series</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP
@@ -1081,13 +1070,12 @@
                                     </a>
                                 </div>
                                 <h5 class="card-title">2019 Nissan 350z</h5>
-                                <div class="price fs-mini">
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black" aria-hidden="true"></i>
-                                    <i class="fa fa-star text-black-50" aria-hidden="true"></i>
-                                    (4.0) 53 Reviews
+                                <div class="price fs-mini d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-star text-black" aria-hidden="true"></i>
+                                        4.0
+                                    </div>
+                                    <span>53 Reviews</span>
                                 </div>
                                 <div class="info">
                                     STARTING MSRP

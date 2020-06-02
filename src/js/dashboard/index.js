@@ -61,7 +61,10 @@ $(function(){
                 }
             },
             dataLabels: {
-                enabled: false
+                enabled: false,
+                dropShadow: {
+                    enable: false
+                }
             },
             legend: {
                 show: false
@@ -369,6 +372,11 @@ $(function(){
                     donut: {
                         size: '50%',
                     },
+                }
+            },
+            dataLabels: {
+                dropShadow: {
+                    enabled: false
                 }
             },
             stroke: {
