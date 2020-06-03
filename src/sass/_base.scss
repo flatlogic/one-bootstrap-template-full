@@ -197,8 +197,7 @@ body {
   color: $body-main-color;
   font-size: 16px;
 
-  //icons preload
-
+  //Icons preload
   &:after {
     content:
     url(../img/icons/dashboard_filled.svg)

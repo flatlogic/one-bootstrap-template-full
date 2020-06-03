@@ -922,7 +922,7 @@
     width: 8px;
     content: " ";
     margin-left: -4px;
-    background-color: $gray-200;
+    background-color: $body-main-color;
 
     @include media-breakpoint-up(lg){
       left: 50%;
@@ -1031,21 +1031,22 @@
     height: 50px;
     line-height: 37px;
     margin-left: -25px;
-    background-color: $white;
+    background-color: $body-main-color;
     box-shadow: $widget-shadow;
-    border: 7px solid $white;
     border-radius: 50%;
     text-align: center;
 
     .glyphicon {
       top: 11px;
+      font-size: 28px;
+      color: white;
     }
 
-    &.event-icon-danger{ background-color: theme-color('danger'); border-color: lighten(theme-color('danger'), 7%)}
-    &.event-icon-warning{ background-color: theme-color('warning'); border-color: lighten(theme-color('warning'), 7%)}
-    &.event-icon-success{ background-color: theme-color('success'); border-color: lighten(theme-color('success'), 7%)}
-    &.event-icon-info{ background-color: theme-color('info'); border-color: lighten(theme-color('info'), 7%)}
-    &.event-icon-primary{ background-color: theme-color('primary'); border-color: lighten(theme-color('primary'), 7%)}
+    //&.event-icon-danger{ background-color: theme-color('danger'); border-color: lighten(theme-color('danger'), 7%)}
+    //&.event-icon-warning{ background-color: theme-color('warning'); border-color: lighten(theme-color('warning'), 7%)}
+    //&.event-icon-success{ background-color: theme-color('success'); border-color: lighten(theme-color('success'), 7%)}
+    //&.event-icon-info{ background-color: theme-color('info'); border-color: lighten(theme-color('info'), 7%)}
+    //&.event-icon-primary{ background-color: theme-color('primary'); border-color: lighten(theme-color('primary'), 7%)}
 
     &.event-icon-danger,
     &.event-icon-warning,
@@ -1060,9 +1061,9 @@
     }
 
     > img{
-      width: 36px;
-      height: 36px;
-      margin-top: -4px;
+      width: 45px;
+      height: 45px;
+      margin-top: 3px;
     }
   }
 }
