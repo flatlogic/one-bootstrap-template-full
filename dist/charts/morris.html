@@ -299,7 +299,6 @@
                 <ul id="sidebar-dashboard" class="collapse ">
                     <li class=""><a href="../dashboard/index.html">Analytics</a></li>
                     <li class=""><a href="../dashboard/visits.html">Visits</a></li>
-                    <li class=""><a href="../dashboard/widgets.html">Widgets</a></li>
                 </ul>
             </li>
             <li class="">
@@ -341,9 +340,30 @@
                     <i class="toggle fa fa-angle-down"></i>
                 </a>
                 <ul id="sidebar-doc" class="collapse ">
-                    <li class=""><a href="../documentation/quick_start.html">Quick Start</a></li>
+                    <li class="">
+                        <a class="collapsed d-flex" href="#sidebar-getting-started" data-toggle="collapse" data-parent="#sidebar-doc">
+                            <span class="icon-text">Getting Started</span>
+                            <i class="toggle fa fa-angle-down"></i></a>
+                        <ul id="sidebar-getting-started" class="collapse ">
+                            <li class=""><a href="../documentation/overview.html">Overview</a></li>
+                            <li class=""><a href="../documentation/licences.html">licences</a></li>
+                            <li class=""><a href="../documentation/quick_start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
                     <li class=""><a href="../documentation/structure.html">Structure</a></li>
-                    <li class=""><a href="../documentation/components.html">Components</a></li>
+                    <li class="">
+                        <a class="collapsed d-flex" href="#sidebar-components" data-toggle="collapse" data-parent="#sidebar-doc">
+                            <span class="icon-text">Components</span>
+                            <i class="toggle fa fa-angle-down"></i></a>
+                        <ul id="sidebar-components" class="collapse ">
+                            <li class=""><a href="../documentation/charts.html">Charts</a></li>
+                            <li class=""><a href="../documentation/forms.html">Forms</a></li>
+                            <li class=""><a href="../documentation/ui.html">UI</a></li>
+                            <li class=""><a href="../documentation/grid.html">Grid</a></li>
+                            <li class=""><a href="../documentation/maps.html">Maps</a></li>
+                            <li class=""><a href="../documentation/tables.html">Tables</a></li>
+                        </ul>
+                    </li>
                     <li class=""><a href="https://flatlogic.com/templates/bootstrap" target="_blank">Purchase</a></li>
                 </ul>
             </li>
@@ -780,15 +800,17 @@
 
     <!-- common libraries. required for every page-->
 
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/jquery-pjax/jquery.pjax.js"></script>
-    <script src='../../node_modules/popper.js/dist/umd/popper.js'></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../../node_modules/bootstrap/js/dist/util.js"></script>
-    <script src="../../node_modules/widgster/widgster.js"></script>
-    <script src="../../node_modules/hammerjs/hammer.js"></script>
-    <script src='../../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>
-    <script src="../../node_modules/jquery-hammerjs/jquery.hammer.js"></script>
+    <script src="../js/bundle.js"></script>
+
+<!--    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>-->
+<!--    <script src="../../node_modules/jquery-pjax/jquery.pjax.js"></script>-->
+<!--    <script src='../../node_modules/popper.js/dist/umd/popper.js'></script>-->
+<!--    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+<!--    <script src="../../node_modules/bootstrap/js/dist/util.js"></script>-->
+<!--    <script src="../../node_modules/widgster/widgster.js"></script>-->
+<!--    <script src="../../node_modules/hammerjs/hammer.js"></script>-->
+<!--    <script src='../../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>-->
+<!--    <script src="../../node_modules/jquery-hammerjs/jquery.hammer.js"></script>-->
 
     <!-- common app js -->
     <script src="../js/settings.js"></script>

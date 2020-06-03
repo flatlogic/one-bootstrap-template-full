@@ -1,0 +1,87 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Components Tables"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="components"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item">Components</li>
+                <li class="breadcrumb-item active">Tables</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Tables</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <h4 class="fw-bold mt" id="tables_static">STATIC TABLES</h4>
+                            <p><strong>Flatlogic One</strong> tables are based on
+                                <a href="https://getbootstrap.com/css/#tables">Bootstrap tables</a> with additional
+                                styling.</p>
+                            <p>Flatlogic One introduces two new table classes <code>.table-sm</code> and <code>.table-lg</code>
+                                for decreased and increased table paddings accordingly.</p>
+                            <p>Also, don't forget about <code>.table-responsive</code> class which adds horizontal scrollbar
+                                to tables for small screens.</p>
+
+                            <h5 class="mt fw-semi-bold">OVERFLOW TABLE</h5>
+                            <p>
+                                Add any non-bordered .table within a widget for a seamless design.
+                                Awesome look for no cost.
+                                Just wrap the table with simple css class <code>.widget-table-overflow</code> inside
+                                of widget:
+                            </p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%; color: white"><span class="text-danger">&lt;section</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget&quot;</span><span class="text-danger">&gt;</span>
+    <span class="text-danger">&lt;header&gt;</span>
+        header
+    <span class="text-danger">&lt;/header&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget-body&quot;</span><span class="text-danger">&gt;</span>
+        body
+    <span class="text-danger">&lt;/div&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget-table-overflow&quot;</span><span class="text-danger">&gt;</span>
+        <span class="text-danger">&lt;table</span> <span class="text-success">class=</span><span class="text-warning">&quot;table table-striped&quot;</span><span class="text-danger">&gt;</span>
+            <span class="text-danger">&lt;tbody&gt;</span>
+                <span class="text-danger">&lt;tr&gt;</span>
+                <span class="text-danger">&lt;td&gt;</span>1<span class="text-danger">&lt;/td&gt;</span>
+                <span class="text-danger">&lt;td&gt;</span>2<span class="text-danger">&lt;/td&gt;</span>
+                <span class="text-danger">&lt;/tr&gt;</span>
+            <span class="text-danger">&lt;/tbody&gt;</span>
+        <span class="text-danger">&lt;/table&gt;</span>
+    <span class="text-danger">&lt;/div&gt;</span>
+<span class="text-danger">&lt;/section&gt;</span>
+</pre></div>
+
+                            <h3 class="section-title mt fw-bold" id="tables_dynamic">DYNAMIC TABLES</h3>
+                            <a href="https://wyuenho.github.com/backgrid/">Backgrid.js</a> is a set of components for building semantic and easily stylable data grid widgets.
+                            <p>It has been chosen because it offers really simple, intuitive programming interface that makes easy things easy, but hard things possible when dealing with tabular data.</p>
+                            <p>Backgrind provides editing, adding and sorting data on client side. We recommend to read more about it -
+                                <a href="https://wyuenho.github.com/backgrid/">Backgrid website</a>. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/underscore/underscore-min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/backbone/backbone.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/backbone.paginator/lib/backbone.paginator.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/backgrid/lib/backgrid.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/backgrid-paginator/backgrid-paginator.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <h5 class="mt fw-semi-bold">DATATABLES</h5>
+                            <a href="https://www.datatables.net/">DataTables</a> is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.
+                            <p>The most frequently asked thing about DataTables is its table structure notation. There is a line in
+                                <a href="../ajax/js/tables-dynamic.js">tables-dynamic.js:111</a></p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-warning">&quot;sDom&quot;</span><span class="text-danger">:</span> <span class="text-warning">&quot;&lt;&#39;row&#39;&lt;&#39;col-md-6&#39;l&gt;&lt;&#39;col-md-6&#39;f&gt;r&gt;t&lt;&#39;row&#39;&lt;&#39;col-md-6&#39;i&gt;&lt;&#39;col-md-6&#39;p&gt;&gt;&quot;</span>
+</pre></div>
+
+                            <p></p>
+                            <p>Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/datatables/media/js/jquery.dataTables.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

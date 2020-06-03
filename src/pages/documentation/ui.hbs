@@ -1,0 +1,96 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Components UI"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="components"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item">Components</li>
+                <li class="breadcrumb-item active">UI</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">User Interface</h5>
+                        </div>
+                        <h4 class="fw-semi-bold mt" id="ui_components">COMPONENTS</h4>
+                        <p>
+                            This page contain Flatlogic One-y styled versions of Bootstrap
+                            <a href="https://getbootstrap.com/components/#alerts">Alerts</a>,
+                            <a href="https://getbootstrap.com/components/#labels">Labels</a>,
+                            <a href="https://getbootstrap.com/javascript/#tooltips">Tooltips</a>,
+                            <a href="https://getbootstrap.com/javascript/#popovers">Popovers</a>,
+                            <a href="https://getbootstrap.com/javascript/#modals">Modals</a>
+                            and <a href="https://getbootstrap.com/components/#progress">Progress Bars</a>.
+                            All styles are in bootstrap-override.scss.
+                        </p>
+                        <p>For progress bars there is a small <strong>Flatlogic One</strong> extension which allows you to change progress bars sizes:
+                            <code>.progress-sm</code>, <code>.progress-xs</code>.</p>
+                        <h4 class="fw-semi-bold mt" id="ui_notifications">NOTIFICATIONS</h4>
+                        <p>Flatlogic One uses <strong>HubSpot's Messenger</strong> library. It's a client-side growl-like notifications with actions and auto-retry.</p>
+                        <p>Read more at <a href="https://github.hubspot.com/messenger/">Messenger website</a>.</p>
+                        <h4 class="fw-semi-bold mt" id="ui_icons">ICONS</h4>
+                        <h5 class="mt" id="ui_icons">FONT AWESOME ICONS</h5>
+                        <p>Font Awesome is iconic font originally designed for Bootstrap (Font Awesome works great with all
+                            frameworks). It contains 439 icons in pictographic font form.</p>
+                        <p>Read more at <a href="https://fortawesome.github.com/Font-Awesome/">Font Awesome website</a>.</p>
+                        <h5 class="mt fw-semi-bold">GLYPHICONS ICONS</h5>
+                        <p>200  icons in pictographic font form provided by <a href="https://glyphicons.com">Glyphicons</a>.</p>
+                        <h4 class="fw-semi-bold mt" id="ui_buttons">BUTTONS</h4>
+                        <p>To create button you can style any html element with <code>.btn</code> class. <strong>Flatlogic One</strong>
+                            replaces default bootstrap colors with theme specific and adds two more: <code>.btn-gray</code> and
+                            <code>.btn-inverse</code>.</p>
+                        <p>You can read more at <a href="https://getbootstrap.com/javascript/#buttons">Bootstrap Buttons page</a>.</p>
+                        <h4 class="fw-semi-bold mt" id="ui_tabs">TABS</h4>
+                        <p>Tabs component may be placed both inside of <code>.widget</code> element or directly into main
+                            <code>.content</code>.</p>
+                        <p>Originally Bootstrap has an option to put tabs on left and right. In Bootstrap 3 this feature
+                            was removed. We here think it was a pretty usable component, so <strong>Flatlogic One</strong> keeps
+                            it:</p>
+                        <div class="components-block rounded"><pre style="margin: 0; line-height: 125%; color: white"><span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tabbable tabs-left&quot;</span><span class="text-danger">&gt;</span>
+    <span class="text-danger">&lt;ul</span> <span class="text-success">id=</span><span class="text-warning">&quot;tabs2&quot;</span> <span class="text-success">class=</span><span class="text-warning">&quot;nav nav-tabs&quot;</span><span class="text-danger">&gt;</span>
+        <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab12&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Basic<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;active&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab22&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Assumtion<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab32&quot;</span>  <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Works<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="text-danger">&lt;/ul&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">id=</span><span class="text-warning">&quot;tabs2c&quot;</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-content&quot;</span><span class="text-danger">&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab12&quot;</span><span class="text-danger">&gt;</span>
+            1
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane active&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab22&quot;</span><span class="text-danger">&gt;</span>
+            2
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab32&quot;</span><span class="text-danger">&gt;</span>
+            3
+        <span class="text-danger">&lt;/div&gt;</span>
+    <span class="text-danger">&lt;/div&gt;</span>
+<span class="text-danger">&lt;/div&gt;</span>
+</pre></div>
+
+                        <p>For more info check <a href="https://getbootstrap.com/javascript/#tabs">Bootstrap Tabs</a>.</p>
+                        <p>In case you want your tabs to become accordion for small screens checkout our
+                            <a href="https://github.com/okendoken/bootstrap-tabcollapse">tabcollapse</a> plugin.</p>
+
+                        <h4 class="section-title mt fw-bold" id="ui_accordion">ACCORDION</h4>
+                        <p>Same as Tabs Accordion may be placed both as a widget inside <code>.content</code> or inside of
+                            <code>.widget</code>. <strong>Flatlogic One's</strong> accordion is a styled version of
+                            <a href="https://getbootstrap.com/javascript/#collapse">Bootstrap Collapse component</a>.</p>
+                        <h5 class="fw-semi-bold mt">Grouped Lists</h5>
+                        <p><strong>Flatlogic One</strong> grouped lists is a styled version of
+                            jQuery UI <a href="https://jqueryui.com/sortable/">Sortable component</a>.</p>
+                        <p>With help of <a href="http://touchpunch.furf.com/">Touch Punch</a> allows sorting at
+                            touch devices.</p>
+
+                        <h4 class="section-title mt fw-bold" id="ui_groups">LIST GROUPS</h4>
+                        <p>This nestable draggable lists are built with jQuery based lib -
+                            <a href="https://github.com/dbushell/Nestable">Nestable</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

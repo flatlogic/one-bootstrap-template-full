@@ -1,6 +1,6 @@
 $(function(){
     function initGmap(){
-        var map = new GMaps({
+        let map = new GMaps({
             el: '#gmap',
             lat: -37.813179,
             lng: 144.950259,
@@ -65,9 +65,17 @@ $(function(){
             });
         }, 3000);
     }
+    function panorama() {
+        let panorama = GMaps.createPanorama({
+            el: '#panorama',
+            lat : 42.3455,
+            lng : -71.0983
+        });
+    }
 
     function pageLoad(){
         initGmap();
+        panorama();
     }
 
     pageLoad();

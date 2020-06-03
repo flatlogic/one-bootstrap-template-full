@@ -1053,7 +1053,9 @@ legend {
 //
 // Buttons
 // --------------------------------------------------
-
+.custom-dropdown {
+  box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
+}
 .dashboard-buttons {
   .custom-dropdown {
     box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;

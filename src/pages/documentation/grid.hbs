@@ -1,0 +1,103 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Components Grid"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="components"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item">Components</li>
+                <li class="breadcrumb-item active">Grid</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Grid system</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <p><strong>Flatlogic One</strong> inherits 12-column grid system from
+                                <a href="https://getbootstrap.com/css/#grid">Bootstrap's great one</a>.</p>
+                            <h5 class="mt fw-semi-bold">WIDGET CONTROLS</h5>
+                            <p>For one of our previous works we have developed a custom jquery plugin called <strong>Widgster</strong> which provides an easy way to handle basic
+                                widget functions like collapFlatlogic One, cloFlatlogic One, ajax-refreshing & fullsreening.</p>
+                            <p>Plugin is open-sourced. Check out <a href="https://github.com/okendoken/widgster">Widgster repository</a>.</p>
+                            <p>To apply all these features to your default widget you have to add appropriate links (or buttons) to it:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%; color: white"><span class="text-danger">&lt;section</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget&quot;</span><span class="text-danger">&gt;</span>
+    <span class="text-danger">&lt;header&gt;</span>
+        <span class="text-danger">&lt;h3&gt;</span>Header<span class="text-danger">&lt;/h3&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget-controls&quot;</span><span class="text-danger">&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;load&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Reload<span class="text-danger">&lt;/a&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;expand&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Expand<span class="text-danger">&lt;/a&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;collapse&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Collapse<span class="text-danger">&lt;/a&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;fullscreen&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Fullscreen<span class="text-danger">&lt;/a&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;restore&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Restore<span class="text-danger">&lt;/a&gt;</span>
+            <span class="text-danger">&lt;a</span> <span class="text-success">data-widgster=</span><span class="text-warning">&quot;close&quot;</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Close<span class="text-danger">&lt;/a&gt;</span>
+        <span class="text-danger">&lt;/div&gt;</span>
+    <span class="text-danger">&lt;/header&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;widget-body&quot;</span><span class="text-danger">&gt;</span>
+        Body
+    <span class="text-danger">&lt;/div&gt;</span>
+<span class="text-danger">&lt;/section&gt;</span>
+</pre></div>
+
+                            <p>In the example above links are put into a <code>.widget-controls</code> but you can put them anywhere inside of widget.</p>
+                            <p>Then widgster needs to be initialized via javascript:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-success">$</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;.widget&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">widgster</span><span style="color: #f8f8f2">();</span>
+</pre></div>
+
+                            <p>As you could guess <code>data-widgster</code> attribute defines widget action to be performed when link is clicked.</p>
+                            <h5 class="mt fw-semi-bold">OPTIONS</h5>
+                            <ul style="list-style: disc; padding-left: 40px; margin-bottom: 10px">
+                                <li><strong>collapsed</strong> - if true collapses widget after page load;</li>
+                                <li><strong>fullscreened</strong> - if true fullscreens widget after page load;</li>
+                                <li><strong>bodySelector</strong> - widget body selector. Used for loading and collapFlatlogic One. Default is <code>.body</code>;</li>
+                                <li><strong>load</strong> - an url to fetch widget body from. Default is <code>undefined</code>;</li>
+                                <li><strong>showLoader</strong> - whether to show a loader when ajax refresh performed. Default is <code>true</code>;</li>
+                                <li><strong>autoload</strong> - whether to automatically perform ajax refresh after page load. May be set to an integer value. If set, for example, to 2000 will refresh the widget every 2 seconds. Default is <code>false</code>;</li>
+                                <li><strong>closePrompt(callback)</strong> - a function to be called when cloFlatlogic One. CloFlatlogic One is
+                                    only performed when <code>callback</code> is called.</li>
+                            </ul>
+                            <p>Widgster accepts an object with options:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-success">$</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;.widget&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">widgster</span><span style="color: #f8f8f2">({</span>
+    <span class="text-success">collapsed</span><span class="text-danger">:</span> <span style="color: #66d9ef">true</span>
+<span style="color: #f8f8f2">});</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">ACTIONS</h5>
+                            <ul style="list-style: disc; padding-left: 40px; margin-bottom: 10px">
+                                <li><strong>close</strong> - closes the widget;</li>
+                                <li><strong>collapse</strong> - collapses (minimizes) the widget. An element holding this data
+                                    attribute will be hidden when widget gets expanded;</li>
+                                <li><strong>expand</strong> - expands the widget. An element holding this data
+                                    attribute will be hidden when widget gets collapsed;</li>
+                                <li><strong>fullscreen</strong> - fullscreens the widget. An element holding this data
+                                    attribute will be hidden when widget gets restored;</li>
+                                <li><strong>restore</strong> - restores the widget back to its position. An element holding this data
+                                    attribute will be hidden when widget gets fullscreened;</li>
+                                <li><strong>load</strong> - reloads widget content from the url provided with <code>data-widget-load</code> attribute.</li>
+                            </ul>
+                            <p>All actions may be called via js:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-success">$</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;.widget&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">widgster</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;close&#39;</span><span style="color: #f8f8f2">);</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">EVENTS</h5>
+                            <p>Each action fires both before and after event. Events have the same names as actions. Before event may be canceled.</p>
+                            <p>For example, to make refresh button spin:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-success">$</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;.widget&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">on</span><span style="color: #f8f8f2">(</span><span class="text-warning">&quot;load.widgster&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(){</span>
+    <span class="text-success">$</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">).</span><span class="text-success">find</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;[data-widgster=&quot;load&quot;] &gt; i&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">addClass</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;fa-spin&#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">}).</span><span class="text-success">on</span><span style="color: #f8f8f2">(</span><span class="text-warning">&quot;loaded.widgster&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(){</span>
+    <span class="text-success">$</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">).</span><span class="text-success">find</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;[data-widgster=&quot;load&quot;] &gt; i&#39;</span><span style="color: #f8f8f2">).</span><span class="text-success">removeClass</span><span style="color: #f8f8f2">(</span><span class="text-warning">&#39;fa-spin&#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">});</span>
+</pre></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

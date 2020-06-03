@@ -1,0 +1,207 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Components Forms"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="components"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item">Components</li>
+                <li class="breadcrumb-item active">Forms</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Forms</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <h5 class="fw-semi-bold mt" class="section-title mt fw-bold" id="f_elements">FORM ELEMENTS</h5>
+                            <p>There are four general styles available to style forms:
+                                <code>.form-horizontal</code>, <code>.form-condensed</code>, <code>.form-label-left</code> and "no style" for horizontal placed inputs,
+                                decreased margins, labels aligned to left and default form accordingly. You can combine any of them together.</p>
+
+                            <h5 class="mt fw-semi-bold">INPUTS</h5>
+                            <p>Bootstrap styles input by default, so there is no need to add any classes to inputs. Just use them. Don't forget to include input type.</p>
+                            <p>Bootstrap has a great <a href="https://getbootstrap.com/css/#forms">documentation about forms</a>.</p>
+
+                            <h5 class="mt fw-semi-bold">INPUT SIZING</h5>
+                            <p>Any input can be sized by adding <code>.col-*-*</code> class. For vertical sizing
+                                <code>.input-lg</code> and <code>.input-sm</code> are available.</p>
+
+
+                            <h5 class="mt fw-semi-bold">PREPENDED AND APPENDED INPUTS</h5>
+                            <p>Again Bootstrap helps. It has <a href="https://getbootstrap.com/css/#forms">everything we need to prepend and append inputs</a>.</p>
+
+                            <h5 class="mt fw-semi-bold">TEXTAREAS</h5>
+                            <p>Auto-growing textarea uses <a href="http://www.jacklmoore.com/autosize/">jQuery Autosize</a> plugin
+                                to increase area size dynamically. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jquery-autosize/jquery.autosize.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <p>Wysiwyg editor is based on <a href="https://jhollingworth.github.com/bootstrap-wysihtml5/">
+                                bootstrap-wysihtml5</a>. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap3-wysihtml5/lib/js/wysihtml5-0.3.0.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap3-wysihtml5/src/bootstrap3-wysihtml5.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <p>Markdown editor is built with <a href="https://github.com/evilstreak/markdown-js">Markdown js</a>. Files:</p>
+
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%">
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/markdown/lib/markdown.js&quot;&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <h5 class="mt fw-semi-bold">SELECTS</h5>
+                            <p>Two different type of selects avaiables in <strong>Flatlogic One</strong> template:</p>
+                            <ul>
+                                <li><a href="https://ivaynberg.github.com/select2/">Select2</a> - is a really powerful tool used to convert default selects to interactive search-enabled widgets.</li>
+                                <li><a href="https://github.com/silviomoreto/bootstrap-select">Bootstrap Select</a> - is Bootstrap based custom select, designed to behave like regular Bootstrap selects.
+                                    This one can be colored as any button.</li>
+                            </ul>
+                            <p>Required files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/select2/select2.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">CHECKBOXES AND REDIOS</h5>
+                            <p>To style default checkboxes and radio buttons <a href="https://github.com/okendoken/awesome-bootstrap-checkbox">
+                                Awesome Bootstrap Checkbox</a> library is used. This lib was written specially for Flatlogic One, so
+                                in case you find some bugs or want some features - let us know.</p>
+                            <h5 class="mt fw-semi-bold">BUTTON-LIKE CHECKBOXES</h5>
+                            <p>Bootstrap has a great api to handle button states -
+                                <a href="https://getbootstrap.com/javascript/#buttons">bootstrap-button.js</a>, so uFlatlogic One it to
+                                imitate checkbox or radio buttons.</p>
+
+                            <h5 class="mt fw-semi-bold">IOS-LIKE SEITCHES</h5>
+                            <p>There is a special plugin to do that - <a href="https://abpetkov.github.io/switchery/">Switchery</a>.
+                                Include following files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/switchery/dist/switchery.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">PICKERS</h5>
+                            <p>Any field may have either <a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Datetimepicker</a>
+                                or <a href="http://www.eyecon.ro/bootstrap-colorpicker/">Colorpicker</a> attached. Required files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/moment/min/moment.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">MASKED INPUTS</h5>
+                            <p>To make any input accept only formatted values there is a great plugin to use -
+                                <a href="https://jasny.github.io/bootstrap/">jasny's inputmask.js</a>. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jasny-bootstrap/js/inputmask.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">SLIDERS</h5>
+                            <p>Flatlogic One sliders are styled version of <a href="https://github.com/seiyria/bootstrap-slider">Bootstrap
+                                Slider plugin</a>.</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">SIMPLE FILES UPLOAD</h5>
+                            <p>Same as masked input based on <a href="https://jasny.github.io/bootstrap/">Jasny's BS fork</a>. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jasny-bootstrap/js/fileinput.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+                            <h5 class="mt fw-semi-bold">DROPZONE</h5>
+                            <p>Dead simple file upload plugin with image preview <a href="http://www.dropzonejs.com/">Dropzone</a>.</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/dropzone/downloads/dropzone.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <h3 class="section-title mt fw-bold" id="f_validation">VALIDATION</h3>
+                            <p><strong>Flatlogic One</strong> uses really great validation plugin -
+                                <a href="http://parsleyjs.org/">parsley.js</a>. It's better to
+                                let it say itself:</p>
+                            Javascript forms validation.
+                            Powerful, UX aware & Dead simple.
+                            Never write a Flatlogic Onele javascript line anymore to validate your forms FrontEnd. Parsley will do that for you – and do it right –, thanks to its powerful DOM-API !
+                            <p>To activate it you need to add <code>data-validate="parsley"</code> to your form to make it work. That's it.</p>
+                            <p>If you want to add step-by-step validation with <a href="#f_wizard">wizard</a> please check
+                                <a href="http://parsleyjs.org/doc/examples/multisteps.html">this guide</a>.</p>
+                            <p>Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/parsleyjs/dist/parsley.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <h4 class="fw-bold mt" id="f_wizard">WIZARD</h4>
+                            <p><a href="http://vadimg.com/twitter-bootstrap-wizard-example/">Twitter Bootstrap Wizard Plugin</a> is used to build wizard-enabled widget.</p>
+                            This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure. It allows to build a wizard functionality uFlatlogic One buttons to go through the different wizard steps and uFlatlogic One events allows to hook into each step individually.
+                            <p>To activate it you need to call <code>$("#rootwizard").bootstrapWizard();</code> on your markup to create wizard.</p>
+                            <p>If you want to add step-by-step wizard <a href="#f_validation">validation</a> please check
+                                <a href="http://parsleyjs.org/doc/examples/multisteps.html">this guide</a>.</p>
+                            <p>Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <p>Example Markup:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%; color: white"><span class="text-danger">&lt;div</span> <span class="text-success">id=</span><span class="text-warning">&quot;rootwizard&quot;</span><span class="text-danger">&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;navbar&quot;</span><span class="text-danger">&gt;</span>
+      <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;navbar-inner&quot;</span><span class="text-danger">&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;container&quot;</span><span class="text-danger">&gt;</span>
+            <span class="text-danger">&lt;ul&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab1&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>First<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab2&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Second<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab3&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Third<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab4&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Forth<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab5&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Fifth<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab6&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Sixth<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="text-danger">&lt;li&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#tab7&quot;</span> <span class="text-success">data-toggle=</span><span class="text-warning">&quot;tab&quot;</span><span class="text-danger">&gt;</span>Seventh<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="text-danger">&lt;/ul&gt;</span>
+        <span class="text-danger">&lt;/div&gt;</span>
+      <span class="text-danger">&lt;/div&gt;</span>
+    <span class="text-danger">&lt;/div&gt;</span>
+    <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-content&quot;</span><span class="text-danger">&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab1&quot;</span><span class="text-danger">&gt;</span>
+          1
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab2&quot;</span><span class="text-danger">&gt;</span>
+          2
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab3&quot;</span><span class="text-danger">&gt;</span>
+            3
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab4&quot;</span><span class="text-danger">&gt;</span>
+            4
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab5&quot;</span><span class="text-danger">&gt;</span>
+            5
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab6&quot;</span><span class="text-danger">&gt;</span>
+            6
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;div</span> <span class="text-success">class=</span><span class="text-warning">&quot;tab-pane&quot;</span> <span class="text-success">id=</span><span class="text-warning">&quot;tab7&quot;</span><span class="text-danger">&gt;</span>
+            7
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;ul</span> <span class="text-success">class=</span><span class="text-warning">&quot;pager wizard&quot;</span><span class="text-danger">&gt;</span>
+            <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;previous first&quot;</span> <span class="text-success">style=</span><span class="text-warning">&quot;display:none;&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>First<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;previous&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Previous<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;next last&quot;</span> <span class="text-success">style=</span><span class="text-warning">&quot;display:none;&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Last<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="text-danger">&lt;li</span> <span class="text-success">class=</span><span class="text-warning">&quot;next&quot;</span><span class="text-danger">&gt;&lt;a</span> <span class="text-success">href=</span><span class="text-warning">&quot;#&quot;</span><span class="text-danger">&gt;</span>Next<span class="text-danger">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="text-danger">&lt;/ul&gt;</span>
+    <span class="text-danger">&lt;/div&gt;</span>
+<span class="text-danger">&lt;/div&gt;</span>
+</pre></div>
+
+                            <h5 class="mt fw-semi-bold">APPLICATION WIZARD</h5>
+                            <p><a href="https://github.com/amoffat/bootstrap-application-wizard">Bootstrap Application Wizard</a>
+                                is a ready to use wizard component with simple install process. You don't even need to have any special
+                                markup to instantiate it.</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap-application-wizard/src/bootstrap-wizard.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

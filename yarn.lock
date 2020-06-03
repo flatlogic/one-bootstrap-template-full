@@ -1080,7 +1080,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2, commander@^2.19.0:
+commander@2, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -2620,6 +2620,15 @@ gulp-minify@^3.1.0:
     through2 "^2.0.3"
     vinyl "^2.1.0"
 
+gulp-prettier@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-prettier/-/gulp-prettier-3.0.0.tgz#21c7de272fc7528168af6086e8edae6a645168a8"
+  integrity sha512-vZFyC1F+7EjuI2WDUOcbPt9o3ZjdqjFMjr8a9Yk2K8EmNhP1w6X01QAkv5Ym3dsHCBsBA4AEFcYds2vOTSgx0A==
+  dependencies:
+    plugin-error "^1.0.1"
+    prettier "^2.0.0"
+    through2 "^3.0.0"
+
 gulp-rename@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-2.0.0.tgz#9bbc3962b0c0f52fc67cd5eaff6c223ec5b9cf6c"
@@ -2667,6 +2676,16 @@ gulp-sourcemaps@^2.6.5:
     source-map "~0.6.0"
     strip-bom-string "1.X"
     through2 "2.X"
+
+gulp-terser@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-terser/-/gulp-terser-1.2.0.tgz#41df2a1d0257d011ba8b05efb2568432ecd0495b"
+  integrity sha512-lf+jE2DALg2w32p0HRiYMlFYRYelKZPNunHp2pZccCYrrdCLOs0ItbZcN63yr2pbz116IyhUG9mD/QbtRO1FKA==
+  dependencies:
+    plugin-error "^1.0.1"
+    terser "^4.0.0"
+    through2 "^3.0.1"
+    vinyl-sourcemaps-apply "^0.2.1"
 
 gulp-util@^2.2.14:
   version "2.2.20"
@@ -3266,7 +3285,7 @@ jquery-nestable@^0.8.0:
   resolved "https://registry.yarnpkg.com/jquery-nestable/-/jquery-nestable-0.8.0.tgz#c29d791ca7662837e11dcb50ef7dda28f1731b77"
   integrity sha1-wp15HKdmKDfhHctQ733aKPFzG3c=
 
-jquery-pjax@^2.0.1:
+jquery-pjax@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/jquery-pjax/-/jquery-pjax-2.0.1.tgz#6b3a1ba16e644e624bdcfe72eb6b3d96a846f5f2"
   integrity sha1-azoboW5kTmJL3P5y62s9lqhG9fI=
@@ -4726,6 +4745,11 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
+prettier@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+
 pretty-hrtime@^1.0.0:
   version "1.0.3"
   resolved "http://registry.npmjs.org/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
@@ -5453,7 +5477,7 @@ source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@~0.5.10:
+source-map-support@~0.5.10, source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -5857,6 +5881,15 @@ terser@^3.7.6:
     source-map "~0.6.1"
     source-map-support "~0.5.10"
 
+terser@^4.0.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.7.0.tgz#15852cf1a08e3256a80428e865a2fa893ffba006"
+  integrity sha512-Lfb0RiZcjRDXCC3OSHJpEkxJ9Qeqs6mp2v4jf2MHfy8vGERmVDuvjXdd/EnP5Deme5F2yBRBymKmKHCBg2echw==
+  dependencies:
+    commander "^2.20.0"
+    source-map "~0.6.1"
+    source-map-support "~0.5.12"
+
 throttleit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/throttleit/-/throttleit-1.0.0.tgz#9e785836daf46743145a5984b6268d828528ac6c"
@@ -5885,7 +5918,7 @@ through2@^0.5.0:
     readable-stream "~1.0.17"
     xtend "~3.0.0"
 
-through2@^3.0.0:
+through2@^3.0.0, through2@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
   integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
@@ -6265,7 +6298,7 @@ vinyl-sourcemap@^1.1.0:
     remove-bom-buffer "^3.0.0"
     vinyl "^2.0.0"
 
-vinyl-sourcemaps-apply@^0.2.0:
+vinyl-sourcemaps-apply@^0.2.0, vinyl-sourcemaps-apply@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.2.1.tgz#ab6549d61d172c2b1b87be5c508d239c8ef87705"
   integrity sha1-q2VJ1h0XLCsbh75cUI0jnI74dwU=

@@ -1,7 +1,10 @@
 "use strict";
 
 const gulp = require("gulp");
+const { src, series, parallel, dest, watch } = require("gulp");
 const del = require("del");
+const prettier = require('gulp-prettier');
+const terser = require("gulp-terser");
 const sass = require("gulp-sass");
 const rename = require("gulp-rename");
 const hb = require("gulp-hb");
@@ -34,25 +37,23 @@ async function clean(cb) {
 
 // Copy demo, img, js, fonts folders from src to dist
 async function copy(cb) {
-  return gulp
-    .src([...srcPaths.static, ...srcPaths.images, ...srcPaths.fonts], {
+  return src([...srcPaths.static, ...srcPaths.images, ...srcPaths.fonts], {
       base: "./src"
     })
-    .pipe(gulp.dest("dist"));
+    .pipe(dest("dist"));
 
   cb();
 }
 
 async function copyJS(cb) {
-  return gulp.src(srcPaths.scripts).pipe(gulp.dest("dist/js"));
+  return src(srcPaths.scripts).pipe(dest("dist/js"));
   cb();
 }
 
 // Handle handlebars
 function hbs() {
   // gulp.task("hbs", function() {
-  return gulp
-    .src(srcPaths.templates)
+  return src(srcPaths.templates)
     .pipe(
       hb({
         partials: srcPaths.partials,
@@ -60,13 +61,12 @@ function hbs() {
       })
     )
     .pipe(rename({ extname: ".html" }))
-    .pipe(gulp.dest("dist"));
+    .pipe( dest("dist") );
 }
 
 // Handle sass
 function styles() {
-  return gulp
-    .src(srcPaths.styles)
+  return src(srcPaths.styles)
     .pipe(sourcemaps.init())
     .pipe(
       sass({
@@ -76,7 +76,7 @@ function styles() {
     )
     .pipe(rename({ suffix: ".min" }))
     .pipe(sourcemaps.write("./maps"))
-    .pipe(gulp.dest("./dist/css"));
+    .pipe( dest("./dist/css") );
 }
 
 // function bundle() {
@@ -98,26 +98,47 @@ function styles() {
 //         .pipe(gulp.dest('./dist/js')); //Destination where file to be exported
 // }
 
+function jsTask() {
+  return src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery-pjax/jquery.pjax.js',
+    'node_modules/popper.js/dist/umd/popper.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/bootstrap/js/dist/util.js',
+    'node_modules/widgster/widgster.js',
+    'node_modules/hammerjs/hammer.js',
+    'node_modules/jquery-slimscroll/jquery.slimscroll.js',
+    'node_modules/jquery-hammerjs/jquery.hammer.js',
+
+    // 'src/js/app.js',
+    // 'src/js/settings.js'
+  ])
+      .pipe(prettier({ semi: true }))
+      .pipe(sourcemaps.init())
+      .pipe(concat('bundle.js'))
+      .pipe(terser())
+      .pipe(sourcemaps.write('.'))
+      .pipe(dest('dist/js'));
+}
+
 // Development
 exports.watch = function watch() {
-  gulp.watch(srcPaths.scripts, gulp.series(copyJS));
-  gulp.watch(srcPaths.styles, gulp.series(styles));
-  gulp.watch([...srcPaths.templates, ...srcPaths.partials], gulp.series(hbs));
+  gulp.watch(srcPaths.scripts, series(copyJS));
+  gulp.watch(srcPaths.styles, series(styles));
+  gulp.watch([...srcPaths.templates, ...srcPaths.partials], series(hbs));
   gulp.watch(
     [...srcPaths.static, ...srcPaths.images, ...srcPaths.fonts],
-    gulp.series(copy)
+    series(copy)
   );
 };
 
-gulp.task("build", gulp.parallel( hbs, styles, copy, copyJS));
-
+gulp.task( "build", parallel(hbs, styles, copy, copyJS, jsTask) );
 
 // Build Task
 function build(cb) {
-  return gulp.parallel(clean, "build");
+  return parallel(clean, "build");
   cb();
 }
 
-
 // Default Task
-gulp.task("default", gulp.parallel(clean, "build"));
+gulp.task("default", gulp.parallel( clean, "build") );

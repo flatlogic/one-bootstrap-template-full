@@ -53,7 +53,6 @@ $(function(){
         this._initOnResizeCallbacks();
         this._initOnScreenSizeCallbacks();
 
-
         if (this.pjaxEnabled){
             /**
              * Initialize pjax & attaching all related events
@@ -75,7 +74,6 @@ $(function(){
             $(document).on('sing-app:loaded', $.proxy(this.hideLoader, this));
             $(document).on('pjax:end', $.proxy(this.pageLoaded, this));
         }
-
 
         /* reimplementing bs.collapse data-parent here as we don't want to use BS .panel*/
         this.$sidebar.find('.collapse').on('show.bs.collapse', function(e){

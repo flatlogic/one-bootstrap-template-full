@@ -299,7 +299,6 @@
                         <ul id="sidebar-dashboard" class="collapse ">
                             <li class=""><a href="../dashboard/index.html">Analytics</a></li>
                             <li class=""><a href="../dashboard/visits.html">Visits</a></li>
-                            <li class=""><a href="../dashboard/widgets.html">Widgets</a></li>
                         </ul>
                     </li>
                     <li class="">
@@ -341,9 +340,30 @@
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-doc" class="collapse ">
-                            <li class=""><a href="../documentation/quick_start.html">Quick Start</a></li>
+                            <li class="">
+                                <a class="collapsed d-flex" href="#sidebar-getting-started" data-toggle="collapse" data-parent="#sidebar-doc">
+                                    <span class="icon-text">Getting Started</span>
+                                    <i class="toggle fa fa-angle-down"></i></a>
+                                <ul id="sidebar-getting-started" class="collapse ">
+                                    <li class=""><a href="../documentation/overview.html">Overview</a></li>
+                                    <li class=""><a href="../documentation/licences.html">licences</a></li>
+                                    <li class=""><a href="../documentation/quick_start.html">Quick Start</a></li>
+                                </ul>
+                            </li>
                             <li class=""><a href="../documentation/structure.html">Structure</a></li>
-                            <li class=""><a href="../documentation/components.html">Components</a></li>
+                            <li class="">
+                                <a class="collapsed d-flex" href="#sidebar-components" data-toggle="collapse" data-parent="#sidebar-doc">
+                                    <span class="icon-text">Components</span>
+                                    <i class="toggle fa fa-angle-down"></i></a>
+                                <ul id="sidebar-components" class="collapse ">
+                                    <li class=""><a href="../documentation/charts.html">Charts</a></li>
+                                    <li class=""><a href="../documentation/forms.html">Forms</a></li>
+                                    <li class=""><a href="../documentation/ui.html">UI</a></li>
+                                    <li class=""><a href="../documentation/grid.html">Grid</a></li>
+                                    <li class=""><a href="../documentation/maps.html">Maps</a></li>
+                                    <li class=""><a href="../documentation/tables.html">Tables</a></li>
+                                </ul>
+                            </li>
                             <li class=""><a href="https://flatlogic.com/templates/bootstrap" target="_blank">Purchase</a></li>
                         </ul>
                     </li>
@@ -561,7 +581,7 @@
         <div class="clearfix">
             <div class="btn-toolbar">
                 <div class="btn-group">
-                    <a href="#" data-toggle="dropdown" class="btn dropdown-toggle btn-default">
+                    <a href="#" data-toggle="dropdown" class="btn btn-default btn-lg bg-white dropdown-toggle custom-dropdown">
                         Popular
                     </a>
                     <ul class="dropdown-menu">
@@ -572,7 +592,7 @@
                     </ul>
                 </div>
                 <div class="btn-group">
-                    <a href="#" data-toggle="dropdown" class="btn dropdown-toggle btn-default">
+                    <a href="#" data-toggle="dropdown" class="btn btn-default btn-lg bg-white dropdown-toggle custom-dropdown">
                         All Time
                     </a>
                     <ul class="dropdown-menu">
@@ -589,42 +609,47 @@
         </div>
         <div class="row">
             <div class="col-lg-3 order-lg-2">
-                <h4>Results <span class="fw-semi-bold">Filtering</span></h4>
-                <p class="">Listed content is categorized by the following groups:</p>
-                <ul class="nav nav-pills nav-stacked flex-column search-result-categories mt">
-                    <li class="nav-item">
-                        <a  class="nav-link" href="#">
-                            Hot Ideas
-                            <span class="badge badge-pill badge-danger float-right">34</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Latest Pictures
-                            <span class="badge badge-pill badge-success float-right">9</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Labels of Day
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Recent Movies
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Globals <span class="badge badge-pill badge-info float-right">18</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="widget">
+                    <div class="widget-header">
+                        <h5><span class="fw-bold">Results Filtering</span></h5>
+                    </div>
+                    <div class="widget-body">
+                        <p class="fs-sm text-muted">Listed content is categorized by the following groups:</p>
+                        <ul class="nav nav-pills nav-stacked flex-column search-result-categories mt">
+                            <li class="nav-item">
+                                <a  class="nav-link" href="#">
+                                    Hot Ideas
+                                    <span class="badge badge-pill badge-danger float-right">34</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Latest Pictures
+                                    <span class="badge badge-pill badge-success float-right">9</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Labels of Day
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Recent Movies
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Globals <span class="badge badge-pill badge-info float-right">18</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-9 order-lg-1">
-                <p class="search-results-count">About 94 700 000 (0.39 sec.) results</p>
                 <section class="search-result-item">
                     <a class="image-link" href="#">
-                        <img class="image" src="../demo/img/pictures/1.jpg">
+                        <img class="image" src="../demo/img/pictures/1.png">
                     </a>
                     <div class="search-result-item-body">
                         <div class="row">
@@ -640,28 +665,27 @@
                                     widgets. Not just yet another admin template, but next generation admin template.
                                 </p>
                             </div>
-                            <div class="col-md-3 text-right">
-                                <p class="value4 mt-sm">
+                            <div class="col-md-3 text-center">
+                                <p class="value3 mt-sm">
                                     $9, 700
                                 </p>
-                                <p class="">
+                                <p class="fs-sm text-muted">
                                     PER WEEK
                                 </p>
-                                <a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
+                                <a class="btn btn-info " href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="search-result-item">
                     <a class="image-link" href="#">
-                        <img class="image" src="../demo/img/pictures/5.jpg">
+                        <img class="image" src="../demo/img/pictures/2.png">
                     </a>
                     <div class="search-result-item-body">
                         <div class="row">
                             <div class="col-md-9">
                                 <h4 class="search-result-item-heading">
                                     <a href="#">Try. Posted by Okendoken</a>
-                                    <span class="badge badge-pill bg-danger fw-normal float-right">Best Deal!</span>
                                 </h4>
                                 <p class="info">
                                     Los Angeles, NY 20188
@@ -671,21 +695,21 @@
                                     think three hundred times and still have no precise result.
                                 </p>
                             </div>
-                            <div class="col-md-3 text-right">
-                                <p class="value4 mt-sm">
+                            <div class="col-md-3 text-center">
+                                <p class="value3 mt-sm">
                                     $10, 300
                                 </p>
-                                <p class="">
+                                <p class="fs-sm text-muted">
                                     PER WEEK
                                 </p>
-                                <a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
+                                <a class="btn btn-info" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="search-result-item">
                     <a class="image-link" href="#">
-                        <img class="image" src="../demo/img/pictures/13.jpg">
+                        <img class="image" src="../demo/img/pictures/3.png">
                     </a>
                     <div class="search-result-item-body">
                         <div class="row">
@@ -701,21 +725,21 @@
                                     Europe of Timur (Tamerlan) from Asia heading a big Army of Belarusians, Lithuanians.
                                 </p>
                             </div>
-                            <div class="col-md-3 text-right">
-                                <p class="value4 mt-sm">
+                            <div class="col-md-3 text-center">
+                                <p class="value3 mt-sm">
                                     $3, 200
                                 </p>
-                                <p class="">
+                                <p class="fs-sm text-muted">
                                     PER WEEK
                                 </p>
-                                <a class="btn btn-info btn-sm" href="#">Learn More</a>
+                                <a class="btn btn-info" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="search-result-item">
                     <a class="image-link" href="#">
-                        <img class="image" src="../demo/img/pictures/3.jpg">
+                        <img class="image" src="../demo/img/pictures/4.png">
                     </a>
                     <div class="search-result-item-body">
                         <div class="row">
@@ -731,14 +755,14 @@
                                     either for elements or for the entire background.
                                 </p>
                             </div>
-                            <div class="col-md-3 text-right">
-                                <p class="value4 mt-sm">
+                            <div class="col-md-3 text-center">
+                                <p class="value3 mt-sm">
                                     $2, 400
                                 </p>
-                                <p class="">
+                                <p class="fs-sm text-muted">
                                     PER MONTH
                                 </p>
-                                <a class="btn btn-info btn-sm" href="#">Learn More</a>
+                                <a class="btn btn-info" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -768,15 +792,17 @@
 
     <!-- common libraries. required for every page-->
 
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/jquery-pjax/jquery.pjax.js"></script>
-    <script src='../../node_modules/popper.js/dist/umd/popper.js'></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../../node_modules/bootstrap/js/dist/util.js"></script>
-    <script src="../../node_modules/widgster/widgster.js"></script>
-    <script src="../../node_modules/hammerjs/hammer.js"></script>
-    <script src='../../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>
-    <script src="../../node_modules/jquery-hammerjs/jquery.hammer.js"></script>
+    <script src="../js/bundle.js"></script>
+
+<!--    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>-->
+<!--    <script src="../../node_modules/jquery-pjax/jquery.pjax.js"></script>-->
+<!--    <script src='../../node_modules/popper.js/dist/umd/popper.js'></script>-->
+<!--    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+<!--    <script src="../../node_modules/bootstrap/js/dist/util.js"></script>-->
+<!--    <script src="../../node_modules/widgster/widgster.js"></script>-->
+<!--    <script src="../../node_modules/hammerjs/hammer.js"></script>-->
+<!--    <script src='../../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>-->
+<!--    <script src="../../node_modules/jquery-hammerjs/jquery.hammer.js"></script>-->
 
     <!-- common app js -->
     <script src="../js/settings.js"></script>

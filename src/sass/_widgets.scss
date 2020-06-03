@@ -716,7 +716,7 @@
       display: inline-block;
       margin: -20px 0 -20px -20px;
       float: left;
-      width: 230px;
+      //width: 230px;
     }
     @include media-breakpoint-down(sm) {
       max-height: 200px;
@@ -730,7 +730,7 @@
   .info{
     margin-top: 2px;
     font-size: $font-size-sm;
-    color: $body-main-color-small;
+    color: rgba($body-main-color, 0.6);
   }
 
   .description{
@@ -756,7 +756,8 @@
   font-weight: $font-weight-normal;
 
   > a {
-    color: $body-main-color;
+    color: $primary;
+    text-decoration: none;
   }
 
   @include media-breakpoint-up(md){

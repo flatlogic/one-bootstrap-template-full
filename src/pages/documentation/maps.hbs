@@ -1,0 +1,40 @@
+{{#extend "layout" title="Flatlogic One Bootstrap - Documentation Components Maps"}}
+    {{#content "sidebar"}}
+        {{> sidebar active="components"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="product-grid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Documentation</li>
+                <li class="breadcrumb-item">Components</li>
+                <li class="breadcrumb-item active">Maps</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Maps</h5>
+                        </div>
+                        <div class="widget-body mt-4" >
+                            <h4 class="fw-semi-bold mt" id="maps_google">GOOGLE MAPS</h4>
+                            <p>To embed Google Maps into <strong>Flatlogic One</strong> great jquery plugin is used -
+                                <a href="http://gmap3.net/">Gmap3</a>. Files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;http://maps.google.com/maps/api/js?sensor=true&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/gmaps/gmaps.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+                            <h4 class="fw-semi-bold mt" id="maps_vector">Vector maps</h4>
+                            <p>Sometimes you need to use just simplified version of map. <a href="https://github.com/bjornd/jvectormap">Jvectormap</a> does
+                                a great job in such cases.</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jvectormap/jquery.jvectormap.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jvectormap-world/index.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+    {{/content}}
+{{/extend}}

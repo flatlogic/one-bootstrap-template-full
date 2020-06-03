@@ -8,7 +8,7 @@
     <div class="js-sidebar-content">
         <h5 class="sidebar-nav-title">App</h5>
         <ul class="sidebar-nav">
-            <li class="{{#activeClass active "dashboard_analytics dashboard_visits dashboard_widgets"}} active {{/activeClass}}">
+            <li class="{{#activeClass active "dashboard_analytics dashboard_visits"}} active {{/activeClass}}">
                 <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
                     <i class="sidebar-icon dashboard-icon"></i>
                     <span class="icon-text">Dashboard</span>
@@ -17,7 +17,6 @@
                 <ul id="sidebar-dashboard" class="collapse {{#activeClass active "dashboard_analytics dashboard_visits dashboard_widgets"}} show {{/activeClass}}">
                     <li class="{{#activeClass active "dashboard_analytics"}} active {{/activeClass}}"><a href="../dashboard/index.html">Analytics</a></li>
                     <li class="{{#activeClass active "dashboard_visits"}} active {{/activeClass}}"><a href="../dashboard/visits.html">Visits</a></li>
-                    <li class="{{#activeClass active "dashboard_widgets"}} active {{/activeClass}}"><a href="../dashboard/widgets.html">Widgets</a></li>
                 </ul>
             </li>
             <li class="{{#activeClass active "product_detail product_grid product_management"}} active {{/activeClass}}">
@@ -52,16 +51,37 @@
                     <span class="badge badge-secondary">9</span>
                 </a>
             </li>
-            <li class="{{#activeClass active "quick_start structure components purchase"}} active {{/activeClass}}">
+            <li class="{{#activeClass active "overview licences quick-start structure charts forms ui grid maps tables"}} active {{/activeClass}}">
                 <a class="collapsed" href="#sidebar-doc" data-toggle="collapse" data-parent="#sidebar">
                     <i class="sidebar-icon documentation-icon"></i>
                     <span class="icon-text">Documentation</span>
                     <i class="toggle fa fa-angle-down"></i>
                 </a>
-                <ul id="sidebar-doc" class="collapse {{#activeClass active "quick_start structure components purchase"}} show {{/activeClass}}">
-                    <li class="{{#activeClass active "quick_start"}} active {{/activeClass}}"><a href="../documentation/quick_start.html">Quick Start</a></li>
+                <ul id="sidebar-doc" class="collapse {{#activeClass active "overview licences quick-start structure charts forms ui grid maps tables"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "overview licences quick-start"}} active {{/activeClass}}">
+                        <a class="collapsed d-flex" href="#sidebar-getting-started" data-toggle="collapse" data-parent="#sidebar-doc">
+                            <span class="icon-text">Getting Started</span>
+                            <i class="toggle fa fa-angle-down"></i></a>
+                        <ul id="sidebar-getting-started" class="collapse {{#activeClass active "overview licences quick-start"}} show {{/activeClass}}">
+                            <li class="{{#activeClass active "overview"}} active {{/activeClass}}"><a href="../documentation/overview.html">Overview</a></li>
+                            <li class="{{#activeClass active "licences"}} active {{/activeClass}}"><a href="../documentation/licences.html">licences</a></li>
+                            <li class="{{#activeClass active "quick-start"}} active {{/activeClass}}"><a href="../documentation/quick_start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
                     <li class="{{#activeClass active "structure"}} active {{/activeClass}}"><a href="../documentation/structure.html">Structure</a></li>
-                    <li class="{{#activeClass active "components"}} active {{/activeClass}}"><a href="../documentation/components.html">Components</a></li>
+                    <li class="{{#activeClass active "charts forms ui grid maps tables"}} active {{/activeClass}}">
+                        <a class="collapsed d-flex" href="#sidebar-components" data-toggle="collapse" data-parent="#sidebar-doc">
+                            <span class="icon-text">Components</span>
+                            <i class="toggle fa fa-angle-down"></i></a>
+                        <ul id="sidebar-components" class="collapse {{#activeClass active "charts forms ui grid maps tables"}} show {{/activeClass}}">
+                            <li class="{{#activeClass active "charts"}} active {{/activeClass}}"><a href="../documentation/charts.html">Charts</a></li>
+                            <li class="{{#activeClass active "forms"}} active {{/activeClass}}"><a href="../documentation/forms.html">Forms</a></li>
+                            <li class="{{#activeClass active "ui"}} active {{/activeClass}}"><a href="../documentation/ui.html">UI</a></li>
+                            <li class="{{#activeClass active "grid"}} active {{/activeClass}}"><a href="../documentation/grid.html">Grid</a></li>
+                            <li class="{{#activeClass active "maps"}} active {{/activeClass}}"><a href="../documentation/maps.html">Maps</a></li>
+                            <li class="{{#activeClass active "tables"}} active {{/activeClass}}"><a href="../documentation/tables.html">Tables</a></li>
+                        </ul>
+                    </li>
                     <li class="{{#activeClass active "purchase"}} active {{/activeClass}}"><a href="https://flatlogic.com/templates/bootstrap" target="_blank">Purchase</a></li>
                 </ul>
             </li>
@@ -119,7 +139,7 @@
                     <li class="{{#activeClass active "form_wizard"}} active {{/activeClass}}"><a href="../form/form_wizard.html">Form Wizard</a></li>
                 </ul>
             </li>
-            <li class="{{#activeClass active "charts_flot charts_morris charts_rickshaw charts_sparkline charts_d3 charts_easy_pie charts_overview"}} active {{/activeClass}}">
+            <li class="{{#activeClass active "charts_flot charts_morris charts_rickshaw charts_sparkline charts_easy_pie charts_overview"}} active {{/activeClass}}">
                 <a class="collapsed" href="#sidebar-charts" data-toggle="collapse" data-parent="#sidebar">
                     <i class="sidebar-icon charts-icon"></i>
                     <span class="icon-text">Charts</span>
