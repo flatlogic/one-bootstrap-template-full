@@ -65,17 +65,9 @@ $(function(){
             });
         }, 3000);
     }
-    function panorama() {
-        let panorama = GMaps.createPanorama({
-            el: '#panorama',
-            lat : 42.3455,
-            lng : -71.0983
-        });
-    }
 
     function pageLoad(){
         initGmap();
-        panorama();
     }
 
     pageLoad();
