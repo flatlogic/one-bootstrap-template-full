@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-        <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
                 <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -580,27 +580,32 @@
         <div class="row">
             <div class="col-md">
                 <section class="widget">
+                    <header>
+                        <h5>
+                            <span>Headings</span>
+                        </h5>
+                    </header>
                     <div class="widget-body typography">
-                        <h5>Headings</h5>
-                        <div class="widget-padding-sm  rounded">
-
-                            <div class="row">
-                                <div class="col-sm">
-                                    <h1>h1. Heading</h1>
-                                    <h2>h2. Heading</h2>
-                                    <h3>h3. Heading</h3>
-                                    <h4>h4. Heading</h4>
-                                    <h5>h5. Heading</h5>
-                                    <h6>h6. Heading</h6>
-                                </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h1>h1. Heading</h1>
+                                <h2>h2. Heading</h2>
+                                <h3>h3. Heading</h3>
+                                <h4>h4. Heading</h4>
+                                <h5>h5. Heading</h5>
+                                <h6>h6. Heading</h6>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="widget">
-                    <h5>Text Size</h5>
+                    <header>
+                        <h5>
+                            <span>Text Size</span>
+                        </h5>
+                    </header>
                     <div class="widget-body typography">
-                        <div class="widget-padding-sm  rounded">
+                        <div>
                             <h1 class="display-1">Display 1</h1>
                             <h1 class="display-2">Display 2</h1>
                             <h1 class="display-3">Display 3</h1>
@@ -611,26 +616,32 @@
             </div>
             <div class="col-md">
                 <section class="widget">
+                    <header>
+                        <h5>
+                            <span>Typography Colors</span>
+                        </h5>
+                    </header>
                     <div class="widget-body typography">
-                        <h5>Typography Colors</h5>
-                        <div class="widget-padding-sm rounded">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <h1 class="">h1. Heading</h1>
-                                    <h2 class="text-warning">h2. Heading</h2>
-                                    <h3 class="text-danger">h3. Heading</h3>
-                                    <h4 class="text-success">h4. Heading</h4>
-                                    <h5 class="text-primary">h5. Heading</h5>
-                                    <h6 class="text-info">h6. Heading</h6>
-                                </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h1 class="">h1. Heading</h1>
+                                <h2 class="text-warning">h2. Heading</h2>
+                                <h3 class="text-danger">h3. Heading</h3>
+                                <h4 class="text-success">h4. Heading</h4>
+                                <h5 class="text-primary">h5. Heading</h5>
+                                <h6 class="text-info">h6. Heading</h6>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="widget">
-                    <h5>Basic Text Settings</h5>
+                    <header>
+                        <h5>
+                            <span>Basic Text Settings</span>
+                        </h5>
+                    </header>
                     <div class="widget-body">
-                        <div class="widget-padding-sm rounded">
+                        <div>
                             <p>You can use the mark tag to <mark>highlight</mark> text.</p>
                             <p><del>This line of text is meant to be treated as deleted text.</del></p>
                             <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>

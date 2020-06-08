@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-        <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
                 <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -609,10 +609,10 @@
                             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
                                 Demo
                             </button>
-                            <button type="button" class="btn btn-warning ml-sm" data-toggle="modal" data-target="#exampleModalCenter">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
                                 Vertically centered
                             </button>
-                            <button type="button" class="btn btn-warning ml-sm" data-toggle="modal" data-target="#exampleModalLong">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">
                                 Scrolling long content
                             </button>
                         </div>
@@ -646,7 +646,7 @@
                         <!-- Buttons -->
                         <div class="d-flex">
                             <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-                            <button type="button" class="btn btn-warning ml-sm" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
                         </div>
                     </div>
                 </section>
@@ -657,14 +657,14 @@
                         <h5>Using grid</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -672,6 +672,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </header>
                     <div class="widget-body">
                         <p>Utilize the Bootstrap grid system within a modal by nesting <code>.container-fluid</code> within the <code>.modal-body</code>.
@@ -684,18 +685,19 @@
                             <pre class="text-info bg-light border-0 mb-0 mt-xs">&lt;div <span class="text-primary">class=</span><span class="text-success">"modal-body"</span>&gt;
     &lt;div <span class="text-primary">class=</span><span class="text-success">"container-fluid"</span>&gt;
         &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4"</span>&gt;<span class="text-muted">.col-md-4</span>&lt;/div&gt;
-            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4 ml-auto"</span>&gt;<span class="text-muted">.col-md-4 .ml-auto</span>&lt;/div&gt;
+            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4"</span>&gt;<span>.col-md-4</span>&lt;/div&gt;
+            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4 ml-auto"</span>&gt;<span>.col-md-4 .ml-auto</span>&lt;/div&gt;
         &lt;/div&gt;
         &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-3 ml-auto"</span>&gt;<span class="text-muted">.col-md-4</span>&lt;/div&gt;
-            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4 ml-auto"</span>&gt;<span class="text-muted">.col-md-4 .ml-auto</span>&lt;/div&gt;
+            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-3 ml-auto"</span>&gt;<span>.col-md-4</span>&lt;/div&gt;
+            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-4 ml-auto"</span>&gt;<span>.col-md-4 .ml-auto</span>&lt;/div&gt;
         &lt;/div&gt;
         &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-6 ml-auto"</span>&gt;<span class="text-muted">.col-md-6 .ml-auto</span>&lt;/div&gt;
+            &lt;div <span class="text-primary">class=</span><span class="text-success">"col-md-6 ml-auto"</span>&gt;<span>.col-md-6 .ml-auto</span>&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;</pre></div>
+&lt;/div&gt;</pre>
+                        </div>
                 </section>
             </div>
         </div>

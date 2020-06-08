@@ -134,7 +134,7 @@ $(function(){
             grid: {
                 padding: {
                     right: 20,
-                    left: -20
+                    left: -10
                 },
                 xaxis: {
                     lines: {

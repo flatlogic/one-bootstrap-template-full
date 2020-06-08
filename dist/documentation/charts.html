@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-        <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
                 <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -589,104 +589,78 @@
                         <div class="widget-body">
                             <p class="mb-0">Built with <a href="http://www.flotcharts.org/">Flot JS</a>. Required libs:</p>
                             <div class="components-block rounded">
-                                <pre class="m-0"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/flot/jquery.flot.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre>
+                                <pre class="m-0"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span>"node_modules/flot/jquery.flot.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre>
                             </div>
-                            <br>
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Basic usage
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Create a placeholder div to put the graph in:
-
-                                            You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:
-
-                                            You can also do it with an external stylesheet. Make sure that the placeholder isn't within something with a display:none CSS property - in that case, Flot has trouble measuring label dimensions which results in garbled looks and might have trouble measuring the placeholder dimensions which is fatal (it'll throw an exception).
-
-                                            Then when the div is ready in the DOM, which is usually on document ready, run the plot function:
-
-                                            <div class="components-block rounded">$.plot($("#placeholder"), data, options);</div>
-                                            Here, data is an array of data series and options is an object with settings if you want to customize the plot. Take a look at the examples for some ideas of what to put in or look at the API reference. Here's a quick example that'll draw a line from (0, 0) to (1, 1):
-
-                                            <div class="components-block rounded">$.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });</div>
-                                            The plot function immediately draws the chart and then returns a plot object with a couple of methods.
-                                        </div>
-                                    </div>
-                                </div>
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0">
+                                <pre class="m-0"><span class="text-danger">let </span><span class="text-success">plot = </span><span>$.plot(placeholder, data, options);</span></pre>
                             </div>
                         </div>
                     </div>
+
                     <div class="widget">
                         <div class="widget-header">
                             <h5 class="fw-bold">Interactive Sparklines</h5>
                         </div>
                         <div class="widget-body">
                             <p class="mb-0">Built with <a href="http://omnipotent.net/jquery.sparkline/#s-about">jqeruy.sparkline</a>.</p>
-                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/jquery.sparkline/index.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre></div>
-                            <br>
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Basic usage
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Create a placeholder div to put the graph in:
-
-                                            You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:
-
-                                            You can also do it with an external stylesheet. Make sure that the placeholder isn't within something with a display:none CSS property - in that case, Flot has trouble measuring label dimensions which results in garbled looks and might have trouble measuring the placeholder dimensions which is fatal (it'll throw an exception).
-
-                                            Then when the div is ready in the DOM, which is usually on document ready, run the plot function:
-
-                                            <div class="components-block rounded">$.plot($("#placeholder"), data, options);</div>
-                                            Here, data is an array of data series and options is an object with settings if you want to customize the plot. Take a look at the examples for some ideas of what to put in or look at the API reference. Here's a quick example that'll draw a line from (0, 0) to (1, 1):
-
-                                            <div class="components-block rounded">$.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });</div>
-                                            The plot function immediately draws the chart and then returns a plot object with a couple of methods.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="components-block rounded"><pre><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span>"node_modules/jquery.sparkline/index.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre></div>
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0"><pre><span class="text-danger">let&nbsp;</span><span class="text-success">myValues = </span><span class="">[10,8,5,7,4,4,1];</span><br><br><span>$(</span><span class="text-success">.dynamicsparkline'</span><span>)sparkline(myvalues);</span></pre></div>
                         </div>
                     </div>
 
                     <div class="widget">
                         <div class="widget-header">
-                            <h5 class="fw-bold">Charts</h5>
+                            <h5 class="fw-bold">Rickshaw</h5>
                         </div>
-                        <div class="widget-body mt-4" >
-                            <p class="mb-0">Built with <a href="http://omnipotent.net/jquery.sparkline/#s-about">jqeruy.sparkline</a>.</p>
-                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/jquery.sparkline/index.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre></div>
-                            <h5 class="mt fw-semi-bold">RICKSHAW</h5>
-                            <p>Realtime chart is based on <a href="http://code.shutterstock.com/rickshaw/examples/extensions.html">Rickshaw
+                        <div class="widget-body">
+                            <p>Realtime chart is based on <a href="https://tech.shutterstock.com/rickshaw/">Rickshaw
                                 realtime example</a>.</p>
-                            <h5 class="mt fw-semi-bold">SPARKLINE PIE CHART</h5>
+                            <div class="components-block rounded"><pre><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span>"node_modules/rickshaw.min.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span></pre></div>
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0"><pre><span class="text-danger">let&nbsp;</span><span class="text-success">data = </span><span class="">[ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 17 }, { x: 3, y: 42 } ];</span><br><br><span class="text-danger">let </span><span class="text-success">graph </span><span>new Rickshaw.Graph( { placeholder, options, series: [data] }); </span></pre></div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Sparkline Pie Chart</h5>
+                        </div>
+                        <div class="widget-body">
                             <p>Same as interactive sparklines based on <a href="http://omnipotent.net/jquery.sparkline/#s-about">jqeruy.sparkline</a>.</p>
-                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/jquery.sparkline/index.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span>
-</pre></div>
-                            <h5 class="mt fw-semi-bold">MORRIS CHARTS</h5>
+                            <div class="components-block rounded mt-0"><pre><span class="text-danger">let&nbsp;</span><span class="text-success">myValues = </span><span class="">[10,8,5,7,4,4,1];</span><br><br><span>$(</span><span class="text-success">.dynamicsparkline'</span><span>)sparkline(myvalues, {type: 'pie'});</span></pre></div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Morris Charts</h5>
+                        </div>
+                        <div class="widget-body">
                             <p>Built with <a href="http://www.oesmith.co.uk/morris.js/">Morris JS</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/raphael/raphael-min.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/morris.js/morris.min.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
-                            <h5 class="mt fw-semi-bold">EASY PIE CHARTSs</h5>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Easy Pie Charts</h5>
+                        </div>
+                        <div class="widget-body">
                             <p>Built with <a href="https://github.com/rendro/easy-pie-chart">Easy Pie Chart</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-
-                            <h5 class="mt fw-semi-bold">FLOT BARS</h5>
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h5 class="fw-bold">Flot Bars</h5>
+                        </div>
+                        <div class="widget-body">
                             <p>Same as Flot Charts built with <a href="http://www.flotcharts.org/">Flot</a>. A bit different dependencies:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot.animator/jquery.flot.animator.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot/jquery.flot.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
@@ -694,8 +668,6 @@
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot/jquery.flot.selection.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot/jquery.flot.time.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
-
-
                         </div>
                     </div>
                 </div>

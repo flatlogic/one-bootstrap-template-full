@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-        <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
                 <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -600,7 +600,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Average Order Value</span>
+                            <span>Average Order Value</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -623,7 +623,7 @@
                     <div class="widget-body">
                         <div class="justify-content-between mt-3 no-gutters row">
                             <div class="d-flex align-items-center col-sm-8">
-                                <h3 class="fw-semi-bold mb-0">872 410 $</h3>
+                                <h2 class="fw-semi-bold mb-0">872 410 $</h2>
                             </div>
                             <div class="d-flex align-items-center justify-content-end col-sm-4">
                                 <img src="../img/icons/stocks.svg" alt="" class="mr-1">
@@ -644,7 +644,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Convertion Rate</span>
+                            <span>Convertion Rate</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -667,7 +667,7 @@
                     <div class="widget-body">
                         <div class="justify-content-between mt-3 no-gutters row">
                             <div class="d-flex align-items-center col-sm-8">
-                                <h3 class="fw-semi-bold mb-0">20.7%</h3>
+                                <h2 class="fw-semi-bold mb-0">20.7%</h2>
                             </div>
                             <div class="d-flex align-items-center justify-content-end col-sm-4">
                                 <img src="../img/icons/stocks.svg" alt="" class="mr-1">
@@ -693,7 +693,7 @@
                                 <img src="../img/icons/usersImg.svg" alt="" style="padding-top: 15px;">
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
-                                <h3 class="fw-semi-bold pt-1 mb-0">50873</h3>
+                                <h2 class="fw-semi-bold pt-1 mb-0">50873</h2>
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
                                 <h5 class="fw-thin pt-1 mb-0">Visitors</h5>
@@ -714,7 +714,7 @@
                                 <img src="../img/icons/smileImg.svg" alt="" style="padding-top: 15px;">
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
-                                <h3 class="fw-semi-bold pt-1 mb-0">6452</h3>
+                                <h2 class="fw-semi-bold pt-1 mb-0">6452</h2>
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
                                 <h5 class="fw-thin pt-1 mb-0">Customers</h5>
@@ -733,7 +733,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Upsell Take Rate</span>
+                            <span >Upsell Take Rate</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -756,7 +756,7 @@
                     <div class="widget-body">
                         <div class="justify-content-between mt-3 no-gutters row">
                             <div class="d-flex align-items-center col-sm-8">
-                                <h3 class="fw-semi-bold mb-0">20.7%</h3>
+                                <h2 class="fw-semi-bold mb-0">20.7%</h2>
                             </div>
                             <div class="d-flex align-items-center justify-content-end col-sm-4">
                                 <img src="../img/icons/stocks.svg" alt="" class="mr-1">
@@ -777,7 +777,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Number of returns</span>
+                            <span >Number of returns</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -800,7 +800,7 @@
                     <div class="widget-body">
                         <div class="justify-content-between mt-3 no-gutters row">
                             <div class="d-flex align-items-center col-sm-8">
-                                <h3 class="fw-semi-bold mb-0">12</h3>
+                                <h2 class="fw-semi-bold mb-0">12</h2>
                             </div>
                             <div class="d-flex align-items-center justify-content-end col-sm-4">
                                 <img src="../img/icons/stocks.svg" alt="" class="mr-1">
@@ -826,7 +826,7 @@
                                 <img src="../img/icons/total-sale.svg" alt="" style="padding-top: 15px;">
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
-                                <h3 class="fw-semi-bold pt-1 mb-0">$92k</h3>
+                                <h2 class="fw-semi-bold pt-1 mb-0">$92k</h2>
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
                                 <h5 class="fw-thin pt-1 mb-0">Sales</h5>
@@ -847,7 +847,7 @@
                                 <img src="../img/icons/orders.svg" alt="" style="padding-top: 15px;">
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
-                                <h3 class="fw-semi-bold pt-1 mb-0">3240</h3>
+                                <h2 class="fw-semi-bold pt-1 mb-0">3240</h2>
                             </div>
                             <div class="d-flex justify-content-center align-items-center col-sm-12">
                                 <h5 class="fw-thin pt-1 mb-0">Orders</h5>
@@ -866,7 +866,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Daily Line Chart</span>
+                            <span >Daily Line Chart</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -901,7 +901,7 @@
                 <section class="widget">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Status</span>
+                            <span >Status</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -956,7 +956,7 @@
                 <section class="widget">
                     <header>
                         <h5>
-                            <span class="fw-semi-bold">Recent Order</span>
+                            <span >Recent Order</span>
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">

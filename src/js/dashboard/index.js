@@ -215,7 +215,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
+        let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
     }
 
@@ -274,7 +274,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
+        let chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
         chart.render();
     }
 
@@ -298,7 +298,7 @@ $(function(){
             grid: {
                 padding: {
                     right: 20,
-                    left: -20
+                    left: -10
                 },
                 xaxis: {
                     lines: {
@@ -351,7 +351,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
+        let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
     }
 

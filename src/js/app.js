@@ -325,14 +325,14 @@ $(function(){
         };
 
         $scripts.each(function() {
-            var src = this.src;
-            var matchedScripts = $existingScripts.filter(function() {
+            let src = this.src;
+            let matchedScripts = $existingScripts.filter(function() {
                 //noinspection JSPotentiallyInvalidUsageOfThis
                 return this.src === src;
             });
             if (matchedScripts.length) return;
 
-            var script = document.createElement('script');
+            let script = document.createElement('script');
             script.src = $(this).attr('src');
             $previous.load(function(){
                 document.body.appendChild(script);
@@ -341,7 +341,7 @@ $(function(){
             $previous = $(script);
         });
 
-        var view = this;
+        let view = this;
         $previous.load(function(){
             $(document).trigger('sing-app:loaded');
             view.log('scripts loaded.');
@@ -350,7 +350,7 @@ $(function(){
 
     SingAppView.prototype.extractPageName = function(url){
         //credit: http://stackoverflow.com/a/8497143/1298418
-        var pageName = url.split('#')[0].substring(url.lastIndexOf("/") + 1).split('?')[0];
+        let pageName = url.split('#')[0].substring(url.lastIndexOf("/") + 1).split('?')[0];
         return pageName === '' ? 'index.html' : pageName;
     };
 
@@ -390,7 +390,6 @@ $(function(){
 
 
     window.SingApp = new SingAppView();
-
 
     initAppPlugins();
     initAppFunctions();
@@ -480,7 +479,7 @@ function initAppFunctions(){
         /**
          * Change to loading state when fetching notifications
          */
-        var $loadNotificationsBtn = $('#load-notifications-btn');
+        let $loadNotificationsBtn = $('#load-notifications-btn');
         $loadNotificationsBtn.on('ajax-load:start', function (e) {
             $loadNotificationsBtn.button('loading');
         });
@@ -521,7 +520,7 @@ function initAppFunctions(){
         $('[data-toggle="tooltip"]').tooltip();
 
         function initSidebarScroll(){
-            var $sidebarContent = $('.js-sidebar-content');
+            let $sidebarContent = $('.js-sidebar-content');
             if ($('#sidebar').find('.slimScrollDiv').length != 0){
                 $sidebarContent.slimscroll({
                     destroy: true
@@ -535,8 +534,19 @@ function initAppFunctions(){
             });
         }
 
+        function initThemeHelperScroll(){
+            let $sidebarContent = $('.js-theme-content');
+            $sidebarContent.slimscroll({
+                height: '100vh',
+                size: '5px',
+                opacity: 0.1,
+                wheelStep: 10
+            });
+        }
+
         SingApp.onResize(initSidebarScroll, true);
         initSidebarScroll();
+        initThemeHelperScroll();
 
         /*
          When widget is closed remove its parent if it is .col-*
@@ -558,7 +568,7 @@ function initAppFunctions(){
  * Sing browser fixes. It's always something broken somewhere
  */
 function initAppFixes(){
-    var isWebkit = 'WebkitAppearance' in document.documentElement.style;
+    let isWebkit = 'WebkitAppearance' in document.documentElement.style;
     if (isWebkit){
     }
 }
@@ -582,7 +592,6 @@ function initDemoFunctions(){
             $('#notifications-list').find('[data-toggle=tooltip]').tooltip();
         });
 
-
         const mainSidebar = $('#sidebar');
         const toggleSidebar = $('#toggleSidebar');
 
@@ -599,10 +608,10 @@ function initDemoFunctions(){
         });
 
         // Theme Switcher
-
+        const body = $("body");
         const sidebar = $(".sidebar");
         const navbar = $(".navbar");
-        const styles = ["sidebar-first ", "second ", "third ", "fourth ", "fifth ", "sixth ", "seventh ", "eighth ", "ninth "];
+        const styles = ["theme-first ", "second ", "third ", "fourth ", "fifth ", "sixth ", "seventh ", "eighth ", "ninth "];
 
         $("[name=navbar-type]").change(function() {
             if (this.value === 'floating') {
@@ -615,7 +624,7 @@ function initDemoFunctions(){
         $("[name=sidebar-type]").change( function() {
             if (this.value === "transparent")
             {
-                sidebar.removeClass('sidebar-dark').addClass('sidebar-transparent')
+                sidebar.addClass('sidebar-transparent')
             }
             else
             {
@@ -634,26 +643,26 @@ function initDemoFunctions(){
             const target = $(e.target);
             $('.color-box-side-bar').removeClass('active');
 
-            sidebar.removeClass('sidebar-dark', 'sidebar-first').addClass( `sidebar-${target.data('style')}` );
+            body.removeClass('theme-dark', 'theme-first').addClass( `theme-${target.data('style')}` );
             target.addClass('active');
 
-            localStorage.setItem('sidebarTheme', sidebar.attr('class'));
+            localStorage.setItem('sidebarTheme', body.attr('class'));
         });
 
         $('.colors-list .color-box').click(function(e) {
             const target = $(e.target);
             $('.color-box').removeClass('active-theme');
-            sidebar.removeClass(styles.join("sidebar-")).addClass(`sidebar-${target.data('style')}`);
+            body.removeClass(styles.join("theme-")).addClass(`theme-${target.data('style')}`);
 
             target.addClass('active-theme');
-            localStorage.setItem('sidebarTheme', sidebar.attr('class'));
+            localStorage.setItem('sidebarTheme', body.attr('class'));
         });
 
         //Theme load on reload
 
         function themeLoad() {
             if (localStorage.getItem('sidebarTheme')) {
-                sidebar.removeClass().addClass(localStorage.getItem('sidebarTheme'))
+                body.removeClass().addClass(localStorage.getItem('sidebarTheme'))
             }
         }
         themeLoad();

@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-<nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+<nav id="sidebar" class="sidebar" role="navigation">
     <!-- need this .js class to initiate slimscroll -->
     <header class="logo d-md-block">
         <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -589,10 +589,10 @@
             <div class="widget">
                 <div class="widget-body">
                     <section class="event">
-                        <span class="thumb-sm avatar float-left mr-sm">
-                <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
-            </span>
-                        <h5 class="event-heading"><a href="#">Jessica Nilson</a> <small>@jess</small></h5>
+                        <span class="thumb float-left mr-md">
+                            <img class="rounded-circle" src="../img/avatars/tn72.png" alt="...">
+                        </span>
+                        <h5 class="event-heading"><a href="#">Jessica Nilson @jess</a></h5>
                         <p class="text-muted fs-sm">10:12 am - Publicly near Minsk</p>
                         <p>There is no such thing as maturity. There is instead an ever-evolving process of maturing. Because when there is a maturity, there is ...</p>
                         <footer>
@@ -603,27 +603,27 @@
                             </ul>
                             <ul class="post-comments">
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
-                                        <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
+                                    <span class="thumb-sm float-left mr-md">
+                                        <img class="rounded-circle" src="../img/avatars/tn1.png" alt="...">
                                     </span>
                                     <div class="comment-body">
-                                        <h6 class="author fs-sm fw-semi-bold">Radrigo Gonzales <small>7 mins ago</small></h6>
+                                        <h6 class="author fw-semi-bold">Radrigo Gonzales <small>7 mins ago</small></h6>
                                         <p>Someone said they were the best people out there just few years ago. Don't know
                                             better options.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
-                                        <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
+                                    <span class="thumb-sm float-left mr-md">
+                                        <img class="rounded-circle" src="../img/avatars/tn2.png" alt="...">
                                     </span>
                                     <div class="comment-body">
-                                        <h6 class="author fs-sm fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
+                                        <h6 class="author fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
                                         <p>True. Heard absolutely the same.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
-                                        <img class="rounded-circle" src="../img/avatar.png" alt="...">
+                                    <span class="thumb-sm float-left mr-md">
+                                        <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
                                     </span>
                                     <div class="comment-body">
                                         <input class="form-control" type="text" placeholder="Write your comment...">
@@ -645,10 +645,10 @@
             <div class="widget">
                 <div class="widget-body">
                     <section class="event">
-                        <span class="thumb-sm avatar float-left mr-sm">
-                <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
-            </span>
-                        <h5 class="event-heading"><a href="#">Jessica Nilson</a> <small>@jess</small></h5>
+                        <span class="thumb float-left mr-md">
+                            <img class="rounded-circle" src="../img/avatars/tn7.png" alt="...">
+                        </span>
+                        <h5 class="event-heading"><a href="#">Jessica Nilson @jess</a></h5>
                         <p class="text-muted fs-sm">10:12 am - Publicly near Minsk</p>
                         <div class="event-map" id="gmap"></div>
                         <footer>
@@ -659,8 +659,8 @@
                             </ul>
                             <ul class="post-comments">
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
+                        <span class="thumb-sm float-left mr-md">
+                            <img class="rounded-circle" src="../img/avatars/tn2.png" alt="...">
                         </span>
                                     <div class="comment-body">
                                         <h6 class="author fs-sm fw-semi-bold">Radrigo Gonzales <small>7 mins ago</small></h6>
@@ -669,18 +669,18 @@
                                     </div>
                                 </li>
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
-                        </span>
+                                <span class="thumb-sm avatar float-left mr-md">
+                                    <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
+                                </span>
                                     <div class="comment-body">
                                         <h6 class="author fs-sm fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
                                         <p>True. Heard absolutely the same.</p>
                                     </div>
                                 </li>
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../img/avatar.png" alt="...">
-                        </span>
+                                <span class="thumb-sm avatar float-left mr-md">
+                                    <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
+                                </span>
                                     <div class="comment-body">
                                         <input class="form-control" type="text" placeholder="Write your comment...">
                                     </div>
@@ -700,8 +700,11 @@
         <div class="timeline-panel">
             <div class="widget">
                 <section class="event">
-                    <h5 class="event-heading"><a href="#">Jessica Smith</a> <small>@jess</small></h5>
-                    <p class="text-muted fs-sm">February 22, 2014 at 01:59 PM</p>
+                    <span class="thumb float-left mr-md">
+                            <img class="rounded-circle" src="../img/avatars/tn9.png" alt="...">
+                        </span>
+                    <h5 class="event-heading"><a href="#">Ann Nilson @nils</a></h5>
+                    <p class="text-muted fs-sm">February 22, 2020 at 01:59 PM</p>
                     <p class="fs-mini">
                         Check out this awesome photo I made in Italy last summer. Seems it was lost somewhere deep inside
                         my brand new HDD 40TB. Thanks god I found it!
@@ -732,10 +735,10 @@
         <div class="timeline-panel">
             <div class="widget">
                 <section class="event">
-            <span class="thumb-sm avatar float-left mr-sm">
-                <img class="rounded-circle" src="../demo/img/people/a6.jpg" alt="...">
-            </span>
-                    <h5 class="event-heading"><a href="#">Jessica Smith</a> <small>@jess</small></h5>
+                    <span class="thumb float-left mr-md">
+                        <img class="rounded-circle" src="../demo/img/people/a6.jpg" alt="...">
+                    </span>
+                    <h5 class="event-heading"><a href="#">Jessica Smith @jess</a> </h5>
                     <p class="text-muted fs-sm">9:03 am - Publicly near Minsk</p>
                     <h5>New <span class="fw-semi-bold">Project</span> Launch</h5>
                     <p class="fs-mini">
@@ -766,12 +769,13 @@
                 </div>
                 <div class="widget-body">
                     <section class="event">
-                    <span class="thumb-sm avatar float-left mr-sm">
+                    <span class="thumb float-left mr-md">
                         <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
                     </span>
                         <h5 class="event-heading"><a href="#">Jessica Nilson</a> <small>@jess</small></h5>
                         <p class="text-muted fs-sm">10:12 am - Publicly near Minsk</p>
-                        <div class="event-map" id="gmap"></div>
+                        <p>There is no such thing as maturity. There is instead an ever-evolving process of maturing.
+                            Because when there is a maturity, there is ...</p>
                         <footer>
                             <ul class="post-links">
                                 <li><a href="#">1 hour</a></li>
@@ -780,7 +784,7 @@
                             </ul>
                             <ul class="post-comments">
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
+                                    <span class="thumb-sm avatar float-left mr-md">
                                         <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
                                     </span>
                                     <div class="comment-body">
@@ -790,7 +794,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
+                                    <span class="thumb-sm avatar float-left mr-md">
                                         <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
                                     </span>
                                     <div class="comment-body">
@@ -799,8 +803,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="thumb-xs avatar float-left mr-sm">
-                                        <img class="rounded-circle" src="../img/avatar.png" alt="...">
+                                    <span class="thumb-sm avatar float-left mr-md">
+                                        <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
                                     </span>
                                     <div class="comment-body">
                                         <input class="form-control" type="text" placeholder="Write your comment...">
@@ -814,7 +818,7 @@
         </div>
     </li>
 
-    <li  class="timeline-inverted">
+    <li class="timeline-inverted">
         <div class="timeline-badge">
             <a><i class="fa fa-circle invert" id=""></i></a>
         </div>
@@ -822,12 +826,13 @@
             <div class="widget">
                 <div class="widget-body">
                     <section class="event">
-                        <span class="thumb-sm avatar float-left mr-sm">
-                <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
-            </span>
+                        <span class="thumb float-left mr-md">
+                            <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
+                        </span>
                         <h5 class="event-heading"><a href="#">Jessica Nilson</a> <small>@jess</small></h5>
                         <p class="text-muted fs-sm">10:12 am - Publicly near Minsk</p>
-                        <div class="event-map" id="gmap"></div>
+                        <p>There is no such thing as maturity. There is instead an ever-evolving process of maturing.
+                            Because when there is a maturity, there is ...</p>
                         <footer>
                             <ul class="post-links">
                                 <li><a href="#">1 hour</a></li>
@@ -836,9 +841,9 @@
                             </ul>
                             <ul class="post-comments">
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
-                        </span>
+                                <span class="thumb-sm avatar float-left mr-md">
+                                    <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
+                                </span>
                                     <div class="comment-body">
                                         <h6 class="author fs-sm fw-semi-bold">Radrigo Gonzales <small>7 mins ago</small></h6>
                                         <p>Someone said they were the best people out there just few years ago. Don't know
@@ -846,18 +851,18 @@
                                     </div>
                                 </li>
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
-                        </span>
+                                <span class="thumb-sm avatar float-left mr-md">
+                                    <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
+                                </span>
                                     <div class="comment-body">
                                         <h6 class="author fs-sm fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
                                         <p>True. Heard absolutely the same.</p>
                                     </div>
                                 </li>
                                 <li>
-                        <span class="thumb-xs avatar float-left mr-sm">
-                            <img class="rounded-circle" src="../img/avatar.png" alt="...">
-                        </span>
+                                <span class="thumb-sm avatar float-left mr-md">
+                                    <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
+                                </span>
                                     <div class="comment-body">
                                         <input class="form-control" type="text" placeholder="Write your comment...">
                                     </div>

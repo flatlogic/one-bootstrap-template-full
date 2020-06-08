@@ -405,7 +405,8 @@ legend {
   }
 }
 
-.nav-tabs {
+.nav-tabs, .nav-pills {
+  margin-bottom: 0.5rem;
   .nav-link {
     transition: color .15s ease-in-out;
 
@@ -415,8 +416,8 @@ legend {
     }
   }
   .nav-link.active {
-    background-color: $widget-bg-color;
-    color: $widget-color;
+    background-color: $body-main-color;
+    color: $white;
     border: none;
     font-weight: $font-weight-semi-bold;
     box-shadow: none;
@@ -1053,6 +1054,7 @@ legend {
 //
 // Buttons
 // --------------------------------------------------
+
 .custom-dropdown {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
 }
@@ -1069,6 +1071,19 @@ legend {
       margin-right: 0 !important;
       margin-bottom: 18px;
     }
+  }
+}
+.btn-group {
+  .btn {
+    margin-right: 0;
+  }
+}
+
+.btn {
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -1776,9 +1791,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre-wrap;
-  border-radius: $border-radius;
-  border: 1px solid rgba(50,50,50,.2);
-
+  background-color: rgba(50,50,50,0.05);
   code {
     background: transparent;
     color: $widget-color;
@@ -1972,7 +1985,7 @@ a.badge.badge-light {
  }
 }
 
-///// Events ///
+///// Events ////
 
 .activities {
   .event {
@@ -1993,3 +2006,37 @@ a.badge.badge-light {
   }
 }
 
+//// Bootstrap Tooltip ////
+
+.bs-tooltip-right {
+  .tooltip-inner {
+    background-color: $body-main-color;
+  }
+  .arrow::before {
+    border-right-color: $body-main-color;
+  }
+}
+.bs-tooltip-left {
+  .tooltip-inner {
+    background-color: $body-main-color;
+  }
+  .arrow::before {
+    border-left-color: $body-main-color;
+  }
+}
+.bs-tooltip-top {
+  .tooltip-inner {
+    background-color: $body-main-color;
+  }
+  .arrow::before {
+    border-top-color: $body-main-color;
+  }
+}
+.bs-tooltip-bottom {
+  .tooltip-inner {
+    background-color: $body-main-color;
+  }
+  .arrow::before {
+    border-bottom-color: $body-main-color;
+  }
+}

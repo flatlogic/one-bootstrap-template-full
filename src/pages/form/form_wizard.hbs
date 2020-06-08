@@ -11,9 +11,7 @@
     <div class="col-lg-10">
         <section class="widget">
             <header>
-                <h5>Wizard
-                    <small>Tunable widget</small>
-                </h5>
+                <h5>Wizard Tunable Widget</h5>
                 <div class="widget-controls">
                     <div class="dropdown">
                         <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
@@ -59,7 +57,7 @@
                                     style="width: 25%;"></div>
                             </div>
                             <div class="tab-content">
-                                <div class="tab-pane bg-gray-lighter" id="tab1">
+                                <div class="tab-pane" id="tab1">
                                     <form action='' method="POST" data-parsley-priority-enabled="false"
                                         novalidate="novalidate">
                                         <fieldset>
@@ -89,7 +87,7 @@
                                         </fieldset>
                                     </form>
                                 </div>
-                                <div class="tab-pane bg-gray-lighter" id="tab2">
+                                <div class="tab-pane" id="tab2">
                                     <form action='' method="POST" data-parsley-priority-enabled="false"
                                         novalidate="novalidate">
                                         <fieldset>
@@ -379,7 +377,6 @@
                                             <div class="form-group">
                                                 <label for="courier">Choose shipping option</label>
 
-
                                                 <select id="courier" data-placeholder="Choose an option.."
                                                     class="form-control chzn-select">
                                                     <option value=""></option>
@@ -393,7 +390,6 @@
                                             <div class="form-group">
                                                 <label for="destination">Destination Zip Code</label>
 
-
                                                 <input type="text" id="destination" name="destination" placeholder=""
                                                     class="form-control" required="required">
                                                 <span class="help-block">Please provide your Destination Zip Code</span>
@@ -401,7 +397,6 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="dest-address">Destination Address</label>
-
 
                                                 <input type="text" id="dest-address" name="address" placeholder=""
                                                     class="form-control">
@@ -411,12 +406,11 @@
                                         </fieldset>
                                     </form>
                                 </div>
-                                <div class="tab-pane bg-gray-lighter" id="tab3">
+                                <div class="tab-pane" id="tab3">
                                     <form action='' method="POST">
                                         <fieldset>
                                             <div class="form-group">
                                                 <label for="name">Name on the Card</label>
-
 
                                                 <input type="text" id="name" name="name" placeholder=""
                                                     class="form-control" required="required">
@@ -438,14 +432,12 @@
                                             <div class="form-group ">
                                                 <label for="credit">Credit Card Number </label>
 
-
                                                 <input id="credit" type="text" tabindex="3" class="form-control"
                                                     required="required">
 
                                             </div>
                                             <div class="form-group">
                                                 <label for="expiration-date">Expiration Date</label>
-
 
                                                 <input type="text" id="expiration-date" class="form-control"
                                                     required="required">
@@ -454,20 +446,20 @@
                                         </fieldset>
                                     </form>
                                 </div>
-                                <div class="tab-pane bg-gray-lighter" id="tab4">
+                                <div class="tab-pane" id="tab4">
                                     <h2>Thank you!</h2>
 
                                     <p>Your submission has been received.</p>
                                 </div>
                                 <ul class="pager wizard">
+                                    <li class="next">
+                                        <button class="btn btn-warning btn-square float-right">
+                                            Next &nbsp; <i class="fa fa-caret-right"></i></button>
+                                    </li>
                                     <li class="previous">
-                                        <button class="btn btn-default btn-square float-left">
+                                        <button class="btn btn-default btn-square float-right mr-2">
                                             <i class="fa fa-caret-left"></i> &nbsp; Previous
                                         </button>
-                                    </li>
-                                    <li class="next">
-                                        <button class="btn btn-primary btn-square float-right">
-                                            Next &nbsp; <i class="fa fa-caret-right"></i></button>
                                     </li>
                                     <li class="finish" style="display: none">
                                         <button class="btn btn-success btn-square float-right">

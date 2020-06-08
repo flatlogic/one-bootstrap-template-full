@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-        <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+        <nav id="sidebar" class="sidebar" role="navigation">
             <!-- need this .js class to initiate slimscroll -->
             <header class="logo d-md-block">
                 <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -585,14 +585,14 @@
                         <h5>Popover Example</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -602,7 +602,7 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <button type="button" class="btn btn-lg btn-danger mr-2 mb-2" data-toggle="popover"
+                        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover"
                                 title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
                             <span class="fw-semi-bold text-uppercase">Click to toggle popover</span>
                         </button>
@@ -618,14 +618,14 @@
                         <h5>Popover Directions</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -635,17 +635,17 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <button type="button" class="btn btn-info mb-sm mr-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                             <span class="fw-semi-bold text-uppercase">Popover on top</span>
                         </button>
-                        <button type="button" class="btn btn-warning mb-sm mr-2" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                             <span class="fw-semi-bold text-uppercase">Popover on right</span>
                         </button>
-                        <button type="button" class="btn btn-inverse mb-sm mr-2" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                        <button type="button" class="btn btn-inverse" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
                         sagittis lacus vel augue laoreet rutrum faucibus.">
                             <span class="fw-semi-bold text-uppercase">Popover on bottom</span>
                         </button>
-                        <button type="button" class="btn btn-gray mb-sm mr-2" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <button type="button" class="btn btn-gray" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                             <span class="fw-semi-bold text-uppercase">Popover on left</span>
                         </button>
                     </div>
@@ -657,14 +657,14 @@
                         <h5>Tooltip Example</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -675,7 +675,7 @@
                     </header>
                     <div class="widget-body">
                         <button type="button"
-                                class="btn btn-lg btn-success mr-2 mb-2"
+                                class="btn btn-lg btn-success"
                                 data-toggle="tooltip"
                                 data-placement="top"
                                 title="Tooltip on top">
@@ -693,14 +693,14 @@
                         <h5>Tooltip Directions</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -710,16 +710,16 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <button type="button" class="btn btn-gray mb-sm mr-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                        <button type="button" class="btn btn-gray" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                             <span class="fw-semi-bold text-uppercase">Tooltip on top</span>
                         </button>
-                        <button type="button" class="btn btn-inverse mb-sm mr-2" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                        <button type="button" class="btn btn-inverse" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                             <span class="fw-semi-bold text-uppercase">Tooltip on right</span>
                         </button>
-                        <button type="button" class="btn btn-warning mb-sm mr-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
                             <span class="fw-semi-bold text-uppercase">Tooltip on bottom</span>
                         </button>
-                        <button type="button" class="btn btn-info mb-sm mr-2" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
                             <span class="fw-semi-bold text-uppercase">Tooltip on left</span>
                         </button>
                     </div>

@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-<nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+<nav id="sidebar" class="sidebar" role="navigation">
     <!-- need this .js class to initiate slimscroll -->
     <header class="logo d-md-block">
         <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -581,7 +581,7 @@
 <h1 class="page-title">Email - <span class="fw-semi-bold">Inbox</span></h1>
 <div class="row">
     <div class="col-lg-3 col-xl-2">
-        <div class="widget">
+        <div class="widget px-1">
             <div class="widget-body">
                 <a class="btn btn-warning btn-block" id="compose-btn" href="../other/compose.html">Compose</a>
                 <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt" id="folders-list">
@@ -665,7 +665,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <input class="form-control form-control-sm width-200 float-right" id="mailbox-search"
+                        <input class="form-control width-200 float-right" id="mailbox-search"
                             type="text" placeholder="Search Messages">
                     </div>
                 </div>

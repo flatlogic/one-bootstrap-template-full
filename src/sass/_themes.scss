@@ -1,0 +1,1354 @@
+
+//White sidebar
+
+body.theme-first {
+  .sidebar {
+    .logo {
+      background-color: theme-color('warning');
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('warning');
+      background-color: rgba(theme-color('warning'), 0.1);
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      background: url(../img/icons/e-commerce_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      background: url(../img/icons/package_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      background: url(../img/icons/profile_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      background: url(../img/icons/yellow/email_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      background: url(../img/icons/documentation_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.typography-icon {
+      background: url(../img/icons/typography_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      background: url(../img/icons/core_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.ui-elements {
+      @include sidebar-icons('../img/icons/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-elements {
+      background: url(../img/icons/ui_elements_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      background: url(../img/icons/ui_elements_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      background: url(../img/icons/forms_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      background: url(../img/icons/charts_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      background: url(../img/icons/grid_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      background: url(../img/icons/tables_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      background: url(../img/icons/maps_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/yellow/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      background: url(../img/icons/extra_filled.svg) no-repeat;
+      background-size: 24px;
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper-spinner {
+    background: theme-color('warning');
+  }
+}
+body.theme-second {
+  .sidebar {
+    .logo {
+      background-color: #ff7769;
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/icons/red/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .badge {
+      background-color: rgba(theme-color('danger'), 0.2);
+      border-color: rgba(theme-color('danger'), 1);
+    }
+
+    .toggle {
+      color: theme-color('danger');
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('danger');
+      background-color: rgba(theme-color('danger'), 0.1);
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/red/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/red/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/red/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/red/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/red/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/red/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/red/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/red/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/red/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/red/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/red/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/red/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/red/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/red/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/red/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/red/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/red/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/red/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/red/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/red/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/red/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/red/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/red/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/red/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/red/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/red/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/red/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/red/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/red/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/red/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/red/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper {
+    .theme-helper-spinner {
+    background: #ff7769;
+  }
+    .abc-radio {
+    label::after {
+      background-color: theme-color('danger');
+    }
+
+    label::before {
+      border-color: theme-color('danger');
+    }
+  }
+    .colors-list li.active {
+      border-color: theme-color('danger');
+    }
+ }
+}
+body.theme-third {
+  .sidebar{
+    .logo {
+      background-color: #81d4bb;
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/icons/green/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .badge {
+      background-color: rgba(theme-color('success'), 0.2);
+      border-color: rgba(theme-color('success'), 1);
+    }
+
+    .toggle {
+      color: theme-color('success');
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('success');
+      background-color: rgba(theme-color('success'), 0.1);
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/green/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/green/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/green/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/green/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/green/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/green/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/green/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/green/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/green/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/green/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/green/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/green/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/green/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/green/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/green/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/green/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/green/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/green/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/green/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/green/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/green/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/green/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/green/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/green/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/green/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/green/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/green/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/green/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/green/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/green/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/green/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper {
+    .theme-helper-spinner {
+      background-color: #81d4bb;
+    }
+    .abc-radio {
+      label::after {
+        background-color: theme-color('success');
+      }
+
+      label::before {
+        border-color: theme-color('success');
+      }
+    }
+    .colors-list li.active {
+      border-color: theme-color('success');
+    }
+  }
+}
+body.theme-fourth {
+  .sidebar {
+    .logo {
+      background-color: #4dc7df;
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/icons/blue/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .badge {
+      background-color: rgba(theme-color('info'), 0.2);
+      border-color: rgba(theme-color('info'), 1);
+    }
+
+    .toggle {
+      color: theme-color('info');
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('info');
+      background-color: rgba(theme-color('info'), 0.1);
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/blue/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/blue/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/blue/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/blue/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/blue/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/blue/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/blue/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/blue/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/blue/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/blue/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/blue/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/blue/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/blue/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/blue/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/blue/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/blue/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/blue/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/blue/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/blue/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/blue/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/blue/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/blue/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/blue/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/blue/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/blue/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/blue/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/blue/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/blue/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/blue/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/blue/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/blue/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper {
+    .theme-helper-spinner {
+      background-color: #4dc7df;
+  }
+    .abc-radio {
+      label::after {
+        background-color: theme-color('info');
+      }
+      label::before {
+        border-color: theme-color('info');
+      }
+  }
+    .colors-list li.active {
+      border-color: theme-color('info');
+    }
+  }
+}
+
+//Dark sidebar
+
+body.theme-dark.theme-first {
+  .sidebar {
+     @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
+    .logo {
+      background-color: theme-color('warning');
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+    .badge {
+      background-color: rgba(theme-color('warning'), 0.2);
+      border-color: rgba(theme-color('warning'), 1);
+      color: white;
+    }
+
+    .sidebar-nav > li ul {
+      background-color: #464646;
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/yellow/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/dark-sidebar/yellow/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/dark-sidebar/yellow/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/dark-sidebar/yellow/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper-spinner {
+    background: theme-color('warning');
+  }
+}
+body.theme-dark.theme-second {
+  .sidebar {
+    @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
+  .logo {
+    background-color: #ff7769;
+
+    .logo-icon {
+      display: inline-block;
+      background: url('../img/icons/red/logo.svg') no-repeat;
+      background-size: 41px;
+      height: 41px;
+      width: 41px;
+    }
+  }
+
+  .badge {
+    background-color: rgba(theme-color('danger'), 0.2);
+    border-color: rgba(theme-color('danger'), 1);
+    color: white;
+  }
+
+  .toggle {
+    color: theme-color('danger');
+  }
+
+  .sidebar-nav > li ul {
+    border-right: 3px solid theme-color('danger');
+    background-color: #464646;
+
+    li ul {
+      border-right: none;
+    }
+  }
+
+  .sidebar-icon.dashboard-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/dashboard_outlined.svg');
+  }
+
+  .active .sidebar-icon.dashboard-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/dashboard_filled.svg');
+  }
+
+  .sidebar-icon.e-commerce-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/e-commerce_outlined.svg');
+  }
+
+  .active .sidebar-icon.e-commerce-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/e-commerce_filled.svg');
+  }
+
+  .sidebar-icon.package-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/package_outlined.svg');
+  }
+
+  .active .sidebar-icon.package-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/package_filled.svg');
+  }
+
+  .sidebar-icon.profile-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/profile_outlined.svg');
+  }
+
+  .active .sidebar-icon.profile-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/profile_filled.svg');
+  }
+
+  .sidebar-icon.email-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/email_outlined.svg');
+  }
+
+  .active .sidebar-icon.email-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/email_filled.svg');
+  }
+
+  .sidebar-icon.documentation-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/documentation_outlined.svg');
+  }
+
+  .active .sidebar-icon.documentation-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/documentation_filled.svg');
+  }
+
+  .sidebar-icon.core-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/core_outlined.svg');
+  }
+
+  .active .sidebar-icon.core-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/core_filled.svg');
+  }
+
+  .sidebar-icon.ui-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/ui_elements_outlined.svg');
+  }
+
+  .active .sidebar-icon.ui-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/ui_elements_filled.svg');
+  }
+
+  .sidebar-icon.forms-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/forms_outlined.svg');
+  }
+
+  .active .sidebar-icon.forms-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/forms_filled.svg');
+  }
+
+  .sidebar-icon.charts-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/charts_outlined.svg');
+  }
+
+  .active .sidebar-icon.charts-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/charts_filled.svg');
+  }
+
+  .sidebar-icon.grid-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/grid_outlined.svg');
+  }
+
+  .active .sidebar-icon.grid-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/grid_filled.svg');
+  }
+
+  .sidebar-icon.tables-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/tables_outlined.svg');
+  }
+
+  .active .sidebar-icon.tables-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/tables_filled.svg');
+  }
+
+  .sidebar-icon.maps-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/maps_outlined.svg');
+  }
+
+  .active .sidebar-icon.maps-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/maps_filled.svg');
+  }
+
+  .sidebar-icon.extra-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/extra_outlined.svg');
+  }
+
+  .active .sidebar-icon.extra-icon {
+    @include sidebar-icons('../img/icons/dark-sidebar/red/extra_filled.svg');
+  }
+
+  .sidebar-icon.settings-icon {
+    background: url(../img/icons/dark-sidebar/red/settings_outlined.svg) no-repeat;
+  }
+
+  .sidebar-icon.account-icon {
+    background: url(../img/icons/dark-sidebar/red/profile_outlined.svg) no-repeat;
+  }
+
+  .sidebar-icon.logout-icon {
+    background: url(../img/icons/dark-sidebar/red/logout_outlined.svg) no-repeat;
+  }
+}
+  .theme-helper-spinner {
+    background: #ff7769;
+  }
+}
+body.theme-dark.theme-third {
+  .sidebar{
+    @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
+    .logo {
+      background-color: #81d4bb;
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/icons/green/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .badge {
+      background-color: rgba(theme-color('success'), 0.2);
+      border-color: rgba(theme-color('success'), 1);
+      color: white;
+    }
+
+    .toggle {
+      color: theme-color('success');
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('success');
+      background-color: #464646;
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/green/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/dark-sidebar/green/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/dark-sidebar/green/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/dark-sidebar/green/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper-spinner {
+    background: #81d4bb;
+  }
+}
+body.theme-dark.theme-fourth {
+  .sidebar {
+    @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
+    .logo {
+      background-color: #4dc7df;
+
+      .logo-icon {
+        display: inline-block;
+        background: url('../img/icons/blue/logo.svg') no-repeat;
+        background-size: 41px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+
+    .badge {
+      background-color: rgba(theme-color('info'), 0.2);
+      border-color: rgba(theme-color('info'), 1);
+      color: white;
+    }
+
+    .toggle {
+      color: theme-color('info');
+    }
+
+    .sidebar-nav > li ul {
+      border-right: 3px solid theme-color('info');
+      background-color: #464646;
+
+      li ul {
+        border-right: none;
+      }
+    }
+
+    .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/dashboard_outlined.svg');
+    }
+
+    .active .sidebar-icon.dashboard-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/dashboard_filled.svg');
+    }
+
+    .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/e-commerce_outlined.svg');
+    }
+
+    .active .sidebar-icon.e-commerce-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/e-commerce_filled.svg');
+    }
+
+    .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/package_outlined.svg');
+    }
+
+    .active .sidebar-icon.package-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/package_filled.svg');
+    }
+
+    .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/profile_outlined.svg');
+    }
+
+    .active .sidebar-icon.profile-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/profile_filled.svg');
+    }
+
+    .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/email_outlined.svg');
+    }
+
+    .active .sidebar-icon.email-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/email_filled.svg');
+    }
+
+    .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/documentation_outlined.svg');
+    }
+
+    .active .sidebar-icon.documentation-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/documentation_filled.svg');
+    }
+
+    .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/core_outlined.svg');
+    }
+
+    .active .sidebar-icon.core-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/core_filled.svg');
+    }
+
+    .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/ui_elements_outlined.svg');
+    }
+
+    .active .sidebar-icon.ui-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/ui_elements_filled.svg');
+    }
+
+    .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/forms_outlined.svg');
+    }
+
+    .active .sidebar-icon.forms-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/forms_filled.svg');
+    }
+
+    .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/charts_outlined.svg');
+    }
+
+    .active .sidebar-icon.charts-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/charts_filled.svg');
+    }
+
+    .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/grid_outlined.svg');
+    }
+
+    .active .sidebar-icon.grid-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/grid_filled.svg');
+    }
+
+    .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/tables_outlined.svg');
+    }
+
+    .active .sidebar-icon.tables-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/tables_filled.svg');
+    }
+
+    .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/maps_outlined.svg');
+    }
+
+    .active .sidebar-icon.maps-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/maps_filled.svg');
+    }
+
+    .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/extra_outlined.svg');
+    }
+
+    .active .sidebar-icon.extra-icon {
+      @include sidebar-icons('../img/icons/dark-sidebar/blue/extra_filled.svg');
+    }
+
+    .sidebar-icon.settings-icon {
+      background: url(../img/icons/dark-sidebar/blue/settings_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.account-icon {
+      background: url(../img/icons/dark-sidebar/blue/profile_outlined.svg) no-repeat;
+    }
+
+    .sidebar-icon.logout-icon {
+      background: url(../img/icons/dark-sidebar/blue/logout_outlined.svg) no-repeat;
+    }
+  }
+  .theme-helper-spinner {
+    background: #4dc7df;
+  }
+}
+
+
+

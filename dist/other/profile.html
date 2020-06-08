@@ -37,7 +37,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="">
+<body class="theme-first + ">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
        
@@ -280,7 +280,7 @@
             </div>
         </div>
     </nav>
-    <nav id="sidebar" class="sidebar sidebar-first" role="navigation">
+    <nav id="sidebar" class="sidebar" role="navigation">
         <!-- need this .js class to initiate slimscroll -->
         <header class="logo d-md-block">
             <a href="index.html">
@@ -509,13 +509,13 @@
             <section class="widget theme-helper-content">
                 <header class="theme-helper-header d-flex p-0">
                     <div class="theme-helper-toggler hidden-print" data-step='4' data-position="left" data-intro="It's a theme customizer sidebar, go inside it! 😃️">
-                        <div class="theme-helper-spinner bg-warning">
+                        <div class="theme-helper-spinner">
                             <img src="../img/icons/cog.svg" alt="">
                         </div>
                     </div>
-                    <h5>Theme</h5>
                 </header>
-                <div class="widget-body">
+                <div class="js-theme-content">
+                    <h4 class="mb-4">Theme helper</h4>
                     <h5 class="fw-semi-bold">Navbar Type</h5>
                     <div class="form-group row navbar-sidebar-type">
                         <div class="abc-radio">
@@ -578,7 +578,7 @@
         <li class="breadcrumb-item">Dashboard</li>
         <li class="breadcrumb-item active">Profile</li>
     </ol>
-    <div class="row">
+    <div class="row profile-page">
         <div class="col-lg-12 col-xl-6">
             <section class="widget user-profile">
                 <div class="widget-body">
@@ -642,7 +642,7 @@
                                 <a href="#" class="badge badge-light rounded-0 ml-xs"> Ant Design </a>
                             </p>
                             <p class="lead mt-lg">
-                                My name is Adam Johns and here is my new Sing user profile page.
+                                My name is Adam Johns and here is my new user profile page.
                             </p>
                             <p>
                                 I love reading people's summaries page especially those who are in the same industry as me.
@@ -686,7 +686,7 @@
                     </p>
                     <footer>
                         <div class="clearfix">
-                            <ul class="post-links mt-sm float-left">
+                            <ul class="post-links float-left">
                                 <li><a href="#">1 hour</a></li>
                                 <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
                                 <li><a href="#">Comment</a></li>

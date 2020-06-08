@@ -202,6 +202,7 @@
   position: relative;
   .map {
     position: relative;
+    height: 500px;
   }
   .stats {
     position: absolute;
@@ -582,7 +583,7 @@ input.parsley-error {
   .tab-pane {
     padding: $spacer 20px;
     @include border-radius(5px);
-    background: #ffffff1a;
+    background: #e9ecef
   }
 
   .pager > li.disabled > .btn {
@@ -2035,5 +2036,11 @@ a.fc-event {
 }
 .pie-elements.black {
   border-top: 3px solid $black;
+}
+
+//// Marcdown ////
+
+.md-editor>textarea {
+  background-color: white;
 }
 

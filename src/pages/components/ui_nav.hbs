@@ -7,23 +7,23 @@
             <li class="breadcrumb-item">UI</li>
             <li class="breadcrumb-item active">Nav</li>
         </ol>
-        <div class="row"> 
+        <div class="row">
             <div class="col-md-6">
                 <section class="widget">
                     <header>
                         <h5>
-                            Base <span class="fw-semi-bold">nav</span>
+                            Base nav
                         </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -33,23 +33,26 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p>Navigation available in Bootstrap share general markup and styles, 
+                        <p>Navigation available in Bootstrap share general markup and styles,
                             from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
                         <div class="p-3">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">Disabled</a>
-                                </li>
-                            </ul>
+                            <div class="nav-tabs">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <pre class="bg-light border-0 text-info">
 &lt;ul <span class="text-primary">class=</span><span class="text-danger">"nav"</span>&gt;
     &lt;li <span class="text-primary">class=</span><span class="text-danger">"nav-item"</span>&gt;
@@ -66,8 +69,8 @@
     &lt;/li&gt;
 &lt;/ul&gt;</pre>
                         </div>
-                        <p class="mt-md">Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like 
-                            above, or roll your own with say a <code>&lt;nav&gt;</code> element. Because the .nav uses display: flex, 
+                        <p class="mt-md">Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like
+                            above, or roll your own with say a <code>&lt;nav&gt;</code> element. Because the .nav uses display: flex,
                             the nav links behave the same as nav items would, but without the extra markup.</p>
                         <pre class="bg-light border-0 text-info">
 &lt;nav <span class="text-primary">class=</span><span class="text-danger">"nav"</span>&gt;
@@ -78,21 +81,21 @@
 &lt;/nav&gt;</pre>
                     </div>
                 </section>
-            </div> 
+            </div>
             <div class="col-md-6">
                 <section class="widget">
                     <header>
                         <h5>Tabs & Pills</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                <img src="../img/icons/dots.svg" alt="dropdown">
+                            </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -102,7 +105,7 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use 
+                        <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use
                             them to create tabbable regions with our tab JavaScript plugin.</p>
                         <div class="p-3">
                             <nav class="nav nav-tabs">
@@ -161,7 +164,7 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use 
+                        <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use
                             them to create tabbable regions with our tab JavaScript plugin.</p>
                         <div class="p-3">
                             <ul class="nav nav-pills">
