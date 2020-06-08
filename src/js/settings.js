@@ -17,6 +17,7 @@ $(function(){
             'gray-700': '#495057',
             'gray-800': '#343a40',
             'gray-900': '#212529',
+            'dark': '#323232',
             'brand-primary': '#1f7db6',
             'brand-success': '#38a383',
             'brand-danger': '#e05546',

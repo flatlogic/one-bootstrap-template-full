@@ -13,9 +13,9 @@ $(function() {
       hoverColor: false,
       regionStyle: {
         initial: {
-          fill: Sing.colors['brand-warning'],
+          fill: "#323232",
           "fill-opacity": 0.5,
-          stroke: Sing.colors['brand-warning'],
+          stroke: "white",
           "stroke-width": 0.25,
           "stroke-opacity": 1
         },
@@ -25,8 +25,8 @@ $(function() {
       },
       markerStyle: {
         initial: {
-          fill: '#323232',
-          stroke: Sing.darken(Sing.colors["brand-warning"], 0.1),
+          fill: Sing.colors["dark"],
+          stroke: Sing.colors["dark"],
           "fill-opacity": 1,
           "stroke-width": 4,
           "stroke-opacity": 0.2,
