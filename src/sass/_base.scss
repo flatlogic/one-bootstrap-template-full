@@ -1595,6 +1595,17 @@ input[type=search], input.search {
 /*     Product Grid    */
 /***********************/
 
+#product-grid {
+  .rating {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semi-bold;
+    color: $body-main-color;
+    margin-bottom: $spacer / 2;
+    i {
+      margin-left: 0;
+    }
+  }
+}
 .product-grid {
   .product-filters {
     display: flex;
@@ -1647,6 +1658,13 @@ input[type=search], input.search {
   .product-elements {
     margin-top: $spacer * 2;
     margin-bottom: -$spacer * 3;
+
+    .rating {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semi-bold;
+      color: $body-main-color;
+      margin-bottom: $spacer / 2;
+    }
   }
 }
 
@@ -1733,6 +1751,7 @@ input[type=search], input.search {
 }
 
 .product-card {
+
   .card-photo {
     height: 221px;
     background-size: cover;
@@ -1740,48 +1759,31 @@ input[type=search], input.search {
     position: relative;
 
     @include media-breakpoint-down(sm) {
-      height: 200px;
+      height: 400px;
     }
 
     @include media-breakpoint-down(md) {
-      height: 250px;
+      height: 350px;
     }
 
     @include media-breakpoint-down(xs) {
-      height: 150px;
+      height: 250px;
     }
 
     .badge {
       position: absolute;
       left: 0;
-      top: $spacer;
+      top: .94rem;
       border-radius: 0;
       padding: ($spacer / 2) $spacer;
-      transform: rotate(90deg);
+      transform: rotate(270deg);
       font-size: $font-size-base;
       font-weight: $font-weight-thin;
-    }
-
-    .star {
-      transition: .3s;
-      opacity: 0.85;
-      width: 26px;
-      height: 26px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $white;
-      border-radius: 50%;
-      position: absolute;
-      right: 14px;
-      top: 14px;
-      color: $gray-800;
     }
   }
 
   .card-title {
     margin: $spacer 0 $spacer / 2;
-    font-weight: $font-weight-semi-bold;
     color: $body-main-color;
   }
 
@@ -1811,11 +1813,11 @@ input[type=search], input.search {
 }
 .info {
   margin-top: $spacer;
-  font-size: $font-size-base;
+  font-size: $font-size-sm;
 }
 
 .price {
-  font-size: $font-size-larger;
+  font-size: $font-size-xlg;
   font-weight: $font-weight-semi-bold;
   color: $body-main-color;
   margin-bottom: $spacer / 2;

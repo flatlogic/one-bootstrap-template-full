@@ -461,7 +461,6 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 @include text-emphasis-variant('.text-gray-lighter', $gray-200);
 @include text-emphasis-variant('.text-bg-sidebar', $sidebar-bg-color);
 
-
 .text-light{
   opacity: .8;
   color: inherit !important;
