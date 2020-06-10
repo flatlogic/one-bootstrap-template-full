@@ -684,6 +684,21 @@
   }
  }
 
+.js-filter-options {
+  .btn.active {
+    color: $body-main-color;
+    border-radius: 0;
+    border-bottom: 2px solid $warning;
+  }
+  .btn {
+    font-size: 1.15rem;
+    font-weight: $font-weight-semi-bold;
+    box-shadow: none!important;
+    color: rgba($body-main-color, .5);
+    }
+  }
+
+
 /***********************************/
 /**         Search Result         **/
 /***********************************/
