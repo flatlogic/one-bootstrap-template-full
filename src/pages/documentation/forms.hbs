@@ -12,46 +12,138 @@
             <div class="row">
                 <div class="col-12">
                     <div class="widget">
-                        <div class="widget-header">
-                            <h5 class="fw-bold">Forms</h5>
-                        </div>
-                        <div class="widget-body mt-4" >
-                            <h5 class="fw-semi-bold mt" class="section-title mt fw-bold" id="f_elements">FORM ELEMENTS</h5>
+                        <header>
+                            <h5>Form Elements</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>There are four general styles available to style forms:
                                 <code>.form-horizontal</code>, <code>.form-condensed</code>, <code>.form-label-left</code> and "no style" for horizontal placed inputs,
                                 decreased margins, labels aligned to left and default form accordingly. You can combine any of them together.</p>
+                            <p class="mb-0">Example:</p>
+                            <form class="form-horizontal" action="/action_page.php">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">INPUTS</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Inputs</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Bootstrap styles input by default, so there is no need to add any classes to inputs. Just use them. Don't forget to include input type.</p>
-                            <p>Bootstrap has a great <a href="https://getbootstrap.com/css/#forms">documentation about forms</a>.</p>
-
-                            <h5 class="mt fw-semi-bold">INPUT SIZING</h5>
+                            <p>Bootstrap has a great <a href="https://getbootstrap.com/docs/4.5/components/input-group/">documentation about inputs</a>.</p>
+                            <h5 class="mt fw-semi-bold">Input Sizing</h5>
                             <p>Any input can be sized by adding <code>.col-*-*</code> class. For vertical sizing
                                 <code>.input-lg</code> and <code>.input-sm</code> are available.</p>
+                            <h5 class="mt fw-semi-bold">Prepened And Appended Inputs</h5>
+                            <p>Again Bootstrap helps. It has <a href="https://getbootstrap.com/docs/4.5/components/input-group/#basic-example">everything we need to prepend and append inputs</a>.</p>
+                            <p class="mb-0">Example:</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
 
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                </div>
+                            </div>
 
-                            <h5 class="mt fw-semi-bold">PREPENDED AND APPENDED INPUTS</h5>
-                            <p>Again Bootstrap helps. It has <a href="https://getbootstrap.com/css/#forms">everything we need to prepend and append inputs</a>.</p>
+                            <label for="basic-url">Your vanity URL</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
 
-                            <h5 class="mt fw-semi-bold">TEXTAREAS</h5>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">With textarea</span>
+                                </div>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <header>
+                            <h5>Textareas</h5>
+                        </header>
+                        <div class="widget-body">
+                            <h5 class="mt fw-semi-bold"></h5>
                             <p>Auto-growing textarea uses <a href="http://www.jacklmoore.com/autosize/">jQuery Autosize</a> plugin
                                 to increase area size dynamically. Files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jquery-autosize/jquery.autosize.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
-
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0">
+                                <pre class="m-0"><span class="text-danger">autosize(</span><span class="text-success">document.querySelector</span><span>('textarea'));</span></pre>
+                            </div>
+                            <hr>
                             <p>Wysiwyg editor is based on <a href="https://jhollingworth.github.com/bootstrap-wysihtml5/">
                                 bootstrap-wysihtml5</a>. Files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap3-wysihtml5/lib/js/wysihtml5-0.3.0.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap3-wysihtml5/src/bootstrap3-wysihtml5.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
-
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0">
+                                <pre class="m-0"><span class="text-danger">$(</span><span class="text-success">'.textarea').</span><span>wysihtml5();</span></pre>
+                            </div>
+                            <hr>
                             <p>Markdown editor is built with <a href="https://github.com/evilstreak/markdown-js">Markdown js</a>. Files:</p>
-
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%">
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/markdown/lib/markdown.js&quot;&gt;&lt;/script&gt;</span>
 </pre></div>
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0">
+                                <pre class="m-0"><span class="text-danger">let </span><span class="text-success">markdown = </span><span>require( "markdown" ).markdown;</span></pre>
+                            </div>
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">SELECTS</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Selects</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Two different type of selects avaiables in <strong>Flatlogic One</strong> template:</p>
                             <ul>
                                 <li><a href="https://ivaynberg.github.com/select2/">Select2</a> - is a really powerful tool used to convert default selects to interactive search-enabled widgets.</li>
@@ -62,25 +154,55 @@
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/select2/select2.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
+                    <div class="widget">
+                        <header>
+                            <h5>Checkboxes And Radios</h5>
+                        </header>
+                        <div class="widget-body">
+                            <p>Two different type of selects avaiables in <strong>Flatlogic One</strong> template:</p>
+                            <ul>
+                                <li><a href="https://ivaynberg.github.com/select2/">Select2</a> - is a really powerful tool used to convert default selects to interactive search-enabled widgets.</li>
+                                <li><a href="https://github.com/silviomoreto/bootstrap-select">Bootstrap Select</a> - is Bootstrap based custom select, designed to behave like regular Bootstrap selects.
+                                    This one can be colored as any button.</li>
+                            </ul>
+                            <p>Required files:</p>
+                            <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+<span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/select2/select2.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
+</pre></div>
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">CHECKBOXES AND REDIOS</h5>
-                            <p>To style default checkboxes and radio buttons <a href="https://github.com/okendoken/awesome-bootstrap-checkbox">
-                                Awesome Bootstrap Checkbox</a> library is used. This lib was written specially for Flatlogic One, so
-                                in case you find some bugs or want some features - let us know.</p>
-                            <h5 class="mt fw-semi-bold">BUTTON-LIKE CHECKBOXES</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Button-Like Checkboxes</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Bootstrap has a great api to handle button states -
-                                <a href="https://getbootstrap.com/javascript/#buttons">bootstrap-button.js</a>, so uFlatlogic One it to
+                                <a href="https://getbootstrap.com/javascript/#buttons">bootstrap-button.js</a>, so using it to
                                 imitate checkbox or radio buttons.</p>
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">IOS-LIKE SEITCHES</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>IOs-Like Switches</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>There is a special plugin to do that - <a href="https://abpetkov.github.io/switchery/">Switchery</a>.
                                 Include following files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/switchery/dist/switchery.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-
-                            <h5 class="mt fw-semi-bold">PICKERS</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Pickers</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Any field may have either <a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Datetimepicker</a>
                                 or <a href="http://www.eyecon.ro/bootstrap-colorpicker/">Colorpicker</a> attached. Required files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/moment/min/moment.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
@@ -88,33 +210,61 @@
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
 
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">MASKED INPUTS</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Masked Inputs</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>To make any input accept only formatted values there is a great plugin to use -
                                 <a href="https://jasny.github.io/bootstrap/">jasny's inputmask.js</a>. Files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jasny-bootstrap/js/inputmask.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
 
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">SLIDERS</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Sliders</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Flatlogic One sliders are styled version of <a href="https://github.com/seiyria/bootstrap-slider">Bootstrap
                                 Slider plugin</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-
-                            <h5 class="mt fw-semi-bold">SIMPLE FILES UPLOAD</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Simple Files Upload</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Same as masked input based on <a href="https://jasny.github.io/bootstrap/">Jasny's BS fork</a>. Files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jasny-bootstrap/js/fileinput.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-
-                            <h5 class="mt fw-semi-bold">DROPZONE</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Dropzone</h5>
+                        </header>
+                        <div class="widget-body">
                             <p>Dead simple file upload plugin with image preview <a href="http://www.dropzonejs.com/">Dropzone</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/dropzone/downloads/dropzone.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-                            <h3 class="section-title mt fw-bold" id="f_validation">VALIDATION</h3>
+                    <div class="widget">
+                        <header>
+                            <h5 id="f_validation">Validation</h5>
+                        </header>
+                        <div class="widget-body">
                             <p><strong>Flatlogic One</strong> uses really great validation plugin -
                                 <a href="http://parsleyjs.org/">parsley.js</a>. It's better to
                                 let it say itself:</p>
@@ -127,8 +277,14 @@
                             <p>Files:</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/parsleyjs/dist/parsley.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-                            <h4 class="fw-bold mt" id="f_wizard">WIZARD</h4>
+                    <div class="widget">
+                        <header>
+                            <h5 id="f_wizard">Wizard</h5>
+                        </header>
+                        <div class="widget-body">
                             <p><a href="http://vadimg.com/twitter-bootstrap-wizard-example/">Twitter Bootstrap Wizard Plugin</a> is used to build wizard-enabled widget.</p>
                             This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure. It allows to build a wizard functionality uFlatlogic One buttons to go through the different wizard steps and uFlatlogic One events allows to hook into each step individually.
                             <p>To activate it you need to call <code>$("#rootwizard").bootstrapWizard();</code> on your markup to create wizard.</p>
@@ -186,16 +342,19 @@
     <span class="text-danger">&lt;/div&gt;</span>
 <span class="text-danger">&lt;/div&gt;</span>
 </pre></div>
+                        </div>
+                    </div>
 
-                            <h5 class="mt fw-semi-bold">APPLICATION WIZARD</h5>
+                    <div class="widget">
+                        <header>
+                            <h5>Application Wizard</h5>
+                        </header>
+                        <div class="widget-body">
                             <p><a href="https://github.com/amoffat/bootstrap-application-wizard">Bootstrap Application Wizard</a>
                                 is a ready to use wizard component with simple install process. You don't even need to have any special
                                 markup to instantiate it.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/bootstrap-application-wizard/src/bootstrap-wizard.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
-
-
-
                         </div>
                     </div>
                 </div>

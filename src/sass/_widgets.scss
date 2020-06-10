@@ -649,9 +649,10 @@
 .gallery{
   .img-thumbnail{
     border: none;
+    padding: 1rem;
 
     figcaption {
-      margin: 0.8571rem 0.5714rem 0.8571rem 0.5714rem;
+      margin: 0.8571rem 0.5714rem 0 0.5714rem;
       color: $body-main-color;
     }
 

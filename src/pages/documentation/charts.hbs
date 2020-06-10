@@ -67,10 +67,12 @@
                             <h5 class="fw-bold">Morris Charts</h5>
                         </div>
                         <div class="widget-body">
-                            <p>Built with <a href="http://www.oesmith.co.uk/morris.js/">Morris JS</a>.</p>
+                            <p>Built with <a href="https://morrisjs.github.io/morris.js/">Morris JS</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/raphael/raphael-min.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">"node_modules/morris.js/morris.min.js"</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                            <p class="mb-0">Example:</p>
+                            <div class="components-block rounded mt-0"><pre><span class="text-danger">let&nbsp;</span><span class="text-success">data = </span><span class="">[ { year: '2008', value: 20 }, { year: '2009', value: 10 }, { year: '2010', value: 10 }, { year: '2011', value: 8 } ];</span><br><br><span class="text-danger">let </span><span class="text-success">graph </span><span>new Morris.Line( { element, data, labels }); </span></pre></div>
                         </div>
                     </div>
 
@@ -79,9 +81,10 @@
                             <h5 class="fw-bold">Easy Pie Charts</h5>
                         </div>
                         <div class="widget-body">
-                            <p>Built with <a href="https://github.com/rendro/easy-pie-chart">Easy Pie Chart</a>.</p>
+                            <p>Built with <a href="http://rendro.github.io/easy-pie-chart/">Easy Pie Chart</a>.</p>
                             <div class="components-block rounded"><pre style="margin: 0; line-height: 125%"><span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                            <div class="components-block rounded mt-0"><pre style="margin: 0; line-height: 125%"><span>$(</span><span class="text-success">'.chart'</span><span>)easyPieChart({ options });</span></pre></div>
                         </div>
                     </div>
 
@@ -97,6 +100,9 @@
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot/jquery.flot.selection.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 <span class="text-danger">&lt;script </span><span class="text-success">src=</span><span class="text-warning">&quot;node_modules/flot/jquery.flot.time.js&quot;</span><span class="text-danger">&gt;&lt;/script&gt;</span>
 </pre></div>
+                            <div class="components-block rounded mt-0">
+                                <pre class="m-0"><span class="text-danger">let </span><span class="text-success">plot = </span><span>$.plot(placeholder, data, options);</span></pre>
+                            </div>
                         </div>
                     </div>
                 </div>
