@@ -716,7 +716,6 @@ input.parsley-error {
     color: $widget-color;
     background: none;
     border: none;
-    text-transform: uppercase;
     font-weight: 600;
     padding-left: 0;
   }
@@ -851,23 +850,23 @@ input.parsley-error {
 
 table.dataTable thead .sorting {
   background: url("#{$vendor-folder}/datatables/media/images/sort_both.png")
-    no-repeat center right;
+    no-repeat center left;
 }
 table.dataTable thead .sorting_asc {
   background: url("#{$vendor-folder}/datatables/media/images/sort_asc.png")
-    no-repeat center right;
+    no-repeat center left;
 }
 table.dataTable thead .sorting_desc {
   background: url("#{$vendor-folder}/datatables/media/images/sort_desc.png")
-    no-repeat center right;
+    no-repeat center left;
 }
 table.dataTable thead .sorting_asc_disabled {
   background: url("#{$vendor-folder}/datatables/media/images/sort_asc_disabled.png")
-    no-repeat center right;
+    no-repeat center left;
 }
 table.dataTable thead .sorting_desc_disabled {
   background: url("#{$vendor-folder}/datatables/media/images/sort_desc_disabled.png")
-    no-repeat center right;
+    no-repeat center left;
 }
 
 table.dataTable tbody tr {
@@ -2066,4 +2065,15 @@ a.fc-event {
 .md-editor>textarea {
   background-color: white;
 }
+/// Slick Slider ///
+.slick-slider {
+  .slick-next {
+    right: 15px;
+  }
+  .slick-prev {
+    left: 15px;
+    z-index: 1;
+  }
+}
+
 

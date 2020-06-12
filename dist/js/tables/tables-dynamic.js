@@ -2,9 +2,9 @@ $(function(){
     function initBackgrid(){
         Backgrid.InputCellEditor.prototype.attributes.class = 'form-control form-control-sm';
 
-        var Territory = Backbone.Model.extend({});
+        let Territory = Backbone.Model.extend({});
 
-        var PageableTerritories = Backbone.PageableCollection.extend({
+        let PageableTerritories = Backbone.PageableCollection.extend({
             model: Territory,
             url: "../demo/json/pageable-territories.json",
             state: {
@@ -14,10 +14,10 @@ $(function(){
         });
 
 
-        var pageableTerritories = new PageableTerritories(),
+        let pageableTerritories = new PageableTerritories(),
             initialTerritories = pageableTerritories;
         function createBackgrid(collection){
-            var columns = [{
+            let columns = [{
                 name: "id", // The key of the model attribute
                 label: "ID", // The name to display in the header
                 editable: false, // By default every cell in a column is editable, but *ID* shouldn't be
@@ -42,13 +42,13 @@ $(function(){
             if (Sing.isScreen('xs')){
                 columns.splice(3,1)
             }
-            var pageableGrid = new Backgrid.Grid({
+            let pageableGrid = new Backgrid.Grid({
                 columns: columns,
                 collection: collection,
                 className: 'table table-striped table-editable no-margin mb-sm'
             });
 
-            var paginator = new Backgrid.Extension.Paginator({
+            let paginator = new Backgrid.Extension.Paginator({
 
                 slideScale: 0.25, // Default is 0.5
 
@@ -88,7 +88,7 @@ $(function(){
 
         $("#search-countries").keyup(function(){
 
-            var $that = $(this),
+            let $that = $(this),
                 filteredCollection = initialTerritories.fullCollection.filter(function(el){
                     return ~el.get('name').toUpperCase().indexOf($that.val().toUpperCase());
                 });
@@ -143,8 +143,8 @@ $(function(){
         $.extend( $.fn.dataTableExt.oPagination, {
             "bootstrap": {
                 "fnInit": function( oSettings, nPaging, fnDraw ) {
-                    var oLang = oSettings.oLanguage.oPaginate;
-                    var fnClickHandler = function ( e ) {
+                    let oLang = oSettings.oLanguage.oPaginate;
+                    let fnClickHandler = function ( e ) {
                         e.preventDefault();
                         if ( oSettings.oApi._fnPageChange(oSettings, e.data.action) ) {
                             fnDraw( oSettings );
@@ -157,16 +157,16 @@ $(function(){
                             '<li class="next disabled page-item"><a class="page-link" href="#">'+oLang.sNext+'</a></li>'+
                             '</ul>'
                     );
-                    var els = $('a', nPaging);
+                    let els = $('a', nPaging);
                     $(els[0]).bind( 'click.DT', { action: "previous" }, fnClickHandler );
                     $(els[1]).bind( 'click.DT', { action: "next" }, fnClickHandler );
                 },
 
                 "fnUpdate": function ( oSettings, fnDraw ) {
-                    var iListLength = 5;
-                    var oPaging = oSettings.oInstance.fnPagingInfo();
-                    var an = oSettings.aanFeatures.p;
-                    var i, ien, j, sClass, iStart, iEnd, iHalf=Math.floor(iListLength/2);
+                    let iListLength = 5;
+                    let oPaging = oSettings.oInstance.fnPagingInfo();
+                    let an = oSettings.aanFeatures.p;
+                    let i, ien, j, sClass, iStart, iEnd, iHalf=Math.floor(iListLength/2);
 
                     if ( oPaging.iTotalPages < iListLength) {
                         iStart = 1;
@@ -216,7 +216,7 @@ $(function(){
             }
         } );
 
-        var unsortableColumns = [];
+        let unsortableColumns = [];
         $('#datatable-table').find('thead th').each(function(){
             if ($(this).hasClass( 'no-sort')){
                 unsortableColumns.push({"bSortable": false});

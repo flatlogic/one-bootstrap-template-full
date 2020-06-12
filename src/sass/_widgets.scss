@@ -1328,19 +1328,22 @@
 
 .nav-email-folders{
   > li > .nav-link {
-    color: $body-main-color;
+    color: #999;
     font-weight: $font-weight-normal;
-    padding: 10px 14px;
+    font-size: $font-size-xlg;
+    padding: 10px $spacer * 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &:hover{
       background-color: $gray-200;
       color: $body-main-color;
+      border-radius: 0;
     }
 
     > .fa-circle{
-      margin-top: 3px;
+      margin-right: $spacer * 2;
+      font-size: $font-size-mini;
     }
   }
 
@@ -1354,7 +1357,7 @@
     &,
     &:hover,
     &:focus {
-      background-color: $gray-200;
+      background-color: rgba($body-main-color, 0.1);
       color: $body-main-color;
       font-weight: $font-weight-semi-bold;
 
