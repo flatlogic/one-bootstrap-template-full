@@ -2021,6 +2021,13 @@ input[type=search], input.search {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: $spacer;
+    .btn {
+      @include media-breakpoint-down(md) {
+        font-size: 70%;
+      }
+    }
+
   }
 
   .info-payments {
@@ -2050,7 +2057,7 @@ input[type=search], input.search {
 .product-page-title {
   width: 100%;
   font-weight: $font-weight-normal;
-  margin: 75px 0 35px;
+  margin: 75px 0 1.5rem;
   color: $body-main-color;
 
   @include media-breakpoint-down(sm) {
@@ -2060,10 +2067,11 @@ input[type=search], input.search {
 
 .product-gallery {
   .carousel-wrapper {
-    margin: 0 -5px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
+    width: 95%;
 
     .product-carousel {
       width: 100%;
@@ -2077,15 +2085,11 @@ input[type=search], input.search {
     .carousel-btn {
       z-index: 10;
       margin-top: -40px;
-      opacity: 0.9;
       transition: 0.3s;
       width: 50px;
       height: 50px;
-      background-color: rgba(0, 0, 0, 0.2);
-      color: $white;
+      color: #c1ccd3;
       display: flex;
-      justify-content: center;
-      align-items: center;
       position: absolute;
 
 
@@ -2095,11 +2099,11 @@ input[type=search], input.search {
       }
 
       &.carousel-left {
-        left: 5px;
+        left: -20px;
       }
 
       &.carousel-right {
-        right: 5px;
+        right: -60px;
       }
     }
 
@@ -2116,7 +2120,6 @@ input[type=search], input.search {
 
   @include media-breakpoint-down(sm) {
 
-
     margin: 0 (-$content-padding-horizontal / 2) -42px;
     padding-bottom: 42px;
   }
@@ -2130,7 +2133,7 @@ input[type=search], input.search {
     grid-template-rows: 1fr 1fr;
 
     & > .description-section {
-      padding: $widget-padding-vertical $widget-padding-horizontal;
+      padding: 0 $widget-padding-horizontal;
       font-weight: $font-weight-normal;
     }
 

@@ -581,22 +581,41 @@
 <section class="widget">
     <header class="d-flex justify-content-between flex-wrap">
         <h5>Table Styles</h5>
-        <div class="width-200">
-            <div class="input-group input-group-sm input-group-transparent input-group-rounded">
+        <div class="widget-controls">
+            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                    </button>
+                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="widget-body">
+        <div class="d-flex justify-content-between flex-wrap">
+            <p>
+                Editable, validatable, filterable and sortable table made with
+                <a href="http://backgridjs.com/" target="_blank">Backgrid.js</a>
+            </p>
+            <div class="width-200">
+                <div class="input-group input-group-sm input-group-transparent input-group-rounded">
                 <span class="input-group-prepend">
                     <span class="input-group-text">
                         <i class="fa fa-search"></i>
                     </span>
                 </span>
-                <input class="form-control " id="search-countries" type="text" placeholder="Search Countries">
+                    <input class="form-control " id="search-countries" type="text" placeholder="Search Countries">
+                </div>
             </div>
         </div>
-    </header>
-    <div class="widget-body">
-        <p>
-            Editable, validatable, filterable and sortable table made with
-            <a href="http://backgridjs.com/" target="_blank">Backgrid.js</a>
-        </p>
         <div id="table-dynamic"></div>
     </div>
 </section>

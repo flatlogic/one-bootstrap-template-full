@@ -13,9 +13,9 @@ $(function(){
             mode: "client" // page entirely on the client side
         });
 
-
         let pageableTerritories = new PageableTerritories(),
             initialTerritories = pageableTerritories;
+
         function createBackgrid(collection){
             let columns = [{
                 name: "id", // The key of the model attribute
@@ -99,7 +99,6 @@ $(function(){
                 }
             }));
         });
-
 
         pageableTerritories.fetch();
 
