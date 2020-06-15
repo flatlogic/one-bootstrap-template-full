@@ -6,6 +6,7 @@ $(function(){
         $map.mapael({
             map:{
                 name : "usa_states",
+                fixedCenter: true,
                 defaultArea : {
                     attrs: {
                         fill: '#FFF0D1',

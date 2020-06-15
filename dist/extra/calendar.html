@@ -578,44 +578,51 @@
     <li class="breadcrumb-item">Extra</li>
     <li class="breadcrumb-item active">Calendar</li>
 </ol>
-<div class="row">
-    <div class="col-xl-4">
-        <h1 class="page-title" id="calender-current-date">Calendar - <span class="fw-semi-bold">Events</span></h1>
-    </div>
-</div>
+
 <div class="row">
     <div class="col-lg-3 col-xl-4">
-        <h3>Draggable <span class="fw-semi-bold">Events</span></h3>
-        <p>Just drap and drop events from there directly into the calendar.</p>
-        <div class="calendar-external-events mb-lg" id='external-events'>
-            <div class='external-event bg-inverse text-white' data-event-class="bg-gray text-white">Buy this template</div>
-            <div class='external-event bg-primary text-white' data-event-class="bg-primary text-white">Study some Node
-            </div>
-            <div class='external-event bg-info text-white' data-event-class="bg-info text-white">Make a tea</div>
-            <div class='external-event bg-success text-white' data-event-class="bg-success text-white">Go to school
-            </div>
-            <div class='external-event bg-warning text-white' data-event-class="bg-warning text-white">Open windows
+        <div class="widget">
+            <header>
+                <h5>Draggable Events</h5>
+            </header>
+            <div class="widget-body">
+                <p>Just drag and drop events from there directly into the calendar.</p>
+                <div class="calendar-external-events mb-lg" id='external-events'>
+                    <div class='external-event bg-inverse text-white' data-event-class="bg-gray text-white">Buy this template</div>
+                    <div class='external-event bg-primary text-white' data-event-class="bg-primary text-white">Study some Node
+                    </div>
+                    <div class='external-event bg-info text-white' data-event-class="bg-info text-white">Make a tea</div>
+                    <div class='external-event bg-success text-white' data-event-class="bg-success text-white">Go to school
+                    </div>
+                    <div class='external-event bg-warning text-white' data-event-class="bg-warning text-white">Open windows
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="col-lg-9 col-xl-8">
         <section class="widget widget-calendar">
             <div class="widget-body">
-                <div class="calendar-controls">
-                    <div class="btn-group">
-                        <button class="btn btn-default" id="calender-prev"><i class="fa fa-angle-left"></i></button>
-                        <button class="btn btn-default" id="calender-next"><i class="fa fa-angle-right"></i></button>
+                <div class="calendar-controls row">
+                    <div class="col-7 d-flex justify-content-end">
+                        <div class="btn-group d-flex align-items-center">
+                            <button class="btn my-0 mr-2" id="calender-prev"><i class="fa fa-angle-left fs-xlg text-muted"></i></button>
+                            <span class="fw-semi-bold mb-0" id="calender-current-date">Calendar - Events</span>
+                            <button class="btn my-0 ml-2" id="calender-next"><i class="fa fa-angle-right fs-xlg text-muted"></i></button>
+                        </div>
                     </div>
-                    <div id="calendar-switcher" class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <label class="btn btn-default active">
-                            <input type="radio" name="view" value="month"> Month
-                        </label>
-                        <label class="btn btn-default">
-                            <input type="radio" name="view" value="agendaWeek"> Week
-                        </label>
-                        <label class="btn btn-default">
-                            <input type="radio" name="view" value="agendaDay"> Day
-                        </label>
+                    <div class="col-5">
+                        <div id="calendar-switcher" class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="view" value="month"> Month
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="view" value="agendaWeek"> Week
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="view" value="agendaDay"> Day
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div id="calendar" class="calendar"></div>

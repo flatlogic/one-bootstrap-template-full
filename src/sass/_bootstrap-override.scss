@@ -244,6 +244,7 @@ legend {
     width: auto;
     height: auto;
     vertical-align: baseline;
+    margin-left: 0;
     opacity: .8;
     font-size: 85%;
 
@@ -406,7 +407,7 @@ legend {
 }
 
 .nav-tabs, .nav-pills {
-  margin-bottom: 0.5rem;
+
   .nav-link {
     transition: color .15s ease-in-out;
 

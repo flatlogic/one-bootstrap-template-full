@@ -513,6 +513,9 @@ $slider-handle-size: 26px;
 }
 .fc .fc-row .fc-content-skeleton td {
   border-color: #ddd;
+  .fc-day-number {
+    padding: $spacer * 0.8;
+  }
 }
 
 .popover-header {
@@ -2007,6 +2010,9 @@ a.fc-event {
     }
     .select2-selection__rendered {
       color: $body-main-color;
+      .select2-selection__choice__remove {
+        display: none;
+      }
     }
 
     .select2-selection__placeholder {
