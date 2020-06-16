@@ -15,7 +15,6 @@
   transition: left .2s linear;
   box-shadow: $sidebar-box-shadow;
 
-
   .js-sidebar-content {
     height: 100%;
   }
@@ -103,6 +102,8 @@
 .navbar-floating-type{
   margin: 1rem 40px 0 $sidebar-width + 40;
   border-radius: .5rem;
+  box-shadow: 4px 4px 25px rgba(109,105,105,0.5);
+
   @include media-breakpoint-down(sm) {
     margin: $spacer $spacer 0;
   }

@@ -23,7 +23,7 @@ $(function(){
     function apexChartFirst() {
         let options = {
             chart: {
-                height: 80,
+                height: 90,
                 type: 'bar',
                 toolbar: {
                     show: false
@@ -102,7 +102,7 @@ $(function(){
                 toolbar: {
                     show: false
                 },
-                height: 80,
+                height: 90,
                 type: 'bar',
             },
             plotOptions: {
@@ -160,7 +160,7 @@ $(function(){
     }
 
     function apexChartThird() {
-        var options = {
+        let options = {
             series: [{
                 data: [31, 40, 28, 51, 42, 25, 63]
             }],
@@ -169,7 +169,7 @@ $(function(){
                 toolbar: {
                     show: false
                 },
-                height: 80,
+                height: 90,
                 type: 'area'
             },
             dataLabels: {
@@ -229,7 +229,7 @@ $(function(){
                 toolbar: {
                     show: false
                 },
-                height: 80,
+                height: 90,
                 type: 'area'
             },
             dataLabels: {
