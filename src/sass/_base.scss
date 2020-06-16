@@ -1601,6 +1601,8 @@ input[type=search], input.search {
     font-weight: $font-weight-semi-bold;
     color: $body-main-color;
     margin-bottom: $spacer / 2;
+    display: flex;
+    justify-content: center;
     i {
       margin-left: 0;
     }
@@ -1646,6 +1648,9 @@ input[type=search], input.search {
       color: theme-color('danger');
       font-weight: $font-weight-semi-bold;
     }
+  }
+  .table img {
+    width: 170px;
   }
 }
 .product-grid {
