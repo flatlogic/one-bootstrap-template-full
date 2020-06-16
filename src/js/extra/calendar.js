@@ -140,8 +140,13 @@ $(function(){
 
         });
 
-        $("#calendar-switcher").find("label").click(function(){
-            $calendar.fullCalendar( 'changeView', $(this).find('input').val() )
+        // $("#calendar-switcher").find("label").click(function(){
+        //     $calendar.fullCalendar( 'changeView', $(this).find('input').val() )
+        //     console.log('origin')
+        // });
+
+        $("#select").find("button").click(function(){
+            $calendar.fullCalendar( 'changeView', $(this).val() )
         });
 
         let currentDate = $calendar.fullCalendar('getDate');
@@ -165,7 +170,10 @@ $(function(){
                     $.fullCalendar.formatDate(currentDate, "MMM yyyy")
             );
         });
+
+        $('.selectpicker').selectpicker();
     }
+
     pageLoad();
     SingApp.onPageLoad(pageLoad);
 });

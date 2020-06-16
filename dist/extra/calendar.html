@@ -611,19 +611,27 @@
                             <button class="btn my-0 ml-2" id="calender-next"><i class="fa fa-angle-right fs-xlg text-muted"></i></button>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div id="calendar-switcher" class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                            <label class="btn btn-default active">
-                                <input type="radio" name="view" value="month"> Month
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="view" value="agendaWeek"> Week
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="view" value="agendaDay"> Day
-                            </label>
+                    <div class="col-5 d-flex justify-content-end">
+                        <button
+                                class="btn btn-lg btn-default bg-white dropdown-toggle custom-dropdown mr-0"
+                                type="button" id="dropdownMenu"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="true">
+                            Month
+                        </button>
+                        <div class="dropdown-menu" id="select" aria-labelledby="dropdownMenu" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start">
+                            <button class="dropdown-item" type="button" value="month">Month</button>
+                            <button class="dropdown-item" type="button" value="agendaWeek">Week</button>
+                            <button class="dropdown-item" type="button" value="agendaDay">Day</button>
                         </div>
-                    </div>
+<!--                        <select class="selectpicker" data-style="btn-default" data-width="auto" tabindex="-1"-->
+<!--                                id="simple-select">-->
+<!--                            <option class="dropdown-item" name="view" value="month">Month</option>-->
+<!--                            <option class="dropdown-item" name="view" value="agendaWeek">Week</option>-->
+<!--                            <option class="dropdown-item" name="view" value="agendaDay">Day</option>-->
+<!--                        </select>-->
+                      </div>
                 </div>
                 <div id="calendar" class="calendar"></div>
             </div>
@@ -709,6 +717,7 @@
 </div>
 <!-- page specific js -->
 <script src="../js/extra/calendar.js"></script>
+<script src="../../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>

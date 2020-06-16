@@ -1,7 +1,7 @@
 $(function(){
 
     function initMap(){
-        var $map = $('#map'),
+        let $map = $('#map'),
             state;
         $map.mapael({
             map:{
@@ -188,7 +188,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
+        let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
     }
 
