@@ -182,6 +182,9 @@ body.theme-first {
   .theme-helper-spinner {
     background: theme-color('warning');
   }
+  .navbar-header .toggle-sidebar {
+    background-color: theme-color('warning');
+  }
 }
 body.theme-second {
   .sidebar {
@@ -356,6 +359,9 @@ body.theme-second {
       border-color: theme-color('danger');
     }
  }
+  .navbar-header .toggle-sidebar {
+    background-color: #ff7769;
+  }
 }
 body.theme-third {
   .sidebar{
@@ -530,6 +536,9 @@ body.theme-third {
       border-color: theme-color('success');
     }
   }
+  .navbar-header .toggle-sidebar {
+    background-color: #81d4bb;
+  }
 }
 body.theme-fourth {
   .sidebar {
@@ -702,6 +711,9 @@ body.theme-fourth {
     .colors-list li.active {
       border-color: theme-color('info');
     }
+  }
+  .navbar-header .toggle-sidebar {
+    background-color: #4dc7df;
   }
 }
 

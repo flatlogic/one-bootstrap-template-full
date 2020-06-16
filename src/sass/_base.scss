@@ -1707,6 +1707,22 @@ input[type=search], input.search {
       color: $body-main-color;
       margin-bottom: $spacer / 2;
     }
+
+    .mobile-search {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      img {
+        height: 22px;
+      }
+
+      input.form-control[type=text] {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(#323232, 0.7);
+      }
+    }
   }
 }
 

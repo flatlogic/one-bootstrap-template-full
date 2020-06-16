@@ -44,8 +44,8 @@ $(function() {
   }
 
   function generateSubFilterMenu(listObjectName) {
-    var listObject = filters[listObjectName];
-    var $list = '';
+    let listObject = filters[listObjectName];
+    let $list = '';
     listObject.items.forEach(function (l) {
       if (listObject.checked === l) {
         $list += '<li class="option active"><span class="filter-check"><img src="./demo/img/check.svg" alt="check" /></span><span class="name">'+ l +'</span></li>';
@@ -83,7 +83,7 @@ $(function() {
         hideFiltersModal();
     });
     $('ul#type-filters-list > li').on('click', function () {
-      var list = $(this).html();
+      let list = $(this).html();
       showFiltersList('#type-subfilters-list');
       declareModalFilterTitle(list);
       showButton('back_modal');
@@ -95,7 +95,7 @@ $(function() {
     initFilter();
     $('.js-slider').slider();
     $(".star").on("click", function() {
-      var starred = $(this).hasClass("star--fill");
+      let starred = $(this).hasClass("star--fill");
 
       if (starred) {
         $(this).removeClass("star--fill");
@@ -110,6 +110,10 @@ $(function() {
           .removeClass("fa-star-o")
           .addClass("fa-star");
       }
+    });
+
+    $("#mobile-filter").on("click", function() {
+      $("#filter").toggleClass('d-none');
     });
   }
 
