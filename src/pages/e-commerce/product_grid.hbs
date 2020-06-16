@@ -9,8 +9,19 @@
         <li class="breadcrumb-item active">Product Grid</li>
     </ol>
     <div class="row wrapper">
-        <div class="product-elements col-xl-2 d-none d-xl-block">
-            <div class="widget">
+        <div class="product-elements d-none d-block d-sm-none col-12">
+            <div class="widget p-3">
+                <div class="widget-body">
+                    <div class="mobile-search">
+                        <img src="../img/icons/filter.svg" id="mobile-filter" class="mx-3" alt="">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <img src="../img/icons/search.png" class="mx-3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-elements d-none d-sm-block col-xl-2 col-lg-4 col-sm-4" id="filter">
+            <div class="widget overflow-hidden">
                 <div class="widget-header">
                     <h5 class="fw-bold">Filters</h5>
                 </div>
@@ -215,17 +226,17 @@
                 </div>
             </div>
         </div>
-        <div class="product-elements col-lg-12 col-xl-10" id="product-grid">
-            <div class="widget">
+        <div class="product-elements col-lg-8 col-xl-10 col-sm-8" id="product-grid">
+            <div class="widget d-none d-sm-block col-sm-12">
                 <div class="widget-body">
                     <div class="row">
-                        <div class="col-lg-4 col-7"><div class="input-group input-group-lg pl-0">
+                        <div class="col-lg-4 col-md-10"><div class="input-group input-group-lg pl-0">
                             <div class="input-group-prepend">
                                 <span class="input-group-text bg-transparent"><i class="fa fa-search text-black-50" aria-hidden="true"></i></span>
                             </div>
                             <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
                         </div></div>
-                        <div class="col-lg-8 col-5">
+                        <div class="col-lg-8  d-none d-lg-block">
                             <img src="../img/icons/list.svg" style="height: 38px" class="float-right" alt="">
                             <img src="../img/icons/grid.svg" style="height: 38px" class="float-right mr-2" alt="">
                     </div>
@@ -547,44 +558,6 @@
 
 {{/content}}
 {{#content "scripts"}}
-<div class="product-filter-modal">
-        <div class="filter-modal-title">
-            <button class="close">
-                <img id="close_modal" class="hide" src="./../demo/img/cancel.svg" alt="close" />
-                <img id="back_modal" class="hide" src="./../demo/img/back.svg" alt="back" />
-            </button>
-            <h5 class="mb-0"></h5>
-        </div>
-        <ul id="sort-filters-list" class="filter-modal-body">
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Favourite</span>
-            </li>
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Price</span>
-            </li>
-            <li class="option">
-            <span class="filter-check">
-                <img src='./../demo/img/check.svg' alt="check" />
-            </span>
-                <span class="name">Popular</span>
-            </li>
-        </ul>
-        <ul id="type-filters-list" class="filter-modal-body">
-            <li>Type</li>
-            <li>Brands</li>
-            <li>Size</li>
-            <li>Color</li>
-            <li>Range</li>
-        </ul>
-        <ul id="type-subfilters-list" class="filter-modal-body">
-        </ul>
-    </div>
 <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="../../node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
 <!-- page specific js -->
