@@ -1,12 +1,10 @@
 {{#extend "layout" title="Flatlogic One - UI Buttons"}}
     {{#content "sidebar"}}
-    {{> sidebar active="ui_buttons"}}
+        {{> sidebar active="ui_buttons"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">UI</li>
-            <li class="breadcrumb-item active">Buttons</li>
-        </ol>
+        <h1 class="page-title">UI > <span class="fw-semi-bold">Buttons</span></h1>
+        <p class="lead">Buttons communicate actions that users can take.</p>
         <div class="row">
             <div class="col-md-6">
                 <section class="widget">
@@ -14,9 +12,9 @@
                         <h5>Color Options</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -35,7 +33,7 @@
                             Use any of the available button classes to quickly create a styled button.
                             Semantically distinguishable beauty.
                         </p>
-                        <p>
+                        <p class="mb-0">
                             <button class="btn btn-default width-100 mb-3" role="button">
                                 <span class="fw-semi-bold">Default</span>
                             </button>
@@ -70,14 +68,14 @@
                         <h5>Size Variants</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
-                                </span>
+                                            <strong>9</strong>
+                                        </span>
                                     </button>
                                     <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
@@ -91,7 +89,7 @@
                             Fancy larger or smaller buttons? Four separate sizes available for all use cases: from
                             tiny 10px button to large one. Add <code>.btn-lg</code>, <code>.btn-sm</code> or  <code>.btn-xs</code> for additional sizes.
                         </p>
-                        <p>
+                        <p class="mb-0">
                             <button type="button" class="btn btn-default btn-lg">Large button</button>
                             <button type="button" class="btn btn-primary">Default button</button>
                             <button type="button" class="btn btn-info btn-sm">Small button</button>
@@ -106,9 +104,9 @@
                         <h5>Outline Buttons</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -127,7 +125,7 @@
                             In need of a button, but not the hefty background colors they bring? Replace the default modifier
                             classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.
                         </p>
-                        <p>
+                        <p class="mb-0">
                             <button class="btn btn-outline-default btn-rounded width-100 mb-3" role="button">
                                 <span class="fw-semi-bold">Default</span>
                             </button>
@@ -162,9 +160,9 @@
                         <h5>Rounded Buttons</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -196,7 +194,8 @@
                             <button class="btn btn-success btn-rounded-f width-100 mb-3" role="button">
                                 <span class="fw-semi-bold">Success</span>
                             </button>
-                            <div class="w-100"></div>
+                        </p>
+                        <p class="mb-0">
                             <button class="btn btn-outline-warning btn-square width-100 mb-3" role="button">
                                 <span class="fw-semi-bold">Warning</span>
                             </button>
@@ -219,9 +218,9 @@
                         <h5>Block Buttons</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -241,7 +240,7 @@
                             of a parent— by adding <code>.btn-block</code>.
                             Great for menu & social buttons.
                         </p>
-                        <p>
+                        <p class="mb-0">
                             <button type="button" class="btn btn-info btn-block"><span class="fw-semi-bold">Block Button</span></button>
                         </p>
                         <p>
@@ -262,9 +261,9 @@
                         <h5>Disabled Buttons</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -300,9 +299,9 @@
                         <h5>Button Groups</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
-                            <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img src="../img/icons/dots.svg" alt="dropdown">
-                            </span>
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
+                                </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
@@ -545,6 +544,6 @@
         </div>
     {{/content}}
     {{#content "scripts"}}
-    <script src="../js/components/ui-buttons.js"></script>
+        <script src="../js/components/ui-buttons.js"></script>
     {{/content}}
 {{/extend}}

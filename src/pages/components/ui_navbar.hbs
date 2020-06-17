@@ -1,13 +1,11 @@
 {{#extend "layout" title="Flatlogic One - UI Navbar"}}
     {{#content "sidebar"}}
-    {{> sidebar active="ui_navbar"}}
+        {{> sidebar active="ui_navbar"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item">UI</li>
-            <li class="breadcrumb-item active">Navbar</li>
-        </ol>
-        <div class="row"> 
+         <h1 class="page-title">UI > <span class="fw-semi-bold">Navbar</span></h1>
+         <p class="lead">Documentation and examples for powerful, responsive navigation header, the navbar.</p>
+        <div class="row">
             <div class="col-md-12">
                 <section class="widget">
                     <header>
@@ -33,13 +31,13 @@
                     <div class="widget-body">
                         <p>Here’s what you need to know before getting started with the navbar:</p>
                         <ui>
-                            <li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl}</code> for 
+                            <li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl}</code> for
                                 responsive collapsing and <a href="core_colors.html">color scheme</a> classes.</li>
                             <li>Navbars and their contents are fluid by default. Use optional containers to limit their horizontal width.</li>
                             <li>Use our spacing and flex utility classes for controlling spacing and alignment within navbars.</li>
                             <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
                             <li>Navbars are hidden by default when printing. Force them to be printed by adding <code>.d-print</code> to the <code>.navbar</code>. See the display utility class.</li>
-                            <li>Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, 
+                            <li>Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>,
                             add a <code>role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
                         </ui>
                         <nav class="navbar navbar-expand-lg navbar-light bg-light mt">
@@ -90,8 +88,8 @@
                         </div>
                     </header>
                     <div class="widget-body">
-                        <p>Theming the navbar has never been easier thanks to the combination of theming classes and 
-                            background-color utilities. Choose from <code>.navbar-light</code> for use with light background 
+                        <p>Theming the navbar has never been easier thanks to the combination of theming classes and
+                            background-color utilities. Choose from <code>.navbar-light</code> for use with light background
                             colors, or <code>.navbar-dark</code> for dark background colors. Then, customize with <code>.bg-*</code> utilities.</p>
                         <nav class="navbar navbar-dark bg-inverse navbar-expand-lg mt">
                             <a class="navbar-brand ml-sm" href="#">Navbar</a>
@@ -168,7 +166,7 @@
                         </nav>
                     </div>
                 </section>
-            </div> 
+            </div>
         </div>
     {{/content}}
     {{#content "scripts"}}

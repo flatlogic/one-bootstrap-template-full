@@ -1,193 +1,188 @@
 {{#extend "layout" title="Flatlogic One Bootstrap - Gallery"}}
-{{#content "sidebar"}}
-{{> sidebar active="gallery"}}
-{{/content}}
-{{#content "content" mode="replace"}}
-<ol class="breadcrumb">
-    <li class="breadcrumb-item">UI</li>
-    <li class="breadcrumb-item active">Gallery</li>
-</ol>
-<div class="widget p-3">
-    <div class="widget-body d-flex justify-content-between">
-            <div class="js-filter-options">
-                <span class="btn filter active" data-group="all">All</span>
-                <span class="btn filter" data-group="nature">Nature</span>
-                <span class="btn filter" data-group="people">People</span>
-                <span class="btn filter" data-group="space">Space</span>
+    {{#content "sidebar"}}
+        {{> sidebar active="gallery"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <h1 class="page-title">UI > <span class="fw-semi-bold">Gallery</span></h1>
+        <p class="lead">Categorize, sort, and filter a responsive grid of items.</p>
+        <div class="widget p-3">
+            <div class="widget-body d-flex justify-content-between">
+                <div class="js-filter-options">
+                    <span class="btn filter active" data-group="all">All</span>
+                    <span class="btn filter" data-group="nature">Nature</span>
+                    <span class="btn filter" data-group="people">People</span>
+                    <span class="btn filter" data-group="space">Space</span>
+                </div>
+                <div class="btn-group js-sort-options">
+                    <span class="btn btn-default sort active" data-sort-order="asc"><i class="fa fa-sort-numeric-asc"></i></span>
+                    <span class="btn btn-default sort" data-sort-order="desc"><i class="fa fa-sort-numeric-desc"></i></span>
+                </div>
             </div>
-
-            <div class="btn-group js-sort-options">
-                <span class="btn btn-default sort active" data-sort-order="asc"><i class="fa fa-sort-numeric-asc"></i></span>
-                <span class="btn btn-default sort" data-sort-order="desc"><i class="fa fa-sort-numeric-desc"></i></span>
+        </div>
+        <div class="row gallery" id="grid">
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Mountains">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/1.png"><img class="figure-img" src="../img/gallery/1.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Flowers</h6>
+                        <ul class="post-links">
+                            <li><a href="#">10 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
             </div>
-    </div>
-</div>
-
-<div class="row gallery" id="grid">
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Mountains">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/1.png"><img class="figure-img" src="../img/gallery/1.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Flowers</h6>
-                <ul class="post-links">
-                    <li><a href="#">10 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Empire State Pigeon">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/2.png"><img class="figure-img" src="../img/gallery/2.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Empire State Pigeon</h6>
-                <ul class="post-links">
-                    <li><a href="#">1 hour</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Big Lake">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/3.png"><img class="figure-img" src="../img/gallery/3.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Big Lake</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Forest">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/4.png"><img class="figure-img" src="../img/gallery/4.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Forest</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Smile">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/5.png"><img class="figure-img" src="../img/gallery/5.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Smile</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Smile">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/6.png"><img class="figure-img" src="../img/gallery/6.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Smile</h6>
-                <ul class="post-links">
-                    <li><a href="#">1 hour</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Fog">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/7.png"><img class="figure-img" src="../img/gallery/7.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Fog</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Beach">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/8.png"><img class="figure-img" src="../img/gallery/8.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Beach</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Pause">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/9.png"><img class="figure-img" src="../img/gallery/9.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Pause</h6>
-                <ul class="post-links">
-                    <li><a href="#">3 hour</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Space">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/10.png"><img class="figure-img" src="../img/gallery/10.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Space</h6>
-                <ul class="post-links">
-                    <li><a href="#">3 hour</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Shuttle">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/11.png"><img class="figure-img" src="../img/gallery/11.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Shuttle</h6>
-                <ul class="post-links">
-                    <li><a href="#">35 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Sky">
-        <figure class="figure img-thumbnail">
-            <a href="../img/gallery/12.png"><img class="figure-img" src="../img/gallery/12.png" alt="..."></a>
-            <figcaption class="figure-caption">
-                <h6 class="mt-0 mb-xs">Sky</h6>
-                <ul class="post-links">
-                    <li><a href="#">2 mins</a></li>
-                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
-                    <li><a href="#">Details</a></li>
-                </ul>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="col-sm-6 col-md-3 js-shuffle-sizer"></div>
-</div>
-{{/content}}
-{{#content "scripts"}}
-
-<script src="../../node_modules/shufflejs/dist/shuffle.min.js"></script>
-<script src="../../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-<!-- page specific js -->
-<script src="../js/extra/gallery.js"></script>
-{{/content}}
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Empire State Pigeon">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/2.png"><img class="figure-img" src="../img/gallery/2.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Empire State Pigeon</h6>
+                        <ul class="post-links">
+                            <li><a href="#">1 hour</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Big Lake">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/3.png"><img class="figure-img" src="../img/gallery/3.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Big Lake</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Forest">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/4.png"><img class="figure-img" src="../img/gallery/4.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Forest</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Smile">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/5.png"><img class="figure-img" src="../img/gallery/5.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Smile</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Smile">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/6.png"><img class="figure-img" src="../img/gallery/6.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Smile</h6>
+                        <ul class="post-links">
+                            <li><a href="#">1 hour</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["nature"]' data-title="Fog">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/7.png"><img class="figure-img" src="../img/gallery/7.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Fog</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Beach">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/8.png"><img class="figure-img" src="../img/gallery/8.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Beach</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item gallery-card" data-groups='["people"]' data-title="Pause">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/9.png"><img class="figure-img" src="../img/gallery/9.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Pause</h6>
+                        <ul class="post-links">
+                            <li><a href="#">3 hour</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Space">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/10.png"><img class="figure-img" src="../img/gallery/10.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Space</h6>
+                        <ul class="post-links">
+                            <li><a href="#">3 hour</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Shuttle">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/11.png"><img class="figure-img" src="../img/gallery/11.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Shuttle</h6>
+                        <ul class="post-links">
+                            <li><a href="#">35 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 gallery-item" data-groups='["space"]' data-title="Sky">
+                <figure class="figure img-thumbnail">
+                    <a href="../img/gallery/12.png"><img class="figure-img" src="../img/gallery/12.png" alt="..."></a>
+                    <figcaption class="figure-caption">
+                        <h6 class="mt-0 mb-xs">Sky</h6>
+                        <ul class="post-links">
+                            <li><a href="#">2 mins</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
+                            <li><a href="#">Details</a></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-3 js-shuffle-sizer"></div>
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+        <script src="../../node_modules/shufflejs/dist/shuffle.min.js"></script>
+        <script src="../../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <!-- page specific js -->
+        <script src="../js/extra/gallery.js"></script>
+    {{/content}}
 {{/extend}}

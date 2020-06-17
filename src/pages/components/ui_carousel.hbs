@@ -1,12 +1,12 @@
 {{#extend "layout" title="Flatlogic One - UI Carousel"}}
     {{#content "sidebar"}}
-    {{> sidebar active="ui_carousel"}}
+        {{> sidebar active="ui_carousel"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">UI</li>
-            <li class="breadcrumb-item active">Carousel</li>
-        </ol>
+        <h1 class="page-title">UI > <span class="fw-semi-bold">Carousel</span></h1>
+        <p class="lead">The carousel is a slideshow for cycling through a series of content, built with CSS 3D
+            transforms and a bit of JavaScript. It works with a series of images, text, or custom
+            markup. It also includes support for previous/next controls and indicators.</p>
         <section class="widget">
             <header>
                 <h5>Carousel</h5>
@@ -29,9 +29,6 @@
                 </div>
             </header>
             <div class="widget-body">
-                <p>The carousel is a slideshow for cycling through a series of content, built with CSS 3D
-                    transforms and a bit of JavaScript. It works with a series of images, text, or custom
-                    markup. It also includes support for previous/next controls and indicators.</p>
                 <div class="row">
                     <div class="col-12">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -168,8 +165,8 @@
         </section>
     {{/content}}
     {{#content "scripts"}}
-    <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
-    <script src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
-    <script src="../js/components/ui-carousel.js"></script>
+        <script src="../../node_modules/slick-carousel/slick/slick.min.js"></script>
+        <script src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+        <script src="../js/components/ui-carousel.js"></script>
     {{/content}}
 {{/extend}}

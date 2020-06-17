@@ -1704,7 +1704,7 @@ input[type=search], input.search {
   }
 
   .product-elements {
-    margin-top: $spacer * 2;
+    //margin-top: $spacer * 2;
     margin-bottom: -$spacer * 3;
 
     .rating {
@@ -2131,6 +2131,9 @@ input[type=search], input.search {
 
     .product-card {
       padding: 0 $spacer;
+    }
+    .price {
+      margin-bottom: $spacer;
     }
   }
 

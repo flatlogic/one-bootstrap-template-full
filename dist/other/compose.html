@@ -474,7 +474,6 @@
                             <li class=""><a href="../extra/calendar.html">Calendar</a></li>
                             <li class=""><a href="../extra/invoice.html">Invoice</a></li>
                             <li class=""><a href="../extra/login.html" target="_blank">Login Page</a></li>
-                            <li class=""><a href="../extra/error.html" target="_blank">Error Page</a></li>
                             <li class=""><a href="../extra/gallery.html">Gallery</a></li>
                             <li class=""><a href="../extra/search.html">Search Results</a></li>
                             <li class=""><a href="../extra/time_line.html">Time Line</a></li>
@@ -574,78 +573,78 @@
         <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
         <main id="content" class="content" role="main">
             <!-- Page content -->
-    <h1 class="page-title">Email - <span class="fw-semi-bold">Inbox</span></h1>
-    <div class="row">
-        <div class="col-lg-3 col-xl-2">
-            <a class="btn btn-danger btn-block" href="../other/inbox.html">
-                Compose
-            </a>
-            <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../other/inbox.html">
-                        <p class="m-0">Inbox</p>
-                        <span class="badge badge-pill bg-primary">2</span>
-                    </a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Starred</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Sent Mail</p></a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="m-0">Draft</p>
-                        <span class="badge badge-pill bg-danger">3</span>
-                    </a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
-            </ul>
-            <h5 class="mt">QUICK VIEW</h5>
-            <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg">
-                <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Work</p><i class="fa fa-circle text-danger"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Private</p><i class="fa fa-circle text-primary"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Saved</p><i class="fa fa-circle text-warning"></i></a></li>
-            </ul>
-        </div>
-        <div class="col-lg-9 col-xl-10">
-            <div class="clearfix mb-xs">
-                <a class="btn btn-default btn-sm width-50 float-left" id="back-btn" href="../other/inbox.html">
-                    <i class="fa fa-angle-left fa-lg"></i>
+        <h1 class="page-title">Email - <span class="fw-semi-bold">Inbox</span></h1>
+        <div class="row">
+            <div class="col-lg-3 col-xl-2">
+                <a class="btn btn-danger btn-block" href="../other/inbox.html">
+                    Compose
                 </a>
-                <div class="float-right hide" id="folder-stats">
-                    <p class="widget-email-count">Showing 1 - 10 of 96 messages</p>
-                    <ul class="pagination pagination-sm widget-email-pagination">
-                        <li class="prev disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li class="next"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                    </ul>
-                </div>
+                <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../other/inbox.html">
+                            <p class="m-0">Inbox</p>
+                            <span class="badge badge-pill bg-primary">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Starred</p></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Sent Mail</p></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <p class="m-0">Draft</p>
+                            <span class="badge badge-pill bg-danger">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
+                </ul>
+                <h5 class="mt">QUICK VIEW</h5>
+                <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg">
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Work</p><i class="fa fa-circle text-danger"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Private</p><i class="fa fa-circle text-primary"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Saved</p><i class="fa fa-circle text-warning"></i></a></li>
+                </ul>
             </div>
-            <section class="widget widget-email">
-                <header>
-                    <h4>Compose <span class="fw-semi-bold">New</span></h4>
-                </header>
-                <div class="widget-body">
-                    <form id="email-compose" class="form-email-compose" method="get" action="../other/inbox.html">
-                        <div class="form-group">
-                            <input type="email" id="input-to" placeholder="To" class="input-transparent form-control" value="">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="input-subject" placeholder="Subject" class="input-transparent form-control" value="">
-                        </div>
-                        <div class="form-group">
-                            <div id="summernote"></div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="btn-toolbar float-right">
-                                <button type="reset" id="compose-discard-button" class="btn btn-gray">Discard</button>
-                                <button type="button" id="compose-save-button" class="btn btn-gray">&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
-                                <button type="submit" id="compose-send-button" class="btn btn-danger">&nbsp;&nbsp;&nbsp;Send&nbsp;&nbsp;&nbsp;</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-lg-9 col-xl-10">
+                <div class="clearfix mb-xs">
+                    <a class="btn btn-default btn-sm width-50 float-left" id="back-btn" href="../other/inbox.html">
+                        <i class="fa fa-angle-left fa-lg"></i>
+                    </a>
+                    <div class="float-right hide" id="folder-stats">
+                        <p class="widget-email-count">Showing 1 - 10 of 96 messages</p>
+                        <ul class="pagination pagination-sm widget-email-pagination">
+                            <li class="prev disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="next"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
+                <section class="widget widget-email">
+                    <header>
+                        <h4>Compose <span class="fw-semi-bold">New</span></h4>
+                    </header>
+                    <div class="widget-body">
+                        <form id="email-compose" class="form-email-compose" method="get" action="../other/inbox.html">
+                            <div class="form-group">
+                                <input type="email" id="input-to" placeholder="To" class="input-transparent form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="input-subject" placeholder="Subject" class="input-transparent form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <div id="summernote"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btn-toolbar float-right">
+                                    <button type="reset" id="compose-discard-button" class="btn btn-gray">Discard</button>
+                                    <button type="button" id="compose-save-button" class="btn btn-gray">&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+                                    <button type="submit" id="compose-send-button" class="btn btn-danger">&nbsp;&nbsp;&nbsp;Send&nbsp;&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
 
             <footer class="content-footer hidden-print">
                 Flatlogic One Lite - Bootstrap Admin Dashboard Template Made by <a href="https://flatlogic.com"
@@ -678,8 +677,8 @@
 
     <!-- Page scripts -->
         <script src="../../node_modules/summernote/dist/summernote.js"></script>
-      <!-- page specific js -->
-      <script src="../js/other/compose.js"></script>
+        <!-- page specific js -->
+        <script src="../js/other/compose.js"></script>
 </body>
 
 </html>

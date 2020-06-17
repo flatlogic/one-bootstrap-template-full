@@ -3,10 +3,8 @@
         {{> sidebar active="ui_modal"}}
     {{/content}}
     {{#content "content" mode="replace"}}
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">UI</li>
-            <li class="breadcrumb-item active">Modal</li>
-        </ol>
+        <h1 class="page-title">UI > <span class="fw-semi-bold">Modal</span></h1>
+        <p class="lead">Use modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
         <div class="row">
             <div class="col-md-6">
                 <section class="widget">
@@ -130,9 +128,7 @@
                 </section>
             </div>
         </div>
-
     {{/content}}
-
     {{#content "scripts"}}
         <!-- Modal -->
         <div class="modal fade" id="exampleModalGrid" tabindex="-1" role="dialog" aria-labelledby="exampleModalGridTitle" aria-hidden="true">
@@ -299,5 +295,4 @@
         </div>
         <script src="../js/components/ui-modal.js"></script>
     {{/content}}
-
 {{/extend}}

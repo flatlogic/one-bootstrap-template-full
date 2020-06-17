@@ -1,146 +1,142 @@
 {{#extend "layout" title="Flatlogic One - Form Validation"}}
-{{#content "sidebar"}}
-{{> sidebar active="form_validation"}}
-{{/content}}
-{{#content "content" mode="replace"}}
-<ol class="breadcrumb">
-    <li class="breadcrumb-item">Form</li>
-    <li class="breadcrumb-item active">Validation</li>
-</ol>
-<div class="row">
-    <div class="col-lg-8">
-        <section class="widget">
-            <header>
-                <h5>
-                    Dead simple validation
-                    <small>No JS needed to tune-up</small>
-                </h5>
-                <div class="widget-controls">
-                    <div class="dropdown">
-                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                            <img src="../img/icons/dots.svg" alt="dropdown">
-                        </span>
-                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                <span class="badge badge-pill badge-success animated bounceIn">
-                                    <strong>9</strong>
+    {{#content "sidebar"}}
+        {{> sidebar active="form_validation"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <h1 class="page-title">Form > <span class="fw-semi-bold">Validation</span></h1>
+        <p class="lead">Way to validate form's data on the client's computer before sending it to the web server.</p>
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="widget">
+                    <header>
+                        <h5>
+                            Dead simple validation
+                            <small>No JS needed to tune-up</small>
+                        </h5>
+                        <div class="widget-controls">
+                            <div class="dropdown">
+                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                                    <img src="../img/icons/dots.svg" alt="dropdown">
                                 </span>
-                            </button>
-                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
-                            <div tabindex="-1" class="dropdown-divider"></div>
-                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                            <strong>9</strong>
+                                        </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
                         </div>
+                    </header>
+                    <div class="widget-body">
+                        <form id="validation-form" class="form-horizontal form-label-left" method="post"
+                            data-parsley-priority-enabled="false" novalidate="novalidate">
+                            <fieldset>
+                                <legend>
+                                    By default validation is started only after at least 3 characters have been input.
+                                </legend>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="basic">Simple required</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="basic" name="basic" class="form-control" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="basic-change">
+                                        Min-length On Change
+                                        <span class="help-block">
+                                            At least 10
+                                        </span>
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="basic-change" name="basic-change" class="form-control"
+                                            data-parsley-trigger="change" data-parsley-minlength="10" required="required">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    <span class="badge bg-warning mr-xs">
+                                        HTML5
+                                    </span>
+                                    input types supported
+                                </legend>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="email">
+                                        E-mail
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            data-parsley-trigger="change" data-parsley-validation-threshold="1"
+                                            required="required">
+                                        <span class="help-block">
+                                            This one is triggered even when 1 character has been input
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="number">
+                                        Number
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="number" name="number" class="form-control"
+                                            data-parsley-type="number" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="range">
+                                        Range
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="range" name="range"
+                                            data-parsley-range="[10, 100]" data-parsley-trigger="change"
+                                            data-parsley-validation-threshold="1" required="required">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    More validation
+                                </legend>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="password">
+                                        Password helpers
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="password" id="password" name="password" class="form-control mb-sm"
+                                            data-parsley-trigger="change" data-parsley-minlength="6" required="required">
+                                        <input type="password" id="password-r" name="password-r" class="form-control"
+                                            data-parsley-trigger="change" data-parsley-minlength="6"
+                                            data-parsley-equalto="#password" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3" for="website">
+                                        Website
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="website" name="website" class="form-control"
+                                            data-parsley-trigger="change" data-parsley-type="url" required="required">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-actions pb-4">
+                                <button type="submit" class="btn btn-warning float-right mr-0">Validate &amp;
+                                    Submit</button>
+                                <button type="button" class="btn btn-default float-right mr-4">Cancel</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-            </header>
-            <div class="widget-body">
-                <form id="validation-form" class="form-horizontal form-label-left" method="post"
-                    data-parsley-priority-enabled="false" novalidate="novalidate">
-                    <fieldset>
-                        <legend>
-                            By default validation is started only after at least 3 characters have been input.
-                        </legend>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="basic">Simple required</label>
-                            <div class="col-sm-9">
-                                <input type="text" id="basic" name="basic" class="form-control" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="basic-change">
-                                Min-length On Change
-                                <span class="help-block">
-                                    At least 10
-                                </span>
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="basic-change" name="basic-change" class="form-control"
-                                    data-parsley-trigger="change" data-parsley-minlength="10" required="required">
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            <span class="badge bg-warning mr-xs">
-                                HTML5
-                            </span>
-                            input types supported
-                        </legend>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="email">
-                                E-mail
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="email" id="email" name="email" class="form-control"
-                                    data-parsley-trigger="change" data-parsley-validation-threshold="1"
-                                    required="required">
-                                <span class="help-block">
-                                    This one is triggered even when 1 character has been input
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="number">
-                                Number
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="number" name="number" class="form-control"
-                                    data-parsley-type="number" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="range">
-                                Range
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="range" name="range"
-                                    data-parsley-range="[10, 100]" data-parsley-trigger="change"
-                                    data-parsley-validation-threshold="1" required="required">
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            More validation
-                        </legend>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="password">
-                                Password helpers
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="password" id="password" name="password" class="form-control mb-sm"
-                                    data-parsley-trigger="change" data-parsley-minlength="6" required="required">
-                                <input type="password" id="password-r" name="password-r" class="form-control"
-                                    data-parsley-trigger="change" data-parsley-minlength="6"
-                                    data-parsley-equalto="#password" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="control-label col-sm-3" for="website">
-                                Website
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="website" name="website" class="form-control"
-                                    data-parsley-trigger="change" data-parsley-type="url" required="required">
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="form-actions px-0">
-                        <button type="submit" class="btn btn-success btn-square float-right">Validate &amp;
-                            Submit</button>
-                        <button type="button" class="btn btn-warning btn-rounded">Cancel</button>
-                    </div>
-                </form>
+                </section>
             </div>
-        </section>
-    </div>
-</div>
-{{/content}}
-{{#content "scripts"}}
-
-<script src="../../node_modules/parsleyjs/dist/parsley.min.js"></script>
-
-<!-- page specific js -->
-<script src="../js/form/form-validation.js"></script>
-{{/content}}
+        </div>
+    {{/content}}
+    {{#content "scripts"}}
+        <script src="../../node_modules/parsleyjs/dist/parsley.min.js"></script>
+        <!-- page specific js -->
+        <script src="../js/form/form-validation.js"></script>
+    {{/content}}
 {{/extend}}

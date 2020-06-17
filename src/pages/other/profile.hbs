@@ -1,198 +1,195 @@
 {{#extend "layout" title="Flatlogic One Bootstrap - Profile"}}
-  {{#content "sidebar"}}
-    {{> sidebar active="profile"}}
-  {{/content}}
-  {{#content "content" mode="replace"}}
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">Dashboard</li>
-        <li class="breadcrumb-item active">Profile</li>
-    </ol>
-    <div class="row profile-page">
-        <div class="col-lg-12 col-xl-6">
-            <section class="widget user-profile">
-                <div class="widget-body">
-                    <div class="widget-top-overlay text-white">
-                        <div class="height-250 overflow-hidden">
-                            <img class="img-fluid" src="../img/landing/profilefon.png">
-                        </div>
-                        <div class="btn-toolbar">
-                            <div class="d-flex mb-4 mt-3">
-                                <a href="/">
-                                    <img src="../img/icons/gplus.png" alt="google_plus" class="ml-3"></a>
-                                <a href="/">
-                                    <img src="../img/icons/twitter.png" alt="twitter" class="ml-3"></a>
-                                <a href="/">
-                                    <img src="../img/icons/facebook.png" alt="facebook" class="ml-3"></a>
-                                <a href="/">
-                                    <img src="../img/icons/github.png" alt="github" class="ml-3"></a>
-                                <a href="/">
-                                    <img src="../img/icons/linkedin.png" alt="linkedin" class="ml-3"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 text-center">
-                            <div class="post-user post-user-profile">
-                                <span>
-                                    <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
-                                </span>
-                                <h4 class="fw-semi-bold mt-1">Adam Johns</h4>
-                                <h6 class="fw-normal">UI/UX designer</h6>
-                                <ul class="contacts">
-                                    <li><i class="fa fa-phone fa-fw mr-xs"></i><a href="#"> +375 29 555-55-55</a></li>
-                                    <li><i class="fa fa-envelope fa-fw mr-xs"></i><a href="#"> psmith@example.com</a></li>
-                                    <li><i class="fa fa-map-marker fa-fw mr-xs"></i><a href="#"> Minsk, Belarus</a></li>
-                                </ul>
-                                <a href="#" class="btn btn-success btn-sm mt">
-                                    <i class="fa fa-envelope ml-xs"></i>&nbsp;
-                                    SEND MESSAGE&nbsp;
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="stats-row stats-row-profile mt d-flex justify-content-start">
-                                <div class="stat-item text-left">
-                                    <p class="value">251</p>
-                                    <h6 class="name">Posts</h6>
+    {{#content "sidebar"}}
+        {{> sidebar active="profile"}}
+    {{/content}}
+    {{#content "content" mode="replace"}}
+        <h1 class="page-title">Dashboard > <span class="fw-semi-bold">Profile</span></h1>
+        <div class="row profile-page">
+                <div class="col-lg-12 col-xl-6">
+                    <section class="widget user-profile">
+                        <div class="widget-body">
+                            <div class="widget-top-overlay text-white">
+                                <div class="height-250 overflow-hidden">
+                                    <img class="img-fluid" src="../img/landing/profilefon.png">
                                 </div>
-                                <div class="stat-item text-left">
-                                    <p class="value">9.38%</p>
-                                    <h6 class="name">Conversion</h6>
-                                </div>
-                                <div class="stat-item text-left">
-                                    <p class="value">842</p>
-                                    <h6 class="name">Followers</h6>
+                                <div class="btn-toolbar">
+                                    <div class="d-flex mb-4 mt-3">
+                                        <a href="/">
+                                            <img src="../img/icons/gplus.png" alt="google_plus" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="../img/icons/twitter.png" alt="twitter" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="../img/icons/facebook.png" alt="facebook" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="../img/icons/github.png" alt="github" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="../img/icons/linkedin.png" alt="linkedin" class="ml-3"></a>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="mt-lg">
-                                <a href="#" class="badge badge-light rounded-0"> UI/UX </a>
-                                <a href="#" class="badge badge-light rounded-0 ml-xs"> Web Design </a>
-                                <a href="#" class="badge badge-light rounded-0 ml-xs"> Mobile Apps </a>
-                                <a href="#" class="badge badge-light rounded-0 ml-xs"> Ant Design </a>
-                            </p>
-                            <p class="lead mt-lg">
-                                My name is Adam Johns and here is my new user profile page.
-                            </p>
-                            <p>
-                                I love reading people's summaries page especially those who are in the same industry as me.
-                                Sometimes it's much easier to find your concentration during the night.
-                            </p>
+                            <div class="row">
+                                <div class="col-md-5 text-center">
+                                    <div class="post-user post-user-profile">
+                                        <span>
+                                            <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
+                                        </span>
+                                        <h4 class="fw-semi-bold mt-1">Adam Johns</h4>
+                                        <h6 class="fw-normal">UI/UX designer</h6>
+                                        <ul class="contacts">
+                                            <li><i class="fa fa-phone fa-fw mr-xs"></i><a href="#"> +375 29 555-55-55</a></li>
+                                            <li><i class="fa fa-envelope fa-fw mr-xs"></i><a href="#"> psmith@example.com</a></li>
+                                            <li><i class="fa fa-map-marker fa-fw mr-xs"></i><a href="#"> Minsk, Belarus</a></li>
+                                        </ul>
+                                        <a href="#" class="btn btn-success btn-sm mt">
+                                            <i class="fa fa-envelope ml-xs"></i>&nbsp;
+                                            SEND MESSAGE&nbsp;
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="stats-row stats-row-profile mt d-flex justify-content-start">
+                                        <div class="stat-item text-left">
+                                            <p class="value">251</p>
+                                            <h6 class="name">Posts</h6>
+                                        </div>
+                                        <div class="stat-item text-left">
+                                            <p class="value">9.38%</p>
+                                            <h6 class="name">Conversion</h6>
+                                        </div>
+                                        <div class="stat-item text-left">
+                                            <p class="value">842</p>
+                                            <h6 class="name">Followers</h6>
+                                        </div>
+                                    </div>
+                                    <p class="mt-lg">
+                                        <a href="#" class="badge badge-light rounded-0"> UI/UX </a>
+                                        <a href="#" class="badge badge-light rounded-0 ml-xs"> Web Design </a>
+                                        <a href="#" class="badge badge-light rounded-0 ml-xs"> Mobile Apps </a>
+                                        <a href="#" class="badge badge-light rounded-0 ml-xs"> Ant Design </a>
+                                    </p>
+                                    <p class="lead mt-lg">
+                                        My name is Adam Johns and here is my new user profile page.
+                                    </p>
+                                    <p>
+                                        I love reading people's summaries page especially those who are in the same industry as me.
+                                        Sometimes it's much easier to find your concentration during the night.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
-        </div>
-        <div class="col-lg-12 col-xl-6">
-            <section class="activities">
-                <h2 class="ml-3">Activities</h2>
-                <section class="event">
-                    <span class="thumb avatar float-left mr-sm">
-                        <img class="rounded-circle" src="../demo/img/people/a5.jpg" alt="...">
-                    </span>
-                    <h5 class="event-heading"><a href="#">Bob Nilson</a> <span><a href="#">@nils</a></span></h5>
-                    <p class="text-muted fs-sm mt-2 fs-sm">February 22, 2020 at 01:59 PM</p>
-                    <p class="event-post">
-                        There is no such thing as maturity. There is instead an ever-evolving process of maturing.
-                        Because when there is a maturity, there is ...
-                    </p>
-                    <footer>
-                        <ul class="post-links">
-                            <li><a href="#">1 hour</a></li>
-                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                            <li><a href="#">Comment</a></li>
-                        </ul>
-                    </footer>
-                </section>
-                <section class="event">
-                    <span class="thumb avatar float-left mr-sm">
-                        <img class="rounded-circle" src="../img/avatars/tn7.png" alt="...">
-                    </span>
-                    <h5 class="event-heading"><a href="#">Jessica Smith</a> <span>@jess</span></h5>
-                    <p class="text-muted fs-sm mt-2">February 22, 2020 at 01:59 PM</p>
-                    <p>
-                        Check out this awesome photo I made in Italy last summer. Seems it was lost somewhere deep inside
-                        my brand new HDD 40TB. Thanks god I found it!
-                    </p>
-                    <footer>
-                        <div class="clearfix">
-                            <ul class="post-links float-left">
-                                <li><a href="#">1 hour</a></li>
-                                <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
-                                <li><a href="#">Comment</a></li>
-                            </ul>
-                            <ul class="avatars-row float-right">
-                                <li>
-                                    <div class="avatar">
-                                        <div class="image-wrapper stroke">
-                                            <img src="../img/chat/avatars/1.png" class="avatar">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="avatar">
-                                        <div class="image-wrapper stroke">
-                                            <img src="../img/chat/avatars/4.png" class="avatar">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="avatar">
-                                        <div class="image-wrapper stroke">
-                                            <img src="../img/chat/avatars/5.png" class="avatar">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="post-comments mt-sm">
-                            <li>
-                                <span class="thumb-sm avatar float-left mr-sm">
-                                    <img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="...">
-                                </span>
-                                <div class="comment-body">
-                                    <h6 class="author fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
-                                    <p>Hey, have you heard anything about that?</p>
+                <div class="col-lg-12 col-xl-6">
+                    <section class="activities">
+                        <h2 class="ml-3">Activities</h2>
+                        <section class="event">
+                            <span class="thumb avatar float-left mr-sm">
+                                <img class="rounded-circle" src="../demo/img/people/a5.jpg" alt="...">
+                            </span>
+                            <h5 class="event-heading"><a href="#">Bob Nilson</a> <span><a href="#">@nils</a></span></h5>
+                            <p class="text-muted fs-sm mt-2 fs-sm">February 22, 2020 at 01:59 PM</p>
+                            <p class="event-post">
+                                There is no such thing as maturity. There is instead an ever-evolving process of maturing.
+                                Because when there is a maturity, there is ...
+                            </p>
+                            <footer>
+                                <ul class="post-links">
+                                    <li><a href="#">1 hour</a></li>
+                                    <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                                    <li><a href="#">Comment</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                        <section class="event">
+                            <span class="thumb avatar float-left mr-sm">
+                                <img class="rounded-circle" src="../img/avatars/tn7.png" alt="...">
+                            </span>
+                            <h5 class="event-heading"><a href="#">Jessica Smith</a> <span>@jess</span></h5>
+                            <p class="text-muted fs-sm mt-2">February 22, 2020 at 01:59 PM</p>
+                            <p>
+                                Check out this awesome photo I made in Italy last summer. Seems it was lost somewhere deep inside
+                                my brand new HDD 40TB. Thanks god I found it!
+                            </p>
+                            <footer>
+                                <div class="clearfix">
+                                    <ul class="post-links float-left">
+                                        <li><a href="#">1 hour</a></li>
+                                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart-o"></i> Like</span></a></li>
+                                        <li><a href="#">Comment</a></li>
+                                    </ul>
+                                    <ul class="avatars-row float-right">
+                                        <li>
+                                            <div class="avatar">
+                                                <div class="image-wrapper stroke">
+                                                    <img src="../img/chat/avatars/1.png" class="avatar">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar">
+                                                <div class="image-wrapper stroke">
+                                                    <img src="../img/chat/avatars/4.png" class="avatar">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar">
+                                                <div class="image-wrapper stroke">
+                                                    <img src="../img/chat/avatars/5.png" class="avatar">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="thumb-sm avatar float-left mr-sm">
-                                    <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
-                                </span>
-                                <div class="comment-body">
-                                    <input class="form-control" type="text" placeholder="Write your comment...">
+                                <ul class="post-comments mt-sm">
+                                    <li>
+                                        <span class="thumb-sm avatar float-left mr-sm">
+                                            <img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="...">
+                                        </span>
+                                        <div class="comment-body">
+                                            <h6 class="author fw-semi-bold">Ignacio Abad <small>6 mins ago</small></h6>
+                                            <p>Hey, have you heard anything about that?</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="thumb-sm avatar float-left mr-sm">
+                                            <img class="rounded-circle" src="../img/avatars/tn6.png" alt="...">
+                                        </span>
+                                        <div class="comment-body">
+                                            <input class="form-control" type="text" placeholder="Write your comment...">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </section>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                    <div class="widget pb">
+                        <div class="widget-body">
+                            <form action="#">
+                                <div class="form-group mb-0">
+                                    <label class="sr-only" for="new-event">New event</label>
+                                    <textarea class="form-control" id="new-event" placeholder="Post something..." rows="3"></textarea>
                                 </div>
-                            </li>
-                        </ul>
-                    </footer>
-                </section>
-            </section>
-        </div>
-        <div class="col-lg-12 col-xl-6">
-            <div class="widget">
-                <div class="widget-body">
-                    <form class="mt" action="#">
-                        <div class="form-group mb-0">
-                            <label class="sr-only" for="new-event">New event</label>
-                            <textarea class="form-control" id="new-event" placeholder="Post something..." rows="3"></textarea>
+                                <div class="btn-toolbar justify-content-between">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fas fa-smile fa-lg"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fa fa-camera fa-lg"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fa fa-map-marker fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-sm">POST</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="btn-toolbar justify-content-between">
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-sm">
-                                    <i class="fas fa-smile fa-lg"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm">
-                                    <i class="fa fa-camera fa-lg"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm">
-                                    <i class="fa fa-map-marker fa-lg"></i>
-                                </a>
-                            </div>
-                            <button type="submit" class="btn btn-success btn-sm">POST</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-  {{/content}}
+    {{/content}}
 {{/extend}}
