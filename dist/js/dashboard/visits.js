@@ -6,7 +6,7 @@ $(function(){
         $map.mapael({
             map:{
                 name : "usa_states",
-                fixedCenter: true,
+                fixedCenter: false,
                 defaultArea : {
                     attrs: {
                         fill: '#FFF0D1',
@@ -203,11 +203,16 @@ $(function(){
         $('.js-progress-animate').animateProgressBar();
     }
 
+    function amcharts() {
+        var chart = am4core.create("chartdiv", "PieChart");
+    }
+
     function pjaxPageLoad(){
         $('.widget').widgster();
         initMap();
         apexChartFifth();
         initAnimations();
+        amcharts();
     }
 
     pjaxPageLoad();

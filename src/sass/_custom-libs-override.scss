@@ -203,8 +203,14 @@
   .map {
     position: relative;
     height: 400px;
+    overflow: hidden;
     @include media-breakpoint-down(md) {
       height: 200px;
+    }
+    svg {
+      width: auto!important;
+      display: block;
+      margin: auto;
     }
   }
   .stats {

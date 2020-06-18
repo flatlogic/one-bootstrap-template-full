@@ -193,6 +193,10 @@ body {
   font-family: 'Nunito', sans-serif;
   color: $body-main-color;
   font-size: 16px;
+  .lead {
+    padding-bottom: 1rem;
+    margin-top: -20px;
+  }
 }
 
 .content-wrap{
