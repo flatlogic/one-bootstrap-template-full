@@ -458,8 +458,8 @@ body {
         }
       }
 
-      &.active{
-        > a{
+      &.active {
+        > a {
           font-weight: $font-weight-bold;
           color: $body-color
         }
