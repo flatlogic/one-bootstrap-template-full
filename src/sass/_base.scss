@@ -268,11 +268,11 @@ body {
   }
 }
 
-.sidebar-white{
+.sidebar-white {
   background-color: $white;
 }
 
-.sidebar-nav{
+.sidebar-nav {
   padding: 10px 0;
   font-weight: $sidebar-font-weight;
   list-style: none;
@@ -291,10 +291,11 @@ body {
     }
   }
 
-  .hover-white{
+  .hover-white {
     background-color: white!important;
     color: #6c757d!important;
-    &:hover{
+
+    &:hover {
       background-color: transparent;
     }
   }
@@ -408,7 +409,7 @@ body {
   }
 
   > .active > a {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-semi-bold;
     color: $body-color;
 
     &, &:hover {
@@ -445,10 +446,10 @@ body {
       font-size: 14px;
     }
 
-    > li{
-      margin: 10px 0;
-      > a{
-        padding: 10px 0 10px 48px;
+    > li {
+      padding: 10px 0;
+      > a {
+        padding: 5px 0 5px 48px;
         font-size: $font-size-base;
 
         &:hover {
