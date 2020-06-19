@@ -20,6 +20,24 @@ $(function(){
         'brand-secondary': '#5B5B5B'
     };
 
+    let theme = {first: ['RGBA(255, 173, 1, 0.3)'], second: ['RGBA(246, 121, 93, 0.3)'], third: ['RGBA(59, 191, 151, 0.3)'], fourth: ['RGBA(18, 180, 222, 0.3)'] }
+
+    function colorsUpdate(chartName) {
+        $('.colors-list .color-box').click(function(e) {
+            const target = $(e.target);
+            const style = target.data('style')
+            console.log(style)
+
+            chartName.updateOptions({
+                colors:
+                    style === 'first' ? theme.first :
+                    style === 'second' ? theme.second :
+                    style === 'third' ? theme.third : theme.fourth
+            })
+
+        });
+    }
+
     function apexChartFirst() {
         let options = {
             chart: {
@@ -90,6 +108,8 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
 
         chart.render();
+
+        colorsUpdate(chart);
     }
 
     function apexChartSecond() {
@@ -157,6 +177,7 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
         chart.render();
+        colorsUpdate(chart);
     }
 
     function apexChartThird() {
@@ -400,6 +421,8 @@ $(function(){
         apexChartFifth();
         apexChartSixth();
     }
+
+
 
     pageLoad();
     SingApp.onPageLoad(pageLoad);

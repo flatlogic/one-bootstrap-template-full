@@ -11,6 +11,7 @@ $(function () {
         fontColor: Sing.colors['gray-400'],
         gridBorder: [Sing.colors['brand-warning'], Sing.colors['brand-info'], Sing.colors['brand-primary']]
     };
+
     let debouncedTmeout = 0;
 
     class StackedLineChart {
@@ -208,6 +209,7 @@ $(function () {
                         show: true
                     }
                 },
+                shadowSize: 0,
                 colors: COLORS.trackingChart,
                 crosshair: {
                     mode: "x",
@@ -331,7 +333,7 @@ $(function () {
         }
 
         labelFormatter(label, series) {
-            return `<h1><span class="badge badge-secondary">${label}: ${Math.round(series.percent)}%</span></h1>`;
+            return `<h1><span class="badge badge-inverse">${label}: ${Math.round(series.percent)}%</span></h1>`;
         }
 
     }

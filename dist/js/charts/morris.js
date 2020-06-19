@@ -92,7 +92,7 @@ $(function() {
                 ykeys: ['y'],
                 labels: ['OS Users, %'],
                 barColors: [Sing.colors['brand-info']],
-                gridTextColor: Sing.colors['gray-400']
+                gridTextColor: Sing.colors['gray-600']
             });
         }
 
@@ -122,7 +122,7 @@ $(function() {
                     Sing.colors['brand-info'],
                     Sing.colors['brand-danger']
                 ],
-                gridTextColor: Sing.colors['gray-100']
+                gridTextColor: Sing.colors['gray-600']
             });
         }
 

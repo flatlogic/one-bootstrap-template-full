@@ -185,6 +185,36 @@ body.theme-first {
   .navbar-header .toggle-sidebar {
     background-color: theme-color('warning');
   }
+  #content {
+    .sidebar-icon.users-img {
+      background: url('../img/icons/users-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.smile-img {
+      background: url('../img/icons/smile-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.sale-img {
+      background: url('../img/icons/total-sale.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.orders-img {
+      background: url('../img/icons/orders.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+  }
 }
 body.theme-second {
   .sidebar {
@@ -361,6 +391,36 @@ body.theme-second {
  }
   .navbar-header .toggle-sidebar {
     background-color: #ff7769;
+  }
+  #content {
+    .sidebar-icon.users-img {
+      background: url('../img/icons/red/users-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.smile-img {
+      background: url('../img/icons/red/smile-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.sale-img {
+      background: url('../img/icons/red/total-sale.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.orders-img {
+      background: url('../img/icons/red/orders.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
   }
 }
 body.theme-third {
@@ -539,6 +599,36 @@ body.theme-third {
   .navbar-header .toggle-sidebar {
     background-color: #81d4bb;
   }
+  #content {
+    .sidebar-icon.users-img {
+      background: url('../img/icons/green/users-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.smile-img {
+      background: url('../img/icons/green/smile-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.sale-img {
+      background: url('../img/icons/green/total-sale.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.orders-img {
+      background: url('../img/icons/green/orders.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+  }
 }
 body.theme-fourth {
   .sidebar {
@@ -714,6 +804,36 @@ body.theme-fourth {
   }
   .navbar-header .toggle-sidebar {
     background-color: #4dc7df;
+  }
+  #content {
+    .sidebar-icon.users-img {
+      background: url('../img/icons/blue/users-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.smile-img {
+      background: url('../img/icons/blue/smile-img.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.sale-img {
+      background: url('../img/icons/blue/total-sale.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
+    .sidebar-icon.orders-img {
+      background: url('../img/icons/blue/orders.svg') no-repeat;
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+    }
   }
 }
 

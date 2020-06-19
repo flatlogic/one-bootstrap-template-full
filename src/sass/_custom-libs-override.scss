@@ -1661,6 +1661,20 @@ ul.messenger-theme-air .messenger-message .message-info {
   color: $gray-900;
 }
 
+
+/***********************/
+/*    Moris Chart     */
+/***********************/
+
+#morris3 {
+  svg {
+    text {
+      font-weight: normal!important;
+    }
+  }
+}
+
+
 /***********************/
 /*   Easy Pie Chart    */
 /***********************/
@@ -1889,6 +1903,8 @@ a.fc-event {
   color: $body-main-color;
   padding-left: 5px;
 }
+
+
 /**********************************/
 /*   Awesome Bootstrap Checkbox   */
 /**********************************/
@@ -2041,6 +2057,19 @@ a.fc-event {
 
 .flot-tick-label {
   color: $body-main-color;
+}
+
+#flot-donut-legend {
+  .legendLabel {
+    padding-bottom: 5px;
+  }
+  .legendColorBox > div {
+    border: none!important;
+    div {
+      border-width: 8px!important;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 ///rickshaw_graph///
