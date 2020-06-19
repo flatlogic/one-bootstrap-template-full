@@ -20,20 +20,25 @@ $(function(){
         'brand-secondary': '#5B5B5B'
     };
 
-    let theme = {first: ['RGBA(255, 173, 1, 0.3)'], second: ['RGBA(246, 121, 93, 0.3)'], third: ['RGBA(59, 191, 151, 0.3)'], fourth: ['RGBA(18, 180, 222, 0.3)'] }
+    let themeFirst = {
+        first: ['RGBA(254, 176, 74, 0.3)'],
+        second: ['RGBA(224, 85, 70, 0.3)'],
+        third: ['RGBA(56, 163, 131, 0.3)'],
+        fourth: ['RGBA(18, 180, 222, 0.3)']
+    }
+    let themeSecond = {
+        first: ['RGBA(224, 85, 70, 0.3)'],
+        second: ['RGBA(50, 50, 50, 0.3)'],
+        third: ['RGBA(50, 50, 50, 0.3)'],
+        fourth: ['RGBA(50, 50, 50, 0.3)']
+    }
 
-    function colorsUpdate(chartName) {
+    function colorsUpdate(chartName, theme, options) {
         $('.colors-list .color-box').click(function(e) {
             const target = $(e.target);
             const style = target.data('style')
-            console.log(style)
 
-            chartName.updateOptions({
-                colors:
-                    style === 'first' ? theme.first :
-                    style === 'second' ? theme.second :
-                    style === 'third' ? theme.third : theme.fourth
-            })
+            chartName.updateOptions( options );
 
         });
     }
@@ -108,8 +113,14 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
 
         chart.render();
+        let newOptions = {
+            colors:
+                style === 'first' ? theme.first :
+                style === 'second' ? theme.second :
+                style === 'third' ? theme.third : theme.fourth
+        }
 
-        colorsUpdate(chart);
+        colorsUpdate(chart, themeFirst, newOptions);
     }
 
     function apexChartSecond() {
@@ -177,7 +188,7 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
         chart.render();
-        colorsUpdate(chart);
+
     }
 
     function apexChartThird() {
@@ -238,6 +249,7 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
+
     }
 
     function apexChartFourth() {
