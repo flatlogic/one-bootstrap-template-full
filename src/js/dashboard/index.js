@@ -645,36 +645,26 @@ $(function(){
         colorsUpdate(chart, mainOptions.chartSixth, 'pie');
     }
 
-    function themeLoad() {
-        console.log(typeof localStorage.getItem('sidebarTheme'))
-        if (localStorage.getItem('sidebarTheme')) {
-            if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
-                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeSecond);
-                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeSecond);
-                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeSecond);
-                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeSecond);
-                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeSecond);
-                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeSecond);
+    function chartsThemeLoad() {
+
+        const charts = ['chartFirst', 'chartSecond', 'chartThird', 'chartFourth', 'chartFifth', 'chartSixth'];
+
+        if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
+            for ( let i = 0; i < 6; i++ ) {
+                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeSecond);
             }
-            else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
-                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeThird);
-                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeThird);
-                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeThird);
-                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeThird);
-                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeThird);
-                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeThird);
+        }
+        else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
+            for ( let i = 0; i < 6; i++ ) {
+                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeThird);
             }
-            else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
-                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeFourth);
-                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeFourth);
-                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeFourth);
-                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeFourth);
-                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeFourth);
-                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeFourth);
+        }
+        else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
+            for ( let i = 0; i < 6; i++ ) {
+                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeFourth);
             }
         }
     }
-
 
     function pageLoad(){
         $('.widget').widgster();
@@ -684,7 +674,7 @@ $(function(){
         apexChartFourth();
         apexChartFifth();
         apexChartSixth();
-        themeLoad();
+        chartsThemeLoad();
     }
 
     pageLoad();
