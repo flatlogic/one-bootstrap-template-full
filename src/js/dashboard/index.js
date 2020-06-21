@@ -1,23 +1,11 @@
 $(function(){
     let colors = {
-        'white': '#fff',
         'black': '#323232',
-        'gray-100': '#f8f9fa',
-        'gray-200': '#e9ecef',
-        'gray-300': '#dee2e6',
-        'gray-400': '#ced4da',
-        'gray-500': '#adb5bd',
-        'gray-600': '#6c757d',
-        'gray-700': '#495057',
-        'gray-800': '#343a40',
-        'gray-900': '#212529',
         'brand-primary': '#1f7db6',
         'brand-success': '#38a383',
         'brand-danger': '#e05546',
         'brand-warning': '#feb04a',
-        'brand-info': '#12b4de',
-        'body-bg': '#fafbff',
-        'brand-secondary': '#5B5B5B'
+        'brand-info': '#12b4de'
     };
 
     let mainOptions  = {
@@ -51,51 +39,123 @@ $(function(){
         },
         chartThird: {
             themeFirst: {
-                colors: [colors["brand-danger"]],
                 stroke: {
                     colors: [colors['brand-danger']]
+                },
+                fill: {
+                    colors: [colors["brand-danger"]],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.9,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
                 }
             },
             themeSecond: {
-                colors: ['RGBA(50, 50, 50, 0.3)'],
                 stroke: {
-                    colors: ['RGBA(50, 50, 50, 0.3)']
+                    colors: ['RGBA(50,50,50, 0.8)'],
+                },
+                fill: {
+                    colors: ['#323232'],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.5,
+                        opacityTo: 0.4,
+                        stops: [0, 100]
+                    }
                 }
             },
             themeThird: {
-                colors: ['RGBA(50, 50, 50, 0.3)'],
                 stroke: {
-                    colors: ['RGBA(50, 50, 50, 0.3)']
+                    colors: ['RGBA(50, 50, 50, 0.8)']
+                },
+                fill: {
+                    colors: ['#323232'],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.5,
+                        opacityTo: 0.4,
+                        stops: [0, 100]
+                    }
                 }
             },
             themeFourth: {
-                colors: ['RGBA(50, 50, 50, 0.3)'],
                 stroke: {
-                    colors: ['RGBA(50, 50, 50, 0.3)']
+                    colors: ['RGBA(50, 50, 50, 0.8)']
+                },
+                fill: {
+                    colors: ['#323232'],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.5,
+                        opacityTo: 0.4,
+                        stops: [0, 100]
+                    }
                 }
             }
         },
         chartFourth: {
             themeFirst: {
-                colors: [colors['brand-warning']],
+                fill: {
+                    colors: [colors["brand-warning"]],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.9,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
+                },
                 stroke: {
                     colors: [colors['brand-warning']]
                 }
             },
             themeSecond: {
-                colors: [colors['brand-danger']],
+                fill: {
+                    colors: [colors["brand-danger"]],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.9,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
+                },
                 stroke: {
                     colors: [colors['brand-danger']]
                 }
             },
             themeThird: {
-                colors: [colors['brand-success']],
+                fill: {
+                    colors: [colors["brand-success"]],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.9,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
+                },
                 stroke: {
                     colors: [colors['brand-success']]
                 }
             },
             themeFourth: {
-                colors: [colors['brand-info']],
+                fill: {
+                    colors: [colors["brand-info"]],
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.9,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
+                },
                 stroke: {
                     colors: [colors['brand-info']]
                 }
@@ -170,7 +230,8 @@ $(function(){
                     style === 'second' ? theme.themeSecond :
                     style === 'third' ? theme.themeThird : theme.themeFourth
             }
-            else if (type === 'pie') {
+            else if (type === 'pie')
+            {
                 options =
                     style === 'first' ? theme.themeFirst :
                     style === 'second' ? theme.themeSecond:
@@ -357,8 +418,16 @@ $(function(){
                     },
                 }
             },
-            colors: [colors['brand-danger']],
-
+            fill: {
+                colors: [colors["brand-danger"]],
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    opacityFrom: 0.9,
+                    opacityTo: 0.8,
+                    stops: [0, 100]
+                }
+            },
             stroke: {
                 colors: [colors['brand-danger']],
                 curve: 'smooth'
@@ -420,7 +489,16 @@ $(function(){
                     },
                 }
             },
-            colors: [colors['brand-warning']],
+            fill: {
+                colors: [colors["brand-warning"]],
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    opacityFrom: 0.9,
+                    opacityTo: 0.8,
+                    stops: [0, 100]
+                }
+            },
             stroke: {
                 colors: [colors['brand-warning']],
                 curve: 'smooth'

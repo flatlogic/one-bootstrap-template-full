@@ -29,8 +29,10 @@
 }
 
 .sidebar-transparent {
-  background-color: transparent;
-  box-shadow: none;
+  #sidebar {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .sidebar.sidebar-open {
@@ -1284,6 +1286,16 @@ body {
   right: 0;
   padding: $widget-padding-horizontal;
   cursor: pointer;
+
+  .dropdown button {
+    &:active {
+      background-color: transparent;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
   &.left{
     left: 0;
     right: auto;

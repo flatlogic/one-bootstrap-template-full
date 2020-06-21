@@ -621,14 +621,14 @@ function initDemoFunctions(){
             }
         });
 
-        $("[name=sidebar-type]").change( function() {
+        $("[name=sidebar-type]").change(function() {
             if (this.value === "transparent")
             {
-                sidebar.addClass('sidebar-transparent')
+                body.removeClass('theme-dark').addClass('sidebar-transparent')
             }
             else
             {
-                sidebar.removeClass('sidebar-transparent')
+                body.removeClass('sidebar-transparent')
             }
         });
 
@@ -639,11 +639,13 @@ function initDemoFunctions(){
             navbar.removeClass('navbar-white').addClass( target.data('style') );
         });
 
+        //Sidebar Color
         $('.colors-list .color-box-side-bar').click(function(e) {
             const target = $(e.target);
             $('.color-box-side-bar').removeClass('active');
 
-            body.removeClass('theme-dark', 'theme-first').addClass( `theme-${target.data('style')}` );
+            body.removeClass('theme-dark sidebar-transparent').addClass( `theme-${target.data('style')}` );
+            $("[value='solid']").prop("checked", true);
             target.addClass('active');
 
             localStorage.setItem('sidebarTheme', body.attr('class'));
@@ -653,13 +655,11 @@ function initDemoFunctions(){
             const target = $(e.target);
             $('.color-box').removeClass('active-theme');
             body.removeClass(styles.join("theme-")).addClass(`theme-${target.data('style')}`);
-
             target.addClass('active-theme');
             localStorage.setItem('sidebarTheme', body.attr('class'));
         });
 
         //Theme load on reload
-
         function themeLoad() {
             if (localStorage.getItem('sidebarTheme')) {
                 body.removeClass().addClass(localStorage.getItem('sidebarTheme'))
