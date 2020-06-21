@@ -7,7 +7,6 @@ $(function(){
         'brand-warning': '#feb04a',
         'brand-info': '#12b4de'
     };
-
     let mainOptions  = {
         chartFirst: {
             themeFirst: {
@@ -203,34 +202,34 @@ $(function(){
         }
     };
 
-    function colorsUpdate(chartName, theme, type) {
+    function colorsUpdate(chartName, theme, chartType) {
         $('.colors-list .color-box').click(function(e) {
             const target = $(e.target);
             const style = target.data('style')
             let options = {}
 
-            if (type === 'bars')
+            if (chartType === 'bars')
             {
                 options =
                     style === 'first' ? theme.themeFirst :
                     style === 'second' ? theme.themeSecond :
                     style === 'third' ? theme.themeThird : theme.themeFourth
                 }
-            else if (type === 'two-lines')
+            else if (chartType === 'two-lines')
             {
                 options =
                     style === 'first' ? theme.themeFirst :
                     style === 'second' ? theme.themeSecond :
                     style === 'third' ? theme.themeThird : theme.themeFourth
                 }
-            else if (type === 'lines')
+            else if (chartType === 'lines')
             {
                 options =
                     style === 'first' ? theme.themeFirst :
                     style === 'second' ? theme.themeSecond :
                     style === 'third' ? theme.themeThird : theme.themeFourth
             }
-            else if (type === 'pie')
+            else if (chartType === 'pie')
             {
                 options =
                     style === 'first' ? theme.themeFirst :
@@ -245,6 +244,7 @@ $(function(){
     function apexChartFirst() {
         let options = {
             chart: {
+                id: 'chartFirst',
                 height: 90,
                 type: 'bar',
                 toolbar: {
@@ -322,6 +322,7 @@ $(function(){
                 data: [210, 220, 220, 280, 260, 210, 230, 300, 280, 260, 210, 230, 300]
             }],
             chart: {
+                id: 'chartSecond',
                 width: '100%',
                 toolbar: {
                     show: false
@@ -392,6 +393,7 @@ $(function(){
                 data: [31, 40, 28, 51, 42, 25, 63]
             }],
             chart: {
+                id: 'chartThird',
                 width: '100%',
                 toolbar: {
                     show: false
@@ -463,6 +465,7 @@ $(function(){
                 data: [56, 32, 45, 32, 34, 52, 65]
             }],
             chart: {
+                id: 'chartFourth',
                 width: '100%',
                 toolbar: {
                     show: false
@@ -539,6 +542,7 @@ $(function(){
                 data: [86, 96, 84, 62, 44, 52, 41]
             }],
             chart: {
+                id: 'chartFifth',
                 toolbar: {
                     show: false
                 },
@@ -609,6 +613,7 @@ $(function(){
         let options = {
             series: [1732, 253, 154],
             chart: {
+                id: 'chartSixth',
                 type: 'donut',
                 height: 180,
                 width: '100%'
@@ -640,6 +645,37 @@ $(function(){
         colorsUpdate(chart, mainOptions.chartSixth, 'pie');
     }
 
+    function themeLoad() {
+        console.log(typeof localStorage.getItem('sidebarTheme'))
+        if (localStorage.getItem('sidebarTheme')) {
+            if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
+                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeSecond);
+                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeSecond);
+                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeSecond);
+                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeSecond);
+                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeSecond);
+                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeSecond);
+            }
+            else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
+                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeThird);
+                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeThird);
+                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeThird);
+                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeThird);
+                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeThird);
+                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeThird);
+            }
+            else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
+                ApexCharts.exec('chartFirst', 'updateOptions', mainOptions.chartFirst.themeFourth);
+                ApexCharts.exec('chartSecond', 'updateOptions', mainOptions.chartSecond.themeFourth);
+                ApexCharts.exec('chartThird', 'updateOptions', mainOptions.chartThird.themeFourth);
+                ApexCharts.exec('chartFourth', 'updateOptions', mainOptions.chartFourth.themeFourth);
+                ApexCharts.exec('chartFifth', 'updateOptions', mainOptions.chartFifth.themeFourth);
+                ApexCharts.exec('chartSixth', 'updateOptions', mainOptions.chartSixth.themeFourth);
+            }
+        }
+    }
+
+
     function pageLoad(){
         $('.widget').widgster();
         apexChartFirst();
@@ -648,6 +684,7 @@ $(function(){
         apexChartFourth();
         apexChartFifth();
         apexChartSixth();
+        themeLoad();
     }
 
     pageLoad();
