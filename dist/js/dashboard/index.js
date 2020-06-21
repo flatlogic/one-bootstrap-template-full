@@ -20,23 +20,94 @@ $(function(){
         'brand-secondary': '#5B5B5B'
     };
 
-    let themeFirst = {
+    let chartFirst = {
         first: ['RGBA(254, 176, 74, 0.3)'],
         second: ['RGBA(224, 85, 70, 0.3)'],
         third: ['RGBA(56, 163, 131, 0.3)'],
         fourth: ['RGBA(18, 180, 222, 0.3)']
     }
-    let themeSecond = {
+    let chartSecond = {
         first: ['RGBA(224, 85, 70, 0.3)'],
         second: ['RGBA(50, 50, 50, 0.3)'],
         third: ['RGBA(50, 50, 50, 0.3)'],
         fourth: ['RGBA(50, 50, 50, 0.3)']
     }
+    let chartThird = {
+        first: [colors["brand-danger"]],
+        second: ['RGBA(50, 50, 50, 0.3)'],
+        third: ['RGBA(50, 50, 50, 0.3)'],
+        fourth: ['RGBA(50, 50, 50, 0.3)']
+    }
+    let chartFourth = {
+        first: [colors['brand-warning']],
+        second: [colors['brand-danger']],
+        third: [colors['brand-success']],
+        fourth: [colors['brand-info']]
+    }
+    let chartFifth = {
+        first: ['RGBA(254, 176, 74, 0.1)'],
+        second: ['RGBA(224, 85, 70, 0.1)'],
+        third: ['RGBA(56, 163, 131, 0.1)'],
+        fourth: ['RGBA(18, 180, 222, 0.1)']
+    }
 
-    function colorsUpdate(chartName, theme, options) {
+    function colorsUpdate(chartName, theme, type) {
         $('.colors-list .color-box').click(function(e) {
             const target = $(e.target);
             const style = target.data('style')
+            let options = {}
+
+            if (type === 'line')
+            {
+                options = {
+                    colors:
+                        style === 'first' ? theme.first :
+                        style === 'second' ? theme.second :
+                        style === 'third' ? theme.third : theme.fourth
+                    }
+                }
+            else if (type === 'two-lines')
+            {
+                options = {
+                    stroke: {
+                        colors:
+                            style === 'first' ? [colors['brand-warning'], colors['black']] :
+                            style === 'second' ? [colors['brand-danger'], colors['black']] :
+                            style === 'third' ? [colors['brand-success'], colors['black']] : [colors['brand-info'], colors['black']]
+                    },
+                    fill: {
+                        colors:
+                            style === 'first' ? theme.first :
+                            style === 'second' ? theme.second :
+                            style === 'third' ? theme.third : theme.fourth
+                        }
+                    }
+                }
+            else if (type === 'bars')
+            {
+                options = {
+                    colors:
+                        style === 'first' ? theme.first :
+                        style === 'second' ? theme.second :
+                        style === 'third' ? theme.third : theme.fourth,
+
+                    stroke: {
+                        colors:
+                            style === 'first' ? theme.first :
+                            style === 'second' ? theme.second :
+                            style === 'third' ? theme.third : theme.fourth
+                    }
+                }
+            }
+            else if (type === 'pie') {
+                options = {
+                    colors:
+                        style === 'first' ? [colors['brand-warning'], colors['brand-danger'], colors['black']] :
+                        style === 'second' ? [colors['brand-danger'], colors['brand-warning'], colors['black']]:
+                        style === 'third' ? [colors['brand-success'], colors['brand-warning'], colors['black']] :
+                            [colors['brand-info'], colors['brand-warning'], colors['black']]
+                }
+            }
 
             chartName.updateOptions( options );
 
@@ -113,14 +184,8 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
 
         chart.render();
-        let newOptions = {
-            colors:
-                style === 'first' ? theme.first :
-                style === 'second' ? theme.second :
-                style === 'third' ? theme.third : theme.fourth
-        }
 
-        colorsUpdate(chart, themeFirst, newOptions);
+        colorsUpdate(chart, chartFirst, 'line');
     }
 
     function apexChartSecond() {
@@ -189,6 +254,8 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
         chart.render();
 
+        colorsUpdate(chart, chartSecond, 'line');
+
     }
 
     function apexChartThird() {
@@ -250,6 +317,8 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
 
+        colorsUpdate(chart, chartThird, 'bars');
+
     }
 
     function apexChartFourth() {
@@ -309,6 +378,8 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
         chart.render();
+
+        colorsUpdate(chart, chartFourth, 'bars');
     }
 
     function apexChartFifth() {
@@ -341,7 +412,7 @@ $(function(){
             },
             colors: [colors['brand-warning'], colors['black']],
             fill: {
-                colors: [ '#fff5e0' ]
+                colors: ['RGBA(255, 173, 1, 0.1)']
             },
             stroke: {
                 width: [4, 4],
@@ -386,10 +457,12 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
+
+        colorsUpdate(chart, chartFifth, 'two-lines');
     }
 
     function apexChartSixth() {
-        var options = {
+        let options = {
             series: [1732, 253, 154],
             chart: {
                 type: 'donut',
@@ -397,9 +470,6 @@ $(function(){
                 width: '100%'
             },
             colors: [colors['brand-warning'], colors['brand-danger'], colors['black']],
-            fill: {
-                colors: [colors['brand-warning'], colors['brand-danger'], colors['black']]
-            },
             plotOptions: {
                 pie: {
                     donut: {
@@ -420,8 +490,10 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
+        let chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
         chart.render();
+
+        colorsUpdate(chart, chartFifth, 'pie');
     }
 
     function pageLoad(){
