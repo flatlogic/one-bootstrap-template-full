@@ -20,36 +20,128 @@ $(function(){
         'brand-secondary': '#5B5B5B'
     };
 
-    let chartFirst = {
-        first: ['RGBA(254, 176, 74, 0.3)'],
-        second: ['RGBA(224, 85, 70, 0.3)'],
-        third: ['RGBA(56, 163, 131, 0.3)'],
-        fourth: ['RGBA(18, 180, 222, 0.3)']
-    }
-    let chartSecond = {
-        first: ['RGBA(224, 85, 70, 0.3)'],
-        second: ['RGBA(50, 50, 50, 0.3)'],
-        third: ['RGBA(50, 50, 50, 0.3)'],
-        fourth: ['RGBA(50, 50, 50, 0.3)']
-    }
-    let chartThird = {
-        first: [colors["brand-danger"]],
-        second: ['RGBA(50, 50, 50, 0.3)'],
-        third: ['RGBA(50, 50, 50, 0.3)'],
-        fourth: ['RGBA(50, 50, 50, 0.3)']
-    }
-    let chartFourth = {
-        first: [colors['brand-warning']],
-        second: [colors['brand-danger']],
-        third: [colors['brand-success']],
-        fourth: [colors['brand-info']]
-    }
-    let chartFifth = {
-        first: ['RGBA(254, 176, 74, 0.1)'],
-        second: ['RGBA(224, 85, 70, 0.1)'],
-        third: ['RGBA(56, 163, 131, 0.1)'],
-        fourth: ['RGBA(18, 180, 222, 0.1)']
-    }
+    let mainOptions  = {
+        chartFirst: {
+            themeFirst: {
+                colors: ['RGBA(254, 176, 74, 0.3)']
+            },
+            themeSecond: {
+                colors: ['RGBA(224, 85, 70, 0.3)']
+            },
+            themeThird: {
+                colors: ['RGBA(56, 163, 131, 0.3)']
+            },
+            themeFourth: {
+                colors: ['RGBA(18, 180, 222, 0.3)']
+            }
+        },
+        chartSecond: {
+            themeFirst: {
+                colors: ['RGBA(224, 85, 70, 0.3)']
+            },
+            themeSecond: {
+                colors: ['RGBA(50, 50, 50, 0.3)']
+            },
+            themeThird: {
+                colors: ['RGBA(50, 50, 50, 0.3)']
+            },
+            themeFourth: {
+                colors: ['RGBA(50, 50, 50, 0.3)']
+            }
+        },
+        chartThird: {
+            themeFirst: {
+                colors: [colors["brand-danger"]],
+                stroke: {
+                    colors: [colors['brand-danger']]
+                }
+            },
+            themeSecond: {
+                colors: ['RGBA(50, 50, 50, 0.3)'],
+                stroke: {
+                    colors: ['RGBA(50, 50, 50, 0.3)']
+                }
+            },
+            themeThird: {
+                colors: ['RGBA(50, 50, 50, 0.3)'],
+                stroke: {
+                    colors: ['RGBA(50, 50, 50, 0.3)']
+                }
+            },
+            themeFourth: {
+                colors: ['RGBA(50, 50, 50, 0.3)'],
+                stroke: {
+                    colors: ['RGBA(50, 50, 50, 0.3)']
+                }
+            }
+        },
+        chartFourth: {
+            themeFirst: {
+                colors: [colors['brand-warning']],
+                stroke: {
+                    colors: [colors['brand-warning']]
+                }
+            },
+            themeSecond: {
+                colors: [colors['brand-danger']],
+                stroke: {
+                    colors: [colors['brand-danger']]
+                }
+            },
+            themeThird: {
+                colors: [colors['brand-success']],
+                stroke: {
+                    colors: [colors['brand-success']]
+                }
+            },
+            themeFourth: {
+                colors: [colors['brand-info']],
+                stroke: {
+                    colors: [colors['brand-info']]
+                }
+            }
+        },
+        chartFifth: {
+            themeFirst: {
+                colors: [colors['brand-warning'], colors['black']],
+                fill: {
+                    colors: ['RGBA(255, 173, 1, 0.1)']
+                }
+            },
+            themeSecond: {
+                colors: [colors['brand-danger'], colors['black']],
+                fill: {
+                    colors: ['RGBA(224, 85, 70, 0.1)']
+                }
+            },
+            themeThird: {
+                colors: [colors['brand-success'], colors['black']],
+                fill: {
+                    colors: ['RGBA(56, 163, 131, 0.1)']
+                }
+            },
+            themeFourth: {
+                colors: [colors['brand-info'], colors['black']],
+                fill: {
+                    colors: ['RGBA(18, 180, 222, 0.1)']
+                }
+            }
+        },
+        chartSixth: {
+            themeFirst: {
+                colors: [colors['brand-warning'], colors['brand-danger'], colors['black']]
+            },
+            themeSecond: {
+                colors: [colors['brand-danger'], colors['brand-warning'], colors['black']]
+            },
+            themeThird: {
+                colors: [colors['brand-success'], colors['brand-warning'], colors['black']]
+            },
+            themeFourth: {
+                colors: [colors['brand-info'], colors['brand-warning'], colors['black']]
+            }
+        }
+    };
 
     function colorsUpdate(chartName, theme, type) {
         $('.colors-list .color-box').click(function(e) {
@@ -57,60 +149,35 @@ $(function(){
             const style = target.data('style')
             let options = {}
 
-            if (type === 'line')
+            if (type === 'bars')
             {
-                options = {
-                    colors:
-                        style === 'first' ? theme.first :
-                        style === 'second' ? theme.second :
-                        style === 'third' ? theme.third : theme.fourth
-                    }
+                options =
+                    style === 'first' ? theme.themeFirst :
+                    style === 'second' ? theme.themeSecond :
+                    style === 'third' ? theme.themeThird : theme.themeFourth
                 }
             else if (type === 'two-lines')
             {
-                options = {
-                    stroke: {
-                        colors:
-                            style === 'first' ? [colors['brand-warning'], colors['black']] :
-                            style === 'second' ? [colors['brand-danger'], colors['black']] :
-                            style === 'third' ? [colors['brand-success'], colors['black']] : [colors['brand-info'], colors['black']]
-                    },
-                    fill: {
-                        colors:
-                            style === 'first' ? theme.first :
-                            style === 'second' ? theme.second :
-                            style === 'third' ? theme.third : theme.fourth
-                        }
-                    }
+                options =
+                    style === 'first' ? theme.themeFirst :
+                    style === 'second' ? theme.themeSecond :
+                    style === 'third' ? theme.themeThird : theme.themeFourth
                 }
-            else if (type === 'bars')
+            else if (type === 'lines')
             {
-                options = {
-                    colors:
-                        style === 'first' ? theme.first :
-                        style === 'second' ? theme.second :
-                        style === 'third' ? theme.third : theme.fourth,
-
-                    stroke: {
-                        colors:
-                            style === 'first' ? theme.first :
-                            style === 'second' ? theme.second :
-                            style === 'third' ? theme.third : theme.fourth
-                    }
-                }
+                options =
+                    style === 'first' ? theme.themeFirst :
+                    style === 'second' ? theme.themeSecond :
+                    style === 'third' ? theme.themeThird : theme.themeFourth
             }
             else if (type === 'pie') {
-                options = {
-                    colors:
-                        style === 'first' ? [colors['brand-warning'], colors['brand-danger'], colors['black']] :
-                        style === 'second' ? [colors['brand-danger'], colors['brand-warning'], colors['black']]:
-                        style === 'third' ? [colors['brand-success'], colors['brand-warning'], colors['black']] :
-                            [colors['brand-info'], colors['brand-warning'], colors['black']]
-                }
+                options =
+                    style === 'first' ? theme.themeFirst :
+                    style === 'second' ? theme.themeSecond:
+                    style === 'third' ? theme.themeThird : theme.themeFourth
             }
 
             chartName.updateOptions( options );
-
         });
     }
 
@@ -185,7 +252,7 @@ $(function(){
 
         chart.render();
 
-        colorsUpdate(chart, chartFirst, 'line');
+        colorsUpdate(chart, mainOptions.chartFirst, 'bars');
     }
 
     function apexChartSecond() {
@@ -254,7 +321,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
         chart.render();
 
-        colorsUpdate(chart, chartSecond, 'line');
+        colorsUpdate(chart, mainOptions.chartSecond, 'bars');
 
     }
 
@@ -317,7 +384,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
 
-        colorsUpdate(chart, chartThird, 'bars');
+        colorsUpdate(chart, mainOptions.chartThird, 'lines');
 
     }
 
@@ -379,7 +446,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
         chart.render();
 
-        colorsUpdate(chart, chartFourth, 'bars');
+        colorsUpdate(chart, mainOptions.chartFourth, 'lines');
     }
 
     function apexChartFifth() {
@@ -417,7 +484,6 @@ $(function(){
             stroke: {
                 width: [4, 4],
                 opacity: 0.5,
-                colors: [colors['brand-warning'], colors['black']],
                 curve: 'smooth'
             },
 
@@ -458,7 +524,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
 
-        colorsUpdate(chart, chartFifth, 'two-lines');
+        colorsUpdate(chart, mainOptions.chartFifth, 'two-lines');
     }
 
     function apexChartSixth() {
@@ -493,7 +559,7 @@ $(function(){
         let chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
         chart.render();
 
-        colorsUpdate(chart, chartFifth, 'pie');
+        colorsUpdate(chart, mainOptions.chartSixth, 'pie');
     }
 
     function pageLoad(){
@@ -505,8 +571,6 @@ $(function(){
         apexChartFifth();
         apexChartSixth();
     }
-
-
 
     pageLoad();
     SingApp.onPageLoad(pageLoad);
