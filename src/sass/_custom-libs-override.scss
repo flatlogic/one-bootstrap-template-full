@@ -569,7 +569,7 @@ input.parsley-error {
       color: $white;
     }
     > li.done > a {
-      background-color: lighten(theme-color("primary"), 28%);
+      background-color: theme-color("info");
       color: $white;
       cursor: pointer;
     }
@@ -635,7 +635,7 @@ input.parsley-error {
   .close {
     order: 1;
     color: $body-main-color-small;
-    opacity: 1;
+    opacity: .7!important;
   }
 }
 
@@ -646,6 +646,16 @@ input.parsley-error {
   .wizard-cards .wizard-card-container {
     .wizard-card {
       border-top-color: $widget-border-color;
+
+      .wizard-input-section p {
+        margin-bottom: $spacer / 2;
+      }
+    }
+    .create-another-server {
+      margin-right: 0;
+    }
+    .im-done {
+      color: white;
     }
   }
   .wizard-steps {
@@ -668,6 +678,7 @@ input.parsley-error {
 .wizard-nav-list li.active > a,
 .wizard-nav-item .already-visited .active {
   color: $body-main-color;
+  background-color: theme-color('warning');
 }
 
 .wizard-dialog {

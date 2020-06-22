@@ -668,24 +668,28 @@ function initDemoFunctions(){
             }
 
             // Them Helper check active theme
-            if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
-                $('.color-box').removeClass('active-theme');
-                $('[data-style="second"]').addClass('active-theme');
-            }
-            else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
-                $('.color-box').removeClass('active-theme');
-                $('[data-style="third"]').addClass('active-theme');
-            }
-            else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
-                $('.color-box').removeClass('active-theme');
-                $('[data-style="fourth"]').addClass('active-theme');
+            if (localStorage.getItem('sidebarTheme')) {
+
+                if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
+                    $('.color-box').removeClass('active-theme');
+                    $('[data-style="second"]').addClass('active-theme');
+                }
+                else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
+                    $('.color-box').removeClass('active-theme');
+                    $('[data-style="third"]').addClass('active-theme');
+                }
+                else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
+                    $('.color-box').removeClass('active-theme');
+                    $('[data-style="fourth"]').addClass('active-theme');
+                }
+
+                // Them Helper check active sidebar color
+                if (localStorage.getItem('sidebarTheme').indexOf('theme-dark') !== -1) {
+                    $('.color-box-side-bar').removeClass('active');
+                    $('[data-style="dark"]').addClass('active');
+                }
             }
 
-            // Them Helper check active sidebar color
-            if (localStorage.getItem('sidebarTheme').indexOf('theme-dark') !== -1) {
-                $('.color-box-side-bar').removeClass('active');
-                $('[data-style="dark"]').addClass('active');
-            }
         }
         themeLoad();
     }(jQuery);

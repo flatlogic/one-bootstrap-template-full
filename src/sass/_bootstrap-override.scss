@@ -1060,7 +1060,7 @@ legend {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
 }
 .dashboard-buttons {
-  .custom-dropdown {
+  button {
     box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
   }
   @include media-breakpoint-down(md) {

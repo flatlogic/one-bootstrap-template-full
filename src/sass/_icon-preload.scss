@@ -1,6 +1,10 @@
 body {
   &:after {
     content:
+            url(../img/icons/grid_product.svg)
+            url(../img/icons/grid_product_filled.svg)
+            url(../img/icons/list.svg)
+            url(../img/icons/list_filled.svg)
             url(../img/icons/red/logo.svg)
             url(../img/icons/blue/logo.svg)
             url(../img/icons/green/logo.svg)

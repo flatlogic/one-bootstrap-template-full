@@ -115,6 +115,13 @@ $(function() {
     $("#mobile-filter").on("click", function() {
       $("#filter").toggleClass('d-none');
     });
+
+    $("#product-grid .view ").on("click", function(e) {
+      let target = $(e.target);
+      $("#product-grid .view ").removeClass('active');
+      target.addClass('active');
+    });
+
   }
 
   pageLoad();

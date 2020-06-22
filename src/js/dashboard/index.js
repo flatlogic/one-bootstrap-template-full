@@ -2,10 +2,11 @@ $(function(){
     let colors = {
         'black': '#323232',
         'brand-primary': '#1f7db6',
-        'brand-success': '#38a383',
-        'brand-danger': '#e05546',
+        'brand-success': '#3BBF97',
+        'brand-danger': '#F5695A',
         'brand-warning': '#feb04a',
-        'brand-info': '#12b4de'
+        'brand-info': '#12b4de',
+        'brand-new-warning': '#FFA983'
     };
     let mainOptions  = {
         chartFirst: {
@@ -13,10 +14,10 @@ $(function(){
                 colors: ['RGBA(254, 176, 74, 0.3)']
             },
             themeSecond: {
-                colors: ['RGBA(224, 85, 70, 0.3)']
+                colors: ['RGBA(255,169,131, 0.3)']
             },
             themeThird: {
-                colors: ['RGBA(56, 163, 131, 0.3)']
+                colors: [colors["brand-new-warning"]]
             },
             themeFourth: {
                 colors: ['RGBA(18, 180, 222, 0.3)']
@@ -42,14 +43,7 @@ $(function(){
                     colors: [colors['brand-danger']]
                 },
                 fill: {
-                    colors: [colors["brand-danger"]],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.9,
-                        opacityTo: 0.8,
-                        stops: [0, 100]
-                    }
+                    colors: [colors["brand-danger"]]
                 }
             },
             themeSecond: {
@@ -57,14 +51,7 @@ $(function(){
                     colors: ['RGBA(50,50,50, 0.8)'],
                 },
                 fill: {
-                    colors: ['#323232'],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.5,
-                        opacityTo: 0.4,
-                        stops: [0, 100]
-                    }
+                    colors: ['#323232']
                 }
             },
             themeThird: {
@@ -72,14 +59,7 @@ $(function(){
                     colors: ['RGBA(50, 50, 50, 0.8)']
                 },
                 fill: {
-                    colors: ['#323232'],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.5,
-                        opacityTo: 0.4,
-                        stops: [0, 100]
-                    }
+                    colors: ['#323232']
                 }
             },
             themeFourth: {
@@ -87,28 +67,16 @@ $(function(){
                     colors: ['RGBA(50, 50, 50, 0.8)']
                 },
                 fill: {
-                    colors: ['#323232'],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.5,
-                        opacityTo: 0.4,
-                        stops: [0, 100]
-                    }
+                    type: 'solid',
+                    opacity: 0.1,
+                    colors: ['#323232']
                 }
             }
         },
         chartFourth: {
             themeFirst: {
                 fill: {
-                    colors: [colors["brand-warning"]],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.9,
-                        opacityTo: 0.8,
-                        stops: [0, 100]
-                    }
+                    colors: [colors["brand-warning"]]
                 },
                 stroke: {
                     colors: [colors['brand-warning']]
@@ -116,44 +84,23 @@ $(function(){
             },
             themeSecond: {
                 fill: {
-                    colors: [colors["brand-danger"]],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.9,
-                        opacityTo: 0.8,
-                        stops: [0, 100]
-                    }
+                    colors: [colors["brand-new-warning"]]
                 },
                 stroke: {
-                    colors: [colors['brand-danger']]
+                    colors: [colors['brand-new-warning']]
                 }
             },
             themeThird: {
                 fill: {
-                    colors: [colors["brand-success"]],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.9,
-                        opacityTo: 0.8,
-                        stops: [0, 100]
-                    }
+                    colors: [colors["brand-new-warning"]]
                 },
                 stroke: {
-                    colors: [colors['brand-success']]
+                    colors: [colors["brand-new-warning"]]
                 }
             },
             themeFourth: {
                 fill: {
-                    colors: [colors["brand-info"]],
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.9,
-                        opacityTo: 0.8,
-                        stops: [0, 100]
-                    }
+                    colors: [colors["brand-info"]]
                 },
                 stroke: {
                     colors: [colors['brand-info']]
@@ -165,24 +112,44 @@ $(function(){
                 colors: [colors['brand-warning'], colors['black']],
                 fill: {
                     colors: ['RGBA(255, 173, 1, 0.1)']
+                },
+                legend: {
+                    markers: {
+                        fillColors :[colors['brand-warning'], colors['black']]
+                    }
                 }
             },
             themeSecond: {
                 colors: [colors['brand-danger'], colors['black']],
                 fill: {
                     colors: ['RGBA(224, 85, 70, 0.1)']
+                },
+                legend: {
+                    markers: {
+                        fillColors :[colors['brand-danger'], colors['black']]
+                    }
                 }
             },
             themeThird: {
                 colors: [colors['brand-success'], colors['black']],
                 fill: {
                     colors: ['RGBA(56, 163, 131, 0.1)']
+                },
+                legend: {
+                    markers: {
+                        fillColors :[colors['brand-success'], colors['black']]
+                    }
                 }
             },
             themeFourth: {
                 colors: [colors['brand-info'], colors['black']],
                 fill: {
                     colors: ['RGBA(18, 180, 222, 0.1)']
+                },
+                legend: {
+                    markers: {
+                        fillColors :[colors['brand-info'], colors['black']]
+                    }
                 }
             }
         },
@@ -191,10 +158,10 @@ $(function(){
                 colors: [colors['brand-warning'], colors['brand-danger'], colors['black']]
             },
             themeSecond: {
-                colors: [colors['brand-danger'], colors['brand-warning'], colors['black']]
+                colors: [colors['brand-danger'], colors['brand-new-warning'], colors['black']]
             },
             themeThird: {
-                colors: [colors['brand-success'], colors['brand-warning'], colors['black']]
+                colors: [colors['brand-success'], colors['brand-new-warning'], colors['black']]
             },
             themeFourth: {
                 colors: [colors['brand-info'], colors['brand-warning'], colors['black']]
@@ -390,7 +357,7 @@ $(function(){
     function apexChartThird() {
         let options = {
             series: [{
-                data: [31, 40, 28, 51, 42, 25, 63]
+                data: [55, 56, 52, 51, 52, 55, 53]
             }],
             chart: {
                 id: 'chartThird',
@@ -421,14 +388,9 @@ $(function(){
                 }
             },
             fill: {
-                colors: [colors["brand-danger"]],
-                type: 'gradient',
-                gradient: {
-                    shadeIntensity: 1,
-                    opacityFrom: 0.9,
-                    opacityTo: 0.8,
-                    stops: [0, 100]
-                }
+                type: 'solid',
+                opacity: 0.1,
+                colors: [colors["brand-danger"]]
             },
             stroke: {
                 colors: [colors['brand-danger']],
@@ -462,7 +424,7 @@ $(function(){
     function apexChartFourth() {
         let options = {
             series: [{
-                data: [56, 32, 45, 32, 34, 52, 65]
+                data: [56, 42, 55, 42, 64, 52, 65]
             }],
             chart: {
                 id: 'chartFourth',
@@ -493,14 +455,10 @@ $(function(){
                 }
             },
             fill: {
+                type: 'solid',
+                opacity: 0.1,
                 colors: [colors["brand-warning"]],
-                type: 'gradient',
-                gradient: {
-                    shadeIntensity: 1,
-                    opacityFrom: 0.9,
-                    opacityTo: 0.8,
-                    stops: [0, 100]
-                }
+
             },
             stroke: {
                 colors: [colors['brand-warning']],
@@ -648,20 +606,21 @@ $(function(){
     function chartsThemeLoad() {
 
         const charts = ['chartFirst', 'chartSecond', 'chartThird', 'chartFourth', 'chartFifth', 'chartSixth'];
-
-        if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
-            for ( let i = 0; i < 6; i++ ) {
-                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeSecond);
+        if (localStorage.getItem('sidebarTheme')) {
+            if (localStorage.getItem('sidebarTheme').indexOf('theme-second') !== -1) {
+                for ( let i = 0; i < 6; i++ ) {
+                    ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeSecond);
+                }
             }
-        }
-        else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
-            for ( let i = 0; i < 6; i++ ) {
-                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeThird);
+            else if (localStorage.getItem('sidebarTheme').indexOf('theme-third') !== -1) {
+                for ( let i = 0; i < 6; i++ ) {
+                    ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeThird);
+                }
             }
-        }
-        else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
-            for ( let i = 0; i < 6; i++ ) {
-                ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeFourth);
+            else if (localStorage.getItem('sidebarTheme').indexOf('theme-fourth') !== -1) {
+                for ( let i = 0; i < 6; i++ ) {
+                    ApexCharts.exec(charts[i], 'updateOptions', mainOptions[ charts[i] ].themeFourth);
+                }
             }
         }
     }

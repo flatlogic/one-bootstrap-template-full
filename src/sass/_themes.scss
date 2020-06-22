@@ -37,7 +37,7 @@ body.theme-first {
     }
 
     .active .sidebar-icon.e-commerce-icon {
-      background: url(../img/icons/e-commerce_filled.svg) no-repeat;
+      background: url('../img/icons/e-commerce_filled.svg') no-repeat;
       background-size: 24px;
     }
 
@@ -214,12 +214,20 @@ body.theme-first {
       width: 40px;
       background-size: cover;
     }
+    .widget-body {
+      .pie-elements.danger {
+        border-top: 3px solid theme-color('danger');
+      }
+      .pie-elements.warning {
+        border-top: 3px solid theme-color('warning');
+      }
+    }
   }
 }
 body.theme-second {
   .sidebar {
     .logo {
-      background-color: #ff7769;
+      background-color: theme-color('danger');
 
       .logo-icon {
         display: inline-block;
@@ -374,7 +382,7 @@ body.theme-second {
   }
   .theme-helper {
     .theme-helper-spinner {
-    background: #ff7769;
+      background: theme-color('danger');
   }
     .abc-radio {
     label::after {
@@ -421,12 +429,25 @@ body.theme-second {
       width: 40px;
       background-size: cover;
     }
+    .widget-body {
+      .fa.fa-circle.text-danger {
+        color: rgb(255,169,131)!important;
+      }
+
+      .pie-elements.danger {
+        border-top: 3px solid rgb(255,169,131);
+      }
+      .pie-elements.warning {
+        border-top: 3px solid theme-color('danger');
+      }
+    }
+
   }
 }
 body.theme-third {
   .sidebar{
     .logo {
-      background-color: #81d4bb;
+      background-color: theme-color('success');;
 
       .logo-icon {
         display: inline-block;
@@ -581,7 +602,7 @@ body.theme-third {
   }
   .theme-helper {
     .theme-helper-spinner {
-      background-color: #81d4bb;
+      background: theme-color('success');
     }
     .abc-radio {
       label::after {
@@ -628,12 +649,26 @@ body.theme-third {
       width: 40px;
       background-size: cover;
     }
+    .widget-body {
+      .fa.fa-circle.text-success {
+        color: theme-color('info')!important;
+      }
+      .fa.fa-circle.text-danger {
+        color: rgb(255,169,131)!important;
+      }
+      .pie-elements.danger {
+        border-top: 3px solid theme-color('warning');
+      }
+      .pie-elements.warning {
+        border-top: 3px solid theme-color('success');
+      }
+    }
   }
 }
 body.theme-fourth {
   .sidebar {
     .logo {
-      background-color: #4dc7df;
+      background-color: theme-color('info');;
 
       .logo-icon {
         display: inline-block;
@@ -788,7 +823,7 @@ body.theme-fourth {
   }
   .theme-helper {
     .theme-helper-spinner {
-      background-color: #4dc7df;
+      background: theme-color('info');
   }
     .abc-radio {
       label::after {
@@ -833,6 +868,17 @@ body.theme-fourth {
       height: 40px;
       width: 40px;
       background-size: cover;
+    }
+    .widget-body {
+      .fa.fa-circle.text-danger {
+        color: theme-color('danger')!important;
+      }
+      .pie-elements.danger {
+        border-top: 3px solid theme-color('warning');
+      }
+      .pie-elements.warning {
+        border-top: 3px solid theme-color('info');
+      }
     }
   }
 }
@@ -1000,7 +1046,7 @@ body.theme-dark.theme-second {
   .sidebar {
     @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
   .logo {
-    background-color: #ff7769;
+    background-color: theme-color('danger');
 
     .logo-icon {
       display: inline-block;
@@ -1156,14 +1202,14 @@ body.theme-dark.theme-second {
   }
 }
   .theme-helper-spinner {
-    background: #ff7769;
+    background-color: theme-color('danger');
   }
 }
 body.theme-dark.theme-third {
   .sidebar{
     @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
     .logo {
-      background-color: #81d4bb;
+      background-color: theme-color('success');
 
       .logo-icon {
         display: inline-block;
@@ -1319,14 +1365,14 @@ body.theme-dark.theme-third {
     }
   }
   .theme-helper-spinner {
-    background: #81d4bb;
+    background-color: theme-color('success');
   }
 }
 body.theme-dark.theme-fourth {
   .sidebar {
     @include sidebar-style($white, #323232, $white, transparent, transparent, #464646);
     .logo {
-      background-color: #4dc7df;
+      background-color: theme-color('info');
 
       .logo-icon {
         display: inline-block;
@@ -1482,6 +1528,6 @@ body.theme-dark.theme-fourth {
     }
   }
   .theme-helper-spinner {
-    background: #4dc7df;
+    background-color: theme-color('info');
   }
 }

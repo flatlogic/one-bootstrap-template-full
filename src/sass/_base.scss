@@ -1669,6 +1669,27 @@ input[type=search], input.search {
   .table img {
     width: 170px;
   }
+  .view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+
+    &.view.grid {
+      background-image: url('../img/icons/grid_product.svg');
+      &.active {
+        background-image: url('../img/icons/grid_product_filled.svg');
+      }
+    }
+    &.view.list {
+      background-image: url('../img/icons/list.svg');
+      &.active {
+        background-image: url('../img/icons/list_filled.svg');
+      }
+    }
+  }
+
 }
 .product-grid {
   .product-filters {
@@ -1721,7 +1742,7 @@ input[type=search], input.search {
 
   .product-elements {
     //margin-top: $spacer * 2;
-    margin-bottom: -$spacer * 3;
+    //margin-bottom: $spacer * 3;
 
     .rating {
       font-size: $font-size-base;
