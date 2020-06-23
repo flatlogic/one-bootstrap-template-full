@@ -425,14 +425,9 @@ $(function(){
 
         });
 
-
-
         var EmailsView = new EmailListView();
 
-
-
         var AppView = Backbone.View.extend({
-
 
             el: $("#content"),
             $content: $("#mailbox-content"),
@@ -519,7 +514,7 @@ $(function(){
     function initMailboxAppDemo(){
         setTimeout(function(){
             $('#app-alert').removeClass('hide')
-                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend animationend',function(){
                     $(this).removeClass('animated bounceInLeft');
                 });
         }, 3000)

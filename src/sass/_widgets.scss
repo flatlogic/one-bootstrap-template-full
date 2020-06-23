@@ -1285,10 +1285,8 @@
     padding: 2rem;
   }
   .post-comments {
-    //margin-left: -20px;
-    //margin-right: -20px;
     li {
-      padding: $spacer 0;
+      padding: $spacer * 1.2 0;
     }
   }
   .post-links {
@@ -1486,7 +1484,7 @@
   > li > .nav-link {
     color: #999;
     font-weight: $font-weight-normal;
-    font-size: $font-size-xlg;
+    font-size: 16px;
     padding: 10px $spacer * 2;
     display: flex;
     justify-content: space-between;
@@ -1529,7 +1527,7 @@
 .widget-email-count{
   display: inline-block;
   margin: 0;
-  font-size: $font-size-xlg;
+  font-size: $font-size-base;
   line-height: 29px;
 
   + .widget-email-pagination{
@@ -1538,6 +1536,9 @@
     padding-left: 15px;
     border-radius: 0;
     vertical-align: -9px;
+    .page-item .page-link {
+      font-size: $font-size-base;
+    }
   }
 }
 

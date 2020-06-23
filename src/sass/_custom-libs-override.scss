@@ -279,7 +279,8 @@ svg .title {
 $slider-line-height: 8px;
 $slider-handle-size: 26px;
 .slider-warning .slider.slider-horizontal {
-  width: 166px;
+  width: 140px;
+  margin-left: 14px;
 }
 .slider {
   display: inline-block;
@@ -867,7 +868,9 @@ input.parsley-error {
 /***********************************/
 /**          Datatables           **/
 /***********************************/
-
+#search-countries:focus {
+  border: 1px solid #c1ccd3;
+}
 table.dataTable thead .sorting {
   background: url("#{$vendor-folder}/datatables/media/images/sort_both.png")
     no-repeat center left;
@@ -1478,7 +1481,7 @@ ul.messenger-theme-air .messenger-message .messenger-actions a {
   padding: 5px 10px 5px;
   text-transform: capitalize;
   color: #29323a;
-  background-color: #e9ecef;
+  background-color: white;
   border-color: #e9ecef;
 }
 
@@ -1587,7 +1590,7 @@ ul.messenger-theme-air
 ul.messenger-theme-air
   .messenger-message.alert-info
  {
-  background-color: #4dc7df;
+  background-color: theme-color('info');
 }
 /* line 116, ../../src/sass/messenger-theme-air.sass */
 //ul.messenger-theme-air .messenger-spinner {

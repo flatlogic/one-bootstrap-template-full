@@ -1340,6 +1340,7 @@ legend {
     line-height: 0.75;
     text-shadow: none;
     opacity: 1;
+    color: white;
   }
 }
 
@@ -1351,7 +1352,9 @@ legend {
 .alert {
   border: none;
   color: white;
-
+  .close {
+    color: white;
+  }
   .alert-heading, .alert-footer {
     color: white!important;
   }
