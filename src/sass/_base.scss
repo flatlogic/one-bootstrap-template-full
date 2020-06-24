@@ -283,12 +283,29 @@ body {
   }
 
   > li {
-    &:hover a span{
-      font-weight: 600;
+    &:hover {
+      > a > span {
+        font-weight: 600;
+      }
     }
     ul {
       background-color: rgba(255,173,1,0.1);
       border-right: 3px solid #ffab3c;
+
+    }
+  }
+  > li > ul > li {
+    &:hover {
+      > a {
+        font-weight: 600;
+      }
+    }
+  }
+  > li > ul > li > ul > li {
+    &:hover {
+      a {
+        font-weight: 600;
+      }
     }
   }
 
@@ -461,7 +478,7 @@ body {
 
       &.active {
         > a {
-          font-weight: $font-weight-bold;
+          font-weight: 600;
           color: $body-color
         }
       }

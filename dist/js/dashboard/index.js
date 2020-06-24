@@ -20,7 +20,7 @@ $(function(){
                 colors: [colors["brand-new-warning"]]
             },
             themeFourth: {
-                colors: ['RGBA(18, 180, 222, 0.3)']
+                colors: ['RGBA(245,105,90, 0.3)']
             }
         },
         chartSecond: {
@@ -100,10 +100,10 @@ $(function(){
             },
             themeFourth: {
                 fill: {
-                    colors: [colors["brand-info"]]
+                    colors: [colors["brand-danger"]]
                 },
                 stroke: {
-                    colors: [colors['brand-info']]
+                    colors: [colors['brand-danger']]
                 }
             }
         },
@@ -164,7 +164,7 @@ $(function(){
                 colors: [colors['brand-success'], colors['brand-new-warning'], colors['black']]
             },
             themeFourth: {
-                colors: [colors['brand-info'], colors['brand-warning'], colors['black']]
+                colors: [colors['brand-info'], colors['brand-danger'], colors['black']]
             }
         }
     };

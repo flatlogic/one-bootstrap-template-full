@@ -879,10 +879,10 @@ body.theme-fourth {
         color: theme-color('danger')!important;
       }
       .pie-elements.danger {
-        border-top: 3px solid theme-color('warning');
+        border-top: 3px solid theme-color('info');
       }
       .pie-elements.warning {
-        border-top: 3px solid theme-color('info');
+        border-top: 3px solid theme-color('danger');
       }
     }
   }
