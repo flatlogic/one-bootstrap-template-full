@@ -12,6 +12,13 @@
  * Datetimepicker for Bootstrap v3
  */
 .bootstrap-datetimepicker-widget {
+  td {
+    border: none;
+  }
+  .day.active.today {
+    background-color: theme-color('warning');
+  }
+
   &.dropdown-menu {
     width: auto;
   }
@@ -278,10 +285,13 @@ svg .title {
 
 $slider-line-height: 8px;
 $slider-handle-size: 26px;
-.slider-warning .slider.slider-horizontal {
-  width: 140px;
-  margin-left: 14px;
+.product-elements {
+  .slider-warning .slider.slider-horizontal {
+    width: 140px;
+    margin-left: 14px;
+  }
 }
+
 .slider {
   display: inline-block;
   vertical-align: middle;
@@ -501,6 +511,14 @@ $slider-handle-size: 26px;
   padding: 1px 0;
   border-top: 0;
 }
+.calendar .fc-view-container {
+  .fc-view .fc-body {
+    td.fc-widget-content.fc-today {
+      background-color: rgba(theme-color('warning'), 0.1);
+    }
+  }
+}
+
 .calendar .table {
   margin-bottom: 3px;
   &.header {
@@ -515,7 +533,7 @@ $slider-handle-size: 26px;
 .dropdown-menu .calendar td a {
   padding: 0px;
 }
-.fc-event .fc-content{
+.fc-event .fc-content {
   text-overflow: ellipsis;
 }
 .fc .fc-row .fc-content-skeleton td {

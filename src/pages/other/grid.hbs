@@ -11,7 +11,7 @@
         <h1 class="page-title">UI > <span class="fw-semi-bold">Grid</span></h1>
         <div class="row">
             <div class="col-lg-12">
-                <section class="widget">
+                <section class="widget pb-3">
                     <header>
                         <h5>Draggable Grid &nbsp;<span class="badge bg-danger fw-normal">since 2.1</span></h5>
                     </header>
@@ -41,21 +41,21 @@
         </div>
         <div class="row">
             <div class="col-lg-6 widget-container">
-                <section class="widget" id="default-widget" data-widgster-load="../demo/ajax/widgets/default.php">
+                <section class="widget pb-3" id="default-widget" data-widgster-load="../demo/ajax/widgets/default.php">
                     <header>
-                        <h6>Default <span class="fw-semi-bold">Widget</span></h6>
+                        <h5>Default Widget</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
                                 <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
                                     <img src="../img/icons/dots.svg" alt="dropdown">
                                 </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                    <button type="button" title="Reload" data-widgster="load" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
                                             <strong>9</strong>
                                         </span>
                                     </button>
-                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
                                 </div>
@@ -69,22 +69,22 @@
                 </section>
                 <section class="widget" id="shares-widget" data-widgster-load="../demo/ajax/widgets/shares.php">
                     <header>
-                        <h6>
-                            <span class=" badge bg-primary"><i class="fa fa-facebook"></i></span> &nbsp;
-                            Latest <span class="fw-semi-bold">Shares</span>
-                        </h6>
+                        <h5>
+                            <span class="badge bg-primary"><i class="fa fa-facebook"></i></span> &nbsp;
+                            Latest Shares
+                        </h5>
                         <div class="widget-controls">
                             <div class="dropdown">
                                 <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
                                     <img src="../img/icons/dots.svg" alt="dropdown">
                                 </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                    <button type="button" title="Reload" data-widgster="load" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
                                             <strong>9</strong>
                                         </span>
                                     </button>
-                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
                                 </div>
@@ -129,21 +129,21 @@
                     </div>
                 </section>
                 <section class="widget" id="autoload-widget" data-widgster-load="../demo/ajax/widgets/autoload.php"
-                    data-widgster-autoload="true" data-widgster-show-loader="false">
+                    data-widgster-autoload="true" data-widgster-show-loader="true">
                     <header>
-                        <h6>Autoload <span class="fw-semi-bold">Widget</span></h6>
+                        <h5>Autoload Widget</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
                                 <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
                                     <img src="../img/icons/dots.svg" alt="dropdown">
                                 </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                    <button type="button" title="Reload" data-widgster="load" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
                                             <strong>9</strong>
                                         </span>
                                     </button>
-                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
                                 </div>
@@ -186,7 +186,7 @@
                 </section>
                 <section class="widget" style="min-height: 200px">
                     <header>
-                        <h6>Custom <span class="fw-semi-bold">Loader</span></h6>
+                        <h5>Custom Loader</h5>
                     </header>
                     <div class="widget-body">
                         <div class="loader animated fadeIn handle">
@@ -200,9 +200,9 @@
             <div class="col-lg-6 widget-container">
                 <section class="widget" id="news-widget" data-widgster-load="../demo/ajax/widgets/news.php">
                     <header>
-                        <h6>
+                        <h5>
                             News <span class="badge badge-pill bg-success">17</span>
-                        </h6>
+                        </h5>
                         <span class="">spinning refresh button & close prompt</span>
                         <div class="widget-controls">
                             <div class="dropdown">
@@ -210,19 +210,19 @@
                                     <img src="../img/icons/dots.svg" alt="dropdown">
                                 </span>
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                    <button type="button" title="Reload" data-widgster="load" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
                                             <strong>9</strong>
                                         </span>
                                     </button>
-                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
                                 </div>
                             </div>
                         </div>
                     </header>
-                    <div class="widget-body p-0">
+                    <div class="widget-body">
                         <ul class="news-list stretchable">
                             <li>
                                 <span class="icon bg-danger text-white">
@@ -287,7 +287,7 @@
                 </section>
                 <section class="widget locked" data-widgster-collapsed="true">
                     <header>
-                        <h6>Collapsed by default & locked</h6>
+                        <h5>Collapsed by default & locked</h5>
                         <div class="widget-controls">
                             <div class="dropdown">
                                 <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
@@ -296,10 +296,11 @@
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
                                     <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
                                         <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
+                                        <strong>9</strong>
+                                    </span>
                                     </button>
-                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                                    <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
                                 </div>
@@ -320,7 +321,7 @@
                     </div>
                 </section>
                 <section class="widget bg-gray">
-                    <div class="widget-body p-0">
+                    <div class="widget-body">
                         <div class="jumbotron handle bg-inverse text-white mb-0">
                             <div class="container">
                                 <h1 class="display-5">Draggable story!</h1>
@@ -357,7 +358,6 @@
         <script src="../../node_modules/components-jqueryui/ui/scroll-parent.js"></script>
         <script src="../../node_modules/components-jqueryui/ui/widgets/sortable.js"></script>
         <script src="../../node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-    <script src="../../node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
     <!-- page specific js -->
     <script src="../js/other/grid.js"></script>

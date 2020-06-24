@@ -529,8 +529,7 @@ function initAppFunctions(){
             $sidebarContent.slimscroll({
                 height: '100vh',
                 size: '5px',
-                opacity: 0.1,
-                wheelStep: 10
+                opacity: 0.1
             });
         }
 

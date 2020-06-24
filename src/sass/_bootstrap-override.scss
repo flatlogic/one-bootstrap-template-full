@@ -1060,9 +1060,19 @@ legend {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
 }
 .dashboard-buttons {
-  button {
+  .dropdown-item {
+    &:active {
+    background-color: transparent !important;
+    color: $body-main-color;
+  }
+    &:focus {
+      outline: none;
+    }
+}
+  > button {
     box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
   }
+
   @include media-breakpoint-down(md) {
     flex-direction: column;
     align-items: stretch !important;
@@ -1273,8 +1283,8 @@ legend {
 }
 
 .list-group{
-  .widget-body.p-0 > &{
-    margin: 0;
+  .widget-body > &{
+    margin: 0 30px;
 
     .list-group-item{
       border-width: 1px 0;
@@ -1300,7 +1310,7 @@ legend {
   }
 
   .list-group-lg & {
-    padding: 15px 15px;
+    padding: 15px 0;
   }
 
   .list-group:last-of-type &:last-child{
@@ -1452,7 +1462,7 @@ legend {
 
   .page-item {
     .page-link,
-    > span{
+    > span {
       border-radius: $border-radius;
       margin: 0 2px;
     }
@@ -1460,9 +1470,7 @@ legend {
     .page-link {
       color: $body-main-color;
       border: none;
-      &:hover {
-        background: $gray-200;
-      }
+      background: transparent;
     }
 
     &.active {
@@ -1470,9 +1478,9 @@ legend {
         background: transparent;
         color: $body-main-color;
         border: none;
+        font-weight: 600;
       }
     }
-
     &.disabled {
       .page-link {
         color: $text-muted;
@@ -1962,6 +1970,11 @@ a.badge.badge-light {
     &.show + .toast-flatlogic-left {
       margin-top: 100px;
     }
+  }
+
+  .toast-header button.close {
+    font-size: medium;
+    margin-top: 2px;
   }
 }
 

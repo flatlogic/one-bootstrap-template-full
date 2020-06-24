@@ -14,22 +14,18 @@ $(function() {
       regionStyle: {
         initial: {
           fill: "#323232",
-          "fill-opacity": 0.5,
+          "fill-opacity": 0.4,
           stroke: "white",
           "stroke-width": 0.25,
           "stroke-opacity": 1
         },
         hover: {
-          "fill-opacity": 0.8
+          "fill-opacity": 0.6
         }
       },
       markerStyle: {
         initial: {
           fill: Sing.colors["dark"],
-          stroke: Sing.colors["dark"],
-          "fill-opacity": 1,
-          "stroke-width": 4,
-          "stroke-opacity": 0.2,
           r: 5
         },
         hover: {

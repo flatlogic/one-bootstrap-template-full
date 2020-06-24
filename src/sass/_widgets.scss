@@ -329,6 +329,10 @@
 .widget-invoice{
   padding: 40px;
 
+  .proceed .fa {
+    font-size: 20px;
+    margin-left: 2px;
+  }
   .print-buttons {
     .btn {
       @include media-breakpoint-down(xs) {
@@ -707,6 +711,7 @@
   > li > a {
     color: $body-main-color-small;
     font-weight: $font-weight-normal;
+    padding: 0.5rem 1.7rem;
     &:hover{
       background-color: $gray-light;
       color: $body-color;

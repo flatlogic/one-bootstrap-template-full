@@ -26,8 +26,8 @@ data-widgster-autoload="true"</code></pre>
     </p>
     <div class="clearfix">
         <div class="btn-toolbar float-right">
-            <button type="submit" class="btn btn-transparent">Cancel</button>
-            <button type="submit" class="btn btn-success animated wobble">&nbsp;Submit&nbsp;</button>
+            <button type="submit" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-warning animated wobble">&nbsp;Submit&nbsp;</button>
         </div>
     </div>
 </form>

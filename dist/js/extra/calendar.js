@@ -137,7 +137,6 @@ $(function(){
                     $modal.modal('show');
                 }
             }
-
         });
 
         // $("#calendar-switcher").find("label").click(function(){
@@ -152,7 +151,7 @@ $(function(){
         let currentDate = $calendar.fullCalendar('getDate');
 
         $('#calender-current-date').html(
-                $.fullCalendar.formatDate(currentDate, "MMM yyyy")
+            $.fullCalendar.formatDate(currentDate, "MMM yyyy")
         );
 
 

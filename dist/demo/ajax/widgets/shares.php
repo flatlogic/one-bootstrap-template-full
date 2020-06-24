@@ -6,7 +6,7 @@
         </span>
         <i class="fa fa-circle float-right text-success mt-sm"></i>
         <h6 class="no-margin"><strong>Jenny Wilington</strong></h6>
-        <small>just now</small>
+        <small class="text-muted">just now</small>
     </a>
     <a href="#" class="list-group-item">
         <span class="thumb-sm float-left mr">
