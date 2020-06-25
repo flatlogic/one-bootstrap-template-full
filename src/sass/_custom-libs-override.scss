@@ -897,11 +897,13 @@ table.dataTable thead .sorting {
     no-repeat center left;
 }
 table.dataTable thead .sorting_asc {
+  padding-left: 12px;
   background: url("../img/icons/sort_asc.svg")
     no-repeat center left;
 }
 table.dataTable thead .sorting_desc {
-  background: url("#{$vendor-folder}/datatables/media/images/sort_desc.png")
+  padding-left: 12px;
+  background: url("../img/icons/sort_desc.svg")
     no-repeat center left;
 }
 table.dataTable thead .sorting_asc_disabled {
