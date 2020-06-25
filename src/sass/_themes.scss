@@ -182,9 +182,6 @@ body.theme-first {
   .theme-helper-spinner {
     background: theme-color('warning');
   }
-  .navbar-header .toggle-sidebar {
-    background-color: theme-color('warning');
-  }
   #content {
     .sidebar-icon.users-img {
       background: url('../img/icons/users-img.svg') no-repeat;
@@ -224,8 +221,26 @@ body.theme-first {
     }
   }
   .navbar {
+    .navbar-header .toggle-sidebar {
+      background-color: theme-color('warning');
+    }
     .navbar-header ul li{
+      .sidebar-icon {
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-size: cover;
 
+        &.settings {
+          background: url('../img/icons/settings_outlined.svg') no-repeat;
+        }
+        &.profile {
+          background: url('../img/icons/profile_outlined.svg') no-repeat;
+        }
+        &.logout {
+          background: url('../img/icons/logout_outlined.svg') no-repeat;
+        }
+      }
     }
   }
 }
@@ -402,9 +417,6 @@ body.theme-second {
       border-color: theme-color('danger');
     }
  }
-  .navbar-header .toggle-sidebar {
-    background-color: #ff7769;
-  }
   #content {
     .sidebar-icon.users-img {
       background: url('../img/icons/red/users-img.svg') no-repeat;
@@ -447,6 +459,29 @@ body.theme-second {
       }
     }
 
+  }
+  .navbar {
+    .navbar-header .toggle-sidebar {
+      background-color: #ff7769;
+    }
+    .navbar-header ul li{
+      .sidebar-icon {
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+
+        &.settings {
+          background: url('../img/icons/red/settings_outlined.svg') no-repeat;
+        }
+        &.profile {
+          background: url('../img/icons/red/profile_outlined.svg') no-repeat;
+        }
+        &.logout {
+          background: url('../img/icons/red/logout_outlined.svg') no-repeat;
+        }
+      }
+    }
   }
 }
 body.theme-third {
@@ -622,9 +657,6 @@ body.theme-third {
       border-color: theme-color('success');
     }
   }
-  .navbar-header .toggle-sidebar {
-    background-color: #81d4bb;
-  }
   #content {
     .sidebar-icon.users-img {
       background: url('../img/icons/green/users-img.svg') no-repeat;
@@ -666,6 +698,29 @@ body.theme-third {
       }
       .pie-elements.warning {
         border-top: 3px solid theme-color('success');
+      }
+    }
+  }
+  .navbar {
+    .navbar-header .toggle-sidebar {
+      background-color: #81d4bb;
+    }
+    .navbar-header ul li{
+      .sidebar-icon {
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+
+        &.settings {
+          background: url('../img/icons/green/settings_outlined.svg') no-repeat;
+        }
+        &.profile {
+          background: url('../img/icons/green/profile_outlined.svg') no-repeat;
+        }
+        &.logout {
+          background: url('../img/icons/green/logout_outlined.svg') no-repeat;
+        }
       }
     }
   }
@@ -842,9 +897,6 @@ body.theme-fourth {
       border-color: theme-color('info');
     }
   }
-  .navbar-header .toggle-sidebar {
-    background-color: #4dc7df;
-  }
   #content {
     .sidebar-icon.users-img {
       background: url('../img/icons/blue/users-img.svg') no-repeat;
@@ -879,10 +931,33 @@ body.theme-fourth {
         color: theme-color('danger')!important;
       }
       .pie-elements.danger {
-        border-top: 3px solid theme-color('info');
+        border-top: 3px solid theme-color('danger');
       }
       .pie-elements.warning {
-        border-top: 3px solid theme-color('danger');
+        border-top: 3px solid theme-color('info');
+      }
+    }
+  }
+  .navbar {
+    .navbar-header .toggle-sidebar {
+      background-color: #4dc7df;
+    }
+    .navbar-header ul li{
+      .sidebar-icon {
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+
+        &.settings {
+          background: url('../img/icons/blue/settings_outlined.svg') no-repeat;
+        }
+        &.profile {
+          background: url('../img/icons/blue/profile_outlined.svg') no-repeat;
+        }
+        &.logout {
+          background: url('../img/icons/blue/logout_outlined.svg') no-repeat;
+        }
       }
     }
   }

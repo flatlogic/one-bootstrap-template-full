@@ -255,6 +255,9 @@
     font: $font-weight-base $font-size-sm $font-family-base;
     fill: $gray-400;
   }
+  svg g.nv-group {
+    fill-opacity: 1!important;
+  }
 }
 
 

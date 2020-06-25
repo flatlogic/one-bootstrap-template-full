@@ -14,7 +14,7 @@ $(function() {
       regionStyle: {
         initial: {
           fill: "#323232",
-          "fill-opacity": 0.4,
+          "fill-opacity": 0.2,
           stroke: "white",
           "stroke-width": 0.25,
           "stroke-opacity": 1

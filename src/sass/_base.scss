@@ -318,6 +318,28 @@ body {
     }
   }
 
+   li.active a {
+    .toggle {
+      margin-left: auto;
+      margin-right: 35px;
+      line-height: 18px;
+      font-size: 20px;
+      color: theme-color('warning');
+      transition: transform .35s ease;
+    }
+  }
+
+   li.open a {
+    .toggle {
+      transition: transform .35s ease;
+      transform: rotate(0deg);
+      margin-left: auto;
+      margin-right: 35px;
+      font-size: 20px;
+      color: theme-color('warning');
+    }
+  }
+
   li {
     ul li a {
       .toggle {
@@ -325,7 +347,7 @@ body {
         margin-right: 35px;
         line-height: 18px;
         font-size: 20px;
-        color: #FFAD01;
+        color: theme-color('warning');
         transition: transform .35s ease;
       }
 
@@ -343,21 +365,21 @@ body {
       text-decoration: none;
 
       .toggle {
-        margin-left: auto;
-        margin-right: 35px;
-        line-height: 18px;
-        font-size: 20px;
-        color: #FFAD01;
         transition: transform .35s ease;
-      }
-
-      &.collapsed .toggle {
         transform: rotate(-90deg);
         margin-left: auto;
         margin-right: 35px;
         font-size: 20px;
         color: #C1C2C1;
       }
+
+      //&.collapsed .toggle {
+      //  transform: rotate(-90deg);
+      //  margin-left: auto;
+      //  margin-right: 35px;
+      //  font-size: 20px;
+      //  color: #C1C2C1;
+      //}
 
       .badge {
         line-height: 15px;
@@ -429,7 +451,9 @@ body {
   > .active > a {
     font-weight: $font-weight-semi-bold;
     color: $body-color;
-
+    i.toggle {
+      transform: rotate(0);
+    }
     &, &:hover {
       color: $body-color;
     }

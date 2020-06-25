@@ -340,7 +340,7 @@ legend {
       color: $body-main-color-small;
       font-size: $font-size-base;
       &:hover, &:active, &:focus {
-        background-color: $gray-100;
+        background-color: rgba(50,50,50,0.1);
       }
     }
   }

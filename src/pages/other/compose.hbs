@@ -6,32 +6,36 @@
         <h1 class="page-title">Email - <span class="fw-semi-bold">Inbox</span></h1>
         <div class="row">
             <div class="col-lg-3 col-xl-2">
-                <a class="btn btn-danger btn-block" href="../other/inbox.html">
-                    Compose
-                </a>
-                <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../other/inbox.html">
-                            <p class="m-0">Inbox</p>
-                            <span class="badge badge-pill bg-primary">2</span>
-                        </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Starred</p></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Sent Mail</p></a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <p class="m-0">Draft</p>
-                            <span class="badge badge-pill bg-danger">3</span>
-                        </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
-                </ul>
-                <h5 class="mt">QUICK VIEW</h5>
-                <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg">
-                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Work</p><i class="fa fa-circle text-danger"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Private</p><i class="fa fa-circle text-primary"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><p class="m-0">Saved</p><i class="fa fa-circle text-warning"></i></a></li>
-                </ul>
+                <div class="widget px-0 pb-1">
+                    <div class="widget-body">
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-warning btn-lg btn-block w-75 mb-3" id="compose-btn" href="../other/compose.html">Compose</a>
+                        </div>
+                        <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mt" id="folders-list">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../other/inbox.html">
+                                    <p class="m-0">Inbox</p>
+                                    <span class="badge badge-pill badge-primary">2</span>
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Starred</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sent Mail</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <p class="m-0">Draft</p>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
+                        </ul>
+                        <h5 class="font-weight-bold mt" style="margin-left: 1.8rem">Quick View</h5>
+                        <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg fs-mini">
+                            <li class="nav-item"><a class="nav-link justify-content-start" href="#"><i class="fa fa-circle text-danger"></i><p class="m-0">Work</p></a></li>
+                            <li class="nav-item"><a class="nav-link justify-content-start" href="#"><i class="fa fa-circle text-success"></i><p class="m-0">Private</p></a></li>
+                            <li class="nav-item"><a class="nav-link justify-content-start" href="#"><i class="fa fa-circle text-warning"></i><p class="m-0">Saved</p></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-9 col-xl-10">
                 <div class="clearfix mb-xs">

@@ -709,12 +709,16 @@
 
 .search-result-categories{
   > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: $body-main-color-small;
     font-weight: $font-weight-normal;
     padding: 0.5rem 1.7rem;
     &:hover{
-      background-color: $gray-light;
+      background-color: rgba(50, 50, 50, 0.1);
       color: $body-color;
+      border-radius: 0;
     }
   }
 }
@@ -1495,7 +1499,7 @@
     justify-content: space-between;
     align-items: center;
     &:hover{
-      background-color: $gray-200;
+      background-color: rgba(50, 50, 50, 0.1);
       color: $body-main-color;
       border-radius: 0;
     }
