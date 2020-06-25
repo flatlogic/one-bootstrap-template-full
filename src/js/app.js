@@ -33,7 +33,6 @@ $(function(){
 
         this.pjaxEnabled = window.PJAX_ENABLED;
         this.debug = window.DEBUG;
-        this.navCollapseTimeout = 2500;
         this.$sidebar = $('#sidebar');
         this.$content = $('#content');
         this.$loaderWrap = $('.loader-wrap');
@@ -550,6 +549,7 @@ function initAppFunctions(){
         /*
          When widget is closed remove its parent if it is .col-*
          */
+
         $(document).on('close.widgster', function(e){
             var $colWrap = $(e.target).closest('.content > .row > [class*="col-"]:not(.widget-container)');
 
