@@ -690,6 +690,13 @@ function initDemoFunctions(){
             }
 
         }
+
+        //SidebarFix
+        function sidebarFix() {
+            $(".sidebar li.active").addClass('open');
+        }
         themeLoad();
+        sidebarFix();
+
     }(jQuery);
 }

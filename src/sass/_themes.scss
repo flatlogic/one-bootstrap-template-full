@@ -15,7 +15,7 @@ body.theme-first {
       }
     }
 
-    li.open .toggle {
+    li.open > a > .toggle {
       color: theme-color('warning')!important;
     }
 
@@ -267,7 +267,7 @@ body.theme-second {
       border-color: rgba(theme-color('danger'), 1);
     }
 
-    li.open .toggle {
+    li.open > a > .toggle {
       color: theme-color('danger')!important;
     }
 
@@ -507,7 +507,7 @@ body.theme-third {
       border-color: rgba(theme-color('success'), 1);
     }
 
-    li.open .toggle {
+    li.open > a > .toggle {
       color: theme-color('success')!important;
     }
 
@@ -748,7 +748,7 @@ body.theme-fourth {
       border-color: rgba(theme-color('info'), 1);
     }
 
-    li.open .toggle {
+    li.open > a > .toggle {
       color: theme-color('info')!important;
     }
 
