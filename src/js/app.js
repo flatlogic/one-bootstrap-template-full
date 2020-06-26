@@ -161,20 +161,20 @@ $(function(){
      * @param options
      * @private
      */
-    SingAppView.prototype._changeActiveNavigationItem = function(event, xhr, options){
-        var $newActiveLink = this.$sidebar.find('a[href*="' + this.extractPageName(options.url) + '"]').filter(function(){
-            return this.href === options.url;
-        });
-
-        // collapse .collapse only if new and old active links belong to different .collapse
-        if (!$newActiveLink.is('.active > .collapse > li > a')){
-            this.$sidebar.find('.active .active').closest('.collapse').collapse('hide');
-        }
-        this.$sidebar.find('.active').removeClass('active');
-
-        $newActiveLink.closest('li').addClass('active')
-            .parents('li').addClass('active');
-    };
+    // SingAppView.prototype._changeActiveNavigationItem = function(event, xhr, options){
+    //     var $newActiveLink = this.$sidebar.find('a[href*="' + this.extractPageName(options.url) + '"]').filter(function(){
+    //         return this.href === options.url;
+    //     });
+    //
+    //     // collapse .collapse only if new and old active links belong to different .collapse
+    //     if (!$newActiveLink.is('.active > .collapse > li > a')){
+    //         this.$sidebar.find('.active .active').closest('.collapse').collapse('hide');
+    //     }
+    //     this.$sidebar.find('.active').removeClass('active');
+    //
+    //     $newActiveLink.closest('li').addClass('active')
+    //         .parents('li').addClass('active');
+    // };
 
 
     /**

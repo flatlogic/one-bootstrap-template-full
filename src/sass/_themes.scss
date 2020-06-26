@@ -1147,10 +1147,6 @@ body.theme-dark.theme-second {
     color: white;
   }
 
-  .toggle {
-    color: theme-color('danger');
-  }
-
   .sidebar-nav > li ul {
     border-right: 3px solid theme-color('danger');
     background-color: #464646;
@@ -1310,10 +1306,6 @@ body.theme-dark.theme-third {
       color: white;
     }
 
-    .toggle {
-      color: theme-color('success');
-    }
-
     .sidebar-nav > li ul {
       border-right: 3px solid theme-color('success');
       background-color: #464646;
@@ -1471,10 +1463,6 @@ body.theme-dark.theme-fourth {
       background-color: rgba(theme-color('info'), 0.2);
       border-color: rgba(theme-color('info'), 1);
       color: white;
-    }
-
-    .toggle {
-      color: theme-color('info');
     }
 
     .sidebar-nav > li ul {
