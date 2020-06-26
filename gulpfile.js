@@ -79,25 +79,6 @@ function styles() {
     .pipe( dest("./dist/css") );
 }
 
-// function bundle() {
-//     return gulp.src([
-//         'node_modules/jquery/dist/jquery.min.js',
-//         'node_modules/jquery-pjax/jquery.pjax.js',
-//         'node_modules/popper.js/dist/umd/popper.js',
-//         'node_modules/bootstrap/dist/js/bootstrap.js',
-//         'node_modules/bootstrap/js/dist/util.js',
-//         'node_modules/widgster/widgster.js',
-//         'node_modules/hammerjs/hammer.js',
-//         'node_modules/jquery-slimscroll/jquery.slimscroll.js',
-//         'node_modules/jquery-hammerjs/jquery.hammer.js',
-//         // 'src/js/app.js',
-//         // 'src/js/settings.js',
-//         // 'node_modules/apexcharts/dist/apexcharts.js'
-//     ])
-//         .pipe(concat('bundle.js'))
-//         .pipe(gulp.dest('./dist/js')); //Destination where file to be exported
-// }
-
 function jsTask() {
   return src([
     'node_modules/jquery/dist/jquery.js',

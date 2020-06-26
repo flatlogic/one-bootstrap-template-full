@@ -15,6 +15,10 @@ body.theme-first {
       }
     }
 
+    li.open .toggle {
+      color: theme-color('warning')!important;
+    }
+
     .sidebar-nav > li ul {
       border-right: 3px solid theme-color('warning');
       background-color: rgba(theme-color('warning'), 0.1);
@@ -263,8 +267,8 @@ body.theme-second {
       border-color: rgba(theme-color('danger'), 1);
     }
 
-    .toggle {
-      color: theme-color('danger');
+    li.open .toggle {
+      color: theme-color('danger')!important;
     }
 
     .sidebar-nav > li ul {
@@ -462,7 +466,7 @@ body.theme-second {
   }
   .navbar {
     .navbar-header .toggle-sidebar {
-      background-color: #ff7769;
+      background-color: theme-color('danger')!important;
     }
     .navbar-header ul li{
       .sidebar-icon {
@@ -503,8 +507,8 @@ body.theme-third {
       border-color: rgba(theme-color('success'), 1);
     }
 
-    .toggle {
-      color: theme-color('success');
+    li.open .toggle {
+      color: theme-color('success')!important;
     }
 
     .sidebar-nav > li ul {
@@ -703,7 +707,7 @@ body.theme-third {
   }
   .navbar {
     .navbar-header .toggle-sidebar {
-      background-color: #81d4bb;
+      background-color: theme-color('success')!important;
     }
     .navbar-header ul li{
       .sidebar-icon {
@@ -744,8 +748,8 @@ body.theme-fourth {
       border-color: rgba(theme-color('info'), 1);
     }
 
-    .toggle {
-      color: theme-color('info');
+    li.open .toggle {
+      color: theme-color('info')!important;
     }
 
     .sidebar-nav > li ul {
@@ -940,7 +944,7 @@ body.theme-fourth {
   }
   .navbar {
     .navbar-header .toggle-sidebar {
-      background-color: #4dc7df;
+      background-color: theme-color('info')!important;
     }
     .navbar-header ul li{
       .sidebar-icon {

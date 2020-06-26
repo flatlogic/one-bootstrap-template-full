@@ -2138,12 +2138,14 @@ a.fc-event {
   border-top: 3px solid $black;
 }
 
-//// Marcdown ////
+//// Markdown ////
 
 .md-editor>textarea {
   background-color: white;
 }
+
 /// Slick Slider ///
+
 .slick-slider {
   .slick-next {
     right: 15px;
@@ -2154,4 +2156,16 @@ a.fc-event {
   }
 }
 
+/// Summernote ///
+
+
+.note-editor {
+  .note-toolbar {
+    .note-fontsize, .note-color-all, .note-height {
+      button::after {
+        display: none;
+      }
+    }
+  }
+}
 

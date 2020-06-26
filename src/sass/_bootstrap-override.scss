@@ -1292,6 +1292,16 @@ legend {
     }
   }
 }
+#sortable.list-group{
+  .widget-body > &{
+    margin: 0 30px;
+
+    .list-group-item{
+      border-width: 1px 0;
+      color: $body-main-color;
+    }
+  }
+}
 
 .ui-sortable-placeholder {
   background: red;

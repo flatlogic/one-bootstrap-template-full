@@ -324,7 +324,7 @@ body {
       margin-right: 35px;
       line-height: 18px;
       font-size: 20px;
-      color: theme-color('warning');
+      //color: theme-color('warning');
       transition: transform .35s ease;
     }
   }
@@ -441,6 +441,9 @@ body {
   > .open > a {
     background-color: #ffffff1a;
     border-radius: .3rem;
+    i.toggle {
+      transform: rotate(0);
+    }
   }
 
   > li:last-child > a {
@@ -451,9 +454,7 @@ body {
   > .active > a {
     font-weight: $font-weight-semi-bold;
     color: $body-color;
-    i.toggle {
-      transform: rotate(0);
-    }
+
     &, &:hover {
       color: $body-color;
     }
