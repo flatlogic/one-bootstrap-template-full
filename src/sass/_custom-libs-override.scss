@@ -290,7 +290,7 @@ $slider-line-height: 8px;
 $slider-handle-size: 26px;
 .product-elements {
   .slider-warning .slider.slider-horizontal {
-    width: 140px;
+    width: 95%;
     margin-left: 14px;
   }
 }
@@ -664,6 +664,7 @@ input.parsley-error {
 .wizard-body {
   .wizard-card {
     border: none;
+    padding-top: 10px;
   }
   .wizard-cards .wizard-card-container {
     .wizard-card {
@@ -1634,6 +1635,18 @@ ul.messenger-theme-air .messenger-message {
 
 }
 
+ul.messenger.messenger-fixed.messenger-on-top.messenger-on-left {
+  left: $sidebar-width + 20px;
+  @include media-breakpoint-down(md) {
+    left: 20px;
+  }
+}
+ul.messenger.messenger-fixed.messenger-on-bottom.messenger-on-left {
+  left: $sidebar-width + 20px;
+  @include media-breakpoint-down(md) {
+    left: 20px;
+  }
+}
 
 ul.messenger-theme-air .messenger-message .message-info {
   background: $success;
@@ -1984,6 +1997,7 @@ a.fc-event {
 
     &::after {
       color: $gray-700;
+      left: 0.5px;
     }
   }
 }
@@ -2057,7 +2071,9 @@ a.fc-event {
     margin-right: 7px;
   }
 
-
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: theme-color('primary');
+}
 .select2.select2-container.select2-container--default {
   background: transparent;
 
@@ -2144,6 +2160,11 @@ a.fc-event {
   background-color: white;
 }
 
+.md-editor.active {
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
 /// Slick Slider ///
 
 .slick-slider {
@@ -2158,7 +2179,6 @@ a.fc-event {
 
 /// Summernote ///
 
-
 .note-editor {
   .note-toolbar {
     .note-fontsize, .note-color-all, .note-height {
@@ -2168,4 +2188,15 @@ a.fc-event {
     }
   }
 }
+
+/// abc-checkbox ///
+
+.product-elements {
+  .abc-checkbox {
+    padding-left: 0;
+  }
+}
+
+
+
 

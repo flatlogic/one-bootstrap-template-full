@@ -1824,6 +1824,12 @@ input[type=search], input.search {
         border-bottom: 1px solid rgba(#323232, 0.7);
       }
     }
+
+    .product-element .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
@@ -2069,6 +2075,11 @@ input[type=search], input.search {
     font-size: $h3-font-size;
   }
 
+  .info-color {
+    margin-top: $spacer;
+    font-weight: $font-weight-semi-bold;
+    font-size: 20px;
+  }
   .info-description {
     font-weight: $font-weight-thin;
     font-size: $font-size-base;
@@ -2140,6 +2151,10 @@ input[type=search], input.search {
     justify-content: center;
     margin-top: $spacer;
     .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-size-base;
       @include media-breakpoint-down(md) {
         font-size: 70%;
       }
@@ -2253,7 +2268,7 @@ input[type=search], input.search {
     grid-template-rows: 1fr 1fr;
 
     & > .description-section {
-      padding: 0 $widget-padding-horizontal;
+      padding: 0 10px;
       font-weight: $font-weight-normal;
     }
 

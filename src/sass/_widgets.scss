@@ -1284,6 +1284,11 @@
 
 .profile-page {
 
+  .btn-toolbar.justify-content-between {
+    margin-left: $spacer * 2.5;
+    align-items: start;
+  }
+
 .event {
   background: $widget-bg-color;
   border-radius: $border-radius;
@@ -1556,6 +1561,15 @@
 
     .form-control {
       font-size: 0.8571rem;
+    }
+  }
+  #addon-wrapping {
+    border-right: 0;
+  }
+  #mailbox-search {
+    border-left: 0;
+    &:focus {
+      border-color: #c1ccd3;
     }
   }
 }

@@ -32,7 +32,7 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
                         </ul>
-                        <h5 class="font-weight-bold mt" style="margin-left: 1.8rem">Quick View</h5>
+                        <h5 class="fw-semi-bold fs-larger mt" style="margin-left: 1.8rem">Quick View</h5>
                         <ul class="nav flex-column nav-pills nav-stacked nav-email-folders mb-lg fs-mini">
                             <li class="nav-item"><a class="nav-link justify-content-start" href="#"><i class="fa fa-circle text-danger"></i><p class="m-0">Work</p></a></li>
                             <li class="nav-item"><a class="nav-link justify-content-start" href="#"><i class="fa fa-circle text-success"></i><p class="m-0">Private</p></a></li>
@@ -101,7 +101,7 @@
                             <div class="col-sm-6">
                                 <div class="input-group flex-nowrap width-200 float-right">
                                     <div class="input-group-prepend ">
-                                        <span class="input-group-text" id="addon-wrapping"><img src="../img/icons/search-black.svg" style="width: 16px" alt=""></span>
+                                        <span class="input-group-text" id="addon-wrapping pr-0"><img src="../img/icons/search-black.svg" style="width: 16px" alt=""></span>
                                     </div>
                                     <input type="text" class="form-control" id="mailbox-search" placeholder="Search Messages">
                                 </div>
@@ -553,8 +553,30 @@
 
         <script type="text/template" id="email-list-view-header-template">
             <div class="row">
+                <div class="col-sm-12">
+                    <div class="clearfix mb-lg">
+                        <a class="btn btn-default btn-sm width-50 float-left hide" id="back-btn" href="../other/inbox.html">
+                            <i class="fa fa-angle-left fa-lg"></i>
+                        </a>
+                        <div class="d-flex border-bottom row" id="folder-stats">
+                            <div class="col-6 d-flex justify-content-end">
+                                <p class="widget-email-count text-muted">Showing 1 - 10 of 96 messages</p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <ul class="pagination pagination-sm widget-email-pagination">
+                                    <li class="prev disabled page-item"><a class="page-link" href="#"><i
+                                            class="fa fa-chevron-left"></i></a></li>
+                                    <li class="active page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="next page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6">
-                    <div class="btn-group mr-3">
+                    <div class="btn-group mr-4">
                         <a class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown">
                             Select
                             <i class="fa fa-angle-down "></i>
@@ -586,10 +608,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="input-group flex-nowrap width-200 float-right">
-                        <div class="input-group-prepend ">
-                            <span class="input-group-text bg-transparent" id="addon-wrapping"><img src="../img/icons/search-black.svg" style="width: 16px" alt=""></span>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent pr-0" id="addon-wrapping"><img src="../img/icons/search-black.svg" style="width: 16px" alt=""></span>
                         </div>
-                        <input type="text" class="form-control border-left-0" id="mailbox-search" placeholder="Search Messages">
+                        <input type="text" class="form-control" id="mailbox-search" placeholder="Search Messages">
                     </div>
                 </div>
             </div>

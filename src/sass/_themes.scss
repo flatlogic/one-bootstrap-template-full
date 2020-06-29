@@ -485,6 +485,9 @@ body.theme-second {
           background: url('../img/icons/red/logout_outlined.svg') no-repeat;
         }
       }
+      p.text-warning {
+        color: theme-color('danger') !important;
+      }
     }
   }
 }
@@ -726,6 +729,9 @@ body.theme-third {
           background: url('../img/icons/green/logout_outlined.svg') no-repeat;
         }
       }
+      p.text-warning {
+        color: theme-color('success') !important;
+      }
     }
   }
 }
@@ -962,6 +968,9 @@ body.theme-fourth {
         &.logout {
           background: url('../img/icons/blue/logout_outlined.svg') no-repeat;
         }
+      }
+      p.text-warning {
+        color: theme-color('info') !important;
       }
     }
   }
