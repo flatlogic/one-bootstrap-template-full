@@ -90,6 +90,7 @@ $(function(){
                 if (e.target != e.currentTarget) return;
 
                 $(this).closest('li').addClass('open');
+
             }).on('hide.bs.collapse', function(e){
                 // execute only if we're actually the .collapse element initiated event
                 // return for bubbled events
@@ -152,29 +153,6 @@ $(function(){
     SingAppView.prototype._resetResizeCallbacks = function(){
         this.pageResizeCallbacks = {};
     };
-
-    /**
-     * Changes active navigation item depending on current page.
-     * Should be executed before page load
-     * @param event
-     * @param xhr
-     * @param options
-     * @private
-     */
-    // SingAppView.prototype._changeActiveNavigationItem = function(event, xhr, options){
-    //     var $newActiveLink = this.$sidebar.find('a[href*="' + this.extractPageName(options.url) + '"]').filter(function(){
-    //         return this.href === options.url;
-    //     });
-    //
-    //     // collapse .collapse only if new and old active links belong to different .collapse
-    //     if (!$newActiveLink.is('.active > .collapse > li > a')){
-    //         this.$sidebar.find('.active .active').closest('.collapse').collapse('hide');
-    //     }
-    //     this.$sidebar.find('.active').removeClass('active');
-    //
-    //     $newActiveLink.closest('li').addClass('active')
-    //         .parents('li').addClass('active');
-    // };
 
 
     /**
@@ -693,7 +671,9 @@ function initDemoFunctions(){
 
         //SidebarFix
         function sidebarFix() {
-            $(".sidebar li.active").addClass('open');
+            $('.sidebar li.active').addClass('open');
+            $('.sidebar ul.sidebar-nav li ul li ul li.active').closest('ul.collapse').addClass('show');
+            $('.sidebar ul.sidebar-nav li ul li a.collapsed').closest('ul.collapse').removeClass('collapse');
         }
         themeLoad();
         sidebarFix();

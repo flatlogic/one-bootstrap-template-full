@@ -231,8 +231,7 @@ legend {
   border-top: 1px solid RGBA(196, 196, 196, 0.2);
 }
 .visits-table {
-  @include media-breakpoint-down(md) {
-    display: block;
+  @include media-breakpoint-down(sm) {
     width: 100%;
     overflow-x: auto;
     td {

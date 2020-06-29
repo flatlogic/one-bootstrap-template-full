@@ -2726,6 +2726,14 @@ handlebars-layouts@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/handlebars-layouts/-/handlebars-layouts-3.1.4.tgz#26b3beb931b4b877dfbf7e6feaf4058ee6228b02"
 
+handlebars-utils@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/handlebars-utils/-/handlebars-utils-1.0.6.tgz#cb9db43362479054782d86ffe10f47abc76357f9"
+  integrity sha512-d5mmoQXdeEqSKMtQQZ9WkiUcO1E3tPbWxluCK9hVgIDPzQa9WsKo3Lbe/sGflTe7TomHEeZaOgwIkyIr1kfzkw==
+  dependencies:
+    kind-of "^6.0.0"
+    typeof-article "^0.1.1"
+
 handlebars-wax@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/handlebars-wax/-/handlebars-wax-6.1.0.tgz#9d9a899e6c67b946c7742ce1b7d1bf58f2ba1722"
@@ -3461,9 +3469,10 @@ kind-of@^1.1.0:
   version "1.1.0"
   resolved "http://registry.npmjs.org/kind-of/-/kind-of-1.1.0.tgz#140a3d2d41a36d2efcfa9377b62c24f8495a5c44"
 
-kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
+kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.1.0, kind-of@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
+  integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
   dependencies:
     is-buffer "^1.1.5"
 
@@ -6095,6 +6104,13 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeof-article@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/typeof-article/-/typeof-article-0.1.1.tgz#9f07e733c3fbb646ffa9e61c08debacd460e06af"
+  integrity sha1-nwfnM8P7tkb/qeYcCN66zUYOBq8=
+  dependencies:
+    kind-of "^3.1.0"
 
 uglify-js@^3.1.4:
   version "3.4.9"
