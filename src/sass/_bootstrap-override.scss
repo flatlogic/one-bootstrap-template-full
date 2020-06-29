@@ -593,6 +593,7 @@ legend {
     display: flex;
     border-radius: .3rem;
     background: #1e1e1e;
+    transition: $transition-base;
 
     .input-group-append img {
       opacity: 0.5;
@@ -614,6 +615,7 @@ legend {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       width: 350px;
+      transition: $transition-base;
       @include media-breakpoint-down(md) {
         width: 200px;
       }

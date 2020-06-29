@@ -124,7 +124,7 @@
   height: $navbar-height;
   background-color: $navbar-bg;
   border-color: transparent;
-
+  transition: $transition-base;
 
   @include media-breakpoint-down(sm) {
     font-size: $font-size-lg;

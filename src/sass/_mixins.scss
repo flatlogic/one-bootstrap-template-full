@@ -181,7 +181,7 @@
     #main-search {
       color: $sColor;
       background: $sBgColor;
-
+      transition: $transition-base;
       &:focus {
         background-color: $sBgFColor!important;
       }
