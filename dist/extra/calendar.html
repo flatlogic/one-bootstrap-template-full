@@ -605,25 +605,11 @@
                                 </div>
                             </div>
                             <div class="col-5 d-flex justify-content-end">
-                                <button
-                                        class="btn btn-lg btn-default bg-white dropdown-toggle border mr-0"
-                                        type="button" id="dropdownMenu"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="true">
-                                    Change View
-                                </button>
-                                <div class="dropdown-menu" id="select" aria-labelledby="dropdownMenu" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start">
-                                    <button class="dropdown-item" type="button" value="month">Month</button>
-                                    <button class="dropdown-item" type="button" value="agendaWeek">Week</button>
-                                    <button class="dropdown-item" type="button" value="agendaDay">Day</button>
-                                </div>
-        <!--                        <select class="selectpicker" data-style="btn-default" data-width="auto" tabindex="-1"-->
-        <!--                                id="simple-select">-->
-        <!--                            <option class="dropdown-item" name="view" value="month">Month</option>-->
-        <!--                            <option class="dropdown-item" name="view" value="agendaWeek">Week</option>-->
-        <!--                            <option class="dropdown-item" name="view" value="agendaDay">Day</option>-->
-        <!--                        </select>-->
+                                <select class="custom-select w-50" id="select">
+                                    <option value="month" selected>Month</option>
+                                    <option value="agendaWeek">Week</option>
+                                    <option value="agendaDay">Day</option>
+                                </select>
                               </div>
                         </div>
                         <div id="calendar" class="calendar"></div>

@@ -144,7 +144,7 @@ $(function(){
         //     console.log('origin')
         // });
 
-        $("#select").find("button").click(function(){
+        $("#select").click(function(){
             $calendar.fullCalendar( 'changeView', $(this).val() )
         });
 

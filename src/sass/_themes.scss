@@ -1000,9 +1000,7 @@ body.theme-dark.theme-first {
 
     .sidebar-nav > li ul {
       background-color: #464646;
-
-      li ul {
-        background-color: #595959!important;
+      li > ul {
         border-right: none;
       }
     }
@@ -1159,9 +1157,7 @@ body.theme-dark.theme-second {
   .sidebar-nav > li ul {
     border-right: 3px solid theme-color('danger');
     background-color: #464646;
-
-    li ul {
-      background-color: #595959!important;
+    li > ul {
       border-right: none;
     }
   }
@@ -1318,9 +1314,7 @@ body.theme-dark.theme-third {
     .sidebar-nav > li ul {
       border-right: 3px solid theme-color('success');
       background-color: #464646;
-
-      li ul {
-        background-color: #595959!important;
+      li > ul {
         border-right: none;
       }
     }
@@ -1477,9 +1471,7 @@ body.theme-dark.theme-fourth {
     .sidebar-nav > li ul {
       border-right: 3px solid theme-color('info');
       background-color: #464646;
-
-      li ul {
-        background-color: #595959!important;
+      li > ul {
         border-right: none;
       }
     }

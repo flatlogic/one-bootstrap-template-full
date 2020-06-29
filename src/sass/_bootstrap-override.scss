@@ -230,7 +230,16 @@ legend {
 .table.visits-table td {
   border-top: 1px solid RGBA(196, 196, 196, 0.2);
 }
-
+.visits-table {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
+    }
+  }
+}
 
 //
 // Dropdown menus
