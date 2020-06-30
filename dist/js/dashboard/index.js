@@ -42,6 +42,7 @@ $(function(){
                 stroke: {
                     colors: [colors['brand-danger']]
                 },
+                colors: [colors['brand-danger']],
                 fill: {
                     colors: [colors["brand-danger"]]
                 }
@@ -50,11 +51,13 @@ $(function(){
                 stroke: {
                     colors: ['RGBA(50,50,50, 0.8)'],
                 },
+                colors: ['#323232'],
                 fill: {
                     colors: ['#323232']
                 }
             },
             themeThird: {
+                colors: ['RGBA(50, 50, 50, 0.8)'],
                 stroke: {
                     colors: ['RGBA(50, 50, 50, 0.8)']
                 },
@@ -63,6 +66,7 @@ $(function(){
                 }
             },
             themeFourth: {
+                colors: ['RGBA(50, 50, 50, 0.8)'],
                 stroke: {
                     colors: ['RGBA(50, 50, 50, 0.8)']
                 },
@@ -75,6 +79,7 @@ $(function(){
         },
         chartFourth: {
             themeFirst: {
+                colors: [colors["brand-warning"]],
                 fill: {
                     colors: [colors["brand-warning"]]
                 },
@@ -86,11 +91,13 @@ $(function(){
                 fill: {
                     colors: [colors["brand-new-warning"]]
                 },
+                colors: [colors['brand-new-warning']],
                 stroke: {
                     colors: [colors['brand-new-warning']]
                 }
             },
             themeThird: {
+                colors: [colors["brand-new-warning"]],
                 fill: {
                     colors: [colors["brand-new-warning"]]
                 },
@@ -99,6 +106,7 @@ $(function(){
                 }
             },
             themeFourth: {
+                colors: [colors["brand-danger"]],
                 fill: {
                     colors: [colors["brand-danger"]]
                 },
@@ -387,6 +395,7 @@ $(function(){
                     },
                 }
             },
+            colors: [colors["brand-danger"]],
             fill: {
                 type: 'solid',
                 opacity: 0.1,
@@ -454,6 +463,7 @@ $(function(){
                     },
                 }
             },
+            colors: [colors["brand-warning"]],
             fill: {
                 type: 'solid',
                 opacity: 0.1,

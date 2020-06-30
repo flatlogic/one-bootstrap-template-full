@@ -1486,7 +1486,7 @@ body {
     z-index: 1;
     margin-right: $widget-padding-horizontal;
 
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
       top: auto;
       bottom: 0;
     }
@@ -2272,6 +2272,15 @@ input[type=search], input.search {
       font-weight: $font-weight-normal;
     }
 
+    @include media-breakpoint-down(md) {
+      display: grid;
+      width: 100%;
+      overflow-x: auto;
+      td {
+        white-space: nowrap;
+      }
+    }
+
     @include media-breakpoint-down(sm) {
       display: none;
     }
@@ -2405,6 +2414,7 @@ input[type=search], input.search {
   @include media-breakpoint-down(sm) {
     box-shadow: none;
     border-radius: 0;
+    background: transparent;
     margin: 0 (-$content-padding-horizontal / 2)
   }
 }

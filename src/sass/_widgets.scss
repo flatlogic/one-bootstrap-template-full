@@ -511,13 +511,24 @@
 /**        Full Calendar          **/
 /***********************************/
 
-.full-calendar{
+.full-calendar {
   margin-top: 10px;
 }
 
-.calendar-controls{
-  .btn{
+.calendar-controls {
+  .btn {
     font-size: $font-size-mini;
+  }
+  .main-date {
+    display: flex;
+    justify-content: flex-end;
+    @include media-breakpoint-down(md) {
+      justify-content: flex-start;
+    }
+  }
+  .main-select {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -948,14 +959,14 @@
     padding-right: 30px;
     float: left;
     clear: left;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-right: 0;
     }
   }
   .timeline > li.timeline-inverted {
     padding-right: 0;
     padding-left: 30px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-left: 0;
     }
   }
@@ -1043,7 +1054,7 @@
   }
   .timeline > li.timeline-inverted > .timeline-badge {
     left: -23px!important;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       left: -4px!important;
     }
   }
@@ -1176,7 +1187,7 @@
     left: -12px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     ul.timeline:before {
       left: 20px;
     }
@@ -1193,7 +1204,7 @@
     }
 
     ul.timeline > li > .timeline-badge {
-      left: 28px;
+      left: 0;
       margin-left: 0;
       top: 16px;
       @include media-breakpoint-down(md) {
@@ -1595,6 +1606,15 @@
 .table-emails{
   margin-bottom: 0;
   color: $widget-color;
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
+      padding: 0.8rem!important;
+    }
+  }
 
   tbody > tr > td:first-child {
     width: 45px;

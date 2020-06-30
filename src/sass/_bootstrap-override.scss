@@ -230,8 +230,31 @@ legend {
 .table.visits-table td {
   border-top: 1px solid RGBA(196, 196, 196, 0.2);
 }
+
 .visits-table {
   @include media-breakpoint-down(sm) {
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
+    }
+  }
+}
+
+.colors-table {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
+    }
+  }
+}
+
+.table-invoice {
+  @include media-breakpoint-down(md) {
+    display: block;
     width: 100%;
     overflow-x: auto;
     td {
@@ -269,6 +292,13 @@ legend {
 }
 .navbar .dropdown-menu {
   margin-top: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-dark .navbar-toggler {
+  border: none;
 }
 
 .dropdown-menu{
@@ -320,16 +350,16 @@ legend {
       font-weight: 600;
     }
     .dropdown-date {
-      margin-left: 1.5rem;
       font-size: $font-size-mini;
       color: #32323299;
-      margin-bottom: .5rem;
+      margin: 1.5rem 0 0 1.5rem;
     }
     .dropdown-time {
       font-size: 8px;
       color: #32323299;
       margin-bottom: .5rem;
       white-space: nowrap;
+      padding-left: 0.5rem;
     }
 
     li a h6 {
@@ -345,9 +375,10 @@ legend {
     }
     .dropdown-item {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       color: $body-main-color;
       font-size: $font-size-base;
+      padding-left: 1.5rem;
       &:hover, &:active, &:focus {
         background-color: rgba(50,50,50,0.1);
       }
@@ -1848,7 +1879,7 @@ code {
   text-shadow: none;
   font-weight: $font-weight-bold;
   font-size: 11px;
-  color: white;
+  color: white!important;
 
   &.bg-default {
     color: $default;

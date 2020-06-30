@@ -672,8 +672,6 @@ function initDemoFunctions(){
         //SidebarFix
         function sidebarFix() {
             $('.sidebar li.active').addClass('open');
-            $('.sidebar ul.sidebar-nav li ul li ul li.active').closest('ul.collapse').addClass('show');
-            $('.sidebar ul.sidebar-nav li ul li a.collapsed').closest('ul.collapse').removeClass('collapse');
         }
         themeLoad();
         sidebarFix();

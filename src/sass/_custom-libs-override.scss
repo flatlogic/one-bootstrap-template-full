@@ -879,20 +879,47 @@ input.parsley-error {
       }
     }
   }
-}
-#table-dynamic {
-  .backgrid-paginator{
-    display: flex;
-    justify-content: center;
-    ul > li > a {
-      background-color: transparent;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
     }
   }
 }
+  #table-dynamic {
+    .backgrid-paginator ul{
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-down(md) {
+        display: inline-block;
+      }
+      li > a {
+        background-color: transparent;
+      }
+    }
+    .sortable.renderable.id, .editable.sortable.renderable.name, .editable.sortable.renderable.pop {
+      @include media-breakpoint-down(md) {
+        padding-left: 0.2rem;
+      }
+    }
+  }
 
 /***********************************/
 /**          Datatables           **/
 /***********************************/
+#datatable-table {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    td {
+      white-space: nowrap;
+    }
+  }
+}
 #search-countries:focus {
   border: 1px solid #c1ccd3;
 }
@@ -966,6 +993,11 @@ table.dataTable tfoot th {
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
   font-size: $font-size-mini;
+  .pagination {
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+  }
 }
 
 
@@ -2201,6 +2233,12 @@ a.fc-event {
   }
 }
 
+/// Sparkline ///
 
+.sparkline {
+  @include media-breakpoint-down(lg) {
+    padding-top: $spacer;
+  }
+}
 
 

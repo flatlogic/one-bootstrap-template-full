@@ -468,7 +468,10 @@ body.theme-second {
     .navbar-header .toggle-sidebar {
       background-color: theme-color('danger')!important;
     }
-    .navbar-header ul li{
+    .navbar-header ul li {
+      .badge {
+        background-color: theme-color('danger');
+      }
       .sidebar-icon {
         display: block;
         height: 20px;
@@ -488,11 +491,14 @@ body.theme-second {
       p.text-warning {
         color: theme-color('danger') !important;
       }
+      span.see-more {
+        color: theme-color('danger')!important;
+      }
     }
   }
 }
 body.theme-third {
-  .sidebar{
+  .sidebar {
     .logo {
       background-color: theme-color('success');;
 
@@ -709,10 +715,14 @@ body.theme-third {
     }
   }
   .navbar {
+
     .navbar-header .toggle-sidebar {
       background-color: theme-color('success')!important;
     }
-    .navbar-header ul li{
+    .navbar-header ul li {
+      .badge {
+        background-color: theme-color('success');
+      }
       .sidebar-icon {
         display: block;
         height: 20px;
@@ -731,6 +741,9 @@ body.theme-third {
       }
       p.text-warning {
         color: theme-color('success') !important;
+      }
+      span.see-more {
+        color: theme-color('success')!important;
       }
     }
   }
@@ -949,6 +962,9 @@ body.theme-fourth {
     }
   }
   .navbar {
+    .badge {
+      background-color: theme-color('info');
+    }
     .navbar-header .toggle-sidebar {
       background-color: theme-color('info')!important;
     }
@@ -971,6 +987,9 @@ body.theme-fourth {
       }
       p.text-warning {
         color: theme-color('info') !important;
+      }
+      span.see-more {
+        color: theme-color('info')!important;
       }
     }
   }

@@ -151,7 +151,7 @@ $(function(){
                     };
 
                     $(nPaging).append(
-                            '<ul class="pagination no-margin">'+
+                            '<ul class="pagination col-12-lg no-margin">'+
                             '<li class="prev disabled page-item"><a class="page-link" href="#">'+oLang.sPrevious+'</a></li>'+
                             '<li class="next disabled page-item"><a class="page-link" href="#">'+oLang.sNext+'</a></li>'+
                             '</ul>'
@@ -225,7 +225,7 @@ $(function(){
         });
 
         $("#datatable-table").dataTable({
-            "sDom": "<'row'<'col-lg-6 hidden-sm-down'l><'col-lg-6'f>r>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
+            "sDom": "<'row'<'col-lg-6 hidden-sm-down'l><'col-lg-6 col-sm-12'f>r>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
             "oLanguage": {
                 "sLengthMenu": "_MENU_",
                 "sInfo": "Showing <strong>_START_ to _END_</strong> of _TOTAL_ entries"
