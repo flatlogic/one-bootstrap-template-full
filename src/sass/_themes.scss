@@ -14,7 +14,9 @@ body.theme-first {
         width: 41px;
       }
     }
-
+    .badge {
+      color: $body-main-color!important;
+    }
     li.open > a > .toggle {
       color: theme-color('warning')!important;
     }
@@ -265,6 +267,7 @@ body.theme-second {
     .badge {
       background-color: rgba(theme-color('danger'), 0.2);
       border-color: rgba(theme-color('danger'), 1);
+      color: $body-main-color!important;
     }
 
     li.open > a > .toggle {
@@ -514,6 +517,7 @@ body.theme-third {
     .badge {
       background-color: rgba(theme-color('success'), 0.2);
       border-color: rgba(theme-color('success'), 1);
+      color: $body-main-color!important;
     }
 
     li.open > a > .toggle {
@@ -765,6 +769,7 @@ body.theme-fourth {
     .badge {
       background-color: rgba(theme-color('info'), 0.2);
       border-color: rgba(theme-color('info'), 1);
+      color: $body-main-color!important;
     }
 
     li.open > a > .toggle {
@@ -1014,7 +1019,7 @@ body.theme-dark.theme-first {
     .badge {
       background-color: rgba(theme-color('warning'), 0.2);
       border-color: rgba(theme-color('warning'), 1);
-      color: white;
+      color: white!important;
     }
 
     .sidebar-nav > li ul {
@@ -1170,7 +1175,7 @@ body.theme-dark.theme-second {
   .badge {
     background-color: rgba(theme-color('danger'), 0.2);
     border-color: rgba(theme-color('danger'), 1);
-    color: white;
+    color: white!important;
   }
 
   .sidebar-nav > li ul {
@@ -1327,7 +1332,7 @@ body.theme-dark.theme-third {
     .badge {
       background-color: rgba(theme-color('success'), 0.2);
       border-color: rgba(theme-color('success'), 1);
-      color: white;
+      color: white!important;
     }
 
     .sidebar-nav > li ul {
@@ -1484,7 +1489,7 @@ body.theme-dark.theme-fourth {
     .badge {
       background-color: rgba(theme-color('info'), 0.2);
       border-color: rgba(theme-color('info'), 1);
-      color: white;
+      color: white!important;
     }
 
     .sidebar-nav > li ul {
