@@ -4,7 +4,7 @@ Flotlogic One Bootstrap admin dashboard template built with HTML5 and Bootstrap 
 
 [Download](https://github.com/flatlogic/one-bootstrap-template-full.git) | [More templates](https://flatlogic.com/templates)
 
-[![image](https://user-images.githubusercontent.com/43149862/80715665-5d031c80-8aff-11ea-801b-dd22163b4874.png)
+[![image](http://i112.fastpic.ru/big/2020/0701/ee/_3919bbecef567bf2efdac7439dcdd6ee.jpg)](https://templates-flatlogic.herokuapp.com/flatlogic-one/html5/dashboard/)
 
 ## Features
 
