@@ -203,16 +203,11 @@ $(function(){
         $('.js-progress-animate').animateProgressBar();
     }
 
-    function amcharts() {
-        var chart = am4core.create("chartdiv", "PieChart");
-    }
-
     function pjaxPageLoad(){
         $('.widget').widgster();
         initMap();
         apexChartFifth();
         initAnimations();
-        amcharts();
     }
 
     pjaxPageLoad();
