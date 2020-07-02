@@ -331,18 +331,18 @@ $(function(){
         return pageName === '' ? 'index.html' : pageName;
     };
 
-    SingAppView.prototype._checkLoading = function(e){
-        var oldLoading = this.loading;
-        this.loading = true;
-        if (oldLoading){
-            this.log('attempt to load page while already loading; preventing.');
-            e.preventDefault();
-        } else {
-            this.log(e.currentTarget.href + ' loading started.');
-        }
-        //prevent default if already loading
-        return !oldLoading;
-    };
+    // SingAppView.prototype._checkLoading = function(e){
+    //     var oldLoading = this.loading;
+    //     this.loading = true;
+    //     if (oldLoading){
+    //         this.log('attempt to load page while already loading; preventing.');
+    //         e.preventDefault();
+    //     } else {
+    //         this.log(e.currentTarget.href + ' loading started.');
+    //     }
+    //     //prevent default if already loading
+    //     return !oldLoading;
+    // };
 
     SingAppView.prototype._loadingFinished = function(){
         this.loading = false;
@@ -364,7 +364,6 @@ $(function(){
             );
         }
     };
-
 
     window.SingApp = new SingAppView();
 
