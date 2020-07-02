@@ -90,9 +90,22 @@ function jsTask() {
     'node_modules/hammerjs/hammer.js',
     'node_modules/jquery-slimscroll/jquery.slimscroll.js',
     'node_modules/jquery-hammerjs/jquery.hammer.js',
+      'src/js/settings.js',
+      'src/js/app.js',
 
-    // 'src/js/app.js',
-    // 'src/js/settings.js'
+      //index
+      'node_modules/apexcharts/dist/apexcharts.js',
+
+      //Visits
+    'node_modules/underscore/underscore.js',
+    'node_modules/d3/d3.min.js',
+    'node_modules/raphael/raphael.min.js',
+    'node_modules/jquery-mapael/js/jquery.mapael.js',
+    'node_modules/jquery-mapael/js/maps/usa_states.js',
+    'node_modules/jquery-mapael/js/maps/world_countries.js',
+    'node_modules/jquery.animate-number/jquery.animateNumber.min.js',
+    'node_modules/jquery-mousewheel/jquery.mousewheel.js'
+
   ])
       .pipe(prettier({ semi: true }))
       .pipe(sourcemaps.init())
