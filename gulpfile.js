@@ -17,7 +17,7 @@ const srcPaths = {
   scripts: ["./src/js/**/*"],
   fonts: ["./src/fonts/**/*"],
   images: ["./src/img/**/*"],
-  styles: ["./src/sass/*.scss"],
+  styles: ["./src/sass/*.scss", "./src/sass/application.scss"],
   cssEntries: "./src/sass/application.scss",
   static: ["./src/demo/**/*"],
   templates: ["src/*.hbs", "src/pages/**/*.hbs"],
@@ -25,6 +25,122 @@ const srcPaths = {
   helpers: [
     "./node_modules/handlebars-layouts/index.js",
     "./src/helpers/index.js"
+  ],
+  jsLibs: [
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery-pjax/jquery.pjax.js',
+    'node_modules/popper.js/dist/umd/popper.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/bootstrap/js/dist/util.js',
+    'node_modules/widgster/widgster.js',
+    'node_modules/hammerjs/hammer.js',
+    'node_modules/jquery-slimscroll/jquery.slimscroll.js',
+    'node_modules/jquery-hammerjs/jquery.hammer.js',
+    'src/js/settings.js',
+    'src/js/app.js',
+
+    // Index
+    'node_modules/apexcharts/dist/apexcharts.js',
+
+    // Visits
+    'node_modules/underscore/underscore.js',
+    'node_modules/d3/d3.min.js',
+    'node_modules/raphael/raphael.min.js',
+    'node_modules/jquery-mapael/js/jquery.mapael.js',
+    'node_modules/jquery-mapael/js/maps/usa_states.js',
+    'node_modules/jquery-mapael/js/maps/world_countries.js',
+    'node_modules/jquery.animate-number/jquery.animateNumber.min.js',
+    'node_modules/jquery-mousewheel/jquery.mousewheel.js',
+
+    // E-commerce
+    'node_modules/slick-carousel/slick/slick.min.js',
+    'node_modules/bootstrap-slider/dist/bootstrap-slider.min.js',
+
+    // EMail
+    'node_modules/underscore/underscore-min.js',
+    'node_modules/backbone/backbone.js',
+    'node_modules/underscore/underscore-min.js',
+    'node_modules/summernote/dist/summernote.js',
+
+    // Carousel
+    'node_modules/owl.carousel/dist/owl.carousel.js',
+
+    // List group
+    'node_modules/components-jqueryui/jquery-ui.min.js',
+    'node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
+    'node_modules/jquery-nestable/jquery.nestable.js',
+
+    // Notifications
+    'node_modules/messenger/build/js/messenger.js',
+    'node_modules/messenger/build/js/messenger-theme-flat.js',
+    'node_modules/messenger/docs/welcome/javascripts/location-sel.js',
+
+    // Table dynamic
+    'node_modules/backbone.paginator/lib/backbone.paginator.min.js',
+    'node_modules/backgrid/lib/backgrid.js',
+    'node_modules/backgrid-paginator/backgrid-paginator.js',
+    'node_modules/datatables/media/js/jquery.dataTables.js',
+    'node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
+
+    // Form elements
+    'node_modules/jquery-autosize/jquery.autosize.min.js',
+    'node_modules/select2/dist/js/select2.min.js',
+    'node_modules/switchery/dist/switchery.min.js',
+    'node_modules/moment/min/moment.min.js',
+    'node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js',
+    'node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js',
+    'node_modules/jasny-bootstrap/js/inputmask.js',
+    'node_modules/jasny-bootstrap/js/fileinput.js',
+    'node_modules/holderjs/holder.js',
+    'node_modules/dropzone/dist/min/dropzone.min.js',
+    'node_modules/markdown/lib/markdown.js',
+    'node_modules/bootstrap-markdown/js/bootstrap-markdown.js',
+    'node_modules/parsleyjs/dist/parsley.min.js',
+    'node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js',
+    'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
+    'node_modules/jasny-bootstrap/js/inputmask.js',
+    'node_modules/bootstrap-application-wizard/src/bootstrap-wizard.js',
+
+    // Charts
+    'node_modules/jquery-sparkline/jquery.sparkline.js',
+    'node_modules/d3/d3.min.js',
+    'node_modules/rickshaw/rickshaw.min.js',
+    'node_modules/flotanimator/jquery.flot.animator.min.js',
+    'node_modules/flot/jquery.flot.js',
+    'node_modules/flot-orderbars/js/jquery.flot.orderBars.js',
+    'node_modules/flot/jquery.flot.selection.js',
+    'node_modules/flot/jquery.flot.time.js',
+    'node_modules/nvd3/build/nv.d3.min.js',
+    'node_modules/morris.js/morris.min.js',
+    'node_modules/easy-pie-chart/dist/jquery.easypiechart.min.js',
+
+    'node_modules/flot/jquery.flot.pie.js',
+    'node_modules/flot/jquery.flot.stack.js',
+    'node_modules/flot/jquery.flot.crosshair.js',
+    'node_modules/flot/jquery.flot.symbol.js',
+
+    // Grid
+    'node_modules/components-jqueryui/ui/jquery-1-7.js',
+    'node_modules/components-jqueryui/ui/widget.js',
+    'node_modules/components-jqueryui/ui/data.js',
+
+    'node_modules/components-jqueryui/ui/widgets/mouse.js',
+    'node_modules/components-jqueryui/ui/widgets/droppable.js',
+    'node_modules/components-jqueryui/ui/plugin.js',
+    'node_modules/components-jqueryui/ui/widgets/draggable.js',
+
+    'node_modules/components-jqueryui/ui/scroll-parent.js',
+    'node_modules/components-jqueryui/ui/widgets/sortable.js',
+    'node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
+
+    // Maps
+    'node_modules/gmaps/gmaps.js',
+    'node_modules/jvectormap/jquery-jvectormap.min.js',
+    'node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js',
+
+    // Gallery
+    'node_modules/shufflejs/dist/shuffle.min.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
   ]
 };
 
@@ -80,33 +196,7 @@ function styles() {
 }
 
 function jsTask() {
-  return src([
-    'node_modules/jquery/dist/jquery.js',
-    'node_modules/jquery-pjax/jquery.pjax.js',
-    'node_modules/popper.js/dist/umd/popper.js',
-    'node_modules/bootstrap/dist/js/bootstrap.js',
-    'node_modules/bootstrap/js/dist/util.js',
-    'node_modules/widgster/widgster.js',
-    'node_modules/hammerjs/hammer.js',
-    'node_modules/jquery-slimscroll/jquery.slimscroll.js',
-    'node_modules/jquery-hammerjs/jquery.hammer.js',
-      'src/js/settings.js',
-      'src/js/app.js',
-
-      //index
-      'node_modules/apexcharts/dist/apexcharts.js',
-
-      //Visits
-    'node_modules/underscore/underscore.js',
-    'node_modules/d3/d3.min.js',
-    'node_modules/raphael/raphael.min.js',
-    'node_modules/jquery-mapael/js/jquery.mapael.js',
-    'node_modules/jquery-mapael/js/maps/usa_states.js',
-    'node_modules/jquery-mapael/js/maps/world_countries.js',
-    'node_modules/jquery.animate-number/jquery.animateNumber.min.js',
-    'node_modules/jquery-mousewheel/jquery.mousewheel.js'
-
-  ])
+  return src([...srcPaths.jsLibs])
       .pipe(prettier({ semi: true }))
       .pipe(sourcemaps.init())
       .pipe(concat('bundle.js'))
