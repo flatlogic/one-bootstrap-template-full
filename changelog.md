@@ -3,4 +3,4 @@
 
 ### Updated
 
-- Release Flatlogic One HTML5 Template
+- Release Flatlogic One Bootstrap Full Template
