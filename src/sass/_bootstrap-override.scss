@@ -1929,11 +1929,9 @@ span.badge.badge-default {
   }
 }
 
-a.badge.badge-light {
-  color: $gray-900;
+a.badge.badge-light, .badge-light {
   background-color: $gray-200;
   &:hover, &:active {
-    color: $gray-900;
     background-color: $gray-300;
   }
 }
