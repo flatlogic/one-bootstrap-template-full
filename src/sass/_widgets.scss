@@ -549,6 +549,14 @@
   @include media-breakpoint-up(xl){
 
   }
+  .calendar-controls {
+    #select {
+      width: 60%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 /***********************************/
@@ -846,12 +854,12 @@
   }
 }
 
-.post-user-profile {
+.widget-body .post-user-profile {
   margin-top: -90px;
   @include media-breakpoint-down(lg) {
     margin-top: -140px;
   }
-  .contacts {
+  ul.contacts {
     display: block;
     margin-top: 25px;
     margin-left: -10px;
@@ -872,7 +880,7 @@
       }
 
       > a {
-        color: $body-main-color;
+        color: $primary;
         text-decoration: none;
 
         &:hover,

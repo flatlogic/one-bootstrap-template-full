@@ -2,7 +2,7 @@
  * Whether to use pjax page swithing
  * @type {boolean}
  */
-window.PJAX_ENABLED = false;
+window.PJAX_ENABLED = true;
 /**
  * Whether to print some log information
  * @type {boolean}
@@ -69,7 +69,6 @@ $(function(){
             $(document).on('pjax:success', $.proxy(this._loadScripts, this));
             //custom event which fires when all scripts are actually loaded
             $(document).on('sing-app:loaded', $.proxy(this._loadingFinished, this));
-            $(document).on('sing-app:loaded', $.proxy(this._collapseNavIfSmallScreen, this));
             $(document).on('sing-app:loaded', $.proxy(this.hideLoader, this));
             $(document).on('pjax:end', $.proxy(this.pageLoaded, this));
         }
@@ -100,6 +99,35 @@ $(function(){
             });
 
         window.onerror = $.proxy(this._logErrors, this);
+    };
+
+    /**
+     * Changes active navigation item depending on current page.
+     * Should be executed before page load
+     * @param event
+     * @param xhr
+     * @param options
+     * @private
+     */
+    SingAppView.prototype._changeActiveNavigationItem = function(event, xhr, options){
+        let $newActiveLink = this.$sidebar.find('a[href*="' + this.extractPageName(options.url) + '"]').filter(function(){
+            return this.href === options.url;
+        });
+
+        // collapse .collapse only if new and old active links belong to different .collapse
+        if (!$newActiveLink.is('.active .active > .collapse > li > a')){
+            this.$sidebar.find('.active .active .active').closest('.collapse').collapse('hide');
+        }
+        this.$sidebar.find('.active .active').removeClass('active');
+
+        // collapse .collapse only if new and old active links belong to different .collapse for second menu level
+        if (!$newActiveLink.is('.active > .collapse > li > a')){
+            this.$sidebar.find('.active .active').closest('.collapse').collapse('hide');
+        }
+        this.$sidebar.find('.active').removeClass('active');
+
+        $newActiveLink.closest('li').addClass('active')
+            .parents('li').addClass('active');
     };
 
     /**
@@ -668,12 +696,12 @@ function initDemoFunctions(){
 
         }
 
-        //SidebarFix
-        function sidebarFix() {
-            $('.sidebar li.active').addClass('open');
-        }
+        // //SidebarFix
+        // function sidebarFix() {
+        //     $('.sidebar li.active').addClass('open');
+        // }
         themeLoad();
-        sidebarFix();
+        // sidebarFix();
 
     }(jQuery);
 }
