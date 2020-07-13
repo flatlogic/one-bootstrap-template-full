@@ -1103,6 +1103,9 @@ legend {
 
 .custom-dropdown {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
+  button {
+    border-radius: 4px;
+  }
 }
 .dashboard-buttons {
   .dropdown-item {
@@ -1116,6 +1119,7 @@ legend {
 }
   > button {
     box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
+    border-radius: 4px;
   }
 
   @include media-breakpoint-down(md) {
