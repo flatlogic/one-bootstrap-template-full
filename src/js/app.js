@@ -113,19 +113,14 @@ $(function(){
         let $newActiveLink = this.$sidebar.find('a[href*="' + this.extractPageName(options.url) + '"]').filter(function(){
             return this.href === options.url;
         });
-
-        // collapse .collapse only if new and old active links belong to different .collapse
-        if (!$newActiveLink.is('.active .active > .collapse > li > a')){
-            this.$sidebar.find('.active .active .active').closest('.collapse').collapse('hide');
-        }
-        this.$sidebar.find('.active .active').removeClass('active');
-
         // collapse .collapse only if new and old active links belong to different .collapse for second menu level
-        if (!$newActiveLink.is('.active > .collapse > li > a')){
-            this.$sidebar.find('.active .active').closest('.collapse').collapse('hide');
+        let $parentMenu = $newActiveLink.parents('.open').first();
+        if ($parentMenu.length) {
+            $parentMenu.siblings('.active').children('.collapse').collapse('hide');
+        } else {
+            $newActiveLink.closest('li').siblings('.active').find('.collapse').collapse('hide');
         }
         this.$sidebar.find('.active').removeClass('active');
-
         $newActiveLink.closest('li').addClass('active')
             .parents('li').addClass('active');
     };

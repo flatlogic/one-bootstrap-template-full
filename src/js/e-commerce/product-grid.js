@@ -8,6 +8,10 @@ $(function() {
       target.addClass('active');
     });
 
+    $("#mobile-filter").on("click", function(e) {
+      $("#filter").toggleClass('d-none');
+    });
+
   }
 
   pageLoad();
