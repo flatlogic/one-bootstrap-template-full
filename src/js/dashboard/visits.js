@@ -203,11 +203,22 @@ $(function(){
         $('.js-progress-animate').animateProgressBar();
     }
 
+    function setDateToDropDown() {
+        let button = $('#dropdownMenu');
+        button.text(moment().format("Do MMM YYYY"));
+        $('.dashboard-buttons .dropdown .dropdown-item').each(
+            function(i, elem) {
+                $(elem).text(moment().add(i + 1, 'd').format("Do MMM YYYY"))
+            }
+        )
+    }
+
     function pjaxPageLoad(){
         $('.widget').widgster();
         initMap();
         apexChartFifth();
         initAnimations();
+        setDateToDropDown();
     }
 
     pjaxPageLoad();
