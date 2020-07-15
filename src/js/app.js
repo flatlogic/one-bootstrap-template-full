@@ -638,7 +638,7 @@ function initDemoFunctions(){
             navbar.removeClass('navbar-white').addClass( target.data('style') );
         });
 
-        //Sidebar Color
+        // Sidebar Color
         $('.colors-list .color-box-side-bar').click(function(e) {
             const target = $(e.target);
             $('.color-box-side-bar').removeClass('active');
@@ -658,7 +658,7 @@ function initDemoFunctions(){
             localStorage.setItem('sidebarTheme', body.attr('class'));
         });
 
-        //Theme load on reload
+        // Theme load on reload
         function themeLoad() {
 
             // Main theme
@@ -691,12 +691,6 @@ function initDemoFunctions(){
 
         }
 
-        // //SidebarFix
-        // function sidebarFix() {
-        //     $('.sidebar li.active').addClass('open');
-        // }
         themeLoad();
-        // sidebarFix();
-
     }(jQuery);
 }

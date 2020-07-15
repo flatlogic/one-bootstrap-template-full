@@ -1858,6 +1858,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-height: 800px) {
+      padding: 230px 0 50px;
+    }
   }
 
   &.theme-helper-opened {
