@@ -1,4 +1,14 @@
 # Changelog
+## [1.0.1]
+
+- Fix collapse in sidebar
+- Fix error on styles
+- Fix links in theme helper
+- Fix search toggle in product grid
+- ...and several other errors
+### Updated
+
+- Release Flatlogic One Bootstrap Full Template
 ## [1.0.0]
 
 ### Updated
