@@ -537,8 +537,7 @@ $(function(){
                 curve: 'smooth'
             },
 
-            labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00'
-            ],
+            labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00'],
             legend: {
                 position: 'top',
                 horizontalAlign: 'center',

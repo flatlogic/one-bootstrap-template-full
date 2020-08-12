@@ -657,17 +657,18 @@ legend {
       border-bottom-right-radius: $border-radius !important;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      width: 350px;
       transition: $transition-base;
+      width: 250px;
       @include media-breakpoint-down(md) {
-        width: 200px;
+        width: 175px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 250px;
       }
       &::placeholder {
         color: #dbdbdb;
         opacity: .5;
       }
-
-
     }
 
     .input-group-text {
@@ -711,7 +712,24 @@ legend {
     z-index: 2;
     position: fixed!important;
   }
+  .unlock-button {
+    &:hover {
+      text-decoration: none;
+    }
+    button {
+      margin-bottom: 0;
+      span {
+        color: white!important;
+      }
+      &:hover {
+        .fa {
+          color: white!important;
+        }
+      }
+    }
+  }
 }
+
 .navbar-header > .navbar-nav{
   float: left;
   @include media-breakpoint-down(sm) {
