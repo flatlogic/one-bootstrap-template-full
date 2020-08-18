@@ -662,7 +662,11 @@ function initDemoFunctions(){
         function themeLoad() {
 
             // Main theme
-            if (localStorage.getItem('sidebarTheme')) {
+            if (!localStorage.getItem('sidebarTheme')) {
+                localStorage.setItem('sidebarTheme', 'theme-third');
+                body.removeClass().addClass(localStorage.getItem('sidebarTheme'))
+            }
+            else if(localStorage.getItem('sidebarTheme')) {
                 body.removeClass().addClass(localStorage.getItem('sidebarTheme'))
             }
 
