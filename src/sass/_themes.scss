@@ -248,6 +248,59 @@ body.theme-first {
         }
       }
     }
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        border-color: theme-color('warning')!important;
+        background-color: transparent;
+        span {
+          color: white!important;
+        }
+        .las {
+          transition: color 300ms;
+          color: theme-color('warning')!important;
+        }
+        &:hover {
+          background-color: theme-color('warning');
+          border-color: theme-color('warning');
+          .las {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
+  .navbar.navbar-white {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        background-color: white;
+        margin-bottom: 0;
+        border-color: #323232!important;
+        span {
+          color: #323232!important;
+        }
+        .las {
+          color: theme-color('warning');
+        }
+        &:hover {
+          background-color: theme-color('warning');
+          border-color: theme-color('warning')!important;
+          .las {
+            color: white!important;
+            transition: color;
+          }
+          span {
+            color: white!important;
+          }
+        }
+      }
+    }
   }
 }
 body.theme-second {
@@ -498,6 +551,59 @@ body.theme-second {
         color: theme-color('danger')!important;
       }
     }
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        border-color: theme-color('danger')!important;
+        background-color: transparent;
+        span {
+          color: white!important;
+        }
+        .las {
+          transition: color 300ms;
+          color: theme-color('danger')!important;
+        }
+        &:hover {
+          background-color: theme-color('danger');
+          border-color: theme-color('danger');
+          .las {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
+  .navbar.navbar-white {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        background-color: white;
+        margin-bottom: 0;
+        border-color: #323232!important;
+        span {
+          color: #323232!important;
+        }
+        .las {
+          color: theme-color('danger');
+        }
+        &:hover {
+          background-color: theme-color('danger');
+          border-color: theme-color('danger')!important;
+          .las {
+            color: white!important;
+            transition: color;
+          }
+          span {
+            color: white!important;
+          }
+        }
+      }
+    }
   }
 }
 body.theme-third {
@@ -719,7 +825,6 @@ body.theme-third {
     }
   }
   .navbar {
-
     .navbar-header .toggle-sidebar {
       background-color: theme-color('success')!important;
     }
@@ -748,6 +853,59 @@ body.theme-third {
       }
       span.see-more {
         color: theme-color('success')!important;
+      }
+    }
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        border-color: theme-color('success')!important;
+        background-color: transparent;
+        span {
+          color: white!important;
+        }
+        .las {
+          transition: color 300ms;
+          color: theme-color('success')!important;
+        }
+        &:hover {
+          background-color: theme-color('success');
+          border-color: theme-color('success');
+          .las {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
+  .navbar.navbar-white {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        background-color: white;
+        margin-bottom: 0;
+        border-color: #323232!important;
+        span {
+          color: #323232!important;
+        }
+        .las {
+          color: theme-color('danger');
+        }
+        &:hover {
+          background-color: theme-color('success');
+          border-color: theme-color('success')!important;
+          .las {
+            color: white!important;
+            transition: color;
+          }
+          span {
+            color: white!important;
+          }
+        }
       }
     }
   }
@@ -997,6 +1155,59 @@ body.theme-fourth {
         color: theme-color('info')!important;
       }
     }
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        border-color: theme-color('info')!important;
+        background-color: transparent;
+        span {
+          color: white!important;
+        }
+        .las {
+          transition: color 300ms;
+          color: theme-color('info')!important;
+        }
+        &:hover {
+          background-color: theme-color('info');
+          border-color: theme-color('info');
+          .las {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
+  .navbar.navbar-white {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        background-color: white;
+        margin-bottom: 0;
+        border-color: #323232!important;
+        span {
+          color: #323232!important;
+        }
+        .las {
+          color: theme-color('info');
+        }
+        &:hover {
+          background-color: theme-color('info');
+          border-color: theme-color('info')!important;
+          .las {
+            color: white!important;
+            transition: color;
+          }
+          span {
+            color: white!important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1156,6 +1367,24 @@ body.theme-dark.theme-first {
   .theme-helper-spinner {
     background: theme-color('warning');
   }
+  .navbar {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        span {
+          color: white!important;
+        }
+        &:hover {
+          .fa {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
 }
 body.theme-dark.theme-second {
   .sidebar {
@@ -1312,6 +1541,24 @@ body.theme-dark.theme-second {
 }
   .theme-helper-spinner {
     background-color: theme-color('danger');
+  }
+  .navbar {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        span {
+          color: white!important;
+        }
+        &:hover {
+          .fa {
+            color: white!important;
+          }
+        }
+      }
+    }
   }
 }
 body.theme-dark.theme-third {
@@ -1470,6 +1717,24 @@ body.theme-dark.theme-third {
   .theme-helper-spinner {
     background-color: theme-color('success');
   }
+  .navbar {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        span {
+          color: white!important;
+        }
+        &:hover {
+          .fa {
+            color: white!important;
+          }
+        }
+      }
+    }
+  }
 }
 body.theme-dark.theme-fourth {
   .sidebar {
@@ -1626,5 +1891,23 @@ body.theme-dark.theme-fourth {
   }
   .theme-helper-spinner {
     background-color: theme-color('info');
+  }
+  .navbar {
+    .unlock-button {
+      &:hover {
+        text-decoration: none;
+      }
+      button {
+        margin-bottom: 0;
+        span {
+          color: white!important;
+        }
+        &:hover {
+          .fa {
+            color: white!important;
+          }
+        }
+      }
+    }
   }
 }

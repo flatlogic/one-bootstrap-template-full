@@ -713,22 +713,7 @@ legend {
     z-index: 2;
     position: fixed!important;
   }
-  .unlock-button {
-    &:hover {
-      text-decoration: none;
-    }
-    button {
-      margin-bottom: 0;
-      span {
-        color: white!important;
-      }
-      &:hover {
-        .fa {
-          color: white!important;
-        }
-      }
-    }
-  }
+
 }
 
 .navbar-header > .navbar-nav{
