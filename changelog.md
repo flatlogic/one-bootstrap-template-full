@@ -1,4 +1,8 @@
 # Changelog
+## [1.0.2]
+UPD dependency
+fix package.json
+
 ## [1.0.1]
 
 - Fix collapse in sidebar
@@ -6,6 +10,7 @@
 - Fix links in theme helper
 - Fix search toggle in product grid
 - ...and several other errors
+
 ### Updated
 
 - Release Flatlogic One Bootstrap Full Template
