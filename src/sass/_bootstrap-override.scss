@@ -215,8 +215,7 @@ legend {
   }
 }
 .table-hover tbody tr:hover {
-
-  background-color: rgba(#323232, 0.1)!important;
+  background-color: #f7f7f7!important;
 }
 .table th, .table td {
 
@@ -1107,9 +1106,7 @@ legend {
 
 .custom-dropdown {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
-  button {
-    border-radius: 4px;
-  }
+  border-radius: 4px;
 }
 .dashboard-buttons {
   .dropdown-item {
