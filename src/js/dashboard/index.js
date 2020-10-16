@@ -594,9 +594,7 @@ $(function(){
                 }
             },
             dataLabels: {
-                dropShadow: {
-                    enabled: false
-                }
+                enabled: false
             },
             stroke: {
                 width: 0
