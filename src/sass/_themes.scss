@@ -230,7 +230,18 @@ body.theme-first {
     .navbar-header .toggle-sidebar {
       background-color: theme-color('warning');
     }
-    .navbar-header ul li{
+    .navbar-header ul li {
+      .badge {
+        line-height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(theme-color('warning'), 1);
+        font-weight: 400;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        background-color: rgba(theme-color('warning'), 0.2);
+        color: $body-main-color!important;
+      }
       .sidebar-icon {
         display: block;
         height: 20px;
@@ -269,6 +280,13 @@ body.theme-first {
           .las {
             color: white!important;
           }
+        }
+      }
+    }
+    .dropdown.nav-item {
+      li.presentation {
+        .badge.badge-warning {
+          color: $body-main-color!important;
         }
       }
     }
@@ -526,7 +544,15 @@ body.theme-second {
     }
     .navbar-header ul li {
       .badge {
-        background-color: theme-color('danger');
+        line-height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(theme-color('danger'), 1);
+        font-weight: 400;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        background-color: rgba(theme-color('danger'), 0.2);
+        color: $body-main-color!important;
       }
       .sidebar-icon {
         display: block;
@@ -830,7 +856,15 @@ body.theme-third {
     }
     .navbar-header ul li {
       .badge {
-        background-color: theme-color('success');
+        line-height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(theme-color('success'), 1);
+        font-weight: 400;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        background-color: rgba(theme-color('success'), 0.2);
+        color: $body-main-color!important;
       }
       .sidebar-icon {
         display: block;
@@ -1131,7 +1165,18 @@ body.theme-fourth {
     .navbar-header .toggle-sidebar {
       background-color: theme-color('info')!important;
     }
-    .navbar-header ul li{
+    .navbar-header ul li {
+      .badge {
+        line-height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(theme-color('info'), 1);
+        font-weight: 400;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        background-color: rgba(theme-color('info'), 0.2);
+        color: $body-main-color!important;
+      }
       .sidebar-icon {
         display: block;
         height: 20px;
@@ -1375,7 +1420,7 @@ body.theme-dark.theme-first {
       button {
         margin-bottom: 0;
         span {
-          color: white!important;
+
         }
         &:hover {
           .fa {
