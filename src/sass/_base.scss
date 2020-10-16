@@ -1795,9 +1795,20 @@ input[type=search], input.search {
   }
 
   .product-elements {
-    .widget table td {
-      padding: 0;
+    .widget table {
+      .btn-toolbar {
+        align-items: center;
+        .edit-btn, .del-btn {
+          width: 80%;
+          border-radius: 4px;
+        }
+      }
+      td {
+        padding: 0;
+      }
     }
+
+
 
     .form-control:focus {
       border: 1px solid #c1ccd3;
@@ -1938,13 +1949,16 @@ input[type=search], input.search {
     .badge {
       position: absolute;
       left: 0;
-      top: .94rem;
+      top: 10px;
       border-radius: 0;
       padding: ($spacer / 2) $spacer;
       transform: rotate(270deg);
       font-size: $font-size-base;
       font-weight: $font-weight-thin;
       color: white;
+      &.bg-black {
+        top: 12px;
+      }
     }
   }
 
@@ -1977,11 +1991,11 @@ input[type=search], input.search {
     }
   }
 }
+
 .info {
   margin-top: $spacer;
   font-size: $font-size-sm;
 }
-
 
 /***********************/
 /*     Product page    */
