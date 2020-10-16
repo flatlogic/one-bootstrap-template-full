@@ -15,7 +15,11 @@ body.theme-first {
       }
     }
     .badge {
+      padding: 2px;
       color: $body-main-color!important;
+      &:hover {
+        background-color: rgba(theme-color('warning'), 0.1);
+      }
     }
     li.open > a > .toggle {
       color: theme-color('warning')!important;
@@ -232,6 +236,7 @@ body.theme-first {
     }
     .navbar-header ul li {
       .badge {
+        padding: 2px;
         line-height: 15px;
         border-radius: 50%;
         border: 1px solid rgba(theme-color('warning'), 1);
@@ -336,6 +341,7 @@ body.theme-second {
     }
 
     .badge {
+      padding: 2px;
       background-color: rgba(theme-color('danger'), 0.2);
       border-color: rgba(theme-color('danger'), 1);
       color: $body-main-color!important;
@@ -544,6 +550,7 @@ body.theme-second {
     }
     .navbar-header ul li {
       .badge {
+        padding: 2px;
         line-height: 15px;
         border-radius: 50%;
         border: 1px solid rgba(theme-color('danger'), 1);
@@ -647,6 +654,7 @@ body.theme-third {
     }
 
     .badge {
+      padding: 2px;
       background-color: rgba(theme-color('success'), 0.2);
       border-color: rgba(theme-color('success'), 1);
       color: $body-main-color!important;
@@ -856,6 +864,7 @@ body.theme-third {
     }
     .navbar-header ul li {
       .badge {
+        padding: 2px;
         line-height: 15px;
         border-radius: 50%;
         border: 1px solid rgba(theme-color('success'), 1);
@@ -959,6 +968,7 @@ body.theme-fourth {
     }
 
     .badge {
+      padding: 2px;
       background-color: rgba(theme-color('info'), 0.2);
       border-color: rgba(theme-color('info'), 1);
       color: $body-main-color!important;
@@ -1167,6 +1177,7 @@ body.theme-fourth {
     }
     .navbar-header ul li {
       .badge {
+        padding: 2px;
         line-height: 15px;
         border-radius: 50%;
         border: 1px solid rgba(theme-color('info'), 1);
