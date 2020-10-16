@@ -1,402 +1,402 @@
 {{#extend "layout" title="Flatlogic One Bootstrap - Grid"}}
-    {{#content "sidebar"}}
-        {{> sidebar active="core_grid"}}
-    {{/content}}
-    {{#content "content" mode="replace"}}
-      <h1 class="page-title">Template > Core > <span class="fw-semi-bold">Grid</span></h1>
-      <p class="lead mt-n4">Grid systems are used for creating page layouts through a series of rows and columns that house your content.</p>
-        <div class="row">
-            <div class="col-lg-6">
-                <section class="widget">
-                    <header>
-                        <h5>How it works</h5>
-                        <div class="widget-controls">
-                            <div class="dropdown">
-                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                    <img src="../img/icons/dots.svg" alt="dropdown">
-                                </span>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                        <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
-                                    </button>
-                                    <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
-                                    <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <p class="fs-mini ">
-                            Bootstrap’s grid system uses a series of containers, rows, and columns to layout
-                            and align content. It’s built with flexbox and is fully responsive. Below is an
-                            example and an in-depth look at how the grid comes together.
-                        </p>
-                        <div class="bg-light p-3">
-                            <div class="row mb-lg">
-                                <div class="col-sm">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        One of three columns
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        One of three columns
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        One of three columns
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="bg-light text-info border-0">
+  {{#content "sidebar"}}
+      {{> sidebar active="core_grid"}}
+  {{/content}}
+  {{#content "content" mode="replace"}}
+    <h1 class="page-title">Template > Core > <span class="fw-semi-bold">Grid</span></h1>
+    <p class="lead mt-n4">Grid systems are used for creating page layouts through a series of rows and columns that house your content.</p>
+    <div class="row grid-page">
+      <div class="col-lg-6">
+          <section class="widget">
+              <header>
+                  <h5>How it works</h5>
+                  <div class="widget-controls">
+                      <div class="dropdown">
+                          <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                              <img src="../img/icons/dots.svg" alt="dropdown">
+                          </span>
+                          <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                              <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                  <span class="badge badge-pill badge-success animated bounceIn">
+                                      <strong>9</strong>
+                                  </span>
+                              </button>
+                              <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                              <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
+                              <div tabindex="-1" class="dropdown-divider"></div>
+                              <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <div class="widget-body">
+                  <p class="fs-mini ">
+                      Bootstrap’s grid system uses a series of containers, rows, and columns to layout
+                      and align content. It’s built with flexbox and is fully responsive. Below is an
+                      example and an in-depth look at how the grid comes together.
+                  </p>
+                  <div class="bg-light p-3">
+                      <div class="row mb-lg">
+                          <div class="col-sm my-3 my-sm-0">
+                              <div class="py-4 grid-block text-center text-white">
+                                  One of three columns
+                              </div>
+                          </div>
+                          <div class="col-sm my-3 my-sm-0">
+                              <div class="py-4 grid-block text-center text-white">
+                                  One of three columns
+                              </div>
+                          </div>
+                          <div class="col-sm my-3 my-sm-0">
+                              <div class="py-4 grid-block text-center text-white">
+                                  One of three columns
+                              </div>
+                          </div>
+                      </div>
+                      <pre class="bg-light text-info border-0">
 &lt;div <span class="text-primary">class=</span><span class="text-danger">"container"</span>&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
-            <span class="text-dark">One of three columns</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
-            <span class="text-dark">One of three columns</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
-            <span class="text-dark">One of three columns</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
+      <span class="text-dark">One of three columns</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
+      <span class="text-dark">One of three columns</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-sm"</span>&gt;
+      <span class="text-dark">One of three columns</span>
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</pre>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="col-lg-6">
-                <section class="widget">
-                    <header>
-                        <h5>Equal width</h5>
-                        <div class="widget-controls">
-                            <div class="dropdown">
-                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                    <img src="../img/icons/dots.svg" alt="dropdown">
-                                </span>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                        <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
-                                    </button>
-                                    <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
-                                    <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <p class="fs-mini ">
-                                For example, here are two grid layouts that apply to every device and viewport,
-                                from xs to xl. Add any number of unit-less classes for each breakpoint you
-                                need and every column will be the same width.
-                        </p>
-                        <div class="bg-light p-3">
-                            <div class="row mb-lg">
-                                <div class="col">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                       1 of 2
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                       2 of 2
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="bg-light text-info border-0">
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div class="col-lg-6">
+          <section class="widget">
+              <header>
+                  <h5>Equal width</h5>
+                  <div class="widget-controls">
+                      <div class="dropdown">
+                          <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                              <img src="../img/icons/dots.svg" alt="dropdown">
+                          </span>
+                          <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                              <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                  <span class="badge badge-pill badge-success animated bounceIn">
+                                      <strong>9</strong>
+                                  </span>
+                              </button>
+                              <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                              <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
+                              <div tabindex="-1" class="dropdown-divider"></div>
+                              <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <div class="widget-body">
+                  <p class="fs-mini ">
+                          For example, here are two grid layouts that apply to every device and viewport,
+                          from xs to xl. Add any number of unit-less classes for each breakpoint you
+                          need and every column will be the same width.
+                  </p>
+                  <div class="bg-light p-3">
+                      <div class="row mb-lg">
+                          <div class="col">
+                              <div class="py-4 grid-block text-center text-white">
+                                 1 of 2
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="py-4 grid-block text-center text-white">
+                                 2 of 2
+                              </div>
+                          </div>
+                      </div>
+                      <pre class="bg-light text-info border-0">
 &lt;div <span class="text-primary">class=</span><span class="text-danger">"container"</span>&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col"</span>&gt;
-            <span class="text-dark">1 of 2</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col"</span>&gt;
-            <span class="text-dark">2 of 2</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col"</span>&gt;
+      <span class="text-dark">1 of 2</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col"</span>&gt;
+      <span class="text-dark">2 of 2</span>
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</pre>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="col-12">
-                <section class="widget">
-                    <header>
-                        <h5>Grid options</h5>
-                        <div class="widget-controls">
-                            <div class="dropdown">
-                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                    <img src="../img/icons/dots.svg" alt="dropdown">
-                                </span>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                        <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
-                                    </button>
-                                    <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
-                                    <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div class="col-12">
+          <section class="widget">
+              <header>
+                  <h5>Grid options</h5>
+                  <div class="widget-controls">
+                      <div class="dropdown">
+                          <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                              <img src="../img/icons/dots.svg" alt="dropdown">
+                          </span>
+                          <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                              <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                  <span class="badge badge-pill badge-success animated bounceIn">
+                                      <strong>9</strong>
+                                  </span>
+                              </button>
+                              <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                              <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
 
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <p class="fs-mini ">
-                            While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, pxs are used for
-                            grid breakpoints and container widths. This is because the viewport width is
-                            in pixels and does not change with the font size.
-                        </p>
-                        <p class="fs-mini ">
-                            See how aspects of the Bootstrap grid system work across
-                            multiple devices with a handy table.
-                        </p>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th class="text-center">
-                                        Extra small<br>
-                                        <small>&lt;576px</small>
-                                    </th>
-                                    <th class="text-center">
-                                        Small<br>
-                                        <small>≥576px</small>
-                                    </th>
-                                    <th class="text-center">
-                                        Medium<br>
-                                        <small>≥768px</small>
-                                    </th>
-                                    <th class="text-center">
-                                        Large<br>
-                                        <small>≥992px</small>
-                                    </th>
-                                    <th class="text-center">
-                                        Extra large<br>
-                                        <small>≥1200px</small>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="text-nowrap" scope="row">Max container width</th>
-                                    <td>None (auto)</td>
-                                    <td>540px</td>
-                                    <td>720px</td>
-                                    <td>960px</td>
-                                    <td>1140px</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap" scope="row">Class prefix</th>
-                                    <td><code>.col-</code></td>
-                                    <td><code>.col-sm-</code></td>
-                                    <td><code>.col-md-</code></td>
-                                    <td><code>.col-lg-</code></td>
-                                    <td><code>.col-xl-</code></td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap" scope="row"># of columns</th>
-                                    <td colspan="5">12</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap" scope="row">Gutter width</th>
-                                    <td colspan="5">30px (15px on each side of a column)</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap" scope="row">Nestable</th>
-                                    <td colspan="5">Yes</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap" scope="row">Column ordering</th>
-                                    <td colspan="5">Yes</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </div>
-            <div class="col-lg-6">
-                <section class="widget">
-                    <header>
-                        <h5>Vertical Alignment</h5>
-                        <div class="widget-controls">
-                            <div class="dropdown">
-                                <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                    <img src="../img/icons/dots.svg" alt="dropdown">
-                                </span>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                        <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
-                                    </button>
-                                    <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
-                                    <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
+                              <div tabindex="-1" class="dropdown-divider"></div>
+                              <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <div class="widget-body overflow-auto">
+                  <p class="fs-mini ">
+                      While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, pxs are used for
+                      grid breakpoints and container widths. This is because the viewport width is
+                      in pixels and does not change with the font size.
+                  </p>
+                  <p class="fs-mini ">
+                      See how aspects of the Bootstrap grid system work across
+                      multiple devices with a handy table.
+                  </p>
+                  <table class="table table-striped table-responsive d-table ">
+                      <thead>
+                          <tr>
+                              <th></th>
+                              <th class="text-center">
+                                  Extra small<br>
+                                  <small>&lt;576px</small>
+                              </th>
+                              <th class="text-center">
+                                  Small<br>
+                                  <small>≥576px</small>
+                              </th>
+                              <th class="text-center">
+                                  Medium<br>
+                                  <small>≥768px</small>
+                              </th>
+                              <th class="text-center">
+                                  Large<br>
+                                  <small>≥992px</small>
+                              </th>
+                              <th class="text-center">
+                                  Extra large<br>
+                                  <small>≥1200px</small>
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th class="text-nowrap" scope="row">Max container width</th>
+                              <td>None (auto)</td>
+                              <td>540px</td>
+                              <td>720px</td>
+                              <td>960px</td>
+                              <td>1140px</td>
+                          </tr>
+                          <tr>
+                              <th class="text-nowrap" scope="row">Class prefix</th>
+                              <td><code>.col-</code></td>
+                              <td><code>.col-sm-</code></td>
+                              <td><code>.col-md-</code></td>
+                              <td><code>.col-lg-</code></td>
+                              <td><code>.col-xl-</code></td>
+                          </tr>
+                          <tr>
+                              <th class="text-nowrap" scope="row"># of columns</th>
+                              <td colspan="5">12</td>
+                          </tr>
+                          <tr>
+                              <th class="text-nowrap" scope="row">Gutter width</th>
+                              <td colspan="5">30px (15px on each side of a column)</td>
+                          </tr>
+                          <tr>
+                              <th class="text-nowrap" scope="row">Nestable</th>
+                              <td colspan="5">Yes</td>
+                          </tr>
+                          <tr>
+                              <th class="text-nowrap" scope="row">Column ordering</th>
+                              <td colspan="5">Yes</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </section>
+      </div>
+      <div class="col-lg-6">
+          <section class="widget">
+              <header>
+                  <h5>Vertical Alignment</h5>
+                  <div class="widget-controls">
+                      <div class="dropdown">
+                          <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                              <img src="../img/icons/dots.svg" alt="dropdown">
+                          </span>
+                          <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                              <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                  <span class="badge badge-pill badge-success animated bounceIn">
+                                      <strong>9</strong>
+                                  </span>
+                              </button>
+                              <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                              <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
 
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <p class="fs-mini ">
-                            Use flexbox alignment utilities to vertically and horizontally align columns.
-                        </p>
-                        <div class="bg-light p-3">
-                            <div class="row mb-lg" style="height: 150px">
-                                <div class="col align-self-start">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        Start
-                                    </div>
-                                </div>
-                                <div class="col align-self-center">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        Center
-                                    </div>
-                                </div>
-                                <div class="col align-self-end">
-                                    <div class="py-4 bg-warning text-center text-white">
-                                        End
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="bg-light text-info border-0">
+                              <div tabindex="-1" class="dropdown-divider"></div>
+                              <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <div class="widget-body">
+                  <p class="fs-mini ">
+                      Use flexbox alignment utilities to vertically and horizontally align columns.
+                  </p>
+                  <div class="bg-light p-3">
+                      <div class="row mb-lg" style="height: 150px">
+                          <div class="col align-self-start">
+                              <div class="py-4 grid-block text-center text-white">
+                                  Start
+                              </div>
+                          </div>
+                          <div class="col align-self-center">
+                              <div class="py-4 grid-block text-center text-white">
+                                  Center
+                              </div>
+                          </div>
+                          <div class="col align-self-end">
+                              <div class="py-4 grid-block text-center text-white">
+                                  End
+                              </div>
+                          </div>
+                      </div>
+                      <pre class="bg-light text-info border-0">
 &lt;div <span class="text-primary">class=</span><span class="text-danger">"container"</span>&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-start"</span>&gt;
-            <span class="text-dark">Start</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-center"</span>&gt;
-            <span class="text-dark">Center</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-end"</span>&gt;
-            <span class="text-dark">End</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div <span class="text-primary">class=</span><span class="text-success">"row"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-start"</span>&gt;
+      <span class="text-dark">Start</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-center"</span>&gt;
+      <span class="text-dark">Center</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col align-self-end"</span>&gt;
+      <span class="text-dark">End</span>
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</pre>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="col-lg-6">
-                    <section class="widget">
-                        <header>
-                            <h5>Horizontal Alignment</h5>
-                            <div class="widget-controls">
-                                <div class="dropdown">
-                                    <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                        <img src="../img/icons/dots.svg" alt="dropdown">
-                                    </span>
-                                    <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
-                                        <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
-                                            <span class="badge badge-pill badge-success animated bounceIn">
-                                            <strong>9</strong>
-                                        </span>
-                                        </button>
-                                        <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
-                                        <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div class="col-lg-6">
+          <section class="widget">
+            <header>
+            <h5>Horizontal Alignment</h5>
+            <div class="widget-controls">
+              <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="../img/icons/dots.svg" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                  <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                    <span class="badge badge-pill badge-success animated bounceIn">
+                                <strong>9</strong>
+                            </span>
+                  </button>
+                  <button type="button" title="Expand" data-widgster="expand" tabindex="0" role="menuitem" class="dropdown-item">Expand</button>
+                  <button type="button" title="Collapse" data-widgster="collapse" tabindex="0" role="menuitem" class="dropdown-item">Collapse</button>
 
-                                        <div tabindex="-1" class="dropdown-divider"></div>
-                                        <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </header>
-                        <div class="widget-body">
-                            <p class="fs-mini ">
-                                Use flexbox alignment utilities to vertically and horizontally align columns.
-                            </p>
-                            <div class="bg-light p-3">
-                                <div class="row mb-lg justify-content-end">
-                                    <div class="col-2 ">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            2
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-lg justify-content-around">
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            2
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-lg justify-content-between">
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            2
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="py-4 bg-warning text-center text-white">
-                                            3
-                                        </div>
-                                    </div>
-                                </div>
-                                <pre class="bg-light text-info border-0">
-&lt;div <span class="text-primary">class=</span><span class="text-danger">"container"</span>&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-end"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">1</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">2</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-around"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">1</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">2</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-between"</span>&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">1</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">2</span>
-        &lt;/div&gt;
-        &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
-            <span class="text-dark">3</span>
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                        </div>
-                    </div>
-                </section>
+                  <div tabindex="-1" class="dropdown-divider"></div>
+                  <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+              </div>
             </div>
-        </div>
-    {{/content}}
-    {{#content "scripts"}}
-      <script src="../js/core/core-grid.js"></script>
-    {{/content}}
+          </header>
+            <div class="widget-body">
+              <p class="fs-mini ">
+                Use flexbox alignment utilities to vertically and horizontally align columns.
+              </p>
+              <div class="bg-light p-3">
+                <div class="row mb-lg justify-content-end">
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      1
+                    </div>
+                  </div>
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      2
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-lg justify-content-around">
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      1
+                    </div>
+                  </div>
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      2
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-lg justify-content-between">
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      1
+                    </div>
+                  </div>
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      2
+                    </div>
+                  </div>
+                  <div class="col-2 col-lg-4">
+                    <div class="py-4 grid-block text-center text-white">
+                      3
+                    </div>
+                  </div>
+                </div>
+                <pre class="bg-light text-info border-0">
+  &lt;div <span class="text-primary">class=</span><span class="text-danger">"container"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-end"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">1</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">2</span>
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-around"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">1</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">2</span>
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-success">"row justify-content-between"</span>&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">1</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">2</span>
+  &lt;/div&gt;
+  &lt;div <span class="text-primary">class=</span><span class="text-info">"col-2"</span>&gt;
+  <span class="text-dark">3</span>
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;</pre>
+              </div>
+            </div>
+          </section>
+      </div>
+    </div>
+  {{/content}}
+  {{#content "scripts"}}
+    <script src="../js/core/core-grid.js"></script>
+  {{/content}}
 {{/extend}}

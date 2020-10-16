@@ -229,6 +229,9 @@ body.theme-first {
         border-top: 3px solid theme-color('warning');
       }
     }
+    .grid-page .grid-block {
+      background-color: theme-color('warning');
+    }
   }
   .navbar {
     .navbar-header .toggle-sidebar {
@@ -542,7 +545,9 @@ body.theme-second {
         border-top: 3px solid theme-color('danger');
       }
     }
-
+    .grid-page .grid-block {
+      background-color: theme-color('danger');
+    }
   }
   .navbar {
     .navbar-header .toggle-sidebar {
@@ -857,6 +862,9 @@ body.theme-third {
         border-top: 3px solid theme-color('success');
       }
     }
+    .grid-page .grid-block {
+      background-color: theme-color('success');
+    }
   }
   .navbar {
     .navbar-header .toggle-sidebar {
@@ -1166,6 +1174,9 @@ body.theme-fourth {
       .pie-elements.warning {
         border-top: 3px solid theme-color('info');
       }
+    }
+    .grid-page .grid-block {
+      background-color: theme-color('info');
     }
   }
   .navbar {
