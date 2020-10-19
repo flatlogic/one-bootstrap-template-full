@@ -30,10 +30,10 @@ $(function() {
                 xkey: 'y',
                 ykeys: ['a', 'b'],
                 labels: ['Users A', 'Series B'],
-                fillOpacity: 1.0,
+                fillOpacity: 1,
                 lineColors: [
                     Sing.colors['brand-info'],
-                    Sing.colors['brand-warning']
+                    '#ffa825'
                 ],
                 lineWidth: 0
             });

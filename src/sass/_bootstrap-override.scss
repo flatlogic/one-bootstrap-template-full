@@ -1876,7 +1876,7 @@ code {
   text-shadow: none;
   font-weight: 600;
   font-size: 14px;
-
+  color: white;
 
   &.bg-default {
     color: $default;
@@ -1924,6 +1924,7 @@ span.badge.badge-default {
 }
 
 a.badge.badge-light, .badge-light {
+  color: $body-main-color;
   background-color: $gray-200;
   &:hover, &:active {
     background-color: $gray-300;

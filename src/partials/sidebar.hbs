@@ -191,7 +191,7 @@
                 <ul id="sidebar-extra" class="collapse {{#activeClass active "calendar invoice login gallery search time_line"}} show {{/activeClass}}">
                     <li class="{{#activeClass active "calendar"}} active {{/activeClass}}"><a href="../extra/calendar.html" data-no-pjax >Calendar</a></li>
                     <li class="{{#activeClass active "invoice"}} active {{/activeClass}}"><a href="../extra/invoice.html">Invoice</a></li>
-                    <li class="{{#activeClass active "login"}} active {{/activeClass}}"><a href="../extra/login.html" target="_blank">Login Page</a></li>
+                    <li class="{{#activeClass active "login"}} active {{/activeClass}}"><a href="../extra/login.html" data-no-pjax>Login Page</a></li>
                     <li class="{{#activeClass active "gallery"}} active {{/activeClass}}"><a href="../extra/gallery.html">Gallery</a></li>
                     <li class="{{#activeClass active "search"}} active {{/activeClass}}"><a href="../extra/search.html">Search Results</a></li>
                     <li class="{{#activeClass active "time_line"}} active {{/activeClass}}"><a href="../extra/time_line.html">Time Line</a></li>
@@ -204,17 +204,16 @@
                 <a href="#">
                     <i class="sidebar-icon settings-icon"></i>
                     <span class="icon-text">Settings</span>
-
                 </a>
             </li>
             <li class="{{#activeClass active "account"}} active {{/activeClass}}">
-                <a href="#">
+                <a href="../other/profile.html">
                     <i class="sidebar-icon account-icon"></i>
                     <span class="icon-text">Account</span>
                 </a>
             </li>
             <li class="{{#activeClass active "logout"}} active {{/activeClass}}">
-                <a href="../extra/login.html" target="_blank">
+                <a href="../extra/login.html" data-no-pjax>
                     <i class="sidebar-icon logout-icon"></i>
                     <span class="icon-text">Logout</span>
                 </a>
