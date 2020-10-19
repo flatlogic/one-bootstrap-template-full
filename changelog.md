@@ -1,5 +1,16 @@
 # Changelog
+
+## [1.0.3]
+
+### Updated
+UPD dependency
+Fix adaptive problems
+Fix design problems
+And a lot of small and not significant mistakes :)
+
 ## [1.0.2]
+
+### Updated
 UPD dependency
 fix package.json
 

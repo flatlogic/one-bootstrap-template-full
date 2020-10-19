@@ -1,6 +1,6 @@
 {
   "name": "One",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Flatlogic One - Bootstrap 4.5 Admin Dashboard",
   "scripts": {
     "build": "gulp build",
