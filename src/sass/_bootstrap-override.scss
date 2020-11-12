@@ -280,7 +280,7 @@ legend {
     font-size: 85%;
 
     .dropup & {
-      content: "\F113";
+      content: "\F107";
       border: none;
       vertical-align: baseline;
     }
@@ -1107,6 +1107,10 @@ legend {
 .custom-dropdown {
   box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
   border-radius: 4px;
+  &::after {
+
+    margin-left: 20px;
+  }
 }
 .dashboard-buttons {
   .dropdown-item {
@@ -1871,12 +1875,11 @@ code {
 // --------------------------------------------------
 .badge {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 4px 8px;
   line-height: 19px; // ensure proper line-height if floated
   text-shadow: none;
   font-weight: 600;
   font-size: 14px;
-
 
   &.bg-default {
     color: $default;
@@ -1932,6 +1935,10 @@ a.badge.badge-light, .badge-light {
 
 .badge-pill {
   padding: 4px 12px;
+}
+
+.badge-page .badge {
+  vertical-align: text-top;
 }
 
 //

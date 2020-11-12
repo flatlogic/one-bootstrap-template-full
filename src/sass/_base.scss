@@ -23,7 +23,7 @@
     left: -$sidebar-width;
   }
   hr {
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255,.5);
     width: 85%;
   }
 }
@@ -1503,8 +1503,13 @@ code {
 
 #widget-email-header {
   .btn-group {
-    .dropdown-toggle:after {
-      content: none;
+    .dropdown-toggle {
+      &::after {
+        content: none;
+      }
+      i.fa {
+        margin-left: 1.4rem;
+      }
     }
   }
 }
