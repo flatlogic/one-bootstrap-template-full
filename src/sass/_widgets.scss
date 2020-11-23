@@ -386,7 +386,11 @@
   }
 }
 
-.widget-login-container{
+.widget-login-container {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
   @include media-breakpoint-up(sm) {
     user-select: auto !important;
   }

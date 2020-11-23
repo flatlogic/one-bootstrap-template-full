@@ -1,5 +1,9 @@
 # Changelog
 
+##[1.0.5]
+### Updated
+- Update footer on login page
+
 ##[1.0.3]
 ###Fixed
 - Navbar fix "buy now" button on different themes;
