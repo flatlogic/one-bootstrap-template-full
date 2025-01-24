@@ -38,8 +38,6 @@ Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web
    yarn build
    ```
 
-> **Pro Tip:** If something breaks, it's probably your fault. 😜
-
 ---
 
 ## 🧩 Features
