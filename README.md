@@ -4,7 +4,7 @@
 
 **Originally a premium product priced at $69+, made available for free in January 2025!** 🎉 
 
-Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web App Generator](https://flatlogic.com/generator) - our new tool, sort of template++.
+Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web App Generator](https://flatlogic.com/generator) - our new tool, sort of a template++.
 
 ---
 
