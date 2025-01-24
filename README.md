@@ -2,6 +2,8 @@
 
 [View Demo](https://flatlogic.com/templates/one-bootstrap-template/demo) | [Download](https://github.com/flatlogic/one-bootstrap-template-full/archive/refs/heads/master.zip) | [More Templates](https://flatlogic.com/templates) | [Discord Community](https://discord.gg/flatlogic-community) | [Support Forum](https://flatlogic.com/forum)
 
+[![image](https://images2.imgbox.com/f9/8d/YBqtjrXz_o.jpg)](https://templates-flatlogic.herokuapp.com/flatlogic-one/html5/dashboard/)
+
 **Originally a premium product priced at $69+, made available for free in January 2025!** 🎉 
 
 Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web App Generator](https://flatlogic.com/generator) - our new tool, sort of a template++.
