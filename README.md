@@ -1,115 +1,42 @@
-# 🤘 Flatlogic One Bootstrap Full - A Free Admin Bootstrap Template!
+# Flatlogic One Bootstrap
 
-[View Demo](https://flatlogic.com/templates/one-bootstrap-template/demo) | [Download](https://github.com/flatlogic/one-bootstrap-template-full/archive/refs/heads/master.zip) | [More Templates](https://flatlogic.com/templates) | [Discord Community](https://discord.gg/flatlogic-community) | [Support Forum](https://flatlogic.com/forum)
+An HTML admin dashboard built with Bootstrap 4.6. Pick from 60 pages, including analytics, visits, product management and forms. The pages use Handlebars layouts and Sass, and run on a static web server.
 
-[![image](https://images2.imgbox.com/f9/8d/YBqtjrXz_o.jpg)](https://templates-flatlogic.herokuapp.com/flatlogic-one/html5/dashboard/)
+[Live demo](https://templates.flatlogic.com/flatlogic-one/html5/dashboard/) · [Download the latest release](https://github.com/flatlogic/one-bootstrap-template-full/releases/latest) · [Changelog](changelog.md) · [MIT license](LICENSE)
 
-**Originally a premium product priced at $69+, made available for free in January 2025!** 🎉 
+[![Flatlogic One Bootstrap analytics dashboard](docs/dashboard.jpg)](https://templates.flatlogic.com/flatlogic-one/html5/dashboard/)
 
-Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web App Generator](https://flatlogic.com/generator) - our new tool, sort of a template++.
+## Run the template
 
----
+Use Node.js 22.13 or later, Git and Yarn Classic 1.22.22. The example uses Python's static web server for local development.
 
-## 🎯 Why Flatlogic One Bootstrap?
-- **Ex-Premium**: This template was previously paid. Enjoy it for free now. 😉
-- **Tons of components**: Hundreds of ready-to-use UI elements, charts, and more.
-- **Join the Community**: [Flatlogic Discord](https://discord.gg/flatlogic-community) is where the action happens.
-- **Free Node.js Backend**: Pair it up with [this backend](https://github.com/flatlogic/nodejs-backend) to go full-stack.
+```sh
+git clone https://github.com/flatlogic/one-bootstrap-template-full.git
+cd one-bootstrap-template-full
+npx --yes yarn@1.22.22 install --frozen-lockfile
+npm run build
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
----
+Open [the local dashboard](http://127.0.0.1:8000/dist/dashboard/index.html). Start the server from the repository root so it can serve the browser libraries next to `dist/`. Run `npm run watch` in a second terminal while editing templates or Sass.
 
-## 🚀 Quick Start
+## Find an example
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/flatlogic/one-bootstrap-template-full.git
-   cd one-bootstrap-template-full
-   ```
-2. **Install dependencies**  
-   ```bash
-   yarn install  # Or npm install
-   ```
-3. **Run the app**  
-   ```bash
-   yarn start
-   ```
-   Navigate to http://localhost:3000/.
+| Example | Template |
+| --- | --- |
+| Analytics dashboard | [dashboard/index.hbs](src/pages/dashboard/index.hbs) |
+| Forms and Markdown editor | [form/form_elements.hbs](src/pages/form/form_elements.hbs) |
+| Client-side validation | [form/form_validation.hbs](src/pages/form/form_validation.hbs) |
+| Searchable tables | [tables/tables_dynamic.hbs](src/pages/tables/tables_dynamic.hbs) |
+| Interactive charts | [charts/charts.hbs](src/pages/charts/charts.hbs) |
+| Calendar events | [extra/calendar.hbs](src/pages/extra/calendar.hbs) |
 
-4. **Build for production**  
-   ```bash
-   yarn build
-   ```
+The shared layout and navigation live in [src/partials](src/partials). Edit styles in [src/sass](src/sass) and page behavior in [src/js](src/js). Gulp writes the compiled pages and assets to `dist/`.
 
----
+## Host the prebuilt demo
 
-## 🧩 Features
+Download `flatlogic-one-static.tar.gz` from the release and extract it into a static website directory. Keep `html5/` and `node_modules/` alongside each other. Open `html5/dashboard/` on the web server. The archive includes the browser assets used by the template.
 
-- Static Sidebar
-- Beautiful charts (Amcharts, Echarts, Apexcharts)
-- Fully Responsive
-- Bootstrap 4.5+ & SCSS
-- Login and Logout screens
-- Notifications & Icons
-- Google Maps Integration
-- Flatlogic Datatables
-- Flatlogic Icons & Typography
+## Support
 
----
-
-## 🛠 Built With
-- Bootstrap 4.5
-- HTML5
-- JavaScript (ES6)
-- SASS
-- Webpack
-
----
-
-## 📦 Components
-- UI Elements (Badge, Card, Carousel, Jumbotron, etc.)
-- Charts (Flot, Morris, Rickshaw, Sparkline, Easy Pie Charts)
-- Buttons (Outline, Rounded, Block, Icons)
-- Forms (Validation, Wizard, Elements)
-- Dashboards (Analytics, Visits)
-- Maps (Google, Vector)
-- Pages (Profile, E-commerce, Calendar, Chat, Error)
-
----
-
-## 🌍 Available Variants
-
-|               | **Material**                                              | **Transparent**                                         | **Classic**                                          | **Sofia**                                          | **Flatlogic**                                      |
-|---------------|-----------------------------------------------------------|---------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
-| **React**     | [React Material Admin](https://github.com/flatlogic/react-material-admin-full) | [Light Blue React](https://github.com/flatlogic/light-blue-react) | [Sing App React](https://github.com/flatlogic/sing-app-react) | [Sofia React](https://github.com/flatlogic/sofia-react) | [One React](https://github.com/flatlogic/one-react) |
-| **Angular**   | [Angular Material Admin](https://github.com/flatlogic/angular-material-admin-full) | [Light Blue Angular](https://github.com/flatlogic/light-blue-angular) | [Sing App Angular](https://github.com/flatlogic/sing-app-angular) | - | - |
-| **Vue**       | [Material Vue](https://github.com/flatlogic/material-vue-full) | [Light Blue Vue](https://github.com/flatlogic/light-blue-vue) | [Sing App Vue](https://github.com/flatlogic/sing-app-vue) | - | - |
-| **Bootstrap** | - | [Light Blue HTML5](https://github.com/flatlogic/light-blue-html5) | [Sing App HTML5](https://github.com/flatlogic/sing-app-html5) | - | [One Bootstrap](https://github.com/flatlogic/one-bootstrap-template-full) |
-
-Additionally, these templates are tailored for specific business needs:
-
-- [E-Commerce Frontend (React)](https://github.com/flatlogic/ecommerce-frontend) - A complete e-commerce solution.
-- [Bookkeeper UI (React)](https://github.com/flatlogic/bookkeeper-ui) - Accounting dashboard for finance management.
-- [User Management Template (React)](https://github.com/flatlogic/user-management-template) - User authentication and management.
-  
----
-
-## 👨‍💻 How to Contribute
-- **Star this repo ⭐** - show some love.
-- **Report bugs** - but be nice.
-- **Join the [Discord](<insert-discord-invite-link>)** - meet fellow devs.
-
----
-
-## 🔥 About Flatlogic
-[Flatlogic AI Software Engineer](https://flatlogic.com/ai-software-development-agent) builds modern business software so you don't have to. Our AI Software Development Agent helps you generate, deploy, and maintain enterprise applications with minimal effort.
-
----
-
-## 📜 License
-This template is free to use. Modify it, break it, make it your own. Just don’t try to sell it back to us. 😎
-
----
-
-> **Questions or feedback?**  
-> Join our [Flatlogic Community Discord](https://discord.gg/flatlogic-community) or visit our [support forum](https://flatlogic.com/forum). We might even reply!
-
+Use [GitHub Issues](https://github.com/flatlogic/one-bootstrap-template-full/issues) for bug reports. Include the affected page, browser version and steps to reproduce.

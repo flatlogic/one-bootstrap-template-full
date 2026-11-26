@@ -56,8 +56,8 @@ $(function(){
             /**
              * Initialize pjax & attaching all related events
              */
-            this.$sidebar.find('.sidebar-nav a:not([data-toggle=collapse], [data-no-pjax], [href=#])').on('click', $.proxy(this._checkLoading, this));
-            $(document).pjax('#sidebar .sidebar-nav a:not([data-toggle=collapse], [data-no-pjax], [href=#], .no-pjax)', '#content', {
+            this.$sidebar.find('.sidebar-nav a:not([data-toggle=collapse], [data-no-pjax], [href="#"])').on('click', $.proxy(this._checkLoading, this));
+            $(document).pjax('#sidebar .sidebar-nav a:not([data-toggle=collapse], [data-no-pjax], [href="#"], .no-pjax)', '#content', {
                 fragment: '#content',
                 type: 'GET', //this.debug ? 'POST' : 'GET' //GET - for production, POST - for debug.
                 timeout: 4000
@@ -298,7 +298,7 @@ $(function(){
         var $bodyContents = $($.parseHTML(data.match(/<body[^>]*>([\s\S.]*)<\/body>/i)[0], document, true)),
             $scripts = $bodyContents.filter('script[src]').add($bodyContents.find('script[src]')),
             $templates = $bodyContents.filter('script[type="text/template"]').add($bodyContents.find('script[type="text/template"]')),
-            $existingScripts = $('script[src]'),
+            existingUrls = new Set(Array.from(document.querySelectorAll('script[src]'), function(script) { return script.src; })),
             $existingTemplates = $('script[type="text/template"]');
 
         //append templates first as they are used by scripts
@@ -317,35 +317,31 @@ $(function(){
             document.body.appendChild(script);
         });
 
-        //ensure synchronous loading
-        var $previous = {
-            load: function(fn){
-                fn();
-            }
-        };
-
-        $scripts.each(function() {
-            let src = this.src;
-            let matchedScripts = $existingScripts.filter(function() {
-                //noinspection JSPotentiallyInvalidUsageOfThis
-                return this.src === src;
-            });
-            if (matchedScripts.length) return;
-
-            let script = document.createElement('script');
-            script.src = $(this).attr('src');
-            $previous.load(function(){
-                document.body.appendChild(script);
-            });
-
-            $previous = $(script);
+        var pendingScripts = $scripts.toArray().filter(function(element) {
+            return !existingUrls.has(element.src);
         });
 
-        let view = this;
-        $previous.load(function(){
-            $(document).trigger('sing-app:loaded');
-            view.log('scripts loaded.');
-        })
+        var pageUrl = location.href;
+        function loadNext() {
+            if (location.href !== pageUrl) return;
+
+            var next = pendingScripts.shift();
+            if (!next) {
+                $(document).trigger('sing-app:loaded');
+                return;
+            }
+
+            var script = document.createElement('script');
+            script.onload = loadNext;
+            script.onerror = function() {
+                // Restore navigation through a full page load if a dependency failed.
+                window.location.assign(options.url);
+            };
+            script.src = next.src;
+            document.body.appendChild(script);
+        }
+
+        loadNext();
     };
 
     SingAppView.prototype.extractPageName = function(url){

@@ -50,13 +50,7 @@
                 </section>
             </div>
         </div>
-    {{/content}}
-    {{#content "scripts"}}
-        <script src="../../node_modules/moment/min/moment.min.js"></script>
-        <script src="../../node_modules/components-jqueryui/jquery-ui.js"></script>
-        <script src="../../node_modules/fullcalendar/dist/fullcalendar.min.js"></script>
-
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -97,7 +91,13 @@
             </div>
         </div>
         <!-- page specific js -->
+{{/content}}
+    {{#content "scripts"}}
+        <script src="../../node_modules/moment/min/moment.min.js"></script>
+        <script src="../../node_modules/components-jqueryui/jquery-ui.js"></script>
+        <script src="../../node_modules/fullcalendar/dist/fullcalendar.min.js"></script>
+
         <script src="../js/extra/calendar.js"></script>
         <script src="../../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    {{/content}}
+{{/content}}
 {{/extend}}

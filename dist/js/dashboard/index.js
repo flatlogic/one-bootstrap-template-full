@@ -1,4 +1,10 @@
 $(function(){
+    const chartsOnPage = [];
+    $(document).on('pjax:start', function() {
+        $('.colors-list .color-box').off('click.analyticsChart');
+        chartsOnPage.splice(0).forEach(function(chart) { chart.destroy(); });
+    });
+
     let colors = {
         'black': '#323232',
         'brand-primary': '#1f7db6',
@@ -178,7 +184,7 @@ $(function(){
     };
 
     function colorsUpdate(chartName, theme, chartType) {
-        $('.colors-list .color-box').click(function(e) {
+        $('.colors-list .color-box').on('click.analyticsChart', function(e) {
             const target = $(e.target);
             const style = target.data('style')
             let options = {}
@@ -286,6 +292,7 @@ $(function(){
 
         let chart = new ApexCharts(document.querySelector("#first-apex-chart"), options);
 
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartFirst, 'bars');
@@ -356,6 +363,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#second-apex-chart"), options);
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartSecond, 'bars');
@@ -424,6 +432,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartThird, 'lines');
@@ -493,6 +502,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartFourth, 'lines');
@@ -571,6 +581,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartFifth, 'two-lines');
@@ -605,6 +616,7 @@ $(function(){
         };
 
         let chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
+        chartsOnPage.push(chart);
         chart.render();
 
         colorsUpdate(chart, mainOptions.chartSixth, 'pie');

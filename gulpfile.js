@@ -2,16 +2,12 @@
 
 const gulp = require("gulp");
 const { src, series, parallel, dest, watch } = require("gulp");
-const del = require("del");
-const prettier = require('gulp-prettier');
 const terser = require("gulp-terser");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const rename = require("gulp-rename");
 const hb = require("gulp-hb");
 const concat = require('gulp-concat');
 const layouts = require("handlebars-layouts");
-const runSequence = require("run-sequence");
-const sourcemaps = require("gulp-sourcemaps");
 
 const srcPaths = {
   scripts: ["./src/js/**/*"],
@@ -30,24 +26,21 @@ const srcPaths = {
 
 hb.handlebars.registerHelper(layouts(hb.handlebars));
 
-async function clean(cb) {
-  return del(["dist/*"]);
-  cb();
+function clean() {
+  return require("node:fs/promises").rm("dist", { recursive: true, force: true });
 }
 
 // Copy demo, img, js, fonts folders from src to dist
-async function copy(cb) {
+function copy() {
   return src([...srcPaths.static, ...srcPaths.images, ...srcPaths.fonts], {
-      base: "./src"
+      base: "./src", encoding: false
     })
     .pipe(dest("dist"));
 
-  cb();
 }
 
-async function copyJS(cb) {
+function copyJS() {
   return src(srcPaths.scripts).pipe(dest("dist/js"));
-  cb();
 }
 
 // Handle handlebars
@@ -66,17 +59,17 @@ function hbs() {
 
 // Handle sass
 function styles() {
-  return src(srcPaths.styles)
-    .pipe(sourcemaps.init())
+  return src(srcPaths.styles, { sourcemaps: true })
+
     .pipe(
       sass({
         precision: 10,
         outputStyle: "compressed"
-      }).on("error", sass.logError)
+      })
     )
     .pipe(rename({ suffix: ".min" }))
-    .pipe(sourcemaps.write("./maps"))
-    .pipe( dest("./dist/css") );
+
+    .pipe( dest("./dist/css", { sourcemaps: "./maps" }) );
 }
 
 function jsTask() {
@@ -89,17 +82,15 @@ function jsTask() {
     'node_modules/widgster/widgster.js',
     'node_modules/hammerjs/hammer.js',
     'node_modules/jquery-slimscroll/jquery.slimscroll.js',
-    'node_modules/jquery-hammerjs/jquery.hammer.js',
 
     // 'src/js/app.js',
     // 'src/js/settings.js'
-  ])
-      .pipe(prettier({ semi: true }))
-      .pipe(sourcemaps.init())
+  ], { sourcemaps: true })
+
       .pipe(concat('bundle.js'))
       .pipe(terser())
-      .pipe(sourcemaps.write('.'))
-      .pipe(dest('dist/js'));
+
+      .pipe(dest('dist/js', { sourcemaps: '.' }));
 }
 
 // Development
@@ -113,13 +104,6 @@ exports.watch = function watch() {
   );
 };
 
-gulp.task( "build", parallel(hbs, styles, copy, copyJS, jsTask) );
-
-// Build Task
-function build(cb) {
-  return parallel(clean, "build");
-  cb();
-}
-
-// Default Task
-gulp.task("default", gulp.parallel( clean, "build") );
+const build = parallel(hbs, styles, copy, copyJS, jsTask);
+exports.build = build;
+exports.default = series(clean, build);

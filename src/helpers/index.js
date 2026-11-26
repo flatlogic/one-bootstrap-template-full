@@ -1,4 +1,3 @@
-var util = require('handlebars-utils');
 
 module.exports = {
   activeClass: function(currentPartialName, partialNamesStr, options) {
@@ -10,7 +9,7 @@ module.exports = {
       options = b;
       b = options.hash.compare;
     }
-    return util.value(a == b, this, options);
+    return a == b ? options.fn(this) : options.inverse(this);
   }
   // Other helpers goes here
 
